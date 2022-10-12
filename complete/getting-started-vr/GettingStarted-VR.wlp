@@ -25,14 +25,6 @@
             "name": "FloorPlane",
             "components": [
                 {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "7",
-                        "material": "20"
-                    },
-                    "active": true
-                },
-                {
                     "type": "collision",
                     "collision": {
                         "collider": "aabb",
@@ -63,36 +55,6 @@
                 0.0,
                 0.0,
                 1.192092895507813e-7,
-                1.0
-            ]
-        },
-        "16": {
-            "name": "Cube",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "22"
-                    }
-                }
-            ],
-            "transformation": [
-                0.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.5,
-                0.0,
-                2.9802322387695326e-8,
-                0.4999999,
-                5.960464477539065e-8,
                 1.0
             ]
         },
@@ -208,7 +170,9 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.1
+                        "attenuation": 17.3999996,
+                        "range": 43.9000015,
+                        "type": "point"
                     }
                 }
             ],
@@ -257,66 +221,6 @@
                 -1.0,
                 3.0,
                 -1.0,
-                1.0
-            ]
-        },
-        "24": {
-            "name": "Cone",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "10",
-                        "material": "25"
-                    }
-                }
-            ],
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                1.5,
-                1.0,
-                -1.4901161193847656e-8,
-                1.0
-            ]
-        },
-        "27": {
-            "name": "Sphere",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "26"
-                    }
-                }
-            ],
-            "transformation": [
-                0.75,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.75,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.75,
-                0.0,
-                0.4999999,
-                0.75,
-                -1.25,
                 1.0
             ]
         },
@@ -1564,178 +1468,6 @@
             "parent": "167",
             "skin": "166"
         },
-        "194": {
-            "name": "Panel",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "195",
-                        "material": "202"
-                    }
-                }
-            ],
-            "transformation": [
-                0.25,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.062447,
-                0.1082836,
-                0.0,
-                0.0,
-                -0.2165673,
-                0.1248941,
-                0.0,
-                -2.5,
-                1.2,
-                0.0,
-                1.0
-            ]
-        },
-        "196": {
-            "link": {
-                "name": "Cube",
-                "file": "models\\button.glb"
-            },
-            "parent": "197",
-            "components": [
-                {
-                    "mesh": {
-                        "material": "26"
-                    }
-                }
-            ],
-            "name": "ButtonMesh",
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.999999,
-                0.0000012,
-                0.0,
-                0.0,
-                -0.0000019,
-                0.999999,
-                0.0,
-                -0.0000095,
-                0.3244419,
-                -0.0000677,
-                1.0
-            ]
-        },
-        "197": {
-            "name": "Button",
-            "parent": "194",
-            "transformation": [
-                0.4,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.4999999,
-                -0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.3,
-                0.0,
-                0.0,
-                0.057682,
-                0.1754341,
-                1.0
-            ],
-            "components": [
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "box",
-                        "box": {
-                            "extents": [
-                                0.0974999,
-                                0.025,
-                                0.045
-                            ]
-                        },
-                        "groups": 251
-                    }
-                },
-                {
-                    "type": "cursor-target"
-                },
-                {
-                    "type": "button",
-                    "button": {
-                        "buttonMeshObject": "196",
-                        "hoverMaterial": "203"
-                    }
-                }
-            ]
-        },
-        "198": {
-            "name": "ButtonLabel",
-            "parent": "196",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Thanks!"
-                    }
-                }
-            ],
-            "transformation": [
-                2.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0031942,
-                -3.7999985,
-                0.0,
-                0.0,
-                4.8000044,
-                0.0040349,
-                0.0,
-                -0.0001564,
-                0.108458,
-                0.0000047,
-                1.0
-            ]
-        },
-        "200": {
-            "name": "Title",
-            "parent": "194",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Welcome to\nWonderland",
-                        "material": "201"
-                    }
-                }
-            ],
-            "transformation": [
-                1.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0021012,
-                -2.9999995,
-                0.0,
-                0.0,
-                1.4999996,
-                0.0010506,
-                0.0,
-                -0.0000023,
-                0.1554994,
-                -0.3034151,
-                1.0
-            ]
-        },
         "205": {
             "name": "TrackedSpace",
             "parent": "14",
@@ -1974,6 +1706,236 @@
                 1.0
             ],
             "parent": null
+        },
+        "333": {
+            "link": {
+                "name": "RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "334": {
+            "link": {
+                "name": "RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "333"
+        },
+        "335": {
+            "link": {
+                "name": "Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "334"
+        },
+        "336": {
+            "link": {
+                "name": "Cylinder.008<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "337": {
+            "link": {
+                "name": "Cylinder.008_0<Cylinder.008<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "336"
+        },
+        "338": {
+            "link": {
+                "name": "Cube.035<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "339": {
+            "link": {
+                "name": "Cube.035_0<Cube.035<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "338"
+        },
+        "340": {
+            "link": {
+                "name": "Cylinder_Cylinder.009<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "341": {
+            "link": {
+                "name": "Cylinder_Cylinder.009_0<Cylinder_Cylinder.009<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "340"
+        },
+        "342": {
+            "link": {
+                "name": "Plane.001<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "343": {
+            "link": {
+                "name": "Plane.001_0<Plane.001<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "342"
+        },
+        "344": {
+            "link": {
+                "name": "Cylinder.000<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "345": {
+            "link": {
+                "name": "Cylinder.000_0<Cylinder.000<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "344"
+        },
+        "346": {
+            "link": {
+                "name": "Plane.009<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "347": {
+            "link": {
+                "name": "Plane.009_0<Plane.009<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "346"
+        },
+        "348": {
+            "link": {
+                "name": "Cylinder<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "349": {
+            "link": {
+                "name": "Cylinder_0<Cylinder<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "348"
+        },
+        "350": {
+            "link": {
+                "name": "Plane<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "351": {
+            "link": {
+                "name": "Plane_0<Plane<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "350"
+        },
+        "352": {
+            "link": {
+                "name": "Cylinder.002<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "353": {
+            "link": {
+                "name": "Cylinder.002_0<Cylinder.002<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "352"
+        },
+        "354": {
+            "link": {
+                "name": "Cylinder.001<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "355": {
+            "link": {
+                "name": "Cylinder.001_0<Cylinder.001<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "354"
+        },
+        "356": {
+            "link": {
+                "name": "Cylinder.003<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "357": {
+            "link": {
+                "name": "Cylinder.003_0<Cylinder.003<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "356"
+        },
+        "358": {
+            "link": {
+                "name": "Plane.012<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "359": {
+            "link": {
+                "name": "Plane.012_0<Plane.012<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "358"
+        },
+        "360": {
+            "link": {
+                "name": "Cube.005<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "361": {
+            "link": {
+                "name": "Cube.005_0<Cube.005<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "360"
+        },
+        "362": {
+            "link": {
+                "name": "Cube<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "363": {
+            "link": {
+                "name": "Cube_0<Cube<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "362"
+        },
+        "364": {
+            "link": {
+                "name": "Plane.002<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "365": {
+            "link": {
+                "name": "Plane.002_0<Plane.002<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "364"
         }
     },
     "meshes": {
@@ -2111,6 +2073,186 @@
                 "name": "TeleportIndicator",
                 "file": "models\\teleport-indicator.glb"
             }
+        },
+        "233": {
+            "link": {
+                "name": "Cylinder.008_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "234": {
+            "link": {
+                "name": "Cube.035_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "235": {
+            "link": {
+                "name": "Cylinder_Cylinder.009_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "236": {
+            "link": {
+                "name": "Plane.001_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "237": {
+            "link": {
+                "name": "Cylinder.000_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "238": {
+            "link": {
+                "name": "Plane.009_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "239": {
+            "link": {
+                "name": "Cylinder_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "240": {
+            "link": {
+                "name": "Plane_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "241": {
+            "link": {
+                "name": "Cylinder.002_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "242": {
+            "link": {
+                "name": "Cylinder.001_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "243": {
+            "link": {
+                "name": "Cylinder.003_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "244": {
+            "link": {
+                "name": "Plane.012_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "245": {
+            "link": {
+                "name": "Cube.005_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "246": {
+            "link": {
+                "name": "Cube_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "247": {
+            "link": {
+                "name": "Plane.002_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "285": {
+            "link": {
+                "name": "Cube_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "286": {
+            "link": {
+                "name": "Cube.005_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "287": {
+            "link": {
+                "name": "Cube.035_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "288": {
+            "link": {
+                "name": "Cylinder_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "289": {
+            "link": {
+                "name": "Cylinder.000_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "290": {
+            "link": {
+                "name": "Cylinder.001_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "291": {
+            "link": {
+                "name": "Cylinder.002_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "292": {
+            "link": {
+                "name": "Cylinder.003_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "293": {
+            "link": {
+                "name": "Cylinder.008_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "294": {
+            "link": {
+                "name": "Cylinder_Cylinder.009_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "295": {
+            "link": {
+                "name": "Plane_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "296": {
+            "link": {
+                "name": "Plane.001_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "297": {
+            "link": {
+                "name": "Plane.002_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "298": {
+            "link": {
+                "name": "Plane.009_0",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "299": {
+            "link": {
+                "name": "Plane.012_0",
+                "file": "models\\winter_scene.glb"
+            }
         }
     },
     "textures": {
@@ -2136,6 +2278,19 @@
             "link": {
                 "name": "texture_1",
                 "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "231": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "name": "winter-base"
+        },
+        "282": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\winter_scene.glb"
             }
         }
     },
@@ -2178,6 +2333,27 @@
             "maxSize": [
                 256,
                 256
+            ]
+        },
+        "230": {
+            "link": {
+                "name": "image_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "name": "winter-base",
+            "maxSize": [
+                64,
+                64
+            ]
+        },
+        "281": {
+            "link": {
+                "name": "Main_baseColor",
+                "file": "models\\winter_scene.glb"
+            },
+            "maxSize": [
+                64,
+                64
             ]
         }
     },
@@ -2405,6 +2581,33 @@
                     0.8392072,
                     1.0
                 ]
+            }
+        },
+        "232": {
+            "link": {
+                "name": "Main",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "Phong": {
+                "emissiveColor": [
+                    0.0156862,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "ambientFactor": 3.45
+            }
+        },
+        "283": {
+            "link": {
+                "name": "Main.001",
+                "file": "models\\winter_scene.glb"
+            }
+        },
+        "284": {
+            "link": {
+                "name": "Main",
+                "file": "models\\winter_scene.glb"
             }
         }
     },
@@ -2715,6 +2918,8 @@
         "models/hand-left.glb",
         "models/hand-right.glb",
         "models/button.glb",
-        "models/teleport-indicator.glb"
+        "models/teleport-indicator.glb",
+        "models/low_poly_winter_scene/scene.gltf",
+        "models/winter_scene.glb"
     ]
 }
