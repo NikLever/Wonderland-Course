@@ -170,10 +170,12 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 17.3999996,
-                        "range": 43.9000015,
-                        "type": "point"
-                    }
+                        "attenuation": 0.2,
+                        "range": 15.8999996,
+                        "type": "point",
+                        "shadows": false
+                    },
+                    "active": true
                 }
             ],
             "transformation": [
@@ -189,9 +191,9 @@
                 0.0,
                 1.0,
                 0.0,
-                0.0,
-                3.0,
-                2.0,
+                -7.169753,
+                3.8961482,
+                1.1328948,
                 1.0
             ]
         },
@@ -202,7 +204,8 @@
                     "type": "light",
                     "light": {
                         "attenuation": 0.1
-                    }
+                    },
+                    "active": true
                 }
             ],
             "transformation": [
@@ -2301,9 +2304,10 @@
                 "file": "models\\oculus-touch-v2-left.glb"
             },
             "maxSize": [
-                1024,
-                1024
-            ]
+                512,
+                512
+            ],
+            "compress": true
         },
         "43": {
             "link": {
@@ -2321,9 +2325,10 @@
                 "file": "models\\oculus-touch-v2-right.glb"
             },
             "maxSize": [
-                1024,
-                1024
-            ]
+                512,
+                512
+            ],
+            "compress": true
         },
         "85": {
             "link": {
@@ -2344,7 +2349,8 @@
             "maxSize": [
                 64,
                 64
-            ]
+            ],
+            "compress": false
         },
         "281": {
             "link": {
@@ -2354,7 +2360,8 @@
             "maxSize": [
                 64,
                 64
-            ]
+            ],
+            "compress": false
         }
     },
     "materials": {
