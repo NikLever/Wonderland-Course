@@ -191,9 +191,9 @@
                 0.0,
                 1.0,
                 0.0,
-                -7.169753,
-                3.8961482,
-                1.1328948,
+                -7.0492529,
+                3.8057847,
+                1.670251,
                 1.0
             ]
         },
@@ -1714,7 +1714,8 @@
             "link": {
                 "name": "RootNode (gltf orientation matrix)",
                 "file": "models\\low_poly_winter_scene\\scene.gltf"
-            }
+            },
+            "name": "Winter Scene"
         },
         "334": {
             "link": {
