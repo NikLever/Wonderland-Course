@@ -15,9 +15,9 @@
                 0.0,
                 0.9999998,
                 0.0,
-                -2.5,
+                -1.4617643,
                 0.0,
-                1.1575536,
+                1.7698609,
                 1.0
             ]
         },
@@ -30,9 +30,9 @@
                         "collider": "aabb",
                         "aabb": {
                             "extents": [
-                                4.0,
+                                7.8000001,
                                 0.05,
-                                4.0
+                                0.5
                             ]
                         },
                         "groups": 4
@@ -40,21 +40,21 @@
                 }
             ],
             "transformation": [
-                4.0,
+                5.3000001,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
-                -0.0016164,
-                -3.9999997,
+                -0.0023178,
+                -5.6000204,
                 0.0,
                 0.0,
-                3.9999997,
-                -0.0016164,
+                6.9000091,
+                -0.0028558,
                 0.0,
-                0.0,
-                0.0,
-                1.192092895507813e-7,
+                0.1038826,
+                -0.0156149,
+                1.9444382,
                 1.0
             ]
         },
@@ -848,6 +848,12 @@
                 {
                     "type": "vr-mode-active-switch",
                     "active": true
+                },
+                {
+                    "type": "teleportPlayer",
+                    "teleportPlayer": {
+                        "player": "14"
+                    }
                 }
             ]
         },
@@ -890,6 +896,13 @@
                 {
                     "type": "vr-mode-active-switch",
                     "active": true
+                },
+                {
+                    "type": "teleportPlayer",
+                    "teleportPlayer": {
+                        "navmesh": "15",
+                        "player": "14"
+                    }
                 }
             ],
             "transformation": [
@@ -1253,7 +1266,8 @@
                 {
                     "mesh": {
                         "skin": "166"
-                    }
+                    },
+                    "active": true
                 }
             ]
         },
@@ -1516,10 +1530,13 @@
                 0.0,
                 1.0,
                 0.0,
-                0.0,
+                0.8728564,
                 0.0099999,
-                1.3311299,
+                1.846122,
                 1.0
+            ],
+            "components": [
+                null
             ]
         },
         "209": {
@@ -1603,7 +1620,8 @@
                         "teleportIndicatorMeshObject": "208",
                         "indicatorYOffset": 0.0099999,
                         "eyeLeft": "18",
-                        "eyeRight": "19"
+                        "eyeRight": "19",
+                        "handedness": "input component"
                     }
                 }
             ],
@@ -2257,6 +2275,90 @@
                 "name": "Plane.012_0",
                 "file": "models\\winter_scene.glb"
             }
+        },
+        "372": {
+            "link": {
+                "name": "Mesh.002",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "373": {
+            "link": {
+                "name": "Mesh",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "374": {
+            "link": {
+                "name": "Mesh.006",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "375": {
+            "link": {
+                "name": "Mesh.003",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "376": {
+            "link": {
+                "name": "Mesh.004",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "377": {
+            "link": {
+                "name": "Mesh.001",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "378": {
+            "link": {
+                "name": "Mesh.005",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "379": {
+            "link": {
+                "name": "Mesh.009",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "380": {
+            "link": {
+                "name": "Mesh.007",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "381": {
+            "link": {
+                "name": "Mesh.013",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "382": {
+            "link": {
+                "name": "Mesh.010",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "383": {
+            "link": {
+                "name": "Mesh.011",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "384": {
+            "link": {
+                "name": "Mesh.008",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "385": {
+            "link": {
+                "name": "Mesh.012",
+                "file": "models\\quest_controllers.glb"
+            }
         }
     },
     "textures": {
@@ -2617,6 +2719,42 @@
                 "name": "Main",
                 "file": "models\\winter_scene.glb"
             }
+        },
+        "366": {
+            "link": {
+                "name": "blinn1",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "367": {
+            "link": {
+                "name": "lambert2",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "368": {
+            "link": {
+                "name": "lambert1",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "369": {
+            "link": {
+                "name": "blinn1.001",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "370": {
+            "link": {
+                "name": "lambert2.001",
+                "file": "models\\quest_controllers.glb"
+            }
+        },
+        "371": {
+            "link": {
+                "name": "lambert1.001",
+                "file": "models\\quest_controllers.glb"
+            }
         }
     },
     "shaders": {
@@ -2761,12 +2899,21 @@
             ]
         },
         "runtime": {
-            "visualizeColliders": false,
+            "visualizeColliders": true,
             "webxr": {
                 "optionalFeatures": {
                     "local-floor": true
                 }
             }
+        },
+        "physx": {
+            "enable": false
+        },
+        "rendering": {
+            "compressedTextureAtlasSize": [
+                8192,
+                4096
+            ]
         }
     },
     "animations": {},
@@ -2928,6 +3075,7 @@
         "models/button.glb",
         "models/teleport-indicator.glb",
         "models/low_poly_winter_scene/scene.gltf",
-        "models/winter_scene.glb"
+        "models/winter_scene.glb",
+        "models/quest_controllers.glb"
     ]
 }

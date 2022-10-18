@@ -1,0 +1,6454 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "transformation": [
+                0.9999998,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.9999998,
+                0.0,
+                -2.5,
+                0.0,
+                1.1575536,
+                1.0
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "collisionGroup": 0,
+                        "handedness": "none"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                },
+                {
+                    "type": "howler-audio-listener"
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1,
+                        "type": "point"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                3.0,
+                2.0,
+                1.0
+            ]
+        },
+        "23": {
+            "name": "Light.000",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.25,
+                        "type": "point"
+                    },
+                    "active": true
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.0,
+                3.0,
+                -1.0,
+                1.0
+            ]
+        },
+        "53": {
+            "link": {
+                "name": "root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "130",
+            "name": "ControllerModelLeft",
+            "transformation": [
+                -0.9999998,
+                2.9802311729554276e-8,
+                -5.960464477539065e-8,
+                0.0,
+                -2.9802322387695326e-8,
+                0.0706573,
+                0.9975006,
+                0.0,
+                0.0,
+                0.9975004,
+                -0.0706574,
+                0.0,
+                -0.0117515,
+                0.0008869,
+                0.0161192,
+                1.0
+            ]
+        },
+        "54": {
+            "link": {
+                "name": "controller<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53",
+            "components": [
+                {
+                    "active": false
+                }
+            ]
+        },
+        "55": {
+            "link": {
+                "name": "thumbrest_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "56": {
+            "link": {
+                "name": "thumbrest_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "57": {
+            "link": {
+                "name": "thumbrest_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "58": {
+            "link": {
+                "name": "x_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "59": {
+            "link": {
+                "name": "x_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "60": {
+            "link": {
+                "name": "x_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "61": {
+            "link": {
+                "name": "x_button<x_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "60"
+        },
+        "62": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "63": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "64": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "65": {
+            "link": {
+                "name": "squeeze<xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "64"
+        },
+        "66": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "67": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "68": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "69": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_max<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "68"
+        },
+        "70": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_min<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "68"
+        },
+        "71": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "68"
+        },
+        "72": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_max<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "71"
+        },
+        "73": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_min<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "71"
+        },
+        "74": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "71"
+        },
+        "75": {
+            "link": {
+                "name": "thumbstick<xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "74"
+        },
+        "76": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "77": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "78": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "79": {
+            "link": {
+                "name": "trigger<xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "78"
+        },
+        "80": {
+            "link": {
+                "name": "y_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "81": {
+            "link": {
+                "name": "y_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "82": {
+            "link": {
+                "name": "y_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "83": {
+            "link": {
+                "name": "y_button<y_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "82"
+        },
+        "95": {
+            "link": {
+                "name": "root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "129",
+            "name": "ControllerModelRight",
+            "transformation": [
+                -0.9993979,
+                0.0,
+                8.344650268554688e-7,
+                0.0,
+                -1.4901161193847656e-8,
+                0.9990808,
+                -0.0251145,
+                0.0,
+                -8.642673492431641e-7,
+                -0.0251297,
+                -0.9996858,
+                0.0,
+                0.0097995,
+                -0.0006203,
+                0.0177838,
+                1.0
+            ]
+        },
+        "96": {
+            "link": {
+                "name": "a_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "97": {
+            "link": {
+                "name": "a_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "98": {
+            "link": {
+                "name": "a_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "99": {
+            "link": {
+                "name": "a_button<a_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "98"
+        },
+        "100": {
+            "link": {
+                "name": "b_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "101": {
+            "link": {
+                "name": "b_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "102": {
+            "link": {
+                "name": "b_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "103": {
+            "link": {
+                "name": "b_button<b_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "102"
+        },
+        "104": {
+            "link": {
+                "name": "controller<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95",
+            "components": [
+                {
+                    "active": false
+                }
+            ]
+        },
+        "105": {
+            "link": {
+                "name": "thumbrest_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "106": {
+            "link": {
+                "name": "thumbrest_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "107": {
+            "link": {
+                "name": "thumbrest_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "108": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "109": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "110": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "111": {
+            "link": {
+                "name": "squeeze<xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "110"
+        },
+        "112": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "113": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "114": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "115": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_max<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "114"
+        },
+        "116": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_min<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "114"
+        },
+        "117": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "114"
+        },
+        "118": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_max<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "117"
+        },
+        "119": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_min<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "117"
+        },
+        "120": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "117"
+        },
+        "121": {
+            "link": {
+                "name": "thumbstick<xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "120"
+        },
+        "122": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "123": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "124": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "125": {
+            "link": {
+                "name": "trigger<xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "124"
+        },
+        "126": {
+            "name": "CursorLeft",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorObject": "127",
+                        "collisionGroup": 0,
+                        "cursorRayObject": "209",
+                        "cursorRayScalingAxis": "y"
+                    }
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray left"
+                    }
+                },
+                {
+                    "type": "teleport",
+                    "teleport": {
+                        "floorGroup": 3,
+                        "camRoot": "14",
+                        "cam": "17",
+                        "teleportIndicatorMeshObject": "208",
+                        "indicatorYOffset": 0.0099999,
+                        "eyeLeft": "18",
+                        "eyeRight": "19",
+                        "rayCastMode": "physx"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.384185791015625e-7,
+                1.192092895507813e-7,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "127": {
+            "name": "3DCursorHitLeft",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "128"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0388118,
+                1.5585095,
+                1.0
+            ],
+            "parent": null
+        },
+        "129": {
+            "name": "ControllerRight",
+            "parent": "205",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ],
+            "components": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand right"
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ]
+        },
+        "130": {
+            "name": "ControllerLeft",
+            "parent": "205",
+            "components": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand left"
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "134": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "205",
+            "name": "HandLeft",
+            "components": [
+                {
+                    "type": "hand-tracking",
+                    "hand-tracking": {
+                        "handedness": "left",
+                        "handSkin": "133",
+                        "controllerToDeactivate": "130",
+                        "deactivateChildrenWithoutPose": true
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "135": {
+            "link": {
+                "name": "l_handMeshNode<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "components": [
+                {
+                    "active": true,
+                    "mesh": {
+                        "skin": "133"
+                    }
+                }
+            ]
+        },
+        "136": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_max<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "137": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_min<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "138": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_value<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "139": {
+            "link": {
+                "name": "pinky-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "140": {
+            "link": {
+                "name": "pinky-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "141": {
+            "link": {
+                "name": "pinky-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "142": {
+            "link": {
+                "name": "pinky-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "143": {
+            "link": {
+                "name": "pinky-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "144": {
+            "link": {
+                "name": "ring-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "145": {
+            "link": {
+                "name": "ring-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "146": {
+            "link": {
+                "name": "ring-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "147": {
+            "link": {
+                "name": "ring-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "148": {
+            "link": {
+                "name": "ring-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "149": {
+            "link": {
+                "name": "middle-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "150": {
+            "link": {
+                "name": "middle-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "151": {
+            "link": {
+                "name": "middle-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "152": {
+            "link": {
+                "name": "middle-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "153": {
+            "link": {
+                "name": "middle-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "154": {
+            "link": {
+                "name": "index-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "components": [
+                {
+                    "type": "finger-cursor"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0099999
+                        },
+                        "groups": 2
+                    }
+                }
+            ],
+            "skin": "133"
+        },
+        "155": {
+            "link": {
+                "name": "index-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "156": {
+            "link": {
+                "name": "index-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "157": {
+            "link": {
+                "name": "index-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "158": {
+            "link": {
+                "name": "index-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "159": {
+            "link": {
+                "name": "thumb-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "160": {
+            "link": {
+                "name": "thumb-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "161": {
+            "link": {
+                "name": "thumb-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "162": {
+            "link": {
+                "name": "thumb-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "163": {
+            "link": {
+                "name": "wrist<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "167": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "205",
+            "name": "HandRight",
+            "components": [
+                {
+                    "type": "hand-tracking",
+                    "hand-tracking": {
+                        "handedness": "right",
+                        "handSkin": "166",
+                        "controllerToDeactivate": "129"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "168": {
+            "link": {
+                "name": "r_handMeshNode<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "components": [
+                {
+                    "mesh": {
+                        "skin": "166"
+                    }
+                }
+            ]
+        },
+        "169": {
+            "link": {
+                "name": "wrist<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "170": {
+            "link": {
+                "name": "thumb-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "171": {
+            "link": {
+                "name": "thumb-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "172": {
+            "link": {
+                "name": "thumb-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "173": {
+            "link": {
+                "name": "thumb-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "174": {
+            "link": {
+                "name": "index-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "175": {
+            "link": {
+                "name": "index-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "176": {
+            "link": {
+                "name": "index-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "177": {
+            "link": {
+                "name": "index-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "178": {
+            "link": {
+                "name": "index-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0099999
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "finger-cursor"
+                }
+            ],
+            "skin": "166"
+        },
+        "179": {
+            "link": {
+                "name": "middle-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "180": {
+            "link": {
+                "name": "middle-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "181": {
+            "link": {
+                "name": "middle-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "182": {
+            "link": {
+                "name": "middle-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "183": {
+            "link": {
+                "name": "middle-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "184": {
+            "link": {
+                "name": "ring-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "185": {
+            "link": {
+                "name": "ring-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "186": {
+            "link": {
+                "name": "ring-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "187": {
+            "link": {
+                "name": "ring-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "188": {
+            "link": {
+                "name": "ring-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "189": {
+            "link": {
+                "name": "pinky-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "190": {
+            "link": {
+                "name": "pinky-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "191": {
+            "link": {
+                "name": "pinky-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "192": {
+            "link": {
+                "name": "pinky-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "193": {
+            "link": {
+                "name": "pinky-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "205": {
+            "name": "TrackedSpace",
+            "parent": "14",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                1.75,
+                0.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "player-height"
+                }
+            ]
+        },
+        "208": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "models\\teleport-indicator.glb"
+            },
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0099999,
+                1.3311299,
+                1.0
+            ]
+        },
+        "209": {
+            "name": "CursorRayLeft",
+            "parent": "126",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "210": {
+            "name": "CuresorRayMeshLeft",
+            "parent": "209",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "128"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0049999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0001057,
+                0.3500003,
+                0.0,
+                0.0,
+                -0.005,
+                0.0000015,
+                0.0,
+                2.384192896442983e-7,
+                0.0002447,
+                0.0,
+                1.0
+            ]
+        },
+        "212": {
+            "name": "CursorRight",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorObject": "215",
+                        "collisionGroup": 0,
+                        "cursorRayObject": "213",
+                        "cursorRayScalingAxis": "y"
+                    }
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray right"
+                    }
+                },
+                {
+                    "type": "teleport",
+                    "teleport": {
+                        "floorGroup": 3,
+                        "camRoot": "14",
+                        "cam": "17",
+                        "teleportIndicatorMeshObject": "208",
+                        "indicatorYOffset": 0.0099999,
+                        "eyeLeft": "18",
+                        "eyeRight": "19",
+                        "rayCastMode": "physx"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "213": {
+            "name": "CursorRayRight",
+            "parent": "212",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "214": {
+            "name": "CuresorRayMeshRight",
+            "parent": "213",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "128"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0049999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0001711,
+                0.3499999,
+                0.0,
+                0.0,
+                -0.0049999,
+                -0.0000024,
+                0.0,
+                2.384185791015625e-7,
+                0.0002447,
+                0.0,
+                1.0
+            ]
+        },
+        "215": {
+            "name": "3DCursorHitRight",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "128"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "parent": null
+        },
+        "338": {
+            "link": {
+                "name": "DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "name": "Dungeon",
+            "transformation": [
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.0099997,
+                0.0,
+                0.0,
+                -0.0099999,
+                -0.0,
+                0.0,
+                -8.8880157,
+                0.0,
+                14.4702758,
+                1.0
+            ],
+            "parent": "807"
+        },
+        "339": {
+            "link": {
+                "name": "Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "340": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_01<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "341": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_03<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "342": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_04<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "343": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_05<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "344": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_06<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "345": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_07<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "346": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_08<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "347": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_09<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "348": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_10<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "349": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_11<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "350": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_119<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "351": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_12<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "352": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_13<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "353": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_15<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "354": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_16<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "355": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_17<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "356": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_18<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "357": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_19<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "358": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_20<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "359": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_21<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "360": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_22<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "361": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_23<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "362": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_25<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "363": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_28<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "364": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_29<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "365": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_30<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "366": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_40<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "367": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_41<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "368": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_46<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "369": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_47<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "370": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_49<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "371": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_50<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "372": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_51<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "373": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_52<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "374": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_53<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "375": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_54<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "376": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_55<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "377": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_56<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "378": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_57<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "379": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_58<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "380": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_59<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "381": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_60<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "382": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_83<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "383": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_86<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "384": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_88<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "385": {
+            "link": {
+                "name": "SD_Env_Goblin_Tunnel_01<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "386": {
+            "link": {
+                "name": "SD_Env_Goblin_Tunnel_Entrance_01<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "387": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_02<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "388": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_03<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "389": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_04<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "390": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_05<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "391": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_06<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "392": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_07<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "393": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_08<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "394": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_09<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "395": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_10<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "396": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_11<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "397": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_12<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "398": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_13<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "399": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_14<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "400": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_15<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "401": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_16<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "402": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_17<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "403": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_18<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "404": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_19<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "405": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_20<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "406": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_21<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "407": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_22<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "408": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_23<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "409": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_24<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "410": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_25<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "411": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_26<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "412": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_27<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "413": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_28<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "414": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_29<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "415": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_30<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "416": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_31<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "417": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_32<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "418": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_33<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "419": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_34<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "420": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_35<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "421": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_40<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "422": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_41<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "423": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_42<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "424": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_43<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "425": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_44<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "426": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_45<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "427": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_65<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "428": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_66<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "429": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_67<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "430": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_68<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "431": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_69<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "432": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_70<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "433": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_71<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "434": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_72<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "435": {
+            "link": {
+                "name": "SD_Env_Pillar_Wood_01<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "436": {
+            "link": {
+                "name": "SD_Env_Pillar_Wood_02<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "437": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_01<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "438": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_02<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "439": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_03<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "440": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_04<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "441": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_05<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "442": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_06<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "443": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_07<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "444": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_08<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "445": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_09<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "446": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_10<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "447": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_11<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "448": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_12<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "449": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_13<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "450": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_14<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "451": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_15<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "452": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_16<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "453": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_18<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "454": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_19<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "455": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_02<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "456": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_04<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "457": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_06<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "458": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_07<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "459": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_08<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "460": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_09<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "461": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_10<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "462": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_11<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "463": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_12<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "464": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_13<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "465": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_14<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "466": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_15<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "467": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_16<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "468": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_17<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "469": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_45<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "470": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_46<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "471": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_47<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "472": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_48<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "473": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_49<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "474": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_50<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "475": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_51<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "476": {
+            "link": {
+                "name": "SD_Env_Stairs_Spiral_01<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "477": {
+            "link": {
+                "name": "SD_Env_Stairs_Spiral_02<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "478": {
+            "link": {
+                "name": "SD_Env_Stairs_Stone_01<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "479": {
+            "link": {
+                "name": "SD_Env_Stairs_Stone_02<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "480": {
+            "link": {
+                "name": "SD_Env_StoneCircle_01<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "481": {
+            "link": {
+                "name": "SD_Env_Wall_01<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "482": {
+            "link": {
+                "name": "SD_Env_Wall_02<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "483": {
+            "link": {
+                "name": "SD_Env_Wall_03<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "484": {
+            "link": {
+                "name": "SD_Env_Wall_04<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "485": {
+            "link": {
+                "name": "SD_Env_Wall_05<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "486": {
+            "link": {
+                "name": "SD_Env_Wall_06<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "487": {
+            "link": {
+                "name": "SD_Env_Wall_07<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "488": {
+            "link": {
+                "name": "SD_Env_Wall_08<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "489": {
+            "link": {
+                "name": "SD_Env_Wall_09<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "490": {
+            "link": {
+                "name": "SD_Env_Wall_10<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "491": {
+            "link": {
+                "name": "SD_Env_Wall_11<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "492": {
+            "link": {
+                "name": "SD_Env_Wall_12<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "493": {
+            "link": {
+                "name": "SD_Env_Wall_13<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "494": {
+            "link": {
+                "name": "SD_Env_Wall_14<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "495": {
+            "link": {
+                "name": "SD_Env_Wall_15<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "496": {
+            "link": {
+                "name": "SD_Env_Wall_16<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "497": {
+            "link": {
+                "name": "SD_Env_Wall_17<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "498": {
+            "link": {
+                "name": "SD_Env_Wall_18<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "499": {
+            "link": {
+                "name": "SD_Env_Wall_19<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "500": {
+            "link": {
+                "name": "SD_Env_Wall_21<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "501": {
+            "link": {
+                "name": "SD_Env_Wall_22<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "502": {
+            "link": {
+                "name": "SD_Env_Wall_23<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "503": {
+            "link": {
+                "name": "SD_Env_Wall_24<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "504": {
+            "link": {
+                "name": "SD_Env_Wall_25<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "505": {
+            "link": {
+                "name": "SD_Env_Wall_26<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "506": {
+            "link": {
+                "name": "SD_Env_Wall_27<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "507": {
+            "link": {
+                "name": "SD_Env_Wall_28<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "508": {
+            "link": {
+                "name": "SD_Env_Wall_29<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "509": {
+            "link": {
+                "name": "SD_Env_Wall_30<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "510": {
+            "link": {
+                "name": "SD_Env_Wall_31<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "511": {
+            "link": {
+                "name": "SD_Env_Wall_32<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "512": {
+            "link": {
+                "name": "SD_Env_Wall_33<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "513": {
+            "link": {
+                "name": "SD_Env_Wall_34<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "514": {
+            "link": {
+                "name": "SD_Env_Wall_35<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "515": {
+            "link": {
+                "name": "SD_Env_Wall_36<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "516": {
+            "link": {
+                "name": "SD_Env_Wall_37<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "517": {
+            "link": {
+                "name": "SD_Env_Wall_38<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "518": {
+            "link": {
+                "name": "SD_Env_Wall_39<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "519": {
+            "link": {
+                "name": "SD_Env_Wall_40<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "520": {
+            "link": {
+                "name": "SD_Env_Wall_41<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "521": {
+            "link": {
+                "name": "SD_Env_Wall_42<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "522": {
+            "link": {
+                "name": "SD_Env_Wall_43<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "523": {
+            "link": {
+                "name": "SD_Env_Wall_44<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "524": {
+            "link": {
+                "name": "SD_Env_Wall_45<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "525": {
+            "link": {
+                "name": "SD_Env_Wall_46<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "526": {
+            "link": {
+                "name": "SD_Env_Wall_47<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "527": {
+            "link": {
+                "name": "SD_Env_Wall_48<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "528": {
+            "link": {
+                "name": "SD_Env_Wall_49<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "529": {
+            "link": {
+                "name": "SD_Env_Wall_50<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "530": {
+            "link": {
+                "name": "SD_Env_Wall_51<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "531": {
+            "link": {
+                "name": "SD_Env_Wall_52<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "532": {
+            "link": {
+                "name": "SD_Env_Wall_53<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "533": {
+            "link": {
+                "name": "SD_Env_Wall_54<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "534": {
+            "link": {
+                "name": "SD_Env_Wall_55<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "535": {
+            "link": {
+                "name": "SD_Env_Wall_56<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "536": {
+            "link": {
+                "name": "SD_Env_Wall_57<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "537": {
+            "link": {
+                "name": "SD_Env_Wall_58<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "538": {
+            "link": {
+                "name": "SD_Env_Wall_60<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "539": {
+            "link": {
+                "name": "SD_Env_Wall_61<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "540": {
+            "link": {
+                "name": "SD_Env_Wall_62<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "541": {
+            "link": {
+                "name": "SD_Env_Wall_63<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "542": {
+            "link": {
+                "name": "SD_Env_Wall_64<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "543": {
+            "link": {
+                "name": "SD_Env_Wall_65<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "544": {
+            "link": {
+                "name": "SD_Env_Wall_66<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "545": {
+            "link": {
+                "name": "SD_Env_Wall_67<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "546": {
+            "link": {
+                "name": "SD_Env_Wall_68<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "547": {
+            "link": {
+                "name": "SD_Env_Wall_69<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "548": {
+            "link": {
+                "name": "SD_Env_Wall_70<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "549": {
+            "link": {
+                "name": "SD_Env_Wall_71<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "550": {
+            "link": {
+                "name": "SD_Env_Wall_76<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "551": {
+            "link": {
+                "name": "SD_Env_Wall_77<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "552": {
+            "link": {
+                "name": "SD_Env_Wall_78<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "553": {
+            "link": {
+                "name": "SD_Env_Wall_79<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "554": {
+            "link": {
+                "name": "SD_Env_Wall_80<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "555": {
+            "link": {
+                "name": "SD_Env_Wall_81<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "556": {
+            "link": {
+                "name": "SD_Env_Wall_82<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "557": {
+            "link": {
+                "name": "SD_Env_Wall_83<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "558": {
+            "link": {
+                "name": "SD_Env_Wall_84<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "559": {
+            "link": {
+                "name": "SD_Env_Wall_85<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "560": {
+            "link": {
+                "name": "SD_Env_Wall_87<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "561": {
+            "link": {
+                "name": "SD_Env_Wall_92<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "562": {
+            "link": {
+                "name": "SD_Env_Wall_93<Enviornment<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "339"
+        },
+        "563": {
+            "link": {
+                "name": "Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "564": {
+            "link": {
+                "name": "SD_Prop_Banner_Emblem_04<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "565": {
+            "link": {
+                "name": "SD_Prop_Banner_Emblem_05<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "566": {
+            "link": {
+                "name": "SD_Prop_Banner_Emblem_06<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "567": {
+            "link": {
+                "name": "SD_Prop_Banner_Emblem_07<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "568": {
+            "link": {
+                "name": "SD_Prop_Banner_Emblem_08<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "569": {
+            "link": {
+                "name": "SD_Prop_Banner_Emblem_Ripped_04<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "570": {
+            "link": {
+                "name": "SD_Prop_Banner_Ripped_03<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "571": {
+            "link": {
+                "name": "SD_Prop_Barrel_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "572": {
+            "link": {
+                "name": "SD_Prop_Barrel_02<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "573": {
+            "link": {
+                "name": "SD_Prop_Barrel_Broken_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "574": {
+            "link": {
+                "name": "SD_Prop_Bench_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "575": {
+            "link": {
+                "name": "SD_Prop_Bench_Broken_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "576": {
+            "link": {
+                "name": "SD_Prop_Bookshelf_02<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "577": {
+            "link": {
+                "name": "SD_Prop_Candle_Flame_04<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "578": {
+            "link": {
+                "name": "SD_Prop_Candle_Flame_05<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "579": {
+            "link": {
+                "name": "SD_Prop_CandleStand_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "580": {
+            "link": {
+                "name": "SD_Prop_CandleStand_02<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "581": {
+            "link": {
+                "name": "SD_Prop_Chest_Skull_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "582": {
+            "link": {
+                "name": "SD_Prop_Chest_Skull_Lid_01<SD_Prop_Chest_Skull_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "581"
+        },
+        "583": {
+            "link": {
+                "name": "SD_Prop_Corpse_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "584": {
+            "link": {
+                "name": "SD_Prop_Corpse_04<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "585": {
+            "link": {
+                "name": "SD_Prop_Crate_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "586": {
+            "link": {
+                "name": "SD_Prop_Crate_02<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "587": {
+            "link": {
+                "name": "SD_Prop_Crate_03<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "588": {
+            "link": {
+                "name": "SD_Prop_Crate_04<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "589": {
+            "link": {
+                "name": "SD_Prop_Crate_05<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "590": {
+            "link": {
+                "name": "SD_Prop_Pot_Large_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "591": {
+            "link": {
+                "name": "SD_Prop_Pot_Large_02<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "592": {
+            "link": {
+                "name": "SD_Prop_Pot_Large_03<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "593": {
+            "link": {
+                "name": "SD_Prop_Pot_Large_04<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "594": {
+            "link": {
+                "name": "SD_Prop_Pot_Large_05<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "595": {
+            "link": {
+                "name": "SD_Prop_Pot_Large_06<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "596": {
+            "link": {
+                "name": "SD_Prop_Pot_Large_06_1<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "597": {
+            "link": {
+                "name": "SD_Prop_Pot_Large_07<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "598": {
+            "link": {
+                "name": "SD_Prop_Pot_Large_08<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "599": {
+            "link": {
+                "name": "SD_Prop_Pot_Smashed_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "600": {
+            "link": {
+                "name": "SD_Prop_Rubble_04_1<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "601": {
+            "link": {
+                "name": "SD_Prop_Shield_Rusty_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "602": {
+            "link": {
+                "name": "SD_Prop_Skull_Pile_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "603": {
+            "link": {
+                "name": "SD_Prop_Skull_Pile_02<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "604": {
+            "link": {
+                "name": "SD_Prop_Sword_Rusty_01<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "605": {
+            "link": {
+                "name": "SD_Prop_Torch_09<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "606": {
+            "link": {
+                "name": "SD_Prop_Torch_10<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "607": {
+            "link": {
+                "name": "SD_Prop_Torch_11<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "608": {
+            "link": {
+                "name": "SD_Prop_Torch_12<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "609": {
+            "link": {
+                "name": "SD_Prop_Torch_13<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "610": {
+            "link": {
+                "name": "SD_Prop_Torch_14<Props<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "563"
+        },
+        "611": {
+            "link": {
+                "name": "room<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "612": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_64<room<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "611"
+        },
+        "613": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_42<room<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "611"
+        },
+        "614": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_43<room<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "611"
+        },
+        "615": {
+            "link": {
+                "name": "SD_Env_Railing_Stone_Pillar_44<room<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "611"
+        },
+        "616": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "617": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "618": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "619": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_04<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "620": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_05<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "621": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_06<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "622": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_07<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "623": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_08<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "624": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_09<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "625": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_10<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "626": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_11<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "627": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_12<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "628": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_13<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "629": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_14<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "630": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_15<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "631": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_16<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "632": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_17<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "633": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_18<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "634": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_19<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "635": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_20<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "636": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_21<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "637": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_22<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "638": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_23<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "639": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_24<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "640": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_25<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "641": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_26<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "642": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_27<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "643": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_28<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "644": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_29<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "645": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_30<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "646": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_31<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "647": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_32<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "648": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_33<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "649": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_34<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "650": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_35<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "651": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_36<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "652": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_37<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "653": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_38<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "654": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_39<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "655": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_40<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "656": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_41<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "657": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_42<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "658": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_43<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "659": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_45<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "660": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_58<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "661": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_59<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "662": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_60<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "663": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_61<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "664": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_62<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "665": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_63<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "666": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_64<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "667": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_65<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "668": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_66<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "669": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_67<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "670": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_68<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "671": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_69<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "672": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_71<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "673": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_72<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "674": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_75<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "675": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_76<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "676": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_77<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "677": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_78<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "678": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_79<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "679": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_80<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "680": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_81<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "681": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_82<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "682": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_83<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "683": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_84<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "684": {
+            "link": {
+                "name": "SD_Env_Ceiling_Stone_85<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "685": {
+            "link": {
+                "name": "SD_Env_Door_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "686": {
+            "link": {
+                "name": "Door_3<SD_Env_Door_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "685"
+        },
+        "687": {
+            "link": {
+                "name": "SD_Env_Door_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "688": {
+            "link": {
+                "name": "Door_2<SD_Env_Door_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "687"
+        },
+        "689": {
+            "link": {
+                "name": "SD_Env_Door_04<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "690": {
+            "link": {
+                "name": "Door_1<SD_Env_Door_04<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "689"
+        },
+        "691": {
+            "link": {
+                "name": "SD_Env_Door_05<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "692": {
+            "link": {
+                "name": "SD_Env_Door_08<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "693": {
+            "link": {
+                "name": "Door<SD_Env_Door_08<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "692"
+        },
+        "694": {
+            "link": {
+                "name": "SD_Env_Doorway_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "695": {
+            "link": {
+                "name": "SD_Env_Doorway_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "696": {
+            "link": {
+                "name": "SD_Env_Doorway_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "697": {
+            "link": {
+                "name": "SD_Env_Doorway_04<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "698": {
+            "link": {
+                "name": "SD_Env_Doorway_07<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "699": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_Broken_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "700": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_Broken_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "701": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_Broken_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "702": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_Broken_05<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "703": {
+            "link": {
+                "name": "SD_Env_Floor_Stone_Broken_09<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "704": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "705": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "706": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "707": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_04<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "708": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_05<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "709": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_06<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "710": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_07<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "711": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_08<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "712": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_09<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "713": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_10<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "714": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_11<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "715": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_12<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "716": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_13<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "717": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_14<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "718": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_15<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "719": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_16<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "720": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_17<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "721": {
+            "link": {
+                "name": "SD_Env_Floor_Wood_18<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "722": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_36<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "723": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_37<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "724": {
+            "link": {
+                "name": "SD_Env_Pillar_Stone_56<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "725": {
+            "link": {
+                "name": "SD_Env_Wall_114<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "726": {
+            "link": {
+                "name": "SD_Env_Wall_Half_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "727": {
+            "link": {
+                "name": "SD_Env_Wall_Half_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "728": {
+            "link": {
+                "name": "SD_Env_Wall_Half_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "729": {
+            "link": {
+                "name": "SD_Env_Wall_Half_04<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "730": {
+            "link": {
+                "name": "SD_Env_Wall_Half_05<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "731": {
+            "link": {
+                "name": "SD_Env_Wall_Half_06<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "732": {
+            "link": {
+                "name": "SD_Env_Wall_Half_07<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "733": {
+            "link": {
+                "name": "SD_Env_Wall_Half_08<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "734": {
+            "link": {
+                "name": "SD_Env_Wall_Half_09<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "735": {
+            "link": {
+                "name": "SD_Env_Wall_Half_10<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "736": {
+            "link": {
+                "name": "SD_Env_Wall_Half_11<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "737": {
+            "link": {
+                "name": "SD_Env_Wall_Half_12<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "738": {
+            "link": {
+                "name": "SD_Env_Wall_Half_13<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "739": {
+            "link": {
+                "name": "SD_Env_Wall_Half_14<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "740": {
+            "link": {
+                "name": "SD_Env_Wall_Half_15<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "741": {
+            "link": {
+                "name": "SD_Env_Wall_Half_16<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "742": {
+            "link": {
+                "name": "SD_Env_Wall_Half_17<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "743": {
+            "link": {
+                "name": "SD_Env_Wall_Half_18<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "744": {
+            "link": {
+                "name": "SD_Prop_AlchemyTable_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "745": {
+            "link": {
+                "name": "SD_Prop_AlchemyTable_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "746": {
+            "link": {
+                "name": "SD_Prop_AlchemyTable_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "747": {
+            "link": {
+                "name": "SD_Prop_Banner_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "748": {
+            "link": {
+                "name": "SD_Prop_Banner_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "749": {
+            "link": {
+                "name": "SD_Prop_Banner_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "750": {
+            "link": {
+                "name": "SD_Prop_Barrel_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "751": {
+            "link": {
+                "name": "SD_Prop_Barrel_04<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "752": {
+            "link": {
+                "name": "SD_Prop_Bed_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "753": {
+            "link": {
+                "name": "SD_Prop_Bed_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "754": {
+            "link": {
+                "name": "SD_Prop_Bed_04<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "755": {
+            "link": {
+                "name": "SD_Prop_Bed_05<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "756": {
+            "link": {
+                "name": "SD_Prop_Bed_06<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "757": {
+            "link": {
+                "name": "SD_Prop_Bench_Broken_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "758": {
+            "link": {
+                "name": "SD_Prop_BloodSplat_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "759": {
+            "link": {
+                "name": "SD_Prop_BloodSplat_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "760": {
+            "link": {
+                "name": "SD_Prop_BloodSplat_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "761": {
+            "link": {
+                "name": "SD_Prop_BloodSplat_04<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "762": {
+            "link": {
+                "name": "SD_Prop_BloodSplat_05<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "763": {
+            "link": {
+                "name": "SD_Prop_BloodSplat_06<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "764": {
+            "link": {
+                "name": "SD_Prop_BloodSplat_07<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "765": {
+            "link": {
+                "name": "SD_Prop_Brazier_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "766": {
+            "link": {
+                "name": "SD_Prop_CandleStand_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "767": {
+            "link": {
+                "name": "SD_Prop_ChairStraps_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "768": {
+            "link": {
+                "name": "SD_Prop_Chest_05<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "769": {
+            "link": {
+                "name": "Chest_Lid<SD_Prop_Chest_05<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "768"
+        },
+        "770": {
+            "link": {
+                "name": "Treasure<SD_Prop_Chest_05<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "768"
+        },
+        "771": {
+            "link": {
+                "name": "SD_Prop_Crate_07<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "772": {
+            "link": {
+                "name": "SD_Prop_Drawers_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "773": {
+            "link": {
+                "name": "SD_Prop_Judas_Cradel_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "774": {
+            "link": {
+                "name": "SD_Prop_Panks_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "775": {
+            "link": {
+                "name": "SD_Prop_Panks_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "776": {
+            "link": {
+                "name": "SD_Prop_Panks_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "777": {
+            "link": {
+                "name": "SD_Prop_Pot_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "778": {
+            "link": {
+                "name": "SD_Prop_Rack_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "779": {
+            "link": {
+                "name": "Rack_Handle_01<SD_Prop_Rack_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "778"
+        },
+        "780": {
+            "link": {
+                "name": "Rack_Handle_02<SD_Prop_Rack_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "778"
+        },
+        "781": {
+            "link": {
+                "name": "SD_Prop_Rubble_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "782": {
+            "link": {
+                "name": "SD_Prop_Rubble_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "783": {
+            "link": {
+                "name": "SD_Prop_Rubble_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "784": {
+            "link": {
+                "name": "SD_Prop_Rubble_04<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "785": {
+            "link": {
+                "name": "SD_Prop_Rubble_05<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "786": {
+            "link": {
+                "name": "SD_Prop_Rubble_06<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "787": {
+            "link": {
+                "name": "SD_Prop_Rubble_09<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "788": {
+            "link": {
+                "name": "SD_Prop_Rubble_17<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "789": {
+            "link": {
+                "name": "SD_Prop_Rubble_18<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "790": {
+            "link": {
+                "name": "SD_Prop_Rug_Green_Small_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "791": {
+            "link": {
+                "name": "SD_Prop_Rug_Purple_Small_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "792": {
+            "link": {
+                "name": "SD_Prop_Shelf_04<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "793": {
+            "link": {
+                "name": "SD_Prop_Shelf_05<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "794": {
+            "link": {
+                "name": "SD_Prop_Skeleton_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "795": {
+            "link": {
+                "name": "SD_Prop_Skeleton_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "796": {
+            "link": {
+                "name": "SD_Prop_Skeleton_08<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "797": {
+            "link": {
+                "name": "SD_Prop_Table_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "798": {
+            "link": {
+                "name": "SD_Prop_Toolrack_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "799": {
+            "link": {
+                "name": "SD_Prop_Toolrack_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "800": {
+            "link": {
+                "name": "SD_Prop_WallCuffs_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "801": {
+            "link": {
+                "name": "SD_Prop_WallCuffs_02<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "802": {
+            "link": {
+                "name": "SD_Prop_WeaponRack_03<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "803": {
+            "link": {
+                "name": "SD_Prop_WeaponRack_04<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "804": {
+            "link": {
+                "name": "SD_Trap_IronMaiden_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "338"
+        },
+        "805": {
+            "link": {
+                "name": "IronMaiden_Lid<SD_Trap_IronMaiden_01<DemoScene",
+                "file": "models\\dungeon.glb"
+            },
+            "parent": "804"
+        },
+        "806": {
+            "link": {
+                "name": "Navmesh",
+                "file": "models\\dungeon.glb"
+            },
+            "components": [
+                {
+                    "active": false
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "triangleMesh",
+                        "static": true,
+                        "groups": 255,
+                        "block": 255,
+                        "triangleMesh": {
+                            "mesh": "337",
+                            "scaling": [
+                                0.6999999,
+                                0.6999999,
+                                0.6999999
+                            ]
+                        },
+                        "simulate": false,
+                        "allowQuery": false
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "807": {
+            "name": "Dungeon",
+            "transformation": [
+                0.6999999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.6999999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.6999999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "controller_plyShape",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "48": {
+            "link": {
+                "name": "controller_plyShape.003",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "controller_plyShape.005",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "controller_plyShape.006",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "51": {
+            "link": {
+                "name": "controller_plyShape.004",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "controller_plyShape.002",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "89": {
+            "link": {
+                "name": "controller_plyShape.004",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "90": {
+            "link": {
+                "name": "controller_plyShape.005",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "91": {
+            "link": {
+                "name": "controller_plyShape",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "92": {
+            "link": {
+                "name": "controller_plyShape.002",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "controller_plyShape.003",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "94": {
+            "link": {
+                "name": "controller_plyShape.001",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "132": {
+            "link": {
+                "name": "Mesh",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeft"
+        },
+        "165": {
+            "link": {
+                "name": "Mesh.001",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRight"
+        },
+        "195": {
+            "link": {
+                "name": "Cube.001",
+                "file": "models\\button.glb"
+            },
+            "name": "Button"
+        },
+        "207": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "models\\teleport-indicator.glb"
+            }
+        },
+        "235": {
+            "link": {
+                "name": "Scene.083",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "236": {
+            "link": {
+                "name": "Scene.051",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "237": {
+            "link": {
+                "name": "Scene.035",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "238": {
+            "link": {
+                "name": "Scene.063",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "239": {
+            "link": {
+                "name": "Scene.005",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "240": {
+            "link": {
+                "name": "Scene.025",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "241": {
+            "link": {
+                "name": "Scene.071",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "242": {
+            "link": {
+                "name": "Scene.013",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "243": {
+            "link": {
+                "name": "Scene.028",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "244": {
+            "link": {
+                "name": "Scene.055",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "245": {
+            "link": {
+                "name": "Scene.082",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "246": {
+            "link": {
+                "name": "Scene.016",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "247": {
+            "link": {
+                "name": "Scene.100",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "248": {
+            "link": {
+                "name": "Scene.043",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "249": {
+            "link": {
+                "name": "Scene.058",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "250": {
+            "link": {
+                "name": "Scene.041",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "251": {
+            "link": {
+                "name": "Scene.087",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "252": {
+            "link": {
+                "name": "Scene.086",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "253": {
+            "link": {
+                "name": "Scene.044",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "254": {
+            "link": {
+                "name": "Scene.078",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "255": {
+            "link": {
+                "name": "Scene.098",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "256": {
+            "link": {
+                "name": "Scene.027",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "257": {
+            "link": {
+                "name": "Scene.092",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "258": {
+            "link": {
+                "name": "Scene.053",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "259": {
+            "link": {
+                "name": "Scene.004",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "260": {
+            "link": {
+                "name": "Scene.032",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "261": {
+            "link": {
+                "name": "Scene.074",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "262": {
+            "link": {
+                "name": "Scene.101",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "263": {
+            "link": {
+                "name": "Scene.054",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "264": {
+            "link": {
+                "name": "Scene.009",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "265": {
+            "link": {
+                "name": "Scene.059",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "266": {
+            "link": {
+                "name": "Scene.089",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "267": {
+            "link": {
+                "name": "Scene.073",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "268": {
+            "link": {
+                "name": "Scene.024",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "269": {
+            "link": {
+                "name": "Scene.026",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "270": {
+            "link": {
+                "name": "Scene.034",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "271": {
+            "link": {
+                "name": "Scene.007",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "272": {
+            "link": {
+                "name": "Scene.018",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "273": {
+            "link": {
+                "name": "Scene",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "274": {
+            "link": {
+                "name": "Scene.081",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "275": {
+            "link": {
+                "name": "Scene.001",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "276": {
+            "link": {
+                "name": "Scene.085",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "277": {
+            "link": {
+                "name": "Scene.042",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "278": {
+            "link": {
+                "name": "Scene.075",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "279": {
+            "link": {
+                "name": "Scene.075.0",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "280": {
+            "link": {
+                "name": "Scene.036",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "281": {
+            "link": {
+                "name": "Scene.088",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "282": {
+            "link": {
+                "name": "Scene.066",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "283": {
+            "link": {
+                "name": "Scene.014",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "284": {
+            "link": {
+                "name": "Scene.060",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "285": {
+            "link": {
+                "name": "Scene.037",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "286": {
+            "link": {
+                "name": "Scene.065",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "287": {
+            "link": {
+                "name": "Scene.091",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "288": {
+            "link": {
+                "name": "Scene.099",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "289": {
+            "link": {
+                "name": "Scene.080",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "290": {
+            "link": {
+                "name": "Scene.050",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "291": {
+            "link": {
+                "name": "Scene.020",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "292": {
+            "link": {
+                "name": "Scene.048",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "293": {
+            "link": {
+                "name": "Scene.067",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "294": {
+            "link": {
+                "name": "Scene.003",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "295": {
+            "link": {
+                "name": "Scene.077",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "296": {
+            "link": {
+                "name": "Scene.094",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "297": {
+            "link": {
+                "name": "Scene.076",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "298": {
+            "link": {
+                "name": "Scene.061",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "299": {
+            "link": {
+                "name": "Scene.049",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "300": {
+            "link": {
+                "name": "Scene.069",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "301": {
+            "link": {
+                "name": "Scene.097",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "302": {
+            "link": {
+                "name": "Scene.046",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "303": {
+            "link": {
+                "name": "Scene.033",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "304": {
+            "link": {
+                "name": "Scene.019",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "305": {
+            "link": {
+                "name": "Scene.062",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "306": {
+            "link": {
+                "name": "Scene.090",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "307": {
+            "link": {
+                "name": "Scene.029",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "308": {
+            "link": {
+                "name": "Scene.017",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "309": {
+            "link": {
+                "name": "Scene.012",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "310": {
+            "link": {
+                "name": "Scene.095",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "311": {
+            "link": {
+                "name": "Scene.023",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "312": {
+            "link": {
+                "name": "Scene.021",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "313": {
+            "link": {
+                "name": "Scene.056",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "314": {
+            "link": {
+                "name": "Scene.070",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "315": {
+            "link": {
+                "name": "Scene.011",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "316": {
+            "link": {
+                "name": "Scene.038",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "317": {
+            "link": {
+                "name": "Scene.040",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "318": {
+            "link": {
+                "name": "Scene.045",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "319": {
+            "link": {
+                "name": "Scene.047",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "320": {
+            "link": {
+                "name": "Scene.064",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "321": {
+            "link": {
+                "name": "Scene.015",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "322": {
+            "link": {
+                "name": "Scene.068",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "323": {
+            "link": {
+                "name": "Scene.072",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "324": {
+            "link": {
+                "name": "Scene.096",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "325": {
+            "link": {
+                "name": "Scene.079",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "326": {
+            "link": {
+                "name": "Scene.093",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "327": {
+            "link": {
+                "name": "Scene.052",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "328": {
+            "link": {
+                "name": "Scene.008",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "329": {
+            "link": {
+                "name": "Scene.006",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "330": {
+            "link": {
+                "name": "Scene.002",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "331": {
+            "link": {
+                "name": "Scene.057",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "332": {
+            "link": {
+                "name": "Scene.084",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "333": {
+            "link": {
+                "name": "Scene.030",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "334": {
+            "link": {
+                "name": "Scene.031",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "335": {
+            "link": {
+                "name": "Scene.022",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "336": {
+            "link": {
+                "name": "Scene.039",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "337": {
+            "link": {
+                "name": "Navmesh.015",
+                "file": "models\\dungeon.glb"
+            }
+        }
+    },
+    "textures": {
+        "44": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "86": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "87": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "231": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\dungeon.glb"
+            }
+        }
+    },
+    "images": {
+        "42": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "43": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "maxSize": [
+                256,
+                256
+            ]
+        },
+        "84": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "85": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "maxSize": [
+                256,
+                256
+            ]
+        },
+        "230": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\dungeon.glb"
+            },
+            "compress": false
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "Text": {
+                "effectColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            }
+        },
+        "46": {
+            "link": {
+                "name": "skel_controller_materials_controllerMTL1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "name": "ControllerLeft"
+        },
+        "88": {
+            "link": {
+                "name": "skel_controller_materials_controllerMTL",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "name": "ControllerRight"
+        },
+        "128": {
+            "name": "Cursor",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            },
+            "pipeline": "34"
+        },
+        "131": {
+            "link": {
+                "name": "Default_Material",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeft"
+        },
+        "164": {
+            "link": {
+                "name": "lambert2",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRight"
+        },
+        "201": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "name": "TextAccent",
+            "Text": {
+                "color": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ]
+            }
+        },
+        "202": {
+            "name": "Dark",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1,
+                "diffuseColor": [
+                    0.1686274,
+                    0.1686257,
+                    0.1686257,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0274509,
+                    0.0274507,
+                    0.0274507,
+                    1.0
+                ]
+            }
+        },
+        "203": {
+            "name": "GreenHover",
+            "Phong": {
+                "diffuseColor": [
+                    0.4894117,
+                    0.917647,
+                    0.7511102,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.3294117,
+                    0.2013071,
+                    1.0
+                ]
+            }
+        },
+        "206": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "models\\teleport-indicator.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.6862745,
+                    0.6862676,
+                    0.6862676,
+                    1.0
+                ]
+            },
+            "pipeline": "34",
+            "Flat": {
+                "color": [
+                    0.8392156,
+                    0.8392072,
+                    0.8392072,
+                    1.0
+                ]
+            }
+        },
+        "232": {
+            "link": {
+                "name": "SimpleDungeons_Mat",
+                "file": "models\\dungeon.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.117647,
+                    0.117647,
+                    0.1568627,
+                    1.0
+                ]
+            }
+        },
+        "233": {
+            "link": {
+                "name": "SimpleDungeons_Glow",
+                "file": "models\\dungeon.glb"
+            }
+        },
+        "234": {
+            "link": {
+                "name": "SimpleDungeons_Mat.001",
+                "file": "models\\dungeon.glb"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured.frag",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured.frag",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured.frag",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured.frag",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static.frag",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "217": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "218": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "220": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "221": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "224": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "225": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "227": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "228": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "Dungeon",
+            "version": [
+                0,
+                9,
+                2
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "js/"
+            ]
+        },
+        "runtime": {
+            "visualizeColliders": false,
+            "webxr": {
+                "optionalFeatures": {
+                    "local-floor": true
+                }
+            },
+            "visualizePhysX": false,
+            "pwa": {
+                "customServiceWorker": false,
+                "customManifest": false
+            }
+        },
+        "physx": {
+            "enable": true
+        },
+        "rendering": {
+            "compressedTextureAtlasSize": [
+                8192,
+                4096
+            ]
+        }
+    },
+    "animations": {},
+    "skins": {
+        "133": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeftSkin",
+            "joints": [
+                "139",
+                "140",
+                "141",
+                "142",
+                "143",
+                "144",
+                "145",
+                "146",
+                "147",
+                "148",
+                "149",
+                "150",
+                "151",
+                "152",
+                "153",
+                "154",
+                "155",
+                "156",
+                "157",
+                "158",
+                "159",
+                "160",
+                "161",
+                "162",
+                "163"
+            ]
+        },
+        "166": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRightSkin",
+            "joints": [
+                "169",
+                "170",
+                "171",
+                "172",
+                "173",
+                "174",
+                "175",
+                "176",
+                "177",
+                "178",
+                "179",
+                "180",
+                "181",
+                "182",
+                "183",
+                "184",
+                "185",
+                "186",
+                "187",
+                "188",
+                "189",
+                "190",
+                "191",
+                "192",
+                "193"
+            ]
+        }
+    },
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "219": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "222": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "223": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            }
+        },
+        "226": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "229": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            }
+        }
+    },
+    "files": [
+        "models/oculus-touch-v2-left.glb",
+        "models/oculus-touch-v2-right.glb",
+        "models/hand-left.glb",
+        "models/hand-right.glb",
+        "models/button.glb",
+        "models/teleport-indicator.glb",
+        "models/dungeon.glb"
+    ]
+}
