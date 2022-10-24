@@ -17,7 +17,7 @@
                 0.0,
                 -2.5,
                 0.0,
-                1.1575536,
+                5.7923526,
                 1.0
             ]
         },
@@ -153,40 +153,44 @@
                 0.0,
                 0.0,
                 3.0,
-                2.0,
+                5.66439,
                 1.0
             ]
         },
         "23": {
-            "name": "Light.000",
+            "name": "SpotLight",
             "components": [
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.25,
-                        "type": "point"
+                        "attenuation": 0.05,
+                        "type": "spot",
+                        "range": 32.4000015,
+                        "outerAngle": 32.5,
+                        "innerAngle": 25.7999992
                     },
                     "active": true
                 }
             ],
             "transformation": [
-                1.0,
+                -1.1920027276346445e-7,
+                0.9999243,
+                0.0,
+                0.0,
+                -0.9999243,
+                -1.1920027276346445e-7,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
                 1.0,
                 0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                -1.0,
-                3.0,
-                -1.0,
+                0.0611401,
+                0.0038298,
+                -0.0029788,
                 1.0
-            ]
+            ],
+            "parent": "823"
         },
         "53": {
             "link": {
@@ -700,6 +704,13 @@
                         "eyeLeft": "18",
                         "eyeRight": "19",
                         "rayCastMode": "physx"
+                    }
+                },
+                {
+                    "type": "collectable",
+                    "collectable": {
+                        "collectable": "823",
+                        "controller": "130"
                     }
                 }
             ],
@@ -1567,6 +1578,13 @@
                         "eyeLeft": "18",
                         "eyeRight": "19",
                         "rayCastMode": "physx"
+                    }
+                },
+                {
+                    "type": "collectable",
+                    "collectable": {
+                        "collectable": "823",
+                        "controller": "129"
                     }
                 }
             ],
@@ -3405,7 +3423,25 @@
                 "name": "SD_Prop_Chest_Skull_Lid_01<SD_Prop_Chest_Skull_01<Props<DemoScene",
                 "file": "models\\dungeon.glb"
             },
-            "parent": "581"
+            "parent": "581",
+            "transformation": [
+                0.9999997,
+                -0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0841421,
+                -0.996454,
+                0.0,
+                -0.0,
+                0.9964542,
+                0.0841377,
+                0.0,
+                -0.8696746,
+                -68.9060058,
+                -129.6562957,
+                1.0
+            ]
         },
         "583": {
             "link": {
@@ -5036,6 +5072,50 @@
                 0.0,
                 1.0
             ]
+        },
+        "823": {
+            "link": {
+                "name": "Flashlight_Low.001_Cylinder.000",
+                "file": "models\\flash-light.glb"
+            },
+            "parent": null,
+            "name": "Flashlight",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.7069404,
+                1.1992926,
+                4.3348889,
+                1.0
+            ],
+            "components": [
+                null,
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.3,
+                                0.1,
+                                0.1
+                            ]
+                        },
+                        "groups": 2
+                    }
+                }
+            ]
         }
     },
     "meshes": {
@@ -5791,6 +5871,18 @@
                 "name": "Navmesh.015",
                 "file": "models\\dungeon.glb"
             }
+        },
+        "816": {
+            "link": {
+                "name": "Flashlight_Low.001_Cylinder.000",
+                "file": "models\\flash-light.glb"
+            }
+        },
+        "817": {
+            "link": {
+                "name": "Flashlight_Low.001_Cylinder.000.0",
+                "file": "models\\flash-light.glb"
+            }
         }
     },
     "textures": {
@@ -5822,6 +5914,24 @@
             "link": {
                 "name": "texture_0",
                 "file": "models\\dungeon.glb"
+            }
+        },
+        "811": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\flash-light.glb"
+            }
+        },
+        "812": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\flash-light.glb"
+            }
+        },
+        "813": {
+            "link": {
+                "name": "texture_2",
+                "file": "models\\flash-light.glb"
             }
         }
     },
@@ -5872,6 +5982,24 @@
                 "file": "models\\dungeon.glb"
             },
             "compress": false
+        },
+        "808": {
+            "link": {
+                "name": "T_Flashlight_Body_Normal",
+                "file": "models\\flash-light.glb"
+            }
+        },
+        "809": {
+            "link": {
+                "name": "T_Flashlight_Body_BaseColor",
+                "file": "models\\flash-light.glb"
+            }
+        },
+        "810": {
+            "link": {
+                "name": "T_Flashlight_Body_OcclusionRoughnessMetall",
+                "file": "models\\flash-light.glb"
+            }
         }
     },
     "materials": {
@@ -6125,6 +6253,18 @@
                 "name": "SimpleDungeons_Mat.001",
                 "file": "models\\dungeon.glb"
             }
+        },
+        "814": {
+            "link": {
+                "name": "Material.002",
+                "file": "models\\flash-light.glb"
+            }
+        },
+        "815": {
+            "link": {
+                "name": "Material.003",
+                "file": "models\\flash-light.glb"
+            }
         }
     },
     "shaders": {
@@ -6272,7 +6412,8 @@
             "visualizeColliders": false,
             "webxr": {
                 "optionalFeatures": {
-                    "local-floor": true
+                    "local-floor": true,
+                    "hit-test": false
                 }
             },
             "visualizePhysX": false,
@@ -6282,7 +6423,10 @@
             }
         },
         "physx": {
-            "enable": true
+            "enable": true,
+            "groupNames": {
+                "6": "collectable"
+            }
         },
         "rendering": {
             "compressedTextureAtlasSize": [
@@ -6449,6 +6593,7 @@
         "models/hand-right.glb",
         "models/button.glb",
         "models/teleport-indicator.glb",
-        "models/dungeon.glb"
+        "models/dungeon.glb",
+        "models/flash-light.glb"
     ]
 }
