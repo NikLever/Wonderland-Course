@@ -15,9 +15,9 @@
                 0.0,
                 0.9999998,
                 0.0,
-                -2.5,
+                -0.7575566,
                 0.0,
-                5.7923526,
+                6.4062848,
                 1.0
             ]
         },
@@ -684,7 +684,8 @@
                         "cursorObject": "127",
                         "collisionGroup": 0,
                         "cursorRayObject": "209",
-                        "cursorRayScalingAxis": "y"
+                        "cursorRayScalingAxis": "y",
+                        "rayCastMode": "physx"
                     }
                 },
                 {
@@ -710,8 +711,12 @@
                     "type": "collectable",
                     "collectable": {
                         "collectable": "823",
-                        "controller": "130"
-                    }
+                        "controller": "130",
+                        "collisionIndicator": "824",
+                        "handedness": "left",
+                        "moveToController": false
+                    },
+                    "active": true
                 }
             ],
             "transformation": [
@@ -1558,7 +1563,8 @@
                         "cursorObject": "215",
                         "collisionGroup": 0,
                         "cursorRayObject": "213",
-                        "cursorRayScalingAxis": "y"
+                        "cursorRayScalingAxis": "y",
+                        "rayCastMode": "physx"
                     }
                 },
                 {
@@ -1584,7 +1590,11 @@
                     "type": "collectable",
                     "collectable": {
                         "collectable": "823",
-                        "controller": "129"
+                        "controller": "129",
+                        "collisionIndicator": "825",
+                        "handedness": "right",
+                        "moveToController": true,
+                        "rotateYOnMove": 90.0
                     }
                 }
             ],
@@ -5018,8 +5028,8 @@
                     "physx": {
                         "shape": "triangleMesh",
                         "static": true,
-                        "groups": 255,
-                        "block": 255,
+                        "groups": 191,
+                        "block": 191,
                         "triangleMesh": {
                             "mesh": "337",
                             "scaling": [
@@ -5081,7 +5091,7 @@
             "parent": null,
             "name": "Flashlight",
             "transformation": [
-                1.0,
+                0.9999979,
                 0.0,
                 0.0,
                 0.0,
@@ -5091,11 +5101,11 @@
                 0.0,
                 0.0,
                 0.0,
-                1.0,
+                0.9999979,
                 0.0,
-                -0.7069404,
-                1.1992926,
-                4.3348889,
+                -0.706944,
+                1.1992961,
+                4.3348984,
                 1.0
             ],
             "components": [
@@ -5112,10 +5122,89 @@
                                 0.1
                             ]
                         },
-                        "groups": 2
+                        "groups": 64
+                    },
+                    "active": false
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                0.25,
+                                0.0799999,
+                                0.0799999
+                            ]
+                        },
+                        "gravity": false,
+                        "static": true,
+                        "block": 0,
+                        "groups": 64
                     }
                 }
             ]
+        },
+        "824": {
+            "name": "CollectableHitLeft",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0299999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0299999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0299999,
+                0.0,
+                -0.7291013,
+                0.0,
+                4.3884387,
+                1.0
+            ]
+        },
+        "825": {
+            "name": "CollectableHitRight",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0299999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0299999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0299999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "parent": null
         }
     },
     "meshes": {

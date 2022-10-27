@@ -1,0 +1,4601 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "transformation": [
+                0.9999998,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.9999998,
+                0.0,
+                -2.5,
+                0.0,
+                1.1575536,
+                1.0
+            ]
+        },
+        "15": {
+            "name": "FloorPlane",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                4.0,
+                                0.05,
+                                4.0
+                            ]
+                        },
+                        "groups": 4
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0016164,
+                -3.9999997,
+                0.0,
+                0.0,
+                3.9999997,
+                -0.0016164,
+                0.0,
+                0.0,
+                0.0,
+                1.192092895507813e-7,
+                1.0
+            ],
+            "deleted": true
+        },
+        "16": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                2.9802322387695329e-8,
+                0.4999999,
+                5.960464477539065e-8,
+                1.0
+            ],
+            "deleted": true
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "collisionGroup": 0,
+                        "handedness": "none"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                },
+                {
+                    "type": "howler-audio-listener"
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                3.0,
+                2.0,
+                1.0
+            ]
+        },
+        "23": {
+            "name": "Light.000",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.0,
+                3.0,
+                -1.0,
+                1.0
+            ]
+        },
+        "24": {
+            "name": "Cone",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "25"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.5,
+                1.0,
+                -1.4901161193847657e-8,
+                1.0
+            ],
+            "deleted": true
+        },
+        "27": {
+            "name": "Sphere",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.75,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                0.0,
+                0.4999999,
+                0.75,
+                -1.25,
+                1.0
+            ],
+            "deleted": true
+        },
+        "53": {
+            "link": {
+                "name": "root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "130",
+            "name": "ControllerModelLeft",
+            "transformation": [
+                -0.9999998,
+                2.9802311729554277e-8,
+                -5.960464477539065e-8,
+                0.0,
+                -2.9802322387695329e-8,
+                0.0706573,
+                0.9975006,
+                0.0,
+                0.0,
+                0.9975004,
+                -0.0706574,
+                0.0,
+                -0.0117515,
+                0.0008869,
+                0.0161192,
+                1.0
+            ]
+        },
+        "54": {
+            "link": {
+                "name": "controller<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53",
+            "components": [
+                {
+                    "active": false
+                }
+            ]
+        },
+        "55": {
+            "link": {
+                "name": "thumbrest_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "56": {
+            "link": {
+                "name": "thumbrest_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "57": {
+            "link": {
+                "name": "thumbrest_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "58": {
+            "link": {
+                "name": "x_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "59": {
+            "link": {
+                "name": "x_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "60": {
+            "link": {
+                "name": "x_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "61": {
+            "link": {
+                "name": "x_button<x_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "60"
+        },
+        "62": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "63": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "64": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "65": {
+            "link": {
+                "name": "squeeze<xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "64"
+        },
+        "66": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "67": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "68": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "69": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_max<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "68"
+        },
+        "70": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_min<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "68"
+        },
+        "71": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "68"
+        },
+        "72": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_max<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "71"
+        },
+        "73": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_min<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "71"
+        },
+        "74": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "71"
+        },
+        "75": {
+            "link": {
+                "name": "thumbstick<xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "74"
+        },
+        "76": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "77": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "78": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "79": {
+            "link": {
+                "name": "trigger<xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "78"
+        },
+        "80": {
+            "link": {
+                "name": "y_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "81": {
+            "link": {
+                "name": "y_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "82": {
+            "link": {
+                "name": "y_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "83": {
+            "link": {
+                "name": "y_button<y_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "82"
+        },
+        "95": {
+            "link": {
+                "name": "root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "129",
+            "name": "ControllerModelRight",
+            "transformation": [
+                -0.9993979,
+                0.0,
+                8.344650268554688e-7,
+                0.0,
+                -1.4901161193847657e-8,
+                0.9990808,
+                -0.0251145,
+                0.0,
+                -8.642673492431641e-7,
+                -0.0251297,
+                -0.9996858,
+                0.0,
+                0.0097995,
+                -0.0006203,
+                0.0177838,
+                1.0
+            ]
+        },
+        "96": {
+            "link": {
+                "name": "a_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "97": {
+            "link": {
+                "name": "a_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "98": {
+            "link": {
+                "name": "a_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "99": {
+            "link": {
+                "name": "a_button<a_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "98"
+        },
+        "100": {
+            "link": {
+                "name": "b_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "101": {
+            "link": {
+                "name": "b_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "102": {
+            "link": {
+                "name": "b_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "103": {
+            "link": {
+                "name": "b_button<b_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "102"
+        },
+        "104": {
+            "link": {
+                "name": "controller<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95",
+            "components": [
+                {
+                    "active": false
+                }
+            ]
+        },
+        "105": {
+            "link": {
+                "name": "thumbrest_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "106": {
+            "link": {
+                "name": "thumbrest_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "107": {
+            "link": {
+                "name": "thumbrest_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "108": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "109": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "110": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "111": {
+            "link": {
+                "name": "squeeze<xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "110"
+        },
+        "112": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "113": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "114": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "115": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_max<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "114"
+        },
+        "116": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_min<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "114"
+        },
+        "117": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "114"
+        },
+        "118": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_max<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "117"
+        },
+        "119": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_min<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "117"
+        },
+        "120": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "117"
+        },
+        "121": {
+            "link": {
+                "name": "thumbstick<xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "120"
+        },
+        "122": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "123": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "124": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "125": {
+            "link": {
+                "name": "trigger<xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "124"
+        },
+        "126": {
+            "name": "CursorLeft",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorObject": "127",
+                        "collisionGroup": 0,
+                        "cursorRayObject": "209",
+                        "cursorRayScalingAxis": "y"
+                    }
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray left"
+                    }
+                },
+                {
+                    "type": "teleport",
+                    "teleport": {
+                        "floorGroup": 2,
+                        "camRoot": "14",
+                        "cam": "17",
+                        "teleportIndicatorMeshObject": "208",
+                        "indicatorYOffset": 0.0099999,
+                        "eyeLeft": "18",
+                        "eyeRight": "19"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.384185791015625e-7,
+                1.192092895507813e-7,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "127": {
+            "name": "3DCursorHitLeft",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "128"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0388118,
+                1.5585095,
+                1.0
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "129": {
+            "name": "ControllerRight",
+            "parent": "205",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ],
+            "components": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand right"
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ]
+        },
+        "130": {
+            "name": "ControllerLeft",
+            "parent": "205",
+            "components": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand left"
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "134": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "205",
+            "name": "HandLeft",
+            "components": [
+                {
+                    "type": "hand-tracking",
+                    "hand-tracking": {
+                        "handedness": "left",
+                        "handSkin": "133",
+                        "controllerToDeactivate": "130",
+                        "deactivateChildrenWithoutPose": true
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "135": {
+            "link": {
+                "name": "l_handMeshNode<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
+        },
+        "136": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_max<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "137": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_min<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "138": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_value<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "139": {
+            "link": {
+                "name": "pinky-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "140": {
+            "link": {
+                "name": "pinky-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "141": {
+            "link": {
+                "name": "pinky-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "142": {
+            "link": {
+                "name": "pinky-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "143": {
+            "link": {
+                "name": "pinky-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "144": {
+            "link": {
+                "name": "ring-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "145": {
+            "link": {
+                "name": "ring-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "146": {
+            "link": {
+                "name": "ring-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "147": {
+            "link": {
+                "name": "ring-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "148": {
+            "link": {
+                "name": "ring-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "149": {
+            "link": {
+                "name": "middle-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "150": {
+            "link": {
+                "name": "middle-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "151": {
+            "link": {
+                "name": "middle-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "152": {
+            "link": {
+                "name": "middle-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "153": {
+            "link": {
+                "name": "middle-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "154": {
+            "link": {
+                "name": "index-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "components": [
+                {
+                    "type": "finger-cursor"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0099999
+                        },
+                        "groups": 2
+                    }
+                }
+            ]
+        },
+        "155": {
+            "link": {
+                "name": "index-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "156": {
+            "link": {
+                "name": "index-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "157": {
+            "link": {
+                "name": "index-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "158": {
+            "link": {
+                "name": "index-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "159": {
+            "link": {
+                "name": "thumb-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "160": {
+            "link": {
+                "name": "thumb-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "161": {
+            "link": {
+                "name": "thumb-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "162": {
+            "link": {
+                "name": "thumb-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "163": {
+            "link": {
+                "name": "wrist<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "167": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "205",
+            "name": "HandRight",
+            "components": [
+                {
+                    "type": "hand-tracking",
+                    "hand-tracking": {
+                        "handedness": "right",
+                        "handSkin": "166",
+                        "controllerToDeactivate": "129"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "168": {
+            "link": {
+                "name": "r_handMeshNode<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "169": {
+            "link": {
+                "name": "wrist<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "170": {
+            "link": {
+                "name": "thumb-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "171": {
+            "link": {
+                "name": "thumb-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "172": {
+            "link": {
+                "name": "thumb-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "173": {
+            "link": {
+                "name": "thumb-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "174": {
+            "link": {
+                "name": "index-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "175": {
+            "link": {
+                "name": "index-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "176": {
+            "link": {
+                "name": "index-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "177": {
+            "link": {
+                "name": "index-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "178": {
+            "link": {
+                "name": "index-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0099999
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "finger-cursor"
+                }
+            ]
+        },
+        "179": {
+            "link": {
+                "name": "middle-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "180": {
+            "link": {
+                "name": "middle-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "181": {
+            "link": {
+                "name": "middle-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "182": {
+            "link": {
+                "name": "middle-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "183": {
+            "link": {
+                "name": "middle-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "184": {
+            "link": {
+                "name": "ring-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "185": {
+            "link": {
+                "name": "ring-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "186": {
+            "link": {
+                "name": "ring-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "187": {
+            "link": {
+                "name": "ring-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "188": {
+            "link": {
+                "name": "ring-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "189": {
+            "link": {
+                "name": "pinky-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "190": {
+            "link": {
+                "name": "pinky-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "191": {
+            "link": {
+                "name": "pinky-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "192": {
+            "link": {
+                "name": "pinky-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "193": {
+            "link": {
+                "name": "pinky-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167"
+        },
+        "194": {
+            "name": "Panel",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "195",
+                        "material": "202"
+                    }
+                }
+            ],
+            "transformation": [
+                0.25,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.062447,
+                0.1082836,
+                0.0,
+                0.0,
+                -0.2165673,
+                0.1248941,
+                0.0,
+                -2.5,
+                1.2,
+                0.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "196": {
+            "link": {
+                "name": "Cube",
+                "file": "models\\button.glb"
+            },
+            "parent": "197",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "26"
+                    }
+                }
+            ],
+            "name": "ButtonMesh",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.999999,
+                0.0000012,
+                0.0,
+                0.0,
+                -0.0000019,
+                0.999999,
+                0.0,
+                -0.0000095,
+                0.3244419,
+                -0.0000677,
+                1.0
+            ],
+            "deleted": true
+        },
+        "197": {
+            "name": "Button",
+            "parent": "194",
+            "transformation": [
+                0.4,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.4999999,
+                -0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.3,
+                0.0,
+                0.0,
+                0.057682,
+                0.1754341,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                0.0974999,
+                                0.025,
+                                0.045
+                            ]
+                        },
+                        "groups": 251
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "button",
+                    "button": {
+                        "buttonMeshObject": "196",
+                        "hoverMaterial": "203"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "198": {
+            "name": "ButtonLabel",
+            "parent": "196",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Thanks!"
+                    }
+                }
+            ],
+            "transformation": [
+                2.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0031942,
+                -3.7999985,
+                0.0,
+                0.0,
+                4.8000044,
+                0.0040349,
+                0.0,
+                -0.0001564,
+                0.108458,
+                0.0000047,
+                1.0
+            ],
+            "deleted": true
+        },
+        "200": {
+            "name": "Title",
+            "parent": "194",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Welcome to\nWonderland",
+                        "material": "201"
+                    }
+                }
+            ],
+            "transformation": [
+                1.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0021012,
+                -2.9999995,
+                0.0,
+                0.0,
+                1.4999996,
+                0.0010506,
+                0.0,
+                -0.0000023,
+                0.1554994,
+                -0.3034151,
+                1.0
+            ],
+            "deleted": true
+        },
+        "204": {
+            "name": "TeleportTarget",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "11",
+                        "material": "128"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0311205,
+                0.0,
+                1.2337659,
+                1.0
+            ],
+            "deleted": true
+        },
+        "205": {
+            "name": "TrackedSpace",
+            "parent": "14",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                1.75,
+                0.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "player-height"
+                }
+            ]
+        },
+        "208": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "models\\teleport-indicator.glb"
+            },
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0099999,
+                1.3311299,
+                1.0
+            ],
+            "deleted": true
+        },
+        "209": {
+            "name": "CursorRayLeft",
+            "parent": "126",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "210": {
+            "name": "CuresorRayMeshLeft",
+            "parent": "209",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "128"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0049999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0001057,
+                0.3500003,
+                0.0,
+                0.0,
+                -0.005,
+                0.0000015,
+                0.0,
+                2.384192896442983e-7,
+                0.0002447,
+                0.0,
+                1.0
+            ]
+        },
+        "211": {
+            "name": "CursorRight",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "cursor"
+                }
+            ],
+            "deleted": true
+        },
+        "212": {
+            "name": "CursorRight",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorObject": "215",
+                        "collisionGroup": 0,
+                        "cursorRayObject": "213",
+                        "cursorRayScalingAxis": "y"
+                    }
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray right"
+                    }
+                },
+                {
+                    "type": "teleport",
+                    "teleport": {
+                        "floorGroup": 2,
+                        "camRoot": "14",
+                        "cam": "17",
+                        "teleportIndicatorMeshObject": "208",
+                        "indicatorYOffset": 0.0099999,
+                        "eyeLeft": "18",
+                        "eyeRight": "19"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "213": {
+            "name": "CursorRayRight",
+            "parent": "212",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "214": {
+            "name": "CuresorRayMeshRight",
+            "parent": "213",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "128"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0049999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0001711,
+                0.3499999,
+                0.0,
+                0.0,
+                -0.0049999,
+                -0.0000024,
+                0.0,
+                2.384185791015625e-7,
+                0.0002447,
+                0.0,
+                1.0
+            ]
+        },
+        "215": {
+            "name": "3DCursorHitRight",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "128"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "216": {
+            "name": "FloorPlane",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                1.0,
+                                0.05,
+                                1.0
+                            ]
+                        },
+                        "groups": 4
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0004041,
+                -0.9999999,
+                0.0,
+                0.0,
+                0.9999999,
+                -0.0004041,
+                0.0,
+                0.0,
+                -4.76837158203125e-7,
+                -6.5,
+                1.0
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "534": {
+            "link": {
+                "name": "environment:main",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "535": {
+            "link": {
+                "name": "turbine-fan_(1)",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "536": {
+            "link": {
+                "name": "turbine-fan_(2)",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "537": {
+            "link": {
+                "name": "turbine-fan_(3)",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "538": {
+            "link": {
+                "name": "NavMesh",
+                "file": "factory\\factory.glb"
+            },
+            "transformation": [
+                0.8765776,
+                -2.9802322387695315e-8,
+                -0.4812605,
+                0.0,
+                0.4812605,
+                -1.9371512394172897e-7,
+                0.8765777,
+                0.0,
+                -1.0430814256778831e-7,
+                -1.0000001,
+                -1.6018749704471703e-7,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "controller_plyShape",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "48": {
+            "link": {
+                "name": "controller_plyShape.003",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "controller_plyShape.005",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "controller_plyShape.006",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "51": {
+            "link": {
+                "name": "controller_plyShape.004",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "controller_plyShape.002",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "89": {
+            "link": {
+                "name": "controller_plyShape.004",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "90": {
+            "link": {
+                "name": "controller_plyShape.005",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "91": {
+            "link": {
+                "name": "controller_plyShape",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "92": {
+            "link": {
+                "name": "controller_plyShape.002",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "controller_plyShape.003",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "94": {
+            "link": {
+                "name": "controller_plyShape.001",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "132": {
+            "link": {
+                "name": "Mesh",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeft"
+        },
+        "165": {
+            "link": {
+                "name": "Mesh.001",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRight"
+        },
+        "195": {
+            "link": {
+                "name": "Cube.001",
+                "file": "models\\button.glb"
+            },
+            "name": "Button"
+        },
+        "207": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "models\\teleport-indicator.glb"
+            }
+        },
+        "334": {
+            "link": {
+                "name": "Mesh",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "335": {
+            "link": {
+                "name": "Mesh-uv1",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "336": {
+            "link": {
+                "name": "Mesh.0",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "337": {
+            "link": {
+                "name": "Mesh-uv1.0",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "338": {
+            "link": {
+                "name": "Mesh.1",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "339": {
+            "link": {
+                "name": "Mesh-uv1.1",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "340": {
+            "link": {
+                "name": "Mesh.2",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "341": {
+            "link": {
+                "name": "Mesh-uv1.2",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "342": {
+            "link": {
+                "name": "Mesh.3",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "343": {
+            "link": {
+                "name": "Mesh-uv1.3",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "344": {
+            "link": {
+                "name": "Mesh.4",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "345": {
+            "link": {
+                "name": "Mesh-uv1.4",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "346": {
+            "link": {
+                "name": "Mesh.5",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "347": {
+            "link": {
+                "name": "Mesh-uv1.5",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "348": {
+            "link": {
+                "name": "Mesh.6",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "349": {
+            "link": {
+                "name": "Mesh-uv1.6",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "350": {
+            "link": {
+                "name": "Mesh.7",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "351": {
+            "link": {
+                "name": "Mesh-uv1.7",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "352": {
+            "link": {
+                "name": "Mesh.8",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "353": {
+            "link": {
+                "name": "Mesh-uv1.8",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "354": {
+            "link": {
+                "name": "Mesh.9",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "355": {
+            "link": {
+                "name": "Mesh-uv1.9",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "356": {
+            "link": {
+                "name": "Mesh.10",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "357": {
+            "link": {
+                "name": "Mesh-uv1.10",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "358": {
+            "link": {
+                "name": "Mesh.11",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "359": {
+            "link": {
+                "name": "Mesh-uv1.11",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "360": {
+            "link": {
+                "name": "Mesh.12",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "361": {
+            "link": {
+                "name": "Mesh-uv1.12",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "362": {
+            "link": {
+                "name": "Mesh.13",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "363": {
+            "link": {
+                "name": "Mesh-uv1.13",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "364": {
+            "link": {
+                "name": "Mesh.14",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "365": {
+            "link": {
+                "name": "Mesh-uv1.14",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "366": {
+            "link": {
+                "name": "Mesh.15",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "367": {
+            "link": {
+                "name": "Mesh-uv1.15",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "368": {
+            "link": {
+                "name": "Mesh.16",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "369": {
+            "link": {
+                "name": "Mesh-uv1.16",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "370": {
+            "link": {
+                "name": "Mesh.17",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "371": {
+            "link": {
+                "name": "Mesh-uv1.17",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "372": {
+            "link": {
+                "name": "Mesh.18",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "373": {
+            "link": {
+                "name": "Mesh-uv1.18",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "374": {
+            "link": {
+                "name": "Mesh.19",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "375": {
+            "link": {
+                "name": "Mesh-uv1.19",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "376": {
+            "link": {
+                "name": "Mesh.20",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "377": {
+            "link": {
+                "name": "Mesh-uv1.20",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "378": {
+            "link": {
+                "name": "Mesh.21",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "379": {
+            "link": {
+                "name": "Mesh-uv1.21",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "380": {
+            "link": {
+                "name": "Mesh.22",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "381": {
+            "link": {
+                "name": "Mesh-uv1.22",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "382": {
+            "link": {
+                "name": "Mesh.23",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "383": {
+            "link": {
+                "name": "Mesh-uv1.23",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "384": {
+            "link": {
+                "name": "Mesh.24",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "385": {
+            "link": {
+                "name": "Mesh-uv1.24",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "386": {
+            "link": {
+                "name": "Mesh.25",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "387": {
+            "link": {
+                "name": "Mesh-uv1.25",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "388": {
+            "link": {
+                "name": "Mesh.26",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "389": {
+            "link": {
+                "name": "Mesh-uv1.26",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "390": {
+            "link": {
+                "name": "Mesh.27",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "391": {
+            "link": {
+                "name": "Mesh-uv1.27",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "392": {
+            "link": {
+                "name": "Mesh.28",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "393": {
+            "link": {
+                "name": "Mesh-uv1.28",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "394": {
+            "link": {
+                "name": "Mesh.29",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "395": {
+            "link": {
+                "name": "Mesh-uv1.29",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "396": {
+            "link": {
+                "name": "Mesh.30",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "397": {
+            "link": {
+                "name": "Mesh-uv1.30",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "398": {
+            "link": {
+                "name": "Mesh.31",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "399": {
+            "link": {
+                "name": "Mesh-uv1.31",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "400": {
+            "link": {
+                "name": "Mesh.32",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "401": {
+            "link": {
+                "name": "Mesh-uv1.32",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "402": {
+            "link": {
+                "name": "Mesh.33",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "403": {
+            "link": {
+                "name": "Mesh-uv1.33",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "404": {
+            "link": {
+                "name": "Mesh.34",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "405": {
+            "link": {
+                "name": "Mesh-uv1.34",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "406": {
+            "link": {
+                "name": "Mesh.35",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "407": {
+            "link": {
+                "name": "Mesh-uv1.35",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "408": {
+            "link": {
+                "name": "Mesh.36",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "409": {
+            "link": {
+                "name": "Mesh-uv1.36",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "410": {
+            "link": {
+                "name": "Mesh.37",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "411": {
+            "link": {
+                "name": "Mesh-uv1.37",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "412": {
+            "link": {
+                "name": "Mesh.38",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "413": {
+            "link": {
+                "name": "Mesh-uv1.38",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "414": {
+            "link": {
+                "name": "Mesh.39",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "415": {
+            "link": {
+                "name": "Mesh-uv1.39",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "416": {
+            "link": {
+                "name": "Mesh.40",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "417": {
+            "link": {
+                "name": "Mesh-uv1.40",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "418": {
+            "link": {
+                "name": "Mesh.41",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "419": {
+            "link": {
+                "name": "Mesh-uv1.41",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "420": {
+            "link": {
+                "name": "Mesh.42",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "421": {
+            "link": {
+                "name": "Mesh-uv1.42",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "422": {
+            "link": {
+                "name": "Mesh.43",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "423": {
+            "link": {
+                "name": "Mesh-uv1.43",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "424": {
+            "link": {
+                "name": "Mesh.44",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "425": {
+            "link": {
+                "name": "Mesh-uv1.44",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "426": {
+            "link": {
+                "name": "Mesh.45",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "427": {
+            "link": {
+                "name": "Mesh-uv1.45",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "428": {
+            "link": {
+                "name": "Mesh.46",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "429": {
+            "link": {
+                "name": "Mesh-uv1.46",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "430": {
+            "link": {
+                "name": "Mesh.47",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "431": {
+            "link": {
+                "name": "Mesh-uv1.47",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "432": {
+            "link": {
+                "name": "Mesh.48",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "433": {
+            "link": {
+                "name": "Mesh-uv1.48",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "434": {
+            "link": {
+                "name": "Mesh.49",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "435": {
+            "link": {
+                "name": "Mesh-uv1.49",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "436": {
+            "link": {
+                "name": "Mesh.50",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "437": {
+            "link": {
+                "name": "Mesh-uv1.50",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "438": {
+            "link": {
+                "name": "Mesh.51",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "439": {
+            "link": {
+                "name": "Mesh-uv1.51",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "440": {
+            "link": {
+                "name": "Mesh.52",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "441": {
+            "link": {
+                "name": "Mesh-uv1.52",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "442": {
+            "link": {
+                "name": "Mesh.53",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "443": {
+            "link": {
+                "name": "Mesh-uv1.53",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "444": {
+            "link": {
+                "name": "Mesh.54",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "445": {
+            "link": {
+                "name": "Mesh-uv1.54",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "446": {
+            "link": {
+                "name": "Mesh.55",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "447": {
+            "link": {
+                "name": "Mesh-uv1.55",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "448": {
+            "link": {
+                "name": "Mesh.56",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "449": {
+            "link": {
+                "name": "Mesh-uv1.56",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "450": {
+            "link": {
+                "name": "Mesh.57",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "451": {
+            "link": {
+                "name": "Mesh-uv1.57",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "452": {
+            "link": {
+                "name": "Mesh.58",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "453": {
+            "link": {
+                "name": "Mesh-uv1.58",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "454": {
+            "link": {
+                "name": "Mesh.59",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "455": {
+            "link": {
+                "name": "Mesh-uv1.59",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "456": {
+            "link": {
+                "name": "Mesh.60",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "457": {
+            "link": {
+                "name": "Mesh-uv1.60",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "458": {
+            "link": {
+                "name": "Mesh.61",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "459": {
+            "link": {
+                "name": "Mesh-uv1.61",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "460": {
+            "link": {
+                "name": "Mesh.62",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "461": {
+            "link": {
+                "name": "Mesh-uv1.62",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "462": {
+            "link": {
+                "name": "Mesh.63",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "463": {
+            "link": {
+                "name": "Mesh-uv1.63",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "464": {
+            "link": {
+                "name": "Mesh.64",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "465": {
+            "link": {
+                "name": "Mesh-uv1.64",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "466": {
+            "link": {
+                "name": "Mesh.65",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "467": {
+            "link": {
+                "name": "Mesh-uv1.65",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "468": {
+            "link": {
+                "name": "Mesh.66",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "469": {
+            "link": {
+                "name": "Mesh-uv1.66",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "470": {
+            "link": {
+                "name": "Mesh.67",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "471": {
+            "link": {
+                "name": "Mesh-uv1.67",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "472": {
+            "link": {
+                "name": "Mesh.68",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "473": {
+            "link": {
+                "name": "Mesh-uv1.68",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "474": {
+            "link": {
+                "name": "Mesh.69",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "475": {
+            "link": {
+                "name": "Mesh-uv1.69",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "476": {
+            "link": {
+                "name": "Mesh.70",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "477": {
+            "link": {
+                "name": "Mesh-uv1.70",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "478": {
+            "link": {
+                "name": "Mesh.71",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "479": {
+            "link": {
+                "name": "Mesh-uv1.71",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "480": {
+            "link": {
+                "name": "Mesh.72",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "481": {
+            "link": {
+                "name": "Mesh-uv1.72",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "482": {
+            "link": {
+                "name": "Mesh.73",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "483": {
+            "link": {
+                "name": "Mesh-uv1.73",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "484": {
+            "link": {
+                "name": "Mesh.74",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "485": {
+            "link": {
+                "name": "Mesh-uv1.74",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "486": {
+            "link": {
+                "name": "Mesh.75",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "487": {
+            "link": {
+                "name": "Mesh-uv1.75",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "488": {
+            "link": {
+                "name": "Mesh.76",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "489": {
+            "link": {
+                "name": "Mesh-uv1.76",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "490": {
+            "link": {
+                "name": "Mesh.77",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "491": {
+            "link": {
+                "name": "Mesh-uv1.77",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "492": {
+            "link": {
+                "name": "Mesh.78",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "493": {
+            "link": {
+                "name": "Mesh-uv1.78",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "494": {
+            "link": {
+                "name": "Mesh.79",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "495": {
+            "link": {
+                "name": "Mesh-uv1.79",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "496": {
+            "link": {
+                "name": "Mesh.80",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "497": {
+            "link": {
+                "name": "Mesh-uv1.80",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "498": {
+            "link": {
+                "name": "Mesh.81",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "499": {
+            "link": {
+                "name": "Mesh-uv1.81",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "500": {
+            "link": {
+                "name": "Mesh.82",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "501": {
+            "link": {
+                "name": "Mesh-uv1.82",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "502": {
+            "link": {
+                "name": "Mesh.83",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "503": {
+            "link": {
+                "name": "Mesh-uv1.83",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "504": {
+            "link": {
+                "name": "Mesh.84",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "505": {
+            "link": {
+                "name": "Mesh-uv1.84",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "506": {
+            "link": {
+                "name": "Mesh.85",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "507": {
+            "link": {
+                "name": "Mesh-uv1.85",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "508": {
+            "link": {
+                "name": "Mesh.86",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "509": {
+            "link": {
+                "name": "Mesh-uv1.86",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "510": {
+            "link": {
+                "name": "Mesh.87",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "511": {
+            "link": {
+                "name": "Mesh-uv1.87",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "512": {
+            "link": {
+                "name": "Mesh.88",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "513": {
+            "link": {
+                "name": "Mesh-uv1.88",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "514": {
+            "link": {
+                "name": "Mesh.89",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "515": {
+            "link": {
+                "name": "Mesh-uv1.89",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "516": {
+            "link": {
+                "name": "Mesh.90",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "517": {
+            "link": {
+                "name": "Mesh-uv1.90",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "518": {
+            "link": {
+                "name": "Mesh.91",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "519": {
+            "link": {
+                "name": "Mesh-uv1.91",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "520": {
+            "link": {
+                "name": "Mesh.92",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "521": {
+            "link": {
+                "name": "Mesh-uv1.92",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "522": {
+            "link": {
+                "name": "Mesh.93",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "523": {
+            "link": {
+                "name": "Mesh-uv1.93",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "524": {
+            "link": {
+                "name": "Mesh.94",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "525": {
+            "link": {
+                "name": "Mesh-uv1.94",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "526": {
+            "link": {
+                "name": "Mesh.95",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "527": {
+            "link": {
+                "name": "Mesh-uv1.95",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "528": {
+            "link": {
+                "name": "Mesh.96",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "529": {
+            "link": {
+                "name": "Mesh-uv1.96",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "530": {
+            "link": {
+                "name": "Mesh.006",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "531": {
+            "link": {
+                "name": "Mesh.007",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "532": {
+            "link": {
+                "name": "Mesh.008",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "533": {
+            "link": {
+                "name": "Challenge7 Exported NavMesh",
+                "file": "factory\\factory.glb"
+            }
+        }
+    },
+    "textures": {
+        "t0": {
+            "link": {
+                "name": "DefaultFont",
+                "file": "default"
+            },
+            "name": "DefaultFont"
+        },
+        "44": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "86": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "87": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "226": {
+            "link": {
+                "name": "texture_0",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "227": {
+            "link": {
+                "name": "texture_1",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "228": {
+            "link": {
+                "name": "texture_2",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "229": {
+            "link": {
+                "name": "texture_3",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "230": {
+            "link": {
+                "name": "texture_4",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "231": {
+            "link": {
+                "name": "texture_5",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "232": {
+            "link": {
+                "name": "texture_93",
+                "file": "factory\\factory.glb"
+            }
+        }
+    },
+    "images": {
+        "f0": {
+            "link": {
+                "name": "DefaultFontImage",
+                "file": "default"
+            }
+        },
+        "42": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "43": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "maxSize": [
+                256,
+                256
+            ]
+        },
+        "84": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "85": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "maxSize": [
+                256,
+                256
+            ]
+        },
+        "219": {
+            "link": {
+                "name": "Elements_4",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "220": {
+            "link": {
+                "name": "elements_5",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "221": {
+            "link": {
+                "name": "losttreasur_cfcb39c",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "222": {
+            "link": {
+                "name": "elements_3",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "223": {
+            "link": {
+                "name": "elements_1",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "224": {
+            "link": {
+                "name": "elements_2",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "225": {
+            "link": {
+                "name": "losttreasur_d16bfd3",
+                "file": "factory\\factory.glb"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "DistanceFieldVector": {
+                "outlineRange": [
+                    0.4499999,
+                    0.4499999
+                ],
+                "smoothness": 0.0299999,
+                "outlineColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335233e-7,
+                    9.99993744699168e-7,
+                    9.999999974752428e-7,
+                    1.0
+                ],
+                "shininess": 1
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335233e-7,
+                    9.999911299019005e-7,
+                    9.999999974752428e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752428e-7,
+                    9.999899930335233e-7,
+                    9.999899930335233e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752428e-7,
+                    9.999899930335233e-7,
+                    9.999899930335233e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            }
+        },
+        "46": {
+            "link": {
+                "name": "skel_controller_materials_controllerMTL1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "name": "ControllerLeft"
+        },
+        "88": {
+            "link": {
+                "name": "skel_controller_materials_controllerMTL",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "name": "ControllerRight"
+        },
+        "128": {
+            "name": "Cursor",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335233e-7,
+                    9.99993744699168e-7,
+                    9.999999974752428e-7,
+                    1.0
+                ],
+                "shininess": 1
+            },
+            "pipeline": "34"
+        },
+        "131": {
+            "link": {
+                "name": "Default_Material",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeft"
+        },
+        "164": {
+            "link": {
+                "name": "lambert2",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRight"
+        },
+        "201": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "name": "TextAccent",
+            "DistanceFieldVector": {
+                "color": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "outlineRange": [
+                    0.4,
+                    0.4
+                ]
+            }
+        },
+        "202": {
+            "name": "Dark",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335233e-7,
+                    9.99993744699168e-7,
+                    9.999999974752428e-7,
+                    1.0
+                ],
+                "shininess": 1,
+                "diffuseColor": [
+                    0.1686274,
+                    0.1686257,
+                    0.1686257,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0274509,
+                    0.0274507,
+                    0.0274507,
+                    1.0
+                ]
+            }
+        },
+        "203": {
+            "name": "GreenHover",
+            "Phong": {
+                "diffuseColor": [
+                    0.4894117,
+                    0.917647,
+                    0.7511102,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752428e-7,
+                    9.999899930335233e-7,
+                    9.999899930335233e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.3294117,
+                    0.2013071,
+                    1.0
+                ]
+            }
+        },
+        "206": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "models\\teleport-indicator.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.6862745,
+                    0.6862676,
+                    0.6862676,
+                    1.0
+                ]
+            },
+            "pipeline": "34",
+            "Flat": {
+                "color": [
+                    0.8392156,
+                    0.8392072,
+                    0.8392072,
+                    1.0
+                ]
+            }
+        },
+        "233": {
+            "link": {
+                "name": "elements4",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "234": {
+            "link": {
+                "name": "elements5",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "235": {
+            "link": {
+                "name": "sand",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "236": {
+            "link": {
+                "name": "elements3",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "237": {
+            "link": {
+                "name": "elements1",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "238": {
+            "link": {
+                "name": "elements2",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "239": {
+            "link": {
+                "name": "terrain",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "240": {
+            "link": {
+                "name": "elements2_#78",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "241": {
+            "link": {
+                "name": "elements2_#3",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "242": {
+            "link": {
+                "name": "elements2_#68",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "243": {
+            "link": {
+                "name": "elements2_#23",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "244": {
+            "link": {
+                "name": "elements2_#65",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "245": {
+            "link": {
+                "name": "elements2_#30",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "246": {
+            "link": {
+                "name": "elements2_#25",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "247": {
+            "link": {
+                "name": "elements2_#41",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "248": {
+            "link": {
+                "name": "elements2_#7",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "249": {
+            "link": {
+                "name": "elements2_#52",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "250": {
+            "link": {
+                "name": "elements2_#37",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "251": {
+            "link": {
+                "name": "elements2_#69",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "252": {
+            "link": {
+                "name": "elements2_#36",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "253": {
+            "link": {
+                "name": "elements2_#18",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "254": {
+            "link": {
+                "name": "elements2_#16",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "255": {
+            "link": {
+                "name": "elements2_#66",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "256": {
+            "link": {
+                "name": "elements2_#35",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "257": {
+            "link": {
+                "name": "elements2_#39",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "258": {
+            "link": {
+                "name": "elements2_#63",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "259": {
+            "link": {
+                "name": "elements2_#70",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "260": {
+            "link": {
+                "name": "elements2_#42",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "261": {
+            "link": {
+                "name": "elements2_#26",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "262": {
+            "link": {
+                "name": "elements2_#73",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "263": {
+            "link": {
+                "name": "elements2_#2",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "264": {
+            "link": {
+                "name": "elements2_#5",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "265": {
+            "link": {
+                "name": "elements2_#13",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "266": {
+            "link": {
+                "name": "elements2_#71",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "267": {
+            "link": {
+                "name": "elements2_#54",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "268": {
+            "link": {
+                "name": "elements2_#17",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "269": {
+            "link": {
+                "name": "elements2_#15",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "270": {
+            "link": {
+                "name": "elements2_#43",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "271": {
+            "link": {
+                "name": "elements2_#61",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "272": {
+            "link": {
+                "name": "elements2_#19",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "273": {
+            "link": {
+                "name": "elements2_#75",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "274": {
+            "link": {
+                "name": "elements2_#74",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "275": {
+            "link": {
+                "name": "elements2_#8",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "276": {
+            "link": {
+                "name": "elements2_#62",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "277": {
+            "link": {
+                "name": "elements2_#67",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "278": {
+            "link": {
+                "name": "elements2_#45",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "279": {
+            "link": {
+                "name": "elements2_#46",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "280": {
+            "link": {
+                "name": "elements2_#24",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "281": {
+            "link": {
+                "name": "elements2_#34",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "282": {
+            "link": {
+                "name": "elements2_#64",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "283": {
+            "link": {
+                "name": "elements2_#22",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "284": {
+            "link": {
+                "name": "elements5_#9",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "285": {
+            "link": {
+                "name": "elements5_#6",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "286": {
+            "link": {
+                "name": "elements5_#20",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "287": {
+            "link": {
+                "name": "elements5_#18",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "288": {
+            "link": {
+                "name": "elements2_#28",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "289": {
+            "link": {
+                "name": "elements2_#40",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "290": {
+            "link": {
+                "name": "elements2_#4",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "291": {
+            "link": {
+                "name": "elements5_#4",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "292": {
+            "link": {
+                "name": "elements5_#16",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "293": {
+            "link": {
+                "name": "elements5_#7",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "294": {
+            "link": {
+                "name": "elements5_#11",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "295": {
+            "link": {
+                "name": "elements2_#51",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "296": {
+            "link": {
+                "name": "elements2_#44",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "297": {
+            "link": {
+                "name": "elements2_#21",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "298": {
+            "link": {
+                "name": "elements2_#11",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "299": {
+            "link": {
+                "name": "elements5_#12",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "300": {
+            "link": {
+                "name": "elements5_#10",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "301": {
+            "link": {
+                "name": "elements5_#15",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "302": {
+            "link": {
+                "name": "elements5_#14",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "303": {
+            "link": {
+                "name": "elements2_#33",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "304": {
+            "link": {
+                "name": "elements2_#57",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "305": {
+            "link": {
+                "name": "elements2_#80",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "306": {
+            "link": {
+                "name": "elements2_#27",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "307": {
+            "link": {
+                "name": "elements2_#14",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "308": {
+            "link": {
+                "name": "elements2_#10",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "309": {
+            "link": {
+                "name": "elements2_#49",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "310": {
+            "link": {
+                "name": "elements2_#56",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "311": {
+            "link": {
+                "name": "elements5_#13",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "312": {
+            "link": {
+                "name": "elements5_#2",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "313": {
+            "link": {
+                "name": "elements5_#19",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "314": {
+            "link": {
+                "name": "elements2_#76",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "315": {
+            "link": {
+                "name": "elements2_#72",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "316": {
+            "link": {
+                "name": "elements2_#32",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "317": {
+            "link": {
+                "name": "elements2_#6",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "318": {
+            "link": {
+                "name": "elements2_#38",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "319": {
+            "link": {
+                "name": "elements2_#60",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "320": {
+            "link": {
+                "name": "elements2_#81",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "321": {
+            "link": {
+                "name": "elements2_#12",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "322": {
+            "link": {
+                "name": "elements2_#79",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "323": {
+            "link": {
+                "name": "elements2_#50",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "324": {
+            "link": {
+                "name": "elements2_#48",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "325": {
+            "link": {
+                "name": "terrain_#2",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "326": {
+            "link": {
+                "name": "terrain_#6",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "327": {
+            "link": {
+                "name": "terrain_#5",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "328": {
+            "link": {
+                "name": "terrain_#7",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "329": {
+            "link": {
+                "name": "terrain_#4",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "330": {
+            "link": {
+                "name": "elements3_4",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "331": {
+            "link": {
+                "name": "elements3_5",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "332": {
+            "link": {
+                "name": "elements3_6",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "333": {
+            "link": {
+                "name": "Default OBJ.001",
+                "file": "factory\\factory.glb"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "217": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "Factory",
+            "version": [
+                0,
+                8,
+                10
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "js/"
+            ]
+        },
+        "runtime": {
+            "visualizeColliders": false,
+            "webxr": {
+                "optionalFeatures": {
+                    "local-floor": true
+                }
+            }
+        }
+    },
+    "animations": {},
+    "skins": {
+        "133": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeftSkin"
+        },
+        "166": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRightSkin"
+        }
+    },
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "218": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        }
+    },
+    "files": [
+        "models/oculus-touch-v2-left.glb",
+        "models/oculus-touch-v2-right.glb",
+        "models/hand-left.glb",
+        "models/hand-right.glb",
+        "models/button.glb",
+        "models/teleport-indicator.glb",
+        "factory/factory.glb"
+    ]
+}
