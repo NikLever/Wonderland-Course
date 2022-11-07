@@ -12,16 +12,7 @@ WL.registerComponent('collectable', {
     rotateYOnMove: { type: WL.Type.Float, default: 0 },
     handedness: {type: WL.Type.Enum, values: ['input component', 'left', 'right', 'none'], default: 'input component'}
 }, {
-    init: function() {
-        this._input = this.object.getComponent('input');
-        if(!this._input) {
-            console.error(this.object.name, "collectable.js: input component is required on the object");
-            return;
-        }else if(this.handedness == 0){
-            this.handedness = this._input.handedness;
-        }
-        this._cursor = this.object.getComponent('cursor');
-        this._teleport = this.object.getComponent('teleport');
+    init: function() {    
         this._tempVec = new Float32Array(3);
         this._tempVec0 = new Float32Array(3);
         this._grabParent = null;
@@ -31,6 +22,15 @@ WL.registerComponent('collectable', {
     },
     start: function() {
         console.log('collectable start()');
+        this._input = this.object.getComponent('input');
+        if(!this._input) {
+            console.error(this.object.name, "collectable.js: input component is required on the object");
+            return;
+        }else if(this.handedness == 0){
+            this.handedness = this._input.handedness;
+        }
+        this._cursor = this.object.getComponent('cursor');
+        this._teleport = this.object.getComponent('teleport');
         this.collisionIndicator.active = false;
         WL.onXRSessionStart.push(this.setupVREvents.bind(this));
     },
