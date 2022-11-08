@@ -46,11 +46,11 @@ WL.registerComponent('button', {
         this.hapticFeedback(cursor.object, 0.3, 50);
     },
 
-    hapticFeedback: function(object, strenght, duration) {
+    hapticFeedback: function(object, strength, duration) {
         const input = object.getComponent('input');
         if(input && input.xrInputSource) {
             const gamepad = input.xrInputSource.gamepad;
-            if(gamepad && gamepad.hapticActuators) gamepad.hapticActuators[0].pulse(strenght, duration);
+            if(gamepad && gamepad.hapticActuators) gamepad.hapticActuators[0].pulse(strength, duration);
         }
     },
 });

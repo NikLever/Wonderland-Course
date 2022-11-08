@@ -19,6 +19,15 @@
                 0.0,
                 1.1575536,
                 1.0
+            ],
+            "components": [
+                {
+                    "type": "MovePlayer",
+                    "MovePlayer": {
+                        "navmesh": "444",
+                        "camera": "18"
+                    }
+                }
             ]
         },
         "15": {
@@ -210,7 +219,8 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.1
+                        "attenuation": 0.1,
+                        "type": "sun"
                     }
                 }
             ],
@@ -240,7 +250,8 @@
                     "type": "light",
                     "light": {
                         "attenuation": 0.1
-                    }
+                    },
+                    "active": false
                 }
             ],
             "transformation": [
@@ -886,8 +897,7 @@
                 1.5585095,
                 1.0
             ],
-            "parent": null,
-            "deleted": true
+            "parent": null
         },
         "129": {
             "name": "ControllerRight",
@@ -1526,19 +1536,18 @@
                 0.0,
                 0.0,
                 0.0,
-                0.062447,
+                0.0624469,
                 0.1082836,
                 0.0,
                 0.0,
-                -0.2165673,
-                0.1248941,
+                -0.2165672,
+                0.124894,
                 0.0,
-                -2.5,
-                1.2,
                 0.0,
+                0.0,
+                2.384185791015625e-7,
                 1.0
-            ],
-            "deleted": true
+            ]
         },
         "196": {
             "link": {
@@ -1571,8 +1580,7 @@
                 0.3244419,
                 -0.0000677,
                 1.0
-            ],
-            "deleted": true
+            ]
         },
         "197": {
             "name": "Button",
@@ -1620,8 +1628,7 @@
                         "hoverMaterial": "203"
                     }
                 }
-            ],
-            "deleted": true
+            ]
         },
         "198": {
             "name": "ButtonLabel",
@@ -1651,8 +1658,7 @@
                 0.108458,
                 0.0000047,
                 1.0
-            ],
-            "deleted": true
+            ]
         },
         "200": {
             "name": "Title",
@@ -1683,8 +1689,7 @@
                 0.1554994,
                 -0.3034151,
                 1.0
-            ],
-            "deleted": true
+            ]
         },
         "204": {
             "name": "TeleportTarget",
@@ -1766,8 +1771,7 @@
                 0.0099999,
                 1.3311299,
                 1.0
-            ],
-            "deleted": true
+            ]
         },
         "209": {
             "name": "CursorRayLeft",
@@ -1965,8 +1969,7 @@
                 0.0,
                 1.0
             ],
-            "parent": null,
-            "deleted": true
+            "parent": null
         },
         "216": {
             "name": "FloorPlane",
@@ -2015,52 +2018,196 @@
             "parent": null,
             "deleted": true
         },
-        "534": {
+        "440": {
             "link": {
                 "name": "environment:main",
-                "file": "factory\\factory.glb"
-            }
+                "file": "models\\factory.glb"
+            },
+            "components": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "mesh": {
+                        "material": "242"
+                    }
+                },
+                {
+                    "mesh": {
+                        "material": "242"
+                    }
+                },
+                {
+                    "mesh": {
+                        "material": "242"
+                    }
+                },
+                {
+                    "mesh": {
+                        "material": "242"
+                    }
+                },
+                {
+                    "mesh": {
+                        "material": "242"
+                    }
+                },
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "mesh": {
+                        "material": "242"
+                    }
+                }
+            ]
         },
-        "535": {
+        "441": {
             "link": {
                 "name": "turbine-fan_(1)",
-                "file": "factory\\factory.glb"
-            }
+                "file": "models\\factory.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "RotateFan",
+                    "RotateFan": {
+                        "rotationSpeed": 70.0
+                    }
+                }
+            ]
         },
-        "536": {
+        "442": {
             "link": {
                 "name": "turbine-fan_(2)",
-                "file": "factory\\factory.glb"
-            }
+                "file": "models\\factory.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "RotateFan",
+                    "RotateFan": {
+                        "rotationSpeed": 70.0
+                    }
+                }
+            ]
         },
-        "537": {
+        "443": {
             "link": {
                 "name": "turbine-fan_(3)",
-                "file": "factory\\factory.glb"
-            }
+                "file": "models\\factory.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "RotateFan",
+                    "RotateFan": {
+                        "rotationSpeed": 70.0
+                    }
+                }
+            ]
         },
-        "538": {
+        "444": {
             "link": {
                 "name": "NavMesh",
-                "file": "factory\\factory.glb"
+                "file": "models\\factory.glb"
             },
-            "transformation": [
-                0.8765776,
-                -2.9802322387695315e-8,
-                -0.4812605,
-                0.0,
-                0.4812605,
-                -1.9371512394172897e-7,
-                0.8765777,
-                0.0,
-                -1.0430814256778831e-7,
-                -1.0000001,
-                -1.6018749704471703e-7,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0
+            "components": [
+                {
+                    "active": false
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "triangleMesh",
+                        "triangleMesh": {
+                            "mesh": "439"
+                        },
+                        "allowQuery": false,
+                        "simulate": false
+                    }
+                }
             ]
         }
     },
@@ -2200,1204 +2347,1204 @@
                 "file": "models\\teleport-indicator.glb"
             }
         },
-        "334": {
-            "link": {
-                "name": "Mesh",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "335": {
-            "link": {
-                "name": "Mesh-uv1",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "336": {
-            "link": {
-                "name": "Mesh.0",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "337": {
-            "link": {
-                "name": "Mesh-uv1.0",
-                "file": "factory\\factory.glb"
-            }
-        },
         "338": {
             "link": {
-                "name": "Mesh.1",
-                "file": "factory\\factory.glb"
+                "name": "Mesh",
+                "file": "models\\factory.glb"
             }
         },
         "339": {
             "link": {
-                "name": "Mesh-uv1.1",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.0",
+                "file": "models\\factory.glb"
             }
         },
         "340": {
             "link": {
-                "name": "Mesh.2",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.1",
+                "file": "models\\factory.glb"
             }
         },
         "341": {
             "link": {
-                "name": "Mesh-uv1.2",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.2",
+                "file": "models\\factory.glb"
             }
         },
         "342": {
             "link": {
                 "name": "Mesh.3",
-                "file": "factory\\factory.glb"
+                "file": "models\\factory.glb"
             }
         },
         "343": {
             "link": {
-                "name": "Mesh-uv1.3",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.4",
+                "file": "models\\factory.glb"
             }
         },
         "344": {
             "link": {
-                "name": "Mesh.4",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.5",
+                "file": "models\\factory.glb"
             }
         },
         "345": {
             "link": {
-                "name": "Mesh-uv1.4",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.6",
+                "file": "models\\factory.glb"
             }
         },
         "346": {
             "link": {
-                "name": "Mesh.5",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.7",
+                "file": "models\\factory.glb"
             }
         },
         "347": {
             "link": {
-                "name": "Mesh-uv1.5",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.8",
+                "file": "models\\factory.glb"
             }
         },
         "348": {
             "link": {
-                "name": "Mesh.6",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.9",
+                "file": "models\\factory.glb"
             }
         },
         "349": {
             "link": {
-                "name": "Mesh-uv1.6",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.10",
+                "file": "models\\factory.glb"
             }
         },
         "350": {
             "link": {
-                "name": "Mesh.7",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.11",
+                "file": "models\\factory.glb"
             }
         },
         "351": {
             "link": {
-                "name": "Mesh-uv1.7",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.12",
+                "file": "models\\factory.glb"
             }
         },
         "352": {
             "link": {
-                "name": "Mesh.8",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.13",
+                "file": "models\\factory.glb"
             }
         },
         "353": {
             "link": {
-                "name": "Mesh-uv1.8",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.14",
+                "file": "models\\factory.glb"
             }
         },
         "354": {
             "link": {
-                "name": "Mesh.9",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.15",
+                "file": "models\\factory.glb"
             }
         },
         "355": {
             "link": {
-                "name": "Mesh-uv1.9",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.16",
+                "file": "models\\factory.glb"
             }
         },
         "356": {
             "link": {
-                "name": "Mesh.10",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.17",
+                "file": "models\\factory.glb"
             }
         },
         "357": {
             "link": {
-                "name": "Mesh-uv1.10",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.18",
+                "file": "models\\factory.glb"
             }
         },
         "358": {
             "link": {
-                "name": "Mesh.11",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.19",
+                "file": "models\\factory.glb"
             }
         },
         "359": {
             "link": {
-                "name": "Mesh-uv1.11",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.20",
+                "file": "models\\factory.glb"
             }
         },
         "360": {
             "link": {
-                "name": "Mesh.12",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.21",
+                "file": "models\\factory.glb"
             }
         },
         "361": {
             "link": {
-                "name": "Mesh-uv1.12",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.22",
+                "file": "models\\factory.glb"
             }
         },
         "362": {
             "link": {
-                "name": "Mesh.13",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.23",
+                "file": "models\\factory.glb"
             }
         },
         "363": {
             "link": {
-                "name": "Mesh-uv1.13",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.24",
+                "file": "models\\factory.glb"
             }
         },
         "364": {
             "link": {
-                "name": "Mesh.14",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.25",
+                "file": "models\\factory.glb"
             }
         },
         "365": {
             "link": {
-                "name": "Mesh-uv1.14",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.26",
+                "file": "models\\factory.glb"
             }
         },
         "366": {
             "link": {
-                "name": "Mesh.15",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.27",
+                "file": "models\\factory.glb"
             }
         },
         "367": {
             "link": {
-                "name": "Mesh-uv1.15",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.28",
+                "file": "models\\factory.glb"
             }
         },
         "368": {
             "link": {
-                "name": "Mesh.16",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.29",
+                "file": "models\\factory.glb"
             }
         },
         "369": {
             "link": {
-                "name": "Mesh-uv1.16",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.30",
+                "file": "models\\factory.glb"
             }
         },
         "370": {
             "link": {
-                "name": "Mesh.17",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.31",
+                "file": "models\\factory.glb"
             }
         },
         "371": {
             "link": {
-                "name": "Mesh-uv1.17",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.32",
+                "file": "models\\factory.glb"
             }
         },
         "372": {
             "link": {
-                "name": "Mesh.18",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.33",
+                "file": "models\\factory.glb"
             }
         },
         "373": {
             "link": {
-                "name": "Mesh-uv1.18",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.34",
+                "file": "models\\factory.glb"
             }
         },
         "374": {
             "link": {
-                "name": "Mesh.19",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.35",
+                "file": "models\\factory.glb"
             }
         },
         "375": {
             "link": {
-                "name": "Mesh-uv1.19",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.36",
+                "file": "models\\factory.glb"
             }
         },
         "376": {
             "link": {
-                "name": "Mesh.20",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.37",
+                "file": "models\\factory.glb"
             }
         },
         "377": {
             "link": {
-                "name": "Mesh-uv1.20",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.38",
+                "file": "models\\factory.glb"
             }
         },
         "378": {
             "link": {
-                "name": "Mesh.21",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.39",
+                "file": "models\\factory.glb"
             }
         },
         "379": {
             "link": {
-                "name": "Mesh-uv1.21",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.40",
+                "file": "models\\factory.glb"
             }
         },
         "380": {
             "link": {
-                "name": "Mesh.22",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.41",
+                "file": "models\\factory.glb"
             }
         },
         "381": {
             "link": {
-                "name": "Mesh-uv1.22",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.42",
+                "file": "models\\factory.glb"
             }
         },
         "382": {
             "link": {
-                "name": "Mesh.23",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.43",
+                "file": "models\\factory.glb"
             }
         },
         "383": {
             "link": {
-                "name": "Mesh-uv1.23",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.44",
+                "file": "models\\factory.glb"
             }
         },
         "384": {
             "link": {
-                "name": "Mesh.24",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.45",
+                "file": "models\\factory.glb"
             }
         },
         "385": {
             "link": {
-                "name": "Mesh-uv1.24",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.46",
+                "file": "models\\factory.glb"
             }
         },
         "386": {
             "link": {
-                "name": "Mesh.25",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.47",
+                "file": "models\\factory.glb"
             }
         },
         "387": {
             "link": {
-                "name": "Mesh-uv1.25",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.48",
+                "file": "models\\factory.glb"
             }
         },
         "388": {
             "link": {
-                "name": "Mesh.26",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.49",
+                "file": "models\\factory.glb"
             }
         },
         "389": {
             "link": {
-                "name": "Mesh-uv1.26",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.50",
+                "file": "models\\factory.glb"
             }
         },
         "390": {
             "link": {
-                "name": "Mesh.27",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.51",
+                "file": "models\\factory.glb"
             }
         },
         "391": {
             "link": {
-                "name": "Mesh-uv1.27",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.52",
+                "file": "models\\factory.glb"
             }
         },
         "392": {
             "link": {
-                "name": "Mesh.28",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.53",
+                "file": "models\\factory.glb"
             }
         },
         "393": {
             "link": {
-                "name": "Mesh-uv1.28",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.54",
+                "file": "models\\factory.glb"
             }
         },
         "394": {
             "link": {
-                "name": "Mesh.29",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.55",
+                "file": "models\\factory.glb"
             }
         },
         "395": {
             "link": {
-                "name": "Mesh-uv1.29",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.56",
+                "file": "models\\factory.glb"
             }
         },
         "396": {
             "link": {
-                "name": "Mesh.30",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.57",
+                "file": "models\\factory.glb"
             }
         },
         "397": {
             "link": {
-                "name": "Mesh-uv1.30",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.58",
+                "file": "models\\factory.glb"
             }
         },
         "398": {
             "link": {
-                "name": "Mesh.31",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.59",
+                "file": "models\\factory.glb"
             }
         },
         "399": {
             "link": {
-                "name": "Mesh-uv1.31",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.60",
+                "file": "models\\factory.glb"
             }
         },
         "400": {
             "link": {
-                "name": "Mesh.32",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.61",
+                "file": "models\\factory.glb"
             }
         },
         "401": {
             "link": {
-                "name": "Mesh-uv1.32",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.62",
+                "file": "models\\factory.glb"
             }
         },
         "402": {
             "link": {
-                "name": "Mesh.33",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.63",
+                "file": "models\\factory.glb"
             }
         },
         "403": {
             "link": {
-                "name": "Mesh-uv1.33",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.64",
+                "file": "models\\factory.glb"
             }
         },
         "404": {
             "link": {
-                "name": "Mesh.34",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.65",
+                "file": "models\\factory.glb"
             }
         },
         "405": {
             "link": {
-                "name": "Mesh-uv1.34",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.66",
+                "file": "models\\factory.glb"
             }
         },
         "406": {
             "link": {
-                "name": "Mesh.35",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.67",
+                "file": "models\\factory.glb"
             }
         },
         "407": {
             "link": {
-                "name": "Mesh-uv1.35",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.68",
+                "file": "models\\factory.glb"
             }
         },
         "408": {
             "link": {
-                "name": "Mesh.36",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.69",
+                "file": "models\\factory.glb"
             }
         },
         "409": {
             "link": {
-                "name": "Mesh-uv1.36",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.70",
+                "file": "models\\factory.glb"
             }
         },
         "410": {
             "link": {
-                "name": "Mesh.37",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.71",
+                "file": "models\\factory.glb"
             }
         },
         "411": {
             "link": {
-                "name": "Mesh-uv1.37",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.72",
+                "file": "models\\factory.glb"
             }
         },
         "412": {
             "link": {
-                "name": "Mesh.38",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.73",
+                "file": "models\\factory.glb"
             }
         },
         "413": {
             "link": {
-                "name": "Mesh-uv1.38",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.74",
+                "file": "models\\factory.glb"
             }
         },
         "414": {
             "link": {
-                "name": "Mesh.39",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.75",
+                "file": "models\\factory.glb"
             }
         },
         "415": {
             "link": {
-                "name": "Mesh-uv1.39",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.76",
+                "file": "models\\factory.glb"
             }
         },
         "416": {
             "link": {
-                "name": "Mesh.40",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.77",
+                "file": "models\\factory.glb"
             }
         },
         "417": {
             "link": {
-                "name": "Mesh-uv1.40",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.78",
+                "file": "models\\factory.glb"
             }
         },
         "418": {
             "link": {
-                "name": "Mesh.41",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.79",
+                "file": "models\\factory.glb"
             }
         },
         "419": {
             "link": {
-                "name": "Mesh-uv1.41",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.80",
+                "file": "models\\factory.glb"
             }
         },
         "420": {
             "link": {
-                "name": "Mesh.42",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.81",
+                "file": "models\\factory.glb"
             }
         },
         "421": {
             "link": {
-                "name": "Mesh-uv1.42",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.82",
+                "file": "models\\factory.glb"
             }
         },
         "422": {
             "link": {
-                "name": "Mesh.43",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.83",
+                "file": "models\\factory.glb"
             }
         },
         "423": {
             "link": {
-                "name": "Mesh-uv1.43",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.84",
+                "file": "models\\factory.glb"
             }
         },
         "424": {
             "link": {
-                "name": "Mesh.44",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.85",
+                "file": "models\\factory.glb"
             }
         },
         "425": {
             "link": {
-                "name": "Mesh-uv1.44",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.86",
+                "file": "models\\factory.glb"
             }
         },
         "426": {
             "link": {
-                "name": "Mesh.45",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.87",
+                "file": "models\\factory.glb"
             }
         },
         "427": {
             "link": {
-                "name": "Mesh-uv1.45",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.88",
+                "file": "models\\factory.glb"
             }
         },
         "428": {
             "link": {
-                "name": "Mesh.46",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.89",
+                "file": "models\\factory.glb"
             }
         },
         "429": {
             "link": {
-                "name": "Mesh-uv1.46",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.90",
+                "file": "models\\factory.glb"
             }
         },
         "430": {
             "link": {
-                "name": "Mesh.47",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.91",
+                "file": "models\\factory.glb"
             }
         },
         "431": {
             "link": {
-                "name": "Mesh-uv1.47",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.92",
+                "file": "models\\factory.glb"
             }
         },
         "432": {
             "link": {
-                "name": "Mesh.48",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.93",
+                "file": "models\\factory.glb"
             }
         },
         "433": {
             "link": {
-                "name": "Mesh-uv1.48",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.94",
+                "file": "models\\factory.glb"
             }
         },
         "434": {
             "link": {
-                "name": "Mesh.49",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.95",
+                "file": "models\\factory.glb"
             }
         },
         "435": {
             "link": {
-                "name": "Mesh-uv1.49",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.96",
+                "file": "models\\factory.glb"
             }
         },
         "436": {
             "link": {
-                "name": "Mesh.50",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.006",
+                "file": "models\\factory.glb"
             }
         },
         "437": {
             "link": {
-                "name": "Mesh-uv1.50",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.007",
+                "file": "models\\factory.glb"
             }
         },
         "438": {
             "link": {
-                "name": "Mesh.51",
-                "file": "factory\\factory.glb"
+                "name": "Mesh.008",
+                "file": "models\\factory.glb"
             }
         },
         "439": {
             "link": {
-                "name": "Mesh-uv1.51",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "440": {
-            "link": {
-                "name": "Mesh.52",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "441": {
-            "link": {
-                "name": "Mesh-uv1.52",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "442": {
-            "link": {
-                "name": "Mesh.53",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "443": {
-            "link": {
-                "name": "Mesh-uv1.53",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "444": {
-            "link": {
-                "name": "Mesh.54",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "445": {
-            "link": {
-                "name": "Mesh-uv1.54",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "446": {
-            "link": {
-                "name": "Mesh.55",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "447": {
-            "link": {
-                "name": "Mesh-uv1.55",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "448": {
-            "link": {
-                "name": "Mesh.56",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "449": {
-            "link": {
-                "name": "Mesh-uv1.56",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "450": {
-            "link": {
-                "name": "Mesh.57",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "451": {
-            "link": {
-                "name": "Mesh-uv1.57",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "452": {
-            "link": {
-                "name": "Mesh.58",
-                "file": "factory\\factory.glb"
+                "name": "Challenge7 Exported NavMesh",
+                "file": "models\\factory.glb"
             }
         },
         "453": {
             "link": {
-                "name": "Mesh-uv1.58",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1",
+                "file": "models\\factory.glb"
             }
         },
         "454": {
             "link": {
-                "name": "Mesh.59",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.0",
+                "file": "models\\factory.glb"
             }
         },
         "455": {
             "link": {
-                "name": "Mesh-uv1.59",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.1",
+                "file": "models\\factory.glb"
             }
         },
         "456": {
             "link": {
-                "name": "Mesh.60",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.2",
+                "file": "models\\factory.glb"
             }
         },
         "457": {
             "link": {
-                "name": "Mesh-uv1.60",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.3",
+                "file": "models\\factory.glb"
             }
         },
         "458": {
             "link": {
-                "name": "Mesh.61",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.4",
+                "file": "models\\factory.glb"
             }
         },
         "459": {
             "link": {
-                "name": "Mesh-uv1.61",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.5",
+                "file": "models\\factory.glb"
             }
         },
         "460": {
             "link": {
-                "name": "Mesh.62",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.6",
+                "file": "models\\factory.glb"
             }
         },
         "461": {
             "link": {
-                "name": "Mesh-uv1.62",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.7",
+                "file": "models\\factory.glb"
             }
         },
         "462": {
             "link": {
-                "name": "Mesh.63",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.8",
+                "file": "models\\factory.glb"
             }
         },
         "463": {
             "link": {
-                "name": "Mesh-uv1.63",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.9",
+                "file": "models\\factory.glb"
             }
         },
         "464": {
             "link": {
-                "name": "Mesh.64",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.10",
+                "file": "models\\factory.glb"
             }
         },
         "465": {
             "link": {
-                "name": "Mesh-uv1.64",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.11",
+                "file": "models\\factory.glb"
             }
         },
         "466": {
             "link": {
-                "name": "Mesh.65",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.12",
+                "file": "models\\factory.glb"
             }
         },
         "467": {
             "link": {
-                "name": "Mesh-uv1.65",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.13",
+                "file": "models\\factory.glb"
             }
         },
         "468": {
             "link": {
-                "name": "Mesh.66",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.14",
+                "file": "models\\factory.glb"
             }
         },
         "469": {
             "link": {
-                "name": "Mesh-uv1.66",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.15",
+                "file": "models\\factory.glb"
             }
         },
         "470": {
             "link": {
-                "name": "Mesh.67",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.16",
+                "file": "models\\factory.glb"
             }
         },
         "471": {
             "link": {
-                "name": "Mesh-uv1.67",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.17",
+                "file": "models\\factory.glb"
             }
         },
         "472": {
             "link": {
-                "name": "Mesh.68",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.18",
+                "file": "models\\factory.glb"
             }
         },
         "473": {
             "link": {
-                "name": "Mesh-uv1.68",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.19",
+                "file": "models\\factory.glb"
             }
         },
         "474": {
             "link": {
-                "name": "Mesh.69",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.20",
+                "file": "models\\factory.glb"
             }
         },
         "475": {
             "link": {
-                "name": "Mesh-uv1.69",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.21",
+                "file": "models\\factory.glb"
             }
         },
         "476": {
             "link": {
-                "name": "Mesh.70",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.22",
+                "file": "models\\factory.glb"
             }
         },
         "477": {
             "link": {
-                "name": "Mesh-uv1.70",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.23",
+                "file": "models\\factory.glb"
             }
         },
         "478": {
             "link": {
-                "name": "Mesh.71",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.24",
+                "file": "models\\factory.glb"
             }
         },
         "479": {
             "link": {
-                "name": "Mesh-uv1.71",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.25",
+                "file": "models\\factory.glb"
             }
         },
         "480": {
             "link": {
-                "name": "Mesh.72",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.26",
+                "file": "models\\factory.glb"
             }
         },
         "481": {
             "link": {
-                "name": "Mesh-uv1.72",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.27",
+                "file": "models\\factory.glb"
             }
         },
         "482": {
             "link": {
-                "name": "Mesh.73",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.28",
+                "file": "models\\factory.glb"
             }
         },
         "483": {
             "link": {
-                "name": "Mesh-uv1.73",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.29",
+                "file": "models\\factory.glb"
             }
         },
         "484": {
             "link": {
-                "name": "Mesh.74",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.30",
+                "file": "models\\factory.glb"
             }
         },
         "485": {
             "link": {
-                "name": "Mesh-uv1.74",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.31",
+                "file": "models\\factory.glb"
             }
         },
         "486": {
             "link": {
-                "name": "Mesh.75",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.32",
+                "file": "models\\factory.glb"
             }
         },
         "487": {
             "link": {
-                "name": "Mesh-uv1.75",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.33",
+                "file": "models\\factory.glb"
             }
         },
         "488": {
             "link": {
-                "name": "Mesh.76",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.34",
+                "file": "models\\factory.glb"
             }
         },
         "489": {
             "link": {
-                "name": "Mesh-uv1.76",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.35",
+                "file": "models\\factory.glb"
             }
         },
         "490": {
             "link": {
-                "name": "Mesh.77",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.36",
+                "file": "models\\factory.glb"
             }
         },
         "491": {
             "link": {
-                "name": "Mesh-uv1.77",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.37",
+                "file": "models\\factory.glb"
             }
         },
         "492": {
             "link": {
-                "name": "Mesh.78",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.38",
+                "file": "models\\factory.glb"
             }
         },
         "493": {
             "link": {
-                "name": "Mesh-uv1.78",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.39",
+                "file": "models\\factory.glb"
             }
         },
         "494": {
             "link": {
-                "name": "Mesh.79",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.40",
+                "file": "models\\factory.glb"
             }
         },
         "495": {
             "link": {
-                "name": "Mesh-uv1.79",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.41",
+                "file": "models\\factory.glb"
             }
         },
         "496": {
             "link": {
-                "name": "Mesh.80",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.42",
+                "file": "models\\factory.glb"
             }
         },
         "497": {
             "link": {
-                "name": "Mesh-uv1.80",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.43",
+                "file": "models\\factory.glb"
             }
         },
         "498": {
             "link": {
-                "name": "Mesh.81",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.44",
+                "file": "models\\factory.glb"
             }
         },
         "499": {
             "link": {
-                "name": "Mesh-uv1.81",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.45",
+                "file": "models\\factory.glb"
             }
         },
         "500": {
             "link": {
-                "name": "Mesh.82",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.46",
+                "file": "models\\factory.glb"
             }
         },
         "501": {
             "link": {
-                "name": "Mesh-uv1.82",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.47",
+                "file": "models\\factory.glb"
             }
         },
         "502": {
             "link": {
-                "name": "Mesh.83",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.48",
+                "file": "models\\factory.glb"
             }
         },
         "503": {
             "link": {
-                "name": "Mesh-uv1.83",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.49",
+                "file": "models\\factory.glb"
             }
         },
         "504": {
             "link": {
-                "name": "Mesh.84",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.50",
+                "file": "models\\factory.glb"
             }
         },
         "505": {
             "link": {
-                "name": "Mesh-uv1.84",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.51",
+                "file": "models\\factory.glb"
             }
         },
         "506": {
             "link": {
-                "name": "Mesh.85",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.52",
+                "file": "models\\factory.glb"
             }
         },
         "507": {
             "link": {
-                "name": "Mesh-uv1.85",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.53",
+                "file": "models\\factory.glb"
             }
         },
         "508": {
             "link": {
-                "name": "Mesh.86",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.54",
+                "file": "models\\factory.glb"
             }
         },
         "509": {
             "link": {
-                "name": "Mesh-uv1.86",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.55",
+                "file": "models\\factory.glb"
             }
         },
         "510": {
             "link": {
-                "name": "Mesh.87",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.56",
+                "file": "models\\factory.glb"
             }
         },
         "511": {
             "link": {
-                "name": "Mesh-uv1.87",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.57",
+                "file": "models\\factory.glb"
             }
         },
         "512": {
             "link": {
-                "name": "Mesh.88",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.58",
+                "file": "models\\factory.glb"
             }
         },
         "513": {
             "link": {
-                "name": "Mesh-uv1.88",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.59",
+                "file": "models\\factory.glb"
             }
         },
         "514": {
             "link": {
-                "name": "Mesh.89",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.60",
+                "file": "models\\factory.glb"
             }
         },
         "515": {
             "link": {
-                "name": "Mesh-uv1.89",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.61",
+                "file": "models\\factory.glb"
             }
         },
         "516": {
             "link": {
-                "name": "Mesh.90",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.62",
+                "file": "models\\factory.glb"
             }
         },
         "517": {
             "link": {
-                "name": "Mesh-uv1.90",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.63",
+                "file": "models\\factory.glb"
             }
         },
         "518": {
             "link": {
-                "name": "Mesh.91",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.64",
+                "file": "models\\factory.glb"
             }
         },
         "519": {
             "link": {
-                "name": "Mesh-uv1.91",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.65",
+                "file": "models\\factory.glb"
             }
         },
         "520": {
             "link": {
-                "name": "Mesh.92",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.66",
+                "file": "models\\factory.glb"
             }
         },
         "521": {
             "link": {
-                "name": "Mesh-uv1.92",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.67",
+                "file": "models\\factory.glb"
             }
         },
         "522": {
             "link": {
-                "name": "Mesh.93",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.68",
+                "file": "models\\factory.glb"
             }
         },
         "523": {
             "link": {
-                "name": "Mesh-uv1.93",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.69",
+                "file": "models\\factory.glb"
             }
         },
         "524": {
             "link": {
-                "name": "Mesh.94",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.70",
+                "file": "models\\factory.glb"
             }
         },
         "525": {
             "link": {
-                "name": "Mesh-uv1.94",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.71",
+                "file": "models\\factory.glb"
             }
         },
         "526": {
             "link": {
-                "name": "Mesh.95",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.72",
+                "file": "models\\factory.glb"
             }
         },
         "527": {
             "link": {
-                "name": "Mesh-uv1.95",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.73",
+                "file": "models\\factory.glb"
             }
         },
         "528": {
             "link": {
-                "name": "Mesh.96",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.74",
+                "file": "models\\factory.glb"
             }
         },
         "529": {
             "link": {
-                "name": "Mesh-uv1.96",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.75",
+                "file": "models\\factory.glb"
             }
         },
         "530": {
             "link": {
-                "name": "Mesh.006",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.76",
+                "file": "models\\factory.glb"
             }
         },
         "531": {
             "link": {
-                "name": "Mesh.007",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.77",
+                "file": "models\\factory.glb"
             }
         },
         "532": {
             "link": {
-                "name": "Mesh.008",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.78",
+                "file": "models\\factory.glb"
             }
         },
         "533": {
             "link": {
-                "name": "Challenge7 Exported NavMesh",
-                "file": "factory\\factory.glb"
+                "name": "Mesh-uv1.79",
+                "file": "models\\factory.glb"
+            }
+        },
+        "534": {
+            "link": {
+                "name": "Mesh-uv1.80",
+                "file": "models\\factory.glb"
+            }
+        },
+        "535": {
+            "link": {
+                "name": "Mesh-uv1.81",
+                "file": "models\\factory.glb"
+            }
+        },
+        "536": {
+            "link": {
+                "name": "Mesh-uv1.82",
+                "file": "models\\factory.glb"
+            }
+        },
+        "537": {
+            "link": {
+                "name": "Mesh-uv1.83",
+                "file": "models\\factory.glb"
+            }
+        },
+        "538": {
+            "link": {
+                "name": "Mesh-uv1.84",
+                "file": "models\\factory.glb"
+            }
+        },
+        "539": {
+            "link": {
+                "name": "Mesh-uv1.85",
+                "file": "models\\factory.glb"
+            }
+        },
+        "540": {
+            "link": {
+                "name": "Mesh-uv1.86",
+                "file": "models\\factory.glb"
+            }
+        },
+        "541": {
+            "link": {
+                "name": "Mesh-uv1.87",
+                "file": "models\\factory.glb"
+            }
+        },
+        "542": {
+            "link": {
+                "name": "Mesh-uv1.88",
+                "file": "models\\factory.glb"
+            }
+        },
+        "543": {
+            "link": {
+                "name": "Mesh-uv1.89",
+                "file": "models\\factory.glb"
+            }
+        },
+        "544": {
+            "link": {
+                "name": "Mesh-uv1.90",
+                "file": "models\\factory.glb"
+            }
+        },
+        "545": {
+            "link": {
+                "name": "Mesh-uv1.91",
+                "file": "models\\factory.glb"
+            }
+        },
+        "546": {
+            "link": {
+                "name": "Mesh-uv1.92",
+                "file": "models\\factory.glb"
+            }
+        },
+        "547": {
+            "link": {
+                "name": "Mesh-uv1.93",
+                "file": "models\\factory.glb"
+            }
+        },
+        "548": {
+            "link": {
+                "name": "Mesh-uv1.94",
+                "file": "models\\factory.glb"
+            }
+        },
+        "549": {
+            "link": {
+                "name": "Mesh-uv1.95",
+                "file": "models\\factory.glb"
+            }
+        },
+        "550": {
+            "link": {
+                "name": "Mesh-uv1.96",
+                "file": "models\\factory.glb"
             }
         }
     },
@@ -3433,46 +3580,46 @@
                 "file": "models\\oculus-touch-v2-right.glb"
             }
         },
-        "226": {
-            "link": {
-                "name": "texture_0",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "227": {
-            "link": {
-                "name": "texture_1",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "228": {
-            "link": {
-                "name": "texture_2",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "229": {
-            "link": {
-                "name": "texture_3",
-                "file": "factory\\factory.glb"
-            }
-        },
         "230": {
             "link": {
-                "name": "texture_4",
-                "file": "factory\\factory.glb"
+                "name": "texture_0",
+                "file": "models\\factory.glb"
             }
         },
         "231": {
             "link": {
-                "name": "texture_5",
-                "file": "factory\\factory.glb"
+                "name": "texture_1",
+                "file": "models\\factory.glb"
             }
         },
         "232": {
             "link": {
+                "name": "texture_2",
+                "file": "models\\factory.glb"
+            }
+        },
+        "233": {
+            "link": {
+                "name": "texture_3",
+                "file": "models\\factory.glb"
+            }
+        },
+        "234": {
+            "link": {
+                "name": "texture_4",
+                "file": "models\\factory.glb"
+            }
+        },
+        "235": {
+            "link": {
+                "name": "texture_5",
+                "file": "models\\factory.glb"
+            }
+        },
+        "236": {
+            "link": {
                 "name": "texture_93",
-                "file": "factory\\factory.glb"
+                "file": "models\\factory.glb"
             }
         }
     },
@@ -3523,46 +3670,46 @@
                 256
             ]
         },
-        "219": {
-            "link": {
-                "name": "Elements_4",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "220": {
-            "link": {
-                "name": "elements_5",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "221": {
-            "link": {
-                "name": "losttreasur_cfcb39c",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "222": {
-            "link": {
-                "name": "elements_3",
-                "file": "factory\\factory.glb"
-            }
-        },
         "223": {
             "link": {
-                "name": "elements_1",
-                "file": "factory\\factory.glb"
+                "name": "Elements_4",
+                "file": "models\\factory.glb"
             }
         },
         "224": {
             "link": {
-                "name": "elements_2",
-                "file": "factory\\factory.glb"
+                "name": "elements_5",
+                "file": "models\\factory.glb"
             }
         },
         "225": {
             "link": {
+                "name": "losttreasur_cfcb39c",
+                "file": "models\\factory.glb"
+            }
+        },
+        "226": {
+            "link": {
+                "name": "elements_3",
+                "file": "models\\factory.glb"
+            }
+        },
+        "227": {
+            "link": {
+                "name": "elements_1",
+                "file": "models\\factory.glb"
+            }
+        },
+        "228": {
+            "link": {
+                "name": "elements_2",
+                "file": "models\\factory.glb"
+            }
+        },
+        "229": {
+            "link": {
                 "name": "losttreasur_d16bfd3",
-                "file": "factory\\factory.glb"
+                "file": "models\\factory.glb"
             }
         }
     },
@@ -3801,696 +3948,804 @@
                 ]
             }
         },
-        "233": {
-            "link": {
-                "name": "elements4",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "234": {
-            "link": {
-                "name": "elements5",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "235": {
-            "link": {
-                "name": "sand",
-                "file": "factory\\factory.glb"
-            }
-        },
-        "236": {
-            "link": {
-                "name": "elements3",
-                "file": "factory\\factory.glb"
-            }
-        },
         "237": {
             "link": {
-                "name": "elements1",
-                "file": "factory\\factory.glb"
+                "name": "elements4",
+                "file": "models\\factory.glb"
             }
         },
         "238": {
             "link": {
-                "name": "elements2",
-                "file": "factory\\factory.glb"
+                "name": "elements5",
+                "file": "models\\factory.glb"
             }
         },
         "239": {
             "link": {
-                "name": "terrain",
-                "file": "factory\\factory.glb"
+                "name": "sand",
+                "file": "models\\factory.glb"
             }
         },
         "240": {
             "link": {
-                "name": "elements2_#78",
-                "file": "factory\\factory.glb"
+                "name": "elements3",
+                "file": "models\\factory.glb"
             }
         },
         "241": {
             "link": {
-                "name": "elements2_#3",
-                "file": "factory\\factory.glb"
+                "name": "elements1",
+                "file": "models\\factory.glb"
             }
         },
         "242": {
             "link": {
-                "name": "elements2_#68",
-                "file": "factory\\factory.glb"
+                "name": "elements2",
+                "file": "models\\factory.glb"
             }
         },
         "243": {
             "link": {
-                "name": "elements2_#23",
-                "file": "factory\\factory.glb"
+                "name": "terrain",
+                "file": "models\\factory.glb"
             }
         },
         "244": {
             "link": {
-                "name": "elements2_#65",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#78",
+                "file": "models\\factory.glb"
             }
         },
         "245": {
             "link": {
-                "name": "elements2_#30",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#3",
+                "file": "models\\factory.glb"
             }
         },
         "246": {
             "link": {
-                "name": "elements2_#25",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#68",
+                "file": "models\\factory.glb"
             }
         },
         "247": {
             "link": {
-                "name": "elements2_#41",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#23",
+                "file": "models\\factory.glb"
             }
         },
         "248": {
             "link": {
-                "name": "elements2_#7",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#65",
+                "file": "models\\factory.glb"
             }
         },
         "249": {
             "link": {
-                "name": "elements2_#52",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#30",
+                "file": "models\\factory.glb"
             }
         },
         "250": {
             "link": {
-                "name": "elements2_#37",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#25",
+                "file": "models\\factory.glb"
             }
         },
         "251": {
             "link": {
-                "name": "elements2_#69",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#41",
+                "file": "models\\factory.glb"
             }
         },
         "252": {
             "link": {
-                "name": "elements2_#36",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#7",
+                "file": "models\\factory.glb"
             }
         },
         "253": {
             "link": {
-                "name": "elements2_#18",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#52",
+                "file": "models\\factory.glb"
             }
         },
         "254": {
             "link": {
-                "name": "elements2_#16",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#37",
+                "file": "models\\factory.glb"
             }
         },
         "255": {
             "link": {
-                "name": "elements2_#66",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#69",
+                "file": "models\\factory.glb"
             }
         },
         "256": {
             "link": {
-                "name": "elements2_#35",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#36",
+                "file": "models\\factory.glb"
             }
         },
         "257": {
             "link": {
-                "name": "elements2_#39",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#18",
+                "file": "models\\factory.glb"
             }
         },
         "258": {
             "link": {
-                "name": "elements2_#63",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#16",
+                "file": "models\\factory.glb"
             }
         },
         "259": {
             "link": {
-                "name": "elements2_#70",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#66",
+                "file": "models\\factory.glb"
             }
         },
         "260": {
             "link": {
-                "name": "elements2_#42",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#35",
+                "file": "models\\factory.glb"
             }
         },
         "261": {
             "link": {
-                "name": "elements2_#26",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#39",
+                "file": "models\\factory.glb"
             }
         },
         "262": {
             "link": {
-                "name": "elements2_#73",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#63",
+                "file": "models\\factory.glb"
             }
         },
         "263": {
             "link": {
-                "name": "elements2_#2",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#70",
+                "file": "models\\factory.glb"
             }
         },
         "264": {
             "link": {
-                "name": "elements2_#5",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#42",
+                "file": "models\\factory.glb"
             }
         },
         "265": {
             "link": {
-                "name": "elements2_#13",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#26",
+                "file": "models\\factory.glb"
             }
         },
         "266": {
             "link": {
-                "name": "elements2_#71",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#73",
+                "file": "models\\factory.glb"
             }
         },
         "267": {
             "link": {
-                "name": "elements2_#54",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#2",
+                "file": "models\\factory.glb"
             }
         },
         "268": {
             "link": {
-                "name": "elements2_#17",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#5",
+                "file": "models\\factory.glb"
             }
         },
         "269": {
             "link": {
-                "name": "elements2_#15",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#13",
+                "file": "models\\factory.glb"
             }
         },
         "270": {
             "link": {
-                "name": "elements2_#43",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#71",
+                "file": "models\\factory.glb"
             }
         },
         "271": {
             "link": {
-                "name": "elements2_#61",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#54",
+                "file": "models\\factory.glb"
             }
         },
         "272": {
             "link": {
-                "name": "elements2_#19",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#17",
+                "file": "models\\factory.glb"
             }
         },
         "273": {
             "link": {
-                "name": "elements2_#75",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#15",
+                "file": "models\\factory.glb"
             }
         },
         "274": {
             "link": {
-                "name": "elements2_#74",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#43",
+                "file": "models\\factory.glb"
             }
         },
         "275": {
             "link": {
-                "name": "elements2_#8",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#61",
+                "file": "models\\factory.glb"
             }
         },
         "276": {
             "link": {
-                "name": "elements2_#62",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#19",
+                "file": "models\\factory.glb"
             }
         },
         "277": {
             "link": {
-                "name": "elements2_#67",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#75",
+                "file": "models\\factory.glb"
             }
         },
         "278": {
             "link": {
-                "name": "elements2_#45",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#74",
+                "file": "models\\factory.glb"
             }
         },
         "279": {
             "link": {
-                "name": "elements2_#46",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#8",
+                "file": "models\\factory.glb"
             }
         },
         "280": {
             "link": {
-                "name": "elements2_#24",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#62",
+                "file": "models\\factory.glb"
             }
         },
         "281": {
             "link": {
-                "name": "elements2_#34",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#67",
+                "file": "models\\factory.glb"
             }
         },
         "282": {
             "link": {
-                "name": "elements2_#64",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#45",
+                "file": "models\\factory.glb"
             }
         },
         "283": {
             "link": {
-                "name": "elements2_#22",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#46",
+                "file": "models\\factory.glb"
             }
         },
         "284": {
             "link": {
-                "name": "elements5_#9",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#24",
+                "file": "models\\factory.glb"
             }
         },
         "285": {
             "link": {
-                "name": "elements5_#6",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#34",
+                "file": "models\\factory.glb"
             }
         },
         "286": {
             "link": {
-                "name": "elements5_#20",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#64",
+                "file": "models\\factory.glb"
             }
         },
         "287": {
             "link": {
-                "name": "elements5_#18",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#22",
+                "file": "models\\factory.glb"
             }
         },
         "288": {
             "link": {
-                "name": "elements2_#28",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#9",
+                "file": "models\\factory.glb"
             }
         },
         "289": {
             "link": {
-                "name": "elements2_#40",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#6",
+                "file": "models\\factory.glb"
             }
         },
         "290": {
             "link": {
-                "name": "elements2_#4",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#20",
+                "file": "models\\factory.glb"
             }
         },
         "291": {
             "link": {
-                "name": "elements5_#4",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#18",
+                "file": "models\\factory.glb"
             }
         },
         "292": {
             "link": {
-                "name": "elements5_#16",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#28",
+                "file": "models\\factory.glb"
             }
         },
         "293": {
             "link": {
-                "name": "elements5_#7",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#40",
+                "file": "models\\factory.glb"
             }
         },
         "294": {
             "link": {
-                "name": "elements5_#11",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#4",
+                "file": "models\\factory.glb"
             }
         },
         "295": {
             "link": {
-                "name": "elements2_#51",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#4",
+                "file": "models\\factory.glb"
             }
         },
         "296": {
             "link": {
-                "name": "elements2_#44",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#16",
+                "file": "models\\factory.glb"
             }
         },
         "297": {
             "link": {
-                "name": "elements2_#21",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#7",
+                "file": "models\\factory.glb"
             }
         },
         "298": {
             "link": {
-                "name": "elements2_#11",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#11",
+                "file": "models\\factory.glb"
             }
         },
         "299": {
             "link": {
-                "name": "elements5_#12",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#51",
+                "file": "models\\factory.glb"
             }
         },
         "300": {
             "link": {
-                "name": "elements5_#10",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#44",
+                "file": "models\\factory.glb"
             }
         },
         "301": {
             "link": {
-                "name": "elements5_#15",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#21",
+                "file": "models\\factory.glb"
             }
         },
         "302": {
             "link": {
-                "name": "elements5_#14",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#11",
+                "file": "models\\factory.glb"
             }
         },
         "303": {
             "link": {
-                "name": "elements2_#33",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#12",
+                "file": "models\\factory.glb"
             }
         },
         "304": {
             "link": {
-                "name": "elements2_#57",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#10",
+                "file": "models\\factory.glb"
             }
         },
         "305": {
             "link": {
-                "name": "elements2_#80",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#15",
+                "file": "models\\factory.glb"
             }
         },
         "306": {
             "link": {
-                "name": "elements2_#27",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#14",
+                "file": "models\\factory.glb"
             }
         },
         "307": {
             "link": {
-                "name": "elements2_#14",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#33",
+                "file": "models\\factory.glb"
             }
         },
         "308": {
             "link": {
-                "name": "elements2_#10",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#57",
+                "file": "models\\factory.glb"
             }
         },
         "309": {
             "link": {
-                "name": "elements2_#49",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#80",
+                "file": "models\\factory.glb"
             }
         },
         "310": {
             "link": {
-                "name": "elements2_#56",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#27",
+                "file": "models\\factory.glb"
             }
         },
         "311": {
             "link": {
-                "name": "elements5_#13",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#14",
+                "file": "models\\factory.glb"
             }
         },
         "312": {
             "link": {
-                "name": "elements5_#2",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#10",
+                "file": "models\\factory.glb"
             }
         },
         "313": {
             "link": {
-                "name": "elements5_#19",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#49",
+                "file": "models\\factory.glb"
             }
         },
         "314": {
             "link": {
-                "name": "elements2_#76",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#56",
+                "file": "models\\factory.glb"
             }
         },
         "315": {
             "link": {
-                "name": "elements2_#72",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#13",
+                "file": "models\\factory.glb"
             }
         },
         "316": {
             "link": {
-                "name": "elements2_#32",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#2",
+                "file": "models\\factory.glb"
             }
         },
         "317": {
             "link": {
-                "name": "elements2_#6",
-                "file": "factory\\factory.glb"
+                "name": "elements5_#19",
+                "file": "models\\factory.glb"
             }
         },
         "318": {
             "link": {
-                "name": "elements2_#38",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#76",
+                "file": "models\\factory.glb"
             }
         },
         "319": {
             "link": {
-                "name": "elements2_#60",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#72",
+                "file": "models\\factory.glb"
             }
         },
         "320": {
             "link": {
-                "name": "elements2_#81",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#32",
+                "file": "models\\factory.glb"
             }
         },
         "321": {
             "link": {
-                "name": "elements2_#12",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#6",
+                "file": "models\\factory.glb"
             }
         },
         "322": {
             "link": {
-                "name": "elements2_#79",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#38",
+                "file": "models\\factory.glb"
             }
         },
         "323": {
             "link": {
-                "name": "elements2_#50",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#60",
+                "file": "models\\factory.glb"
             }
         },
         "324": {
             "link": {
-                "name": "elements2_#48",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#81",
+                "file": "models\\factory.glb"
             }
         },
         "325": {
             "link": {
-                "name": "terrain_#2",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#12",
+                "file": "models\\factory.glb"
             }
         },
         "326": {
             "link": {
-                "name": "terrain_#6",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#79",
+                "file": "models\\factory.glb"
             }
         },
         "327": {
             "link": {
-                "name": "terrain_#5",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#50",
+                "file": "models\\factory.glb"
             }
         },
         "328": {
             "link": {
-                "name": "terrain_#7",
-                "file": "factory\\factory.glb"
+                "name": "elements2_#48",
+                "file": "models\\factory.glb"
             }
         },
         "329": {
             "link": {
-                "name": "terrain_#4",
-                "file": "factory\\factory.glb"
+                "name": "terrain_#2",
+                "file": "models\\factory.glb"
             }
         },
         "330": {
             "link": {
-                "name": "elements3_4",
-                "file": "factory\\factory.glb"
+                "name": "terrain_#6",
+                "file": "models\\factory.glb"
             }
         },
         "331": {
             "link": {
-                "name": "elements3_5",
-                "file": "factory\\factory.glb"
+                "name": "terrain_#5",
+                "file": "models\\factory.glb"
             }
         },
         "332": {
             "link": {
-                "name": "elements3_6",
-                "file": "factory\\factory.glb"
+                "name": "terrain_#7",
+                "file": "models\\factory.glb"
             }
         },
         "333": {
             "link": {
+                "name": "terrain_#4",
+                "file": "models\\factory.glb"
+            }
+        },
+        "334": {
+            "link": {
+                "name": "elements3_4",
+                "file": "models\\factory.glb"
+            }
+        },
+        "335": {
+            "link": {
+                "name": "elements3_5",
+                "file": "models\\factory.glb"
+            }
+        },
+        "336": {
+            "link": {
+                "name": "elements3_6",
+                "file": "models\\factory.glb"
+            }
+        },
+        "337": {
+            "link": {
                 "name": "Default OBJ.001",
-                "file": "factory\\factory.glb"
+                "file": "models\\factory.glb"
             }
         }
     },
     "shaders": {
         "1": {
             "link": {
-                "name": "DistanceFieldVector Textured",
+                "name": "DistanceFieldVector Textured.frag",
                 "file": "default"
             }
         },
         "2": {
             "link": {
-                "name": "Flat",
+                "name": "Flat.frag",
                 "file": "default"
             }
         },
         "3": {
             "link": {
-                "name": "Flat Textured",
+                "name": "Flat Textured.frag",
                 "file": "default"
             }
         },
         "4": {
             "link": {
-                "name": "MeshVisualizer",
+                "name": "MeshVisualizer.frag",
                 "file": "default"
             }
         },
         "5": {
             "link": {
-                "name": "Phong",
+                "name": "Phong.frag",
                 "file": "default"
             }
         },
         "6": {
             "link": {
-                "name": "Phong Textured",
+                "name": "Phong Textured.frag",
                 "file": "default"
             }
         },
         "28": {
             "link": {
-                "name": "Dynamic",
+                "name": "Dynamic.vert",
                 "file": "default"
             }
         },
         "29": {
             "link": {
-                "name": "Particle Textured",
+                "name": "Particle Textured.frag",
                 "file": "default"
             }
         },
         "30": {
             "link": {
-                "name": "Skinning",
+                "name": "Skinning.vert",
                 "file": "default"
             }
         },
         "31": {
             "link": {
-                "name": "Static",
+                "name": "Static.frag",
                 "file": "default"
             }
         },
         "32": {
             "link": {
-                "name": "DistanceFieldVector",
+                "name": "DistanceFieldVector.frag",
                 "file": "default"
             }
         },
         "37": {
             "link": {
-                "name": "Particle",
+                "name": "Particle.frag",
                 "file": "default"
             }
         },
         "217": {
             "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "219": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        },
+        "220": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "445": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "446": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "447": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "448": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "449": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "450": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "451": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "452": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "551": {
+            "link": {
                 "name": "Depth",
+                "file": "default"
+            }
+        },
+        "552": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "553": {
+            "link": {
+                "name": "Dynamic",
+                "file": "default"
+            }
+        },
+        "554": {
+            "link": {
+                "name": "Flat",
+                "file": "default"
+            }
+        },
+        "555": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "556": {
+            "link": {
+                "name": "Skinning",
+                "file": "default"
+            }
+        },
+        "557": {
+            "link": {
+                "name": "Phong",
+                "file": "default"
+            }
+        },
+        "558": {
+            "link": {
+                "name": "Particle",
                 "file": "default"
             }
         }
     },
     "settings": {
         "project": {
-            "name": "Factory",
+            "name": "factory",
             "version": [
                 0,
                 8,
@@ -4514,6 +4769,9 @@
                     "local-floor": true
                 }
             }
+        },
+        "physx": {
+            "enable": true
         }
     },
     "animations": {},
@@ -4587,6 +4845,18 @@
                 "name": "Depth",
                 "file": "default"
             }
+        },
+        "221": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "222": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            }
         }
     },
     "files": [
@@ -4596,6 +4866,6 @@
         "models/hand-right.glb",
         "models/button.glb",
         "models/teleport-indicator.glb",
-        "factory/factory.glb"
+        "models/factory.glb"
     ]
 }
