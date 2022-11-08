@@ -170,10 +170,10 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.2,
-                        "range": 15.8999996,
+                        "attenuation": 0.0099999,
+                        "range": 40.0,
                         "type": "point",
-                        "shadows": false
+                        "shadows": true
                     },
                     "active": true
                 }
@@ -191,9 +191,9 @@
                 0.0,
                 1.0,
                 0.0,
-                -7.0492529,
-                3.8057847,
-                1.670251,
+                -1.202864,
+                3.6417806,
+                2.6687562,
                 1.0
             ]
         },
@@ -203,7 +203,8 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.1
+                        "attenuation": 0.05,
+                        "range": 40.0
                     },
                     "active": true
                 }
@@ -221,9 +222,9 @@
                 0.0,
                 1.0,
                 0.0,
-                -1.0,
-                3.0,
-                -1.0,
+                -7.0725474,
+                3.7008161,
+                1.6365301,
                 1.0
             ]
         },
@@ -1728,236 +1729,475 @@
             ],
             "parent": null
         },
-        "333": {
+        "386": {
             "link": {
                 "name": "RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "name": "Winter Scene"
+                "file": "models\\winter_scene.glb"
+            }
         },
-        "334": {
+        "387": {
             "link": {
                 "name": "RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
+                "file": "models\\winter_scene.glb"
             },
-            "parent": "333"
+            "parent": "386"
         },
-        "335": {
+        "388": {
             "link": {
                 "name": "Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
+                "file": "models\\winter_scene.glb"
             },
-            "parent": "334"
+            "parent": "387"
         },
-        "336": {
-            "link": {
-                "name": "Cylinder.008<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "335"
-        },
-        "337": {
-            "link": {
-                "name": "Cylinder.008_0<Cylinder.008<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "336"
-        },
-        "338": {
-            "link": {
-                "name": "Cube.035<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "335"
-        },
-        "339": {
-            "link": {
-                "name": "Cube.035_0<Cube.035<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "338"
-        },
-        "340": {
-            "link": {
-                "name": "Cylinder_Cylinder.009<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "335"
-        },
-        "341": {
-            "link": {
-                "name": "Cylinder_Cylinder.009_0<Cylinder_Cylinder.009<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "340"
-        },
-        "342": {
-            "link": {
-                "name": "Plane.001<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "335"
-        },
-        "343": {
-            "link": {
-                "name": "Plane.001_0<Plane.001<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "342"
-        },
-        "344": {
-            "link": {
-                "name": "Cylinder.000<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "335"
-        },
-        "345": {
-            "link": {
-                "name": "Cylinder.000_0<Cylinder.000<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "344"
-        },
-        "346": {
-            "link": {
-                "name": "Plane.009<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "335"
-        },
-        "347": {
-            "link": {
-                "name": "Plane.009_0<Plane.009<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "346"
-        },
-        "348": {
-            "link": {
-                "name": "Cylinder<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "335"
-        },
-        "349": {
-            "link": {
-                "name": "Cylinder_0<Cylinder<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "348"
-        },
-        "350": {
-            "link": {
-                "name": "Plane<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "335"
-        },
-        "351": {
-            "link": {
-                "name": "Plane_0<Plane<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "350"
-        },
-        "352": {
-            "link": {
-                "name": "Cylinder.002<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "335"
-        },
-        "353": {
-            "link": {
-                "name": "Cylinder.002_0<Cylinder.002<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "352"
-        },
-        "354": {
-            "link": {
-                "name": "Cylinder.001<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "335"
-        },
-        "355": {
-            "link": {
-                "name": "Cylinder.001_0<Cylinder.001<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "354"
-        },
-        "356": {
-            "link": {
-                "name": "Cylinder.003<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "335"
-        },
-        "357": {
-            "link": {
-                "name": "Cylinder.003_0<Cylinder.003<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "356"
-        },
-        "358": {
-            "link": {
-                "name": "Plane.012<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "335"
-        },
-        "359": {
-            "link": {
-                "name": "Plane.012_0<Plane.012<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "358"
-        },
-        "360": {
-            "link": {
-                "name": "Cube.005<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "335"
-        },
-        "361": {
-            "link": {
-                "name": "Cube.005_0<Cube.005<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
-            },
-            "parent": "360"
-        },
-        "362": {
+        "389": {
             "link": {
                 "name": "Cube<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
+                "file": "models\\winter_scene.glb"
             },
-            "parent": "335"
+            "parent": "388"
         },
-        "363": {
+        "390": {
             "link": {
                 "name": "Cube_0<Cube<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
+                "file": "models\\winter_scene.glb"
             },
-            "parent": "362"
+            "parent": "389"
         },
-        "364": {
+        "391": {
+            "link": {
+                "name": "Cube.005<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "388"
+        },
+        "392": {
+            "link": {
+                "name": "Cube.005_0<Cube.005<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "391"
+        },
+        "393": {
+            "link": {
+                "name": "Cube.035<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "388"
+        },
+        "394": {
+            "link": {
+                "name": "Cube.035_0<Cube.035<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "393"
+        },
+        "395": {
+            "link": {
+                "name": "Cylinder<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "388"
+        },
+        "396": {
+            "link": {
+                "name": "Cylinder_0<Cylinder<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "395",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.9999716,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.9999716,
+                0.0,
+                0.7077751,
+                1.1920928955078125e-7,
+                0.0000028,
+                1.0
+            ],
+            "components": [
+                null,
+                {
+                    "type": "text"
+                }
+            ]
+        },
+        "397": {
+            "link": {
+                "name": "Cylinder.000<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "388"
+        },
+        "398": {
+            "link": {
+                "name": "Cylinder.000_0<Cylinder.000<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "397"
+        },
+        "399": {
+            "link": {
+                "name": "Cylinder.001<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "388"
+        },
+        "400": {
+            "link": {
+                "name": "Cylinder.001_0<Cylinder.001<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "399"
+        },
+        "401": {
+            "link": {
+                "name": "Cylinder.002<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "388"
+        },
+        "402": {
+            "link": {
+                "name": "Cylinder.002_0<Cylinder.002<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "401"
+        },
+        "403": {
+            "link": {
+                "name": "Cylinder.003<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "388"
+        },
+        "404": {
+            "link": {
+                "name": "Cylinder.003_0<Cylinder.003<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "403"
+        },
+        "405": {
+            "link": {
+                "name": "Cylinder.008<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "388"
+        },
+        "406": {
+            "link": {
+                "name": "Cylinder.008_0<Cylinder.008<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "405"
+        },
+        "407": {
+            "link": {
+                "name": "Cylinder_Cylinder.009<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "388"
+        },
+        "408": {
+            "link": {
+                "name": "Cylinder_Cylinder.009_0<Cylinder_Cylinder.009<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "407"
+        },
+        "409": {
+            "link": {
+                "name": "Plane<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "388"
+        },
+        "410": {
+            "link": {
+                "name": "Plane_0<Plane<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "409"
+        },
+        "411": {
+            "link": {
+                "name": "Plane.001<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "388"
+        },
+        "412": {
+            "link": {
+                "name": "Plane.001_0<Plane.001<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "411"
+        },
+        "413": {
             "link": {
                 "name": "Plane.002<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
+                "file": "models\\winter_scene.glb"
             },
-            "parent": "335"
+            "parent": "388"
         },
-        "365": {
+        "414": {
             "link": {
                 "name": "Plane.002_0<Plane.002<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
-                "file": "models\\low_poly_winter_scene\\scene.gltf"
+                "file": "models\\winter_scene.glb"
             },
-            "parent": "364"
+            "parent": "413"
+        },
+        "415": {
+            "link": {
+                "name": "Plane.009<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "388"
+        },
+        "416": {
+            "link": {
+                "name": "Plane.009_0<Plane.009<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "415"
+        },
+        "417": {
+            "link": {
+                "name": "Plane.012<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "388"
+        },
+        "418": {
+            "link": {
+                "name": "Plane.012_0<Plane.012<Root<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "models\\winter_scene.glb"
+            },
+            "parent": "417"
+        },
+        "419": {
+            "link": {
+                "name": "root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "420": {
+            "link": {
+                "name": "controller<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "421": {
+            "link": {
+                "name": "thumbrest_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "422": {
+            "link": {
+                "name": "thumbrest_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "423": {
+            "link": {
+                "name": "thumbrest_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "424": {
+            "link": {
+                "name": "x_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "425": {
+            "link": {
+                "name": "x_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "426": {
+            "link": {
+                "name": "x_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "427": {
+            "link": {
+                "name": "x_button<x_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "426"
+        },
+        "428": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "429": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "430": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "431": {
+            "link": {
+                "name": "squeeze<xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "430"
+        },
+        "432": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "433": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "434": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "435": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_max<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "434"
+        },
+        "436": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_min<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "434"
+        },
+        "437": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "434"
+        },
+        "438": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_max<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "437"
+        },
+        "439": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_min<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "437"
+        },
+        "440": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "437"
+        },
+        "441": {
+            "link": {
+                "name": "thumbstick<xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "440"
+        },
+        "442": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "443": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "444": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "445": {
+            "link": {
+                "name": "trigger<xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "444"
+        },
+        "446": {
+            "link": {
+                "name": "y_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "447": {
+            "link": {
+                "name": "y_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "448": {
+            "link": {
+                "name": "y_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "419"
+        },
+        "449": {
+            "link": {
+                "name": "y_button<y_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "448"
         }
     },
     "meshes": {
@@ -2885,7 +3125,7 @@
             "version": [
                 0,
                 9,
-                2
+                3
             ]
         },
         "vr": {
@@ -3022,7 +3262,12 @@
             "link": {
                 "name": "Phong Opaque Textured",
                 "file": "default"
-            }
+            },
+            "features": {
+                "ALPHA": true,
+                "ALPHA_MASKED": true
+            },
+            "castShadows": false
         },
         "39": {
             "link": {
