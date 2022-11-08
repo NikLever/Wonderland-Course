@@ -21,83 +21,6 @@
                 1.0
             ]
         },
-        "15": {
-            "name": "FloorPlane",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "7",
-                        "material": "20"
-                    },
-                    "active": true
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                4.0,
-                                0.05,
-                                4.0
-                            ]
-                        },
-                        "groups": 4
-                    }
-                }
-            ],
-            "transformation": [
-                4.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                -0.0016164,
-                -3.9999997,
-                0.0,
-                0.0,
-                3.9999997,
-                -0.0016164,
-                0.0,
-                0.0,
-                0.0,
-                1.192092895507813e-7,
-                1.0
-            ],
-            "deleted": true
-        },
-        "16": {
-            "name": "Cube",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "22"
-                    }
-                }
-            ],
-            "transformation": [
-                0.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.5,
-                0.0,
-                2.9802322387695329e-8,
-                0.4999999,
-                5.960464477539065e-8,
-                1.0
-            ],
-            "deleted": true
-        },
         "17": {
             "name": "NonVrCamera",
             "parent": "205",
@@ -210,7 +133,8 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.1
+                        "attenuation": 0.0099999,
+                        "range": 40.0
                     }
                 }
             ],
@@ -262,68 +186,6 @@
                 1.0
             ]
         },
-        "24": {
-            "name": "Cone",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "10",
-                        "material": "25"
-                    }
-                }
-            ],
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                1.5,
-                1.0,
-                -1.4901161193847657e-8,
-                1.0
-            ],
-            "deleted": true
-        },
-        "27": {
-            "name": "Sphere",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "26"
-                    }
-                }
-            ],
-            "transformation": [
-                0.75,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.75,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.75,
-                0.0,
-                0.4999999,
-                0.75,
-                -1.25,
-                1.0
-            ],
-            "deleted": true
-        },
         "53": {
             "link": {
                 "name": "root",
@@ -333,10 +195,10 @@
             "name": "ControllerModelLeft",
             "transformation": [
                 -0.9999998,
-                2.9802311729554277e-8,
+                2.9802311729554276e-8,
                 -5.960464477539065e-8,
                 0.0,
-                -2.9802322387695329e-8,
+                -2.9802322387695326e-8,
                 0.0706573,
                 0.9975006,
                 0.0,
@@ -577,7 +439,7 @@
                 0.0,
                 8.344650268554688e-7,
                 0.0,
-                -1.4901161193847657e-8,
+                -1.4901161193847656e-8,
                 0.9990808,
                 -0.0251145,
                 0.0,
@@ -857,38 +719,6 @@
                 1.0
             ]
         },
-        "127": {
-            "name": "3DCursorHitLeft",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "128"
-                    }
-                }
-            ],
-            "transformation": [
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0099999,
-                0.0,
-                0.0,
-                0.0388118,
-                1.5585095,
-                1.0
-            ],
-            "parent": null,
-            "deleted": true
-        },
         "129": {
             "name": "ControllerRight",
             "parent": "205",
@@ -1058,7 +888,10 @@
             "parent": "134",
             "components": [
                 {
-                    "active": true
+                    "active": true,
+                    "mesh": {
+                        "skin": "133"
+                    }
                 }
             ]
         },
@@ -1088,105 +921,120 @@
                 "name": "pinky-finger-tip<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "140": {
             "link": {
                 "name": "pinky-finger-phalanx-distal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "141": {
             "link": {
                 "name": "pinky-finger-phalanx-intermediate<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "142": {
             "link": {
                 "name": "pinky-finger-phalanx-proximal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "143": {
             "link": {
                 "name": "pinky-finger-metacarpal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "144": {
             "link": {
                 "name": "ring-finger-tip<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "145": {
             "link": {
                 "name": "ring-finger-phalanx-distal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "146": {
             "link": {
                 "name": "ring-finger-phalanx-intermediate<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "147": {
             "link": {
                 "name": "ring-finger-phalanx-proximal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "148": {
             "link": {
                 "name": "ring-finger-metacarpal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "149": {
             "link": {
                 "name": "middle-finger-tip<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "150": {
             "link": {
                 "name": "middle-finger-phalanx-distal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "151": {
             "link": {
                 "name": "middle-finger-phalanx-intermediate<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "152": {
             "link": {
                 "name": "middle-finger-phalanx-proximal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "153": {
             "link": {
                 "name": "middle-finger-metacarpal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "154": {
             "link": {
@@ -1207,70 +1055,80 @@
                         "groups": 2
                     }
                 }
-            ]
+            ],
+            "skin": "133"
         },
         "155": {
             "link": {
                 "name": "index-finger-phalanx-distal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "156": {
             "link": {
                 "name": "index-finger-phalanx-intermediate<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "157": {
             "link": {
                 "name": "index-finger-phalanx-proximal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "158": {
             "link": {
                 "name": "index-finger-metacarpal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "159": {
             "link": {
                 "name": "thumb-tip<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "160": {
             "link": {
                 "name": "thumb-phalanx-distal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "161": {
             "link": {
                 "name": "thumb-phalanx-proximal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "162": {
             "link": {
                 "name": "thumb-metacarpal<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "163": {
             "link": {
                 "name": "wrist<Armature",
                 "file": "models\\hand-left.glb"
             },
-            "parent": "134"
+            "parent": "134",
+            "skin": "133"
         },
         "167": {
             "link": {
@@ -1318,70 +1176,86 @@
                 "name": "r_handMeshNode<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "components": [
+                {
+                    "mesh": {
+                        "skin": "166"
+                    }
+                }
+            ]
         },
         "169": {
             "link": {
                 "name": "wrist<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "170": {
             "link": {
                 "name": "thumb-metacarpal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "171": {
             "link": {
                 "name": "thumb-phalanx-proximal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "172": {
             "link": {
                 "name": "thumb-phalanx-distal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "173": {
             "link": {
                 "name": "thumb-tip<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "174": {
             "link": {
                 "name": "index-finger-metacarpal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "175": {
             "link": {
                 "name": "index-finger-phalanx-proximal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "176": {
             "link": {
                 "name": "index-finger-phalanx-intermediate<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "177": {
             "link": {
                 "name": "index-finger-phalanx-distal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "178": {
             "link": {
@@ -1402,320 +1276,128 @@
                 {
                     "type": "finger-cursor"
                 }
-            ]
+            ],
+            "skin": "166"
         },
         "179": {
             "link": {
                 "name": "middle-finger-metacarpal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "180": {
             "link": {
                 "name": "middle-finger-phalanx-proximal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "181": {
             "link": {
                 "name": "middle-finger-phalanx-intermediate<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "182": {
             "link": {
                 "name": "middle-finger-phalanx-distal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "183": {
             "link": {
                 "name": "middle-finger-tip<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "184": {
             "link": {
                 "name": "ring-finger-metacarpal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "185": {
             "link": {
                 "name": "ring-finger-phalanx-proximal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "186": {
             "link": {
                 "name": "ring-finger-phalanx-intermediate<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "187": {
             "link": {
                 "name": "ring-finger-phalanx-distal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "188": {
             "link": {
                 "name": "ring-finger-tip<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "189": {
             "link": {
                 "name": "pinky-finger-metacarpal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "190": {
             "link": {
                 "name": "pinky-finger-phalanx-proximal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "191": {
             "link": {
                 "name": "pinky-finger-phalanx-intermediate<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "192": {
             "link": {
                 "name": "pinky-finger-phalanx-distal<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
+            "parent": "167",
+            "skin": "166"
         },
         "193": {
             "link": {
                 "name": "pinky-finger-tip<Armature",
                 "file": "models\\hand-right.glb"
             },
-            "parent": "167"
-        },
-        "194": {
-            "name": "Panel",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "195",
-                        "material": "202"
-                    }
-                }
-            ],
-            "transformation": [
-                0.25,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.062447,
-                0.1082836,
-                0.0,
-                0.0,
-                -0.2165673,
-                0.1248941,
-                0.0,
-                -2.5,
-                1.2,
-                0.0,
-                1.0
-            ],
-            "deleted": true
-        },
-        "196": {
-            "link": {
-                "name": "Cube",
-                "file": "models\\button.glb"
-            },
-            "parent": "197",
-            "components": [
-                {
-                    "mesh": {
-                        "material": "26"
-                    }
-                }
-            ],
-            "name": "ButtonMesh",
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.999999,
-                0.0000012,
-                0.0,
-                0.0,
-                -0.0000019,
-                0.999999,
-                0.0,
-                -0.0000095,
-                0.3244419,
-                -0.0000677,
-                1.0
-            ],
-            "deleted": true
-        },
-        "197": {
-            "name": "Button",
-            "parent": "194",
-            "transformation": [
-                0.4,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.4999999,
-                -0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.3,
-                0.0,
-                0.0,
-                0.057682,
-                0.1754341,
-                1.0
-            ],
-            "components": [
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "box",
-                        "box": {
-                            "extents": [
-                                0.0974999,
-                                0.025,
-                                0.045
-                            ]
-                        },
-                        "groups": 251
-                    }
-                },
-                {
-                    "type": "cursor-target"
-                },
-                {
-                    "type": "button",
-                    "button": {
-                        "buttonMeshObject": "196",
-                        "hoverMaterial": "203"
-                    }
-                }
-            ],
-            "deleted": true
-        },
-        "198": {
-            "name": "ButtonLabel",
-            "parent": "196",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Thanks!"
-                    }
-                }
-            ],
-            "transformation": [
-                2.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0031942,
-                -3.7999985,
-                0.0,
-                0.0,
-                4.8000044,
-                0.0040349,
-                0.0,
-                -0.0001564,
-                0.108458,
-                0.0000047,
-                1.0
-            ],
-            "deleted": true
-        },
-        "200": {
-            "name": "Title",
-            "parent": "194",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Welcome to\nWonderland",
-                        "material": "201"
-                    }
-                }
-            ],
-            "transformation": [
-                1.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0021012,
-                -2.9999995,
-                0.0,
-                0.0,
-                1.4999996,
-                0.0010506,
-                0.0,
-                -0.0000023,
-                0.1554994,
-                -0.3034151,
-                1.0
-            ],
-            "deleted": true
-        },
-        "204": {
-            "name": "TeleportTarget",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "11",
-                        "material": "128"
-                    }
-                }
-            ],
-            "transformation": [
-                0.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.5,
-                0.0,
-                0.0311205,
-                0.0,
-                1.2337659,
-                1.0
-            ],
-            "deleted": true
+            "parent": "167",
+            "skin": "166"
         },
         "205": {
             "name": "TrackedSpace",
@@ -1743,31 +1425,6 @@
                     "type": "player-height"
                 }
             ]
-        },
-        "208": {
-            "link": {
-                "name": "TeleportIndicator",
-                "file": "models\\teleport-indicator.glb"
-            },
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0099999,
-                1.3311299,
-                1.0
-            ],
-            "deleted": true
         },
         "209": {
             "name": "CursorRayLeft",
@@ -1821,16 +1478,6 @@
                 0.0,
                 1.0
             ]
-        },
-        "211": {
-            "name": "CursorRight",
-            "parent": "205",
-            "components": [
-                {
-                    "type": "cursor"
-                }
-            ],
-            "deleted": true
         },
         "212": {
             "name": "CursorRight",
@@ -1936,85 +1583,6 @@
                 1.0
             ]
         },
-        "215": {
-            "name": "3DCursorHitRight",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "128"
-                    }
-                }
-            ],
-            "transformation": [
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "parent": null,
-            "deleted": true
-        },
-        "216": {
-            "name": "FloorPlane",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "7",
-                        "material": "20"
-                    },
-                    "active": true
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                1.0,
-                                0.05,
-                                1.0
-                            ]
-                        },
-                        "groups": 4
-                    }
-                }
-            ],
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                -0.0004041,
-                -0.9999999,
-                0.0,
-                0.0,
-                0.9999999,
-                -0.0004041,
-                0.0,
-                0.0,
-                -4.76837158203125e-7,
-                -6.5,
-                1.0
-            ],
-            "parent": null,
-            "deleted": true
-        },
         "534": {
             "link": {
                 "name": "environment:main",
@@ -2045,22 +1613,27 @@
                 "file": "factory\\factory.glb"
             },
             "transformation": [
-                0.8765776,
-                -2.9802322387695315e-8,
-                -0.4812605,
+                1.0,
+                -5.099774824657288e-8,
                 0.0,
-                0.4812605,
-                -1.9371512394172897e-7,
-                0.8765777,
                 0.0,
-                -1.0430814256778831e-7,
-                -1.0000001,
-                -1.6018749704471703e-7,
+                -0.0,
+                -1.1920928955078125e-7,
+                0.9999999,
+                0.0,
+                -5.099775535200024e-8,
+                -1.0,
+                -1.1920930376163597e-7,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
                 1.0
+            ],
+            "components": [
+                {
+                    "active": false
+                }
             ]
         }
     },
@@ -3404,7 +2977,7 @@
     "textures": {
         "t0": {
             "link": {
-                "name": "DefaultFont",
+                "name": "DefaultTexture",
                 "file": "default"
             },
             "name": "DefaultFont"
@@ -3459,13 +3032,13 @@
         },
         "230": {
             "link": {
-                "name": "texture_4",
+                "name": "texture_0",
                 "file": "factory\\factory.glb"
             }
         },
         "231": {
             "link": {
-                "name": "texture_5",
+                "name": "texture_1",
                 "file": "factory\\factory.glb"
             }
         },
@@ -3474,12 +3047,24 @@
                 "name": "texture_93",
                 "file": "factory\\factory.glb"
             }
+        },
+        "550": {
+            "link": {
+                "name": "texture_4",
+                "file": "factory\\factory.glb"
+            }
+        },
+        "551": {
+            "link": {
+                "name": "texture_5",
+                "file": "factory\\factory.glb"
+            }
         }
     },
     "images": {
         "f0": {
             "link": {
-                "name": "DefaultFontImage",
+                "name": "DefaultImage",
                 "file": "default"
             }
         },
@@ -3572,13 +3157,8 @@
                 "name": "DefaultFontMaterial",
                 "file": "default"
             },
-            "DistanceFieldVector": {
-                "outlineRange": [
-                    0.4499999,
-                    0.4499999
-                ],
-                "smoothness": 0.0299999,
-                "outlineColor": [
+            "Text": {
+                "effectColor": [
                     1.0,
                     1.0,
                     1.0,
@@ -3591,9 +3171,9 @@
             "shader": "Phong",
             "Phong": {
                 "specularColor": [
-                    9.999899930335233e-7,
+                    9.999899930335232e-7,
                     9.99993744699168e-7,
-                    9.999999974752428e-7,
+                    9.999999974752427e-7,
                     1.0
                 ],
                 "shininess": 1
@@ -3609,9 +3189,9 @@
                     1.0
                 ],
                 "specularColor": [
-                    9.999899930335233e-7,
-                    9.999911299019005e-7,
-                    9.999999974752428e-7,
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
                     1.0
                 ],
                 "shininess": 10,
@@ -3633,9 +3213,9 @@
                     1.0
                 ],
                 "specularColor": [
-                    9.999999974752428e-7,
-                    9.999899930335233e-7,
-                    9.999899930335233e-7,
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
                     1.0
                 ],
                 "ambientColor": [
@@ -3656,9 +3236,9 @@
                     1.0
                 ],
                 "specularColor": [
-                    9.999999974752428e-7,
-                    9.999899930335233e-7,
-                    9.999899930335233e-7,
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
                     1.0
                 ],
                 "ambientColor": [
@@ -3688,9 +3268,9 @@
             "shader": "Phong",
             "Phong": {
                 "specularColor": [
-                    9.999899930335233e-7,
+                    9.999899930335232e-7,
                     9.99993744699168e-7,
-                    9.999999974752428e-7,
+                    9.999999974752427e-7,
                     1.0
                 ],
                 "shininess": 1
@@ -3717,16 +3297,12 @@
                 "file": "default"
             },
             "name": "TextAccent",
-            "DistanceFieldVector": {
+            "Text": {
                 "color": [
                     0.9098039,
                     0.0,
                     0.5411764,
                     1.0
-                ],
-                "outlineRange": [
-                    0.4,
-                    0.4
                 ]
             }
         },
@@ -3735,9 +3311,9 @@
             "shader": "Phong",
             "Phong": {
                 "specularColor": [
-                    9.999899930335233e-7,
+                    9.999899930335232e-7,
                     9.99993744699168e-7,
-                    9.999999974752428e-7,
+                    9.999999974752427e-7,
                     1.0
                 ],
                 "shininess": 1,
@@ -3765,9 +3341,9 @@
                     1.0
                 ],
                 "specularColor": [
-                    9.999999974752428e-7,
-                    9.999899930335233e-7,
-                    9.999899930335233e-7,
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
                     1.0
                 ],
                 "ambientColor": [
@@ -4411,79 +3987,121 @@
     "shaders": {
         "1": {
             "link": {
-                "name": "DistanceFieldVector Textured",
+                "name": "DistanceFieldVector Textured.frag",
                 "file": "default"
             }
         },
         "2": {
             "link": {
-                "name": "Flat",
+                "name": "Flat.frag",
                 "file": "default"
             }
         },
         "3": {
             "link": {
-                "name": "Flat Textured",
+                "name": "Flat Textured.frag",
                 "file": "default"
             }
         },
         "4": {
             "link": {
-                "name": "MeshVisualizer",
+                "name": "MeshVisualizer.frag",
                 "file": "default"
             }
         },
         "5": {
             "link": {
-                "name": "Phong",
+                "name": "Phong.frag",
                 "file": "default"
             }
         },
         "6": {
             "link": {
-                "name": "Phong Textured",
+                "name": "Phong Textured.frag",
                 "file": "default"
             }
         },
         "28": {
             "link": {
-                "name": "Dynamic",
+                "name": "Dynamic.vert",
                 "file": "default"
             }
         },
         "29": {
             "link": {
-                "name": "Particle Textured",
+                "name": "Particle Textured.frag",
                 "file": "default"
             }
         },
         "30": {
             "link": {
-                "name": "Skinning",
+                "name": "Skinning.vert",
                 "file": "default"
             }
         },
         "31": {
             "link": {
-                "name": "Static",
+                "name": "Static.frag",
                 "file": "default"
             }
         },
         "32": {
             "link": {
-                "name": "DistanceFieldVector",
+                "name": "DistanceFieldVector.frag",
                 "file": "default"
             }
         },
         "37": {
             "link": {
-                "name": "Particle",
+                "name": "Particle.frag",
                 "file": "default"
             }
         },
         "217": {
             "link": {
-                "name": "Depth",
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "539": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "540": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "541": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "544": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "545": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "547": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "548": {
+            "link": {
+                "name": "TileFeedback.frag",
                 "file": "default"
             }
         }
@@ -4493,8 +4111,8 @@
             "name": "Factory",
             "version": [
                 0,
-                8,
-                10
+                9,
+                3
             ]
         },
         "vr": {
@@ -4523,14 +4141,68 @@
                 "name": "Armature",
                 "file": "models\\hand-left.glb"
             },
-            "name": "HandLeftSkin"
+            "name": "HandLeftSkin",
+            "joints": [
+                "139",
+                "140",
+                "141",
+                "142",
+                "143",
+                "144",
+                "145",
+                "146",
+                "147",
+                "148",
+                "149",
+                "150",
+                "151",
+                "152",
+                "153",
+                "154",
+                "155",
+                "156",
+                "157",
+                "158",
+                "159",
+                "160",
+                "161",
+                "162",
+                "163"
+            ]
         },
         "166": {
             "link": {
                 "name": "Armature",
                 "file": "models\\hand-right.glb"
             },
-            "name": "HandRightSkin"
+            "name": "HandRightSkin",
+            "joints": [
+                "169",
+                "170",
+                "171",
+                "172",
+                "173",
+                "174",
+                "175",
+                "176",
+                "177",
+                "178",
+                "179",
+                "180",
+                "181",
+                "182",
+                "183",
+                "184",
+                "185",
+                "186",
+                "187",
+                "188",
+                "189",
+                "190",
+                "191",
+                "192",
+                "193"
+            ]
         }
     },
     "pipelines": {
@@ -4585,6 +4257,30 @@
         "218": {
             "link": {
                 "name": "Depth",
+                "file": "default"
+            }
+        },
+        "542": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "543": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            }
+        },
+        "546": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "549": {
+            "link": {
+                "name": "Sky",
                 "file": "default"
             }
         }
