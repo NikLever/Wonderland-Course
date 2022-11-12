@@ -15,9 +15,9 @@
                 0.0,
                 0.9999998,
                 0.0,
-                -2.5,
                 0.0,
-                1.1575536,
+                0.0,
+                1.1575535,
                 1.0
             ]
         },
@@ -47,7 +47,7 @@
                 0.0,
                 2.9802322387695313e-8,
                 0.0,
-                5.960464477539063e-8,
+                0.0,
                 1.0
             ],
             "parent": "230"
@@ -715,18 +715,6 @@
                     "type": "input",
                     "input": {
                         "type": "ray left"
-                    }
-                },
-                {
-                    "type": "teleport",
-                    "teleport": {
-                        "floorGroup": 2,
-                        "camRoot": "14",
-                        "cam": "17",
-                        "teleportIndicatorMeshObject": "208",
-                        "indicatorYOffset": 0.0099999,
-                        "eyeLeft": "18",
-                        "eyeRight": "19"
                     }
                 }
             ],
@@ -1730,18 +1718,6 @@
                     "input": {
                         "type": "ray right"
                     }
-                },
-                {
-                    "type": "teleport",
-                    "teleport": {
-                        "floorGroup": 2,
-                        "camRoot": "14",
-                        "cam": "17",
-                        "teleportIndicatorMeshObject": "208",
-                        "indicatorYOffset": 0.0099999,
-                        "eyeLeft": "18",
-                        "eyeRight": "19"
-                    }
                 }
             ],
             "transformation": [
@@ -1848,7 +1824,33 @@
             "parent": null
         },
         "230": {
-            "name": "Block"
+            "name": "Block",
+            "components": [
+                {
+                    "type": "blockHandler",
+                    "blockHandler": {
+                        "vrCamera": "18"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                1.5059324,
+                -4.4060912,
+                1.0
+            ]
         }
     },
     "meshes": {
