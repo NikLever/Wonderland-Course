@@ -30,6 +30,9 @@
                         "mesh": "8",
                         "material": "22"
                     }
+                },
+                {
+                    "type": "test"
                 }
             ],
             "transformation": [
