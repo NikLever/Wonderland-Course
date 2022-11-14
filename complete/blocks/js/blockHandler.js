@@ -28,7 +28,7 @@ WL.registerComponent('blockHandler', {
         this.countText.text = this.count.toString();
         console.log(`count=${this.count}`);
     },
-    spawn: function() {
+    spawn: function() { 
         if ( this.vrCamera == null ) return;
         this.vrCamera.getForward( this.direction );
         glMatrix.vec3.copy( this.tmpVec, this.direction );
