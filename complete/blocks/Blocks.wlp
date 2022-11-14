@@ -30,9 +30,6 @@
                         "mesh": "8",
                         "material": "22"
                     }
-                },
-                {
-                    "type": "test"
                 }
             ],
             "transformation": [
@@ -1478,7 +1475,7 @@
                 0.0,
                 0.0,
                 1.3364075,
-                1.7881393432617188e-7,
+                1.788139343261719e-7,
                 1.0
             ]
         },
@@ -2516,7 +2513,6 @@
         "models/oculus-touch-v2-right.glb",
         "models/hand-left.glb",
         "models/hand-right.glb",
-        "models/button.glb",
-        "models/teleport-indicator.glb"
+        "models/button.glb"
     ]
 }

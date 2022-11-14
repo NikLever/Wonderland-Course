@@ -4,15 +4,20 @@ WL.registerComponent('blockHandler', {
     countTextObject: {type: WL.Type.Object, default: null}
 }, {
     init: function() {
+        /*if (this.vrCamera == null){
+            console.warning('blockHandler needs a vrCamera assigning');
+            this.active = false;
+            return;
+        }*/
         this.rotation = glMatrix.quat.create();
         glMatrix.quat.fromEuler(this.rotation, 1, 1, 0);
-        this.tmpQuat = glMatrix.quat.create();
-        this.cube = this.object.children[0];
+        this.tmpQuat = glMatrix.quat.create();  
         this.direction = glMatrix.vec3.create();
         this.tmpVec = glMatrix.vec3.create();
         this.tmpVec1 = glMatrix.vec3.create();
     },
     start: function() {
+        this.cube = this.object.children[0];
         this.count = 0;
         if (this.countTextObject) this.countText = this.countTextObject.getComponent('text');
         this.updateCount(); 
@@ -20,7 +25,7 @@ WL.registerComponent('blockHandler', {
     },
     updateCount: function(){
         if (this.countText == null) return;
-        this.countText.text = this.count;
+        this.countText.text = this.count.toString();
         console.log(`count=${this.count}`);
     },
     spawn: function() {
@@ -31,8 +36,7 @@ WL.registerComponent('blockHandler', {
         this.vrCamera.getTranslationWorld( this.tmpVec1 );
         glMatrix.vec3.add( this.tmpVec, this.tmpVec, this.tmpVec1 );
         this.object.setTranslationWorld( this.tmpVec );
-        glMatrix.vec3.negate( this.direction, this.direction );
-        glMatrix.vec3.scale( this.direction, this.direction, this.speed );
+        glMatrix.vec3.scale( this.direction, this.direction, -this.speed );
         this.count++;
         this.updateCount();
     },

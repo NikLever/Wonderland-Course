@@ -176,6 +176,9 @@
                         "shadows": true
                     },
                     "active": true
+                },
+                {
+                    "type": "howler-audio-source"
                 }
             ],
             "transformation": [
@@ -1983,221 +1986,1222 @@
             },
             "parent": "417"
         },
-        "419": {
+        "454": {
             "link": {
-                "name": "root",
-                "file": "models\\oculus-touch-v2-left.glb"
-            }
-        },
-        "420": {
-            "link": {
-                "name": "controller<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "Snowman",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "components": [
+                {
+                    "mesh": {
+                        "skin": "453"
+                    }
+                },
+                {
+                    "type": "animation",
+                    "animation": {
+                        "animation": "612",
+                        "preview": false
+                    }
+                }
+            ],
+            "transformation": [
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                -0.0282073,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "parent": "613"
         },
-        "421": {
+        "455": {
             "link": {
-                "name": "thumbrest_pressed_max<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "skin": "453",
+            "transformation": [
+                0.9990297,
+                0.0362647,
+                -0.0249871,
+                0.0,
+                -0.0366406,
+                0.9992195,
+                -0.0147519,
+                0.0,
+                0.0244326,
+                0.0156531,
+                0.9995788,
+                0.0,
+                -0.0062111,
+                0.8962696,
+                -0.0107846,
+                1.0
+            ],
+            "parent": "613"
         },
-        "422": {
+        "456": {
             "link": {
-                "name": "thumbrest_pressed_min<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "455"
         },
-        "423": {
+        "457": {
             "link": {
-                "name": "thumbrest_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "456"
         },
-        "424": {
+        "458": {
             "link": {
-                "name": "x_button_pressed_max<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "457"
         },
-        "425": {
+        "459": {
             "link": {
-                "name": "x_button_pressed_min<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "458",
+            "skin": "453"
         },
-        "426": {
+        "460": {
             "link": {
-                "name": "x_button_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "459",
+            "skin": "453"
         },
-        "427": {
+        "461": {
             "link": {
-                "name": "x_button<x_button_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "426"
+            "parent": "460",
+            "skin": "453"
         },
-        "428": {
+        "462": {
             "link": {
-                "name": "xr_standard_squeeze_pressed_max<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:Neck_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "461"
         },
-        "429": {
+        "463": {
             "link": {
-                "name": "xr_standard_squeeze_pressed_min<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:Neck_$AssimpFbx$_PreRotation<mixamorig:Neck_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "462"
         },
-        "430": {
+        "464": {
             "link": {
-                "name": "xr_standard_squeeze_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:Neck_$AssimpFbx$_Rotation<mixamorig:Neck_$AssimpFbx$_PreRotation<mixamorig:Neck_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "463"
         },
-        "431": {
+        "465": {
             "link": {
-                "name": "squeeze<xr_standard_squeeze_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:Neck<mixamorig:Neck_$AssimpFbx$_Rotation<mixamorig:Neck_$AssimpFbx$_PreRotation<mixamorig:Neck_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "430"
+            "parent": "464",
+            "skin": "453"
         },
-        "432": {
+        "466": {
             "link": {
-                "name": "xr_standard_thumbstick_pressed_max<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:Head<mixamorig:Neck<mixamorig:Neck_$AssimpFbx$_Rotation<mixamorig:Neck_$AssimpFbx$_PreRotation<mixamorig:Neck_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "465",
+            "skin": "453"
         },
-        "433": {
+        "467": {
             "link": {
-                "name": "xr_standard_thumbstick_pressed_min<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:HeadTop_End<mixamorig:Head<mixamorig:Neck<mixamorig:Neck_$AssimpFbx$_Rotation<mixamorig:Neck_$AssimpFbx$_PreRotation<mixamorig:Neck_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "466"
         },
-        "434": {
+        "468": {
             "link": {
-                "name": "xr_standard_thumbstick_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "461"
         },
-        "435": {
+        "469": {
             "link": {
-                "name": "xr_standard_thumbstick_xaxis_pressed_max<xr_standard_thumbstick_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "434"
+            "parent": "468"
         },
-        "436": {
+        "470": {
             "link": {
-                "name": "xr_standard_thumbstick_xaxis_pressed_min<xr_standard_thumbstick_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "434"
+            "parent": "469"
         },
-        "437": {
+        "471": {
             "link": {
-                "name": "xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "434"
+            "parent": "470",
+            "skin": "453"
         },
-        "438": {
+        "472": {
             "link": {
-                "name": "xr_standard_thumbstick_yaxis_pressed_max<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "437"
+            "parent": "471"
         },
-        "439": {
+        "473": {
             "link": {
-                "name": "xr_standard_thumbstick_yaxis_pressed_min<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "437"
+            "parent": "472"
         },
-        "440": {
+        "474": {
             "link": {
-                "name": "xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "437"
+            "parent": "473"
         },
-        "441": {
+        "475": {
             "link": {
-                "name": "thumbstick<xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "440"
+            "parent": "474",
+            "skin": "453"
         },
-        "442": {
+        "476": {
             "link": {
-                "name": "xr_standard_trigger_pressed_max<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "475"
         },
-        "443": {
+        "477": {
             "link": {
-                "name": "xr_standard_trigger_pressed_min<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "476"
         },
-        "444": {
+        "478": {
             "link": {
-                "name": "xr_standard_trigger_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "477"
         },
-        "445": {
+        "479": {
             "link": {
-                "name": "trigger<xr_standard_trigger_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "444"
+            "parent": "478",
+            "skin": "453"
         },
-        "446": {
+        "480": {
             "link": {
-                "name": "y_button_pressed_max<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "479"
         },
-        "447": {
+        "481": {
             "link": {
-                "name": "y_button_pressed_min<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "480"
         },
-        "448": {
+        "482": {
             "link": {
-                "name": "y_button_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "419"
+            "parent": "481"
         },
-        "449": {
+        "483": {
             "link": {
-                "name": "y_button<y_button_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
+                "name": "mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
             },
-            "parent": "448"
+            "parent": "482",
+            "skin": "453"
+        },
+        "484": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "483"
+        },
+        "485": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb1_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "484"
+        },
+        "486": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb1_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb1_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "485"
+        },
+        "487": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb1<mixamorig:LeftHandThumb1_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb1_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "486",
+            "skin": "453"
+        },
+        "488": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb2_$AssimpFbx$_Translation<mixamorig:LeftHandThumb1<mixamorig:LeftHandThumb1_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb1_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "487"
+        },
+        "489": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb2_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb2_$AssimpFbx$_Translation<mixamorig:LeftHandThumb1<mixamorig:LeftHandThumb1_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb1_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "488"
+        },
+        "490": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb2_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb2_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb2_$AssimpFbx$_Translation<mixamorig:LeftHandThumb1<mixamorig:LeftHandThumb1_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb1_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "489"
+        },
+        "491": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb2<mixamorig:LeftHandThumb2_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb2_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb2_$AssimpFbx$_Translation<mixamorig:LeftHandThumb1<mixamorig:LeftHandThumb1_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb1_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "490",
+            "skin": "453"
+        },
+        "492": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb3_$AssimpFbx$_Translation<mixamorig:LeftHandThumb2<mixamorig:LeftHandThumb2_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb2_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb2_$AssimpFbx$_Translation<mixamorig:LeftHandThumb1<mixamorig:LeftHandThumb1_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb1_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "491"
+        },
+        "493": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb3_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb3_$AssimpFbx$_Translation<mixamorig:LeftHandThumb2<mixamorig:LeftHandThumb2_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb2_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb2_$AssimpFbx$_Translation<mixamorig:LeftHandThumb1<mixamorig:LeftHandThumb1_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb1_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "492"
+        },
+        "494": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb3_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb3_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb3_$AssimpFbx$_Translation<mixamorig:LeftHandThumb2<mixamorig:LeftHandThumb2_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb2_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb2_$AssimpFbx$_Translation<mixamorig:LeftHandThumb1<mixamorig:LeftHandThumb1_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb1_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "493"
+        },
+        "495": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb3<mixamorig:LeftHandThumb3_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb3_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb3_$AssimpFbx$_Translation<mixamorig:LeftHandThumb2<mixamorig:LeftHandThumb2_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb2_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb2_$AssimpFbx$_Translation<mixamorig:LeftHandThumb1<mixamorig:LeftHandThumb1_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb1_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "494",
+            "skin": "453"
+        },
+        "496": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb4<mixamorig:LeftHandThumb3<mixamorig:LeftHandThumb3_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb3_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb3_$AssimpFbx$_Translation<mixamorig:LeftHandThumb2<mixamorig:LeftHandThumb2_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb2_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb2_$AssimpFbx$_Translation<mixamorig:LeftHandThumb1<mixamorig:LeftHandThumb1_$AssimpFbx$_Rotation<mixamorig:LeftHandThumb1_$AssimpFbx$_PreRotation<mixamorig:LeftHandThumb1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "495"
+        },
+        "497": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "483"
+        },
+        "498": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex1_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "497"
+        },
+        "499": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex1_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex1_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "498"
+        },
+        "500": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex1<mixamorig:LeftHandIndex1_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex1_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "499",
+            "skin": "453"
+        },
+        "501": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex2_$AssimpFbx$_Translation<mixamorig:LeftHandIndex1<mixamorig:LeftHandIndex1_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex1_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "500"
+        },
+        "502": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex2_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex2_$AssimpFbx$_Translation<mixamorig:LeftHandIndex1<mixamorig:LeftHandIndex1_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex1_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "501"
+        },
+        "503": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex2_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex2_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex2_$AssimpFbx$_Translation<mixamorig:LeftHandIndex1<mixamorig:LeftHandIndex1_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex1_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "502"
+        },
+        "504": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex2<mixamorig:LeftHandIndex2_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex2_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex2_$AssimpFbx$_Translation<mixamorig:LeftHandIndex1<mixamorig:LeftHandIndex1_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex1_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "503",
+            "skin": "453"
+        },
+        "505": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex3_$AssimpFbx$_Translation<mixamorig:LeftHandIndex2<mixamorig:LeftHandIndex2_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex2_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex2_$AssimpFbx$_Translation<mixamorig:LeftHandIndex1<mixamorig:LeftHandIndex1_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex1_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "504"
+        },
+        "506": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex3_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex3_$AssimpFbx$_Translation<mixamorig:LeftHandIndex2<mixamorig:LeftHandIndex2_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex2_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex2_$AssimpFbx$_Translation<mixamorig:LeftHandIndex1<mixamorig:LeftHandIndex1_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex1_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "505"
+        },
+        "507": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex3_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex3_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex3_$AssimpFbx$_Translation<mixamorig:LeftHandIndex2<mixamorig:LeftHandIndex2_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex2_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex2_$AssimpFbx$_Translation<mixamorig:LeftHandIndex1<mixamorig:LeftHandIndex1_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex1_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "506"
+        },
+        "508": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex3<mixamorig:LeftHandIndex3_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex3_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex3_$AssimpFbx$_Translation<mixamorig:LeftHandIndex2<mixamorig:LeftHandIndex2_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex2_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex2_$AssimpFbx$_Translation<mixamorig:LeftHandIndex1<mixamorig:LeftHandIndex1_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex1_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "507",
+            "skin": "453"
+        },
+        "509": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex4<mixamorig:LeftHandIndex3<mixamorig:LeftHandIndex3_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex3_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex3_$AssimpFbx$_Translation<mixamorig:LeftHandIndex2<mixamorig:LeftHandIndex2_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex2_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex2_$AssimpFbx$_Translation<mixamorig:LeftHandIndex1<mixamorig:LeftHandIndex1_$AssimpFbx$_Rotation<mixamorig:LeftHandIndex1_$AssimpFbx$_PreRotation<mixamorig:LeftHandIndex1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "508"
+        },
+        "510": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "483"
+        },
+        "511": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "510"
+        },
+        "512": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle1_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "511"
+        },
+        "513": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle1<mixamorig:LeftHandMiddle1_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "512",
+            "skin": "453"
+        },
+        "514": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle2_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle1<mixamorig:LeftHandMiddle1_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "513"
+        },
+        "515": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle1<mixamorig:LeftHandMiddle1_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "514"
+        },
+        "516": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle2_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle1<mixamorig:LeftHandMiddle1_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "515"
+        },
+        "517": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle2<mixamorig:LeftHandMiddle2_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle1<mixamorig:LeftHandMiddle1_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "516",
+            "skin": "453"
+        },
+        "518": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle3_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle2<mixamorig:LeftHandMiddle2_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle1<mixamorig:LeftHandMiddle1_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "517"
+        },
+        "519": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle3_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle3_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle2<mixamorig:LeftHandMiddle2_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle1<mixamorig:LeftHandMiddle1_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "518"
+        },
+        "520": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle3_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle3_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle3_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle2<mixamorig:LeftHandMiddle2_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle1<mixamorig:LeftHandMiddle1_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "519"
+        },
+        "521": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle3<mixamorig:LeftHandMiddle3_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle3_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle3_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle2<mixamorig:LeftHandMiddle2_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle1<mixamorig:LeftHandMiddle1_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "520",
+            "skin": "453"
+        },
+        "522": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle4<mixamorig:LeftHandMiddle3<mixamorig:LeftHandMiddle3_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle3_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle3_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle2<mixamorig:LeftHandMiddle2_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle2_$AssimpFbx$_Translation<mixamorig:LeftHandMiddle1<mixamorig:LeftHandMiddle1_$AssimpFbx$_Rotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:LeftHandMiddle1_$AssimpFbx$_Translation<mixamorig:LeftHand<mixamorig:LeftHand_$AssimpFbx$_Rotation<mixamorig:LeftHand_$AssimpFbx$_PreRotation<mixamorig:LeftHand_$AssimpFbx$_Translation<mixamorig:LeftForeArm<mixamorig:LeftForeArm_$AssimpFbx$_Rotation<mixamorig:LeftForeArm_$AssimpFbx$_PreRotation<mixamorig:LeftForeArm_$AssimpFbx$_Translation<mixamorig:LeftArm<mixamorig:LeftArm_$AssimpFbx$_Rotation<mixamorig:LeftArm_$AssimpFbx$_PreRotation<mixamorig:LeftArm_$AssimpFbx$_Translation<mixamorig:LeftShoulder<mixamorig:LeftShoulder_$AssimpFbx$_Rotation<mixamorig:LeftShoulder_$AssimpFbx$_PreRotation<mixamorig:LeftShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "521"
+        },
+        "523": {
+            "link": {
+                "name": "mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "461"
+        },
+        "524": {
+            "link": {
+                "name": "mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "523"
+        },
+        "525": {
+            "link": {
+                "name": "mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "524"
+        },
+        "526": {
+            "link": {
+                "name": "mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "525",
+            "skin": "453"
+        },
+        "527": {
+            "link": {
+                "name": "mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "526"
+        },
+        "528": {
+            "link": {
+                "name": "mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "527"
+        },
+        "529": {
+            "link": {
+                "name": "mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "528"
+        },
+        "530": {
+            "link": {
+                "name": "mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "529",
+            "skin": "453"
+        },
+        "531": {
+            "link": {
+                "name": "mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "530"
+        },
+        "532": {
+            "link": {
+                "name": "mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "531"
+        },
+        "533": {
+            "link": {
+                "name": "mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "532"
+        },
+        "534": {
+            "link": {
+                "name": "mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "533",
+            "skin": "453"
+        },
+        "535": {
+            "link": {
+                "name": "mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "534"
+        },
+        "536": {
+            "link": {
+                "name": "mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "535"
+        },
+        "537": {
+            "link": {
+                "name": "mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "536"
+        },
+        "538": {
+            "link": {
+                "name": "mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "537",
+            "skin": "453"
+        },
+        "539": {
+            "link": {
+                "name": "mixamorig:RightHandThumb1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "538"
+        },
+        "540": {
+            "link": {
+                "name": "mixamorig:RightHandThumb1_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "539"
+        },
+        "541": {
+            "link": {
+                "name": "mixamorig:RightHandThumb1_$AssimpFbx$_Rotation<mixamorig:RightHandThumb1_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "540"
+        },
+        "542": {
+            "link": {
+                "name": "mixamorig:RightHandThumb1<mixamorig:RightHandThumb1_$AssimpFbx$_Rotation<mixamorig:RightHandThumb1_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "541",
+            "skin": "453"
+        },
+        "543": {
+            "link": {
+                "name": "mixamorig:RightHandThumb2_$AssimpFbx$_Translation<mixamorig:RightHandThumb1<mixamorig:RightHandThumb1_$AssimpFbx$_Rotation<mixamorig:RightHandThumb1_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "542"
+        },
+        "544": {
+            "link": {
+                "name": "mixamorig:RightHandThumb2_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb2_$AssimpFbx$_Translation<mixamorig:RightHandThumb1<mixamorig:RightHandThumb1_$AssimpFbx$_Rotation<mixamorig:RightHandThumb1_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "543"
+        },
+        "545": {
+            "link": {
+                "name": "mixamorig:RightHandThumb2_$AssimpFbx$_Rotation<mixamorig:RightHandThumb2_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb2_$AssimpFbx$_Translation<mixamorig:RightHandThumb1<mixamorig:RightHandThumb1_$AssimpFbx$_Rotation<mixamorig:RightHandThumb1_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "544"
+        },
+        "546": {
+            "link": {
+                "name": "mixamorig:RightHandThumb2<mixamorig:RightHandThumb2_$AssimpFbx$_Rotation<mixamorig:RightHandThumb2_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb2_$AssimpFbx$_Translation<mixamorig:RightHandThumb1<mixamorig:RightHandThumb1_$AssimpFbx$_Rotation<mixamorig:RightHandThumb1_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "545",
+            "skin": "453"
+        },
+        "547": {
+            "link": {
+                "name": "mixamorig:RightHandThumb3_$AssimpFbx$_Translation<mixamorig:RightHandThumb2<mixamorig:RightHandThumb2_$AssimpFbx$_Rotation<mixamorig:RightHandThumb2_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb2_$AssimpFbx$_Translation<mixamorig:RightHandThumb1<mixamorig:RightHandThumb1_$AssimpFbx$_Rotation<mixamorig:RightHandThumb1_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "546"
+        },
+        "548": {
+            "link": {
+                "name": "mixamorig:RightHandThumb3_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb3_$AssimpFbx$_Translation<mixamorig:RightHandThumb2<mixamorig:RightHandThumb2_$AssimpFbx$_Rotation<mixamorig:RightHandThumb2_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb2_$AssimpFbx$_Translation<mixamorig:RightHandThumb1<mixamorig:RightHandThumb1_$AssimpFbx$_Rotation<mixamorig:RightHandThumb1_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "547"
+        },
+        "549": {
+            "link": {
+                "name": "mixamorig:RightHandThumb3_$AssimpFbx$_Rotation<mixamorig:RightHandThumb3_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb3_$AssimpFbx$_Translation<mixamorig:RightHandThumb2<mixamorig:RightHandThumb2_$AssimpFbx$_Rotation<mixamorig:RightHandThumb2_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb2_$AssimpFbx$_Translation<mixamorig:RightHandThumb1<mixamorig:RightHandThumb1_$AssimpFbx$_Rotation<mixamorig:RightHandThumb1_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "548"
+        },
+        "550": {
+            "link": {
+                "name": "mixamorig:RightHandThumb3<mixamorig:RightHandThumb3_$AssimpFbx$_Rotation<mixamorig:RightHandThumb3_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb3_$AssimpFbx$_Translation<mixamorig:RightHandThumb2<mixamorig:RightHandThumb2_$AssimpFbx$_Rotation<mixamorig:RightHandThumb2_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb2_$AssimpFbx$_Translation<mixamorig:RightHandThumb1<mixamorig:RightHandThumb1_$AssimpFbx$_Rotation<mixamorig:RightHandThumb1_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "549",
+            "skin": "453"
+        },
+        "551": {
+            "link": {
+                "name": "mixamorig:RightHandThumb4<mixamorig:RightHandThumb3<mixamorig:RightHandThumb3_$AssimpFbx$_Rotation<mixamorig:RightHandThumb3_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb3_$AssimpFbx$_Translation<mixamorig:RightHandThumb2<mixamorig:RightHandThumb2_$AssimpFbx$_Rotation<mixamorig:RightHandThumb2_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb2_$AssimpFbx$_Translation<mixamorig:RightHandThumb1<mixamorig:RightHandThumb1_$AssimpFbx$_Rotation<mixamorig:RightHandThumb1_$AssimpFbx$_PreRotation<mixamorig:RightHandThumb1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "550"
+        },
+        "552": {
+            "link": {
+                "name": "mixamorig:RightHandIndex1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "538"
+        },
+        "553": {
+            "link": {
+                "name": "mixamorig:RightHandIndex1_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "552"
+        },
+        "554": {
+            "link": {
+                "name": "mixamorig:RightHandIndex1_$AssimpFbx$_Rotation<mixamorig:RightHandIndex1_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "553"
+        },
+        "555": {
+            "link": {
+                "name": "mixamorig:RightHandIndex1<mixamorig:RightHandIndex1_$AssimpFbx$_Rotation<mixamorig:RightHandIndex1_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "554",
+            "skin": "453"
+        },
+        "556": {
+            "link": {
+                "name": "mixamorig:RightHandIndex2_$AssimpFbx$_Translation<mixamorig:RightHandIndex1<mixamorig:RightHandIndex1_$AssimpFbx$_Rotation<mixamorig:RightHandIndex1_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "555"
+        },
+        "557": {
+            "link": {
+                "name": "mixamorig:RightHandIndex2_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex2_$AssimpFbx$_Translation<mixamorig:RightHandIndex1<mixamorig:RightHandIndex1_$AssimpFbx$_Rotation<mixamorig:RightHandIndex1_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "556"
+        },
+        "558": {
+            "link": {
+                "name": "mixamorig:RightHandIndex2_$AssimpFbx$_Rotation<mixamorig:RightHandIndex2_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex2_$AssimpFbx$_Translation<mixamorig:RightHandIndex1<mixamorig:RightHandIndex1_$AssimpFbx$_Rotation<mixamorig:RightHandIndex1_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "557"
+        },
+        "559": {
+            "link": {
+                "name": "mixamorig:RightHandIndex2<mixamorig:RightHandIndex2_$AssimpFbx$_Rotation<mixamorig:RightHandIndex2_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex2_$AssimpFbx$_Translation<mixamorig:RightHandIndex1<mixamorig:RightHandIndex1_$AssimpFbx$_Rotation<mixamorig:RightHandIndex1_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "558",
+            "skin": "453"
+        },
+        "560": {
+            "link": {
+                "name": "mixamorig:RightHandIndex3_$AssimpFbx$_Translation<mixamorig:RightHandIndex2<mixamorig:RightHandIndex2_$AssimpFbx$_Rotation<mixamorig:RightHandIndex2_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex2_$AssimpFbx$_Translation<mixamorig:RightHandIndex1<mixamorig:RightHandIndex1_$AssimpFbx$_Rotation<mixamorig:RightHandIndex1_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "559"
+        },
+        "561": {
+            "link": {
+                "name": "mixamorig:RightHandIndex3_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex3_$AssimpFbx$_Translation<mixamorig:RightHandIndex2<mixamorig:RightHandIndex2_$AssimpFbx$_Rotation<mixamorig:RightHandIndex2_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex2_$AssimpFbx$_Translation<mixamorig:RightHandIndex1<mixamorig:RightHandIndex1_$AssimpFbx$_Rotation<mixamorig:RightHandIndex1_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "560"
+        },
+        "562": {
+            "link": {
+                "name": "mixamorig:RightHandIndex3_$AssimpFbx$_Rotation<mixamorig:RightHandIndex3_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex3_$AssimpFbx$_Translation<mixamorig:RightHandIndex2<mixamorig:RightHandIndex2_$AssimpFbx$_Rotation<mixamorig:RightHandIndex2_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex2_$AssimpFbx$_Translation<mixamorig:RightHandIndex1<mixamorig:RightHandIndex1_$AssimpFbx$_Rotation<mixamorig:RightHandIndex1_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "561"
+        },
+        "563": {
+            "link": {
+                "name": "mixamorig:RightHandIndex3<mixamorig:RightHandIndex3_$AssimpFbx$_Rotation<mixamorig:RightHandIndex3_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex3_$AssimpFbx$_Translation<mixamorig:RightHandIndex2<mixamorig:RightHandIndex2_$AssimpFbx$_Rotation<mixamorig:RightHandIndex2_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex2_$AssimpFbx$_Translation<mixamorig:RightHandIndex1<mixamorig:RightHandIndex1_$AssimpFbx$_Rotation<mixamorig:RightHandIndex1_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "562",
+            "skin": "453"
+        },
+        "564": {
+            "link": {
+                "name": "mixamorig:RightHandIndex4<mixamorig:RightHandIndex3<mixamorig:RightHandIndex3_$AssimpFbx$_Rotation<mixamorig:RightHandIndex3_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex3_$AssimpFbx$_Translation<mixamorig:RightHandIndex2<mixamorig:RightHandIndex2_$AssimpFbx$_Rotation<mixamorig:RightHandIndex2_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex2_$AssimpFbx$_Translation<mixamorig:RightHandIndex1<mixamorig:RightHandIndex1_$AssimpFbx$_Rotation<mixamorig:RightHandIndex1_$AssimpFbx$_PreRotation<mixamorig:RightHandIndex1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "563"
+        },
+        "565": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "538"
+        },
+        "566": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "565"
+        },
+        "567": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle1_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "566"
+        },
+        "568": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle1<mixamorig:RightHandMiddle1_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "567",
+            "skin": "453"
+        },
+        "569": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle2_$AssimpFbx$_Translation<mixamorig:RightHandMiddle1<mixamorig:RightHandMiddle1_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "568"
+        },
+        "570": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle2_$AssimpFbx$_Translation<mixamorig:RightHandMiddle1<mixamorig:RightHandMiddle1_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "569"
+        },
+        "571": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle2_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle2_$AssimpFbx$_Translation<mixamorig:RightHandMiddle1<mixamorig:RightHandMiddle1_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "570"
+        },
+        "572": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle2<mixamorig:RightHandMiddle2_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle2_$AssimpFbx$_Translation<mixamorig:RightHandMiddle1<mixamorig:RightHandMiddle1_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "571",
+            "skin": "453"
+        },
+        "573": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle3_$AssimpFbx$_Translation<mixamorig:RightHandMiddle2<mixamorig:RightHandMiddle2_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle2_$AssimpFbx$_Translation<mixamorig:RightHandMiddle1<mixamorig:RightHandMiddle1_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "572"
+        },
+        "574": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle3_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle3_$AssimpFbx$_Translation<mixamorig:RightHandMiddle2<mixamorig:RightHandMiddle2_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle2_$AssimpFbx$_Translation<mixamorig:RightHandMiddle1<mixamorig:RightHandMiddle1_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "573"
+        },
+        "575": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle3_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle3_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle3_$AssimpFbx$_Translation<mixamorig:RightHandMiddle2<mixamorig:RightHandMiddle2_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle2_$AssimpFbx$_Translation<mixamorig:RightHandMiddle1<mixamorig:RightHandMiddle1_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "574"
+        },
+        "576": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle3<mixamorig:RightHandMiddle3_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle3_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle3_$AssimpFbx$_Translation<mixamorig:RightHandMiddle2<mixamorig:RightHandMiddle2_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle2_$AssimpFbx$_Translation<mixamorig:RightHandMiddle1<mixamorig:RightHandMiddle1_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "575",
+            "skin": "453"
+        },
+        "577": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle4<mixamorig:RightHandMiddle3<mixamorig:RightHandMiddle3_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle3_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle3_$AssimpFbx$_Translation<mixamorig:RightHandMiddle2<mixamorig:RightHandMiddle2_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle2_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle2_$AssimpFbx$_Translation<mixamorig:RightHandMiddle1<mixamorig:RightHandMiddle1_$AssimpFbx$_Rotation<mixamorig:RightHandMiddle1_$AssimpFbx$_PreRotation<mixamorig:RightHandMiddle1_$AssimpFbx$_Translation<mixamorig:RightHand<mixamorig:RightHand_$AssimpFbx$_Rotation<mixamorig:RightHand_$AssimpFbx$_PreRotation<mixamorig:RightHand_$AssimpFbx$_Translation<mixamorig:RightForeArm<mixamorig:RightForeArm_$AssimpFbx$_Rotation<mixamorig:RightForeArm_$AssimpFbx$_PreRotation<mixamorig:RightForeArm_$AssimpFbx$_Translation<mixamorig:RightArm<mixamorig:RightArm_$AssimpFbx$_Rotation<mixamorig:RightArm_$AssimpFbx$_PreRotation<mixamorig:RightArm_$AssimpFbx$_Translation<mixamorig:RightShoulder<mixamorig:RightShoulder_$AssimpFbx$_Rotation<mixamorig:RightShoulder_$AssimpFbx$_PreRotation<mixamorig:RightShoulder_$AssimpFbx$_Translation<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Spine_$AssimpFbx$_Rotation<mixamorig:Spine_$AssimpFbx$_PreRotation<mixamorig:Spine_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "576"
+        },
+        "578": {
+            "link": {
+                "name": "mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "455"
+        },
+        "579": {
+            "link": {
+                "name": "mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "578"
+        },
+        "580": {
+            "link": {
+                "name": "mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "579"
+        },
+        "581": {
+            "link": {
+                "name": "mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "580",
+            "skin": "453"
+        },
+        "582": {
+            "link": {
+                "name": "mixamorig:LeftLeg_$AssimpFbx$_Translation<mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "581"
+        },
+        "583": {
+            "link": {
+                "name": "mixamorig:LeftLeg_$AssimpFbx$_PreRotation<mixamorig:LeftLeg_$AssimpFbx$_Translation<mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "582"
+        },
+        "584": {
+            "link": {
+                "name": "mixamorig:LeftLeg_$AssimpFbx$_Rotation<mixamorig:LeftLeg_$AssimpFbx$_PreRotation<mixamorig:LeftLeg_$AssimpFbx$_Translation<mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "583"
+        },
+        "585": {
+            "link": {
+                "name": "mixamorig:LeftLeg<mixamorig:LeftLeg_$AssimpFbx$_Rotation<mixamorig:LeftLeg_$AssimpFbx$_PreRotation<mixamorig:LeftLeg_$AssimpFbx$_Translation<mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "584",
+            "skin": "453"
+        },
+        "586": {
+            "link": {
+                "name": "mixamorig:LeftFoot_$AssimpFbx$_Translation<mixamorig:LeftLeg<mixamorig:LeftLeg_$AssimpFbx$_Rotation<mixamorig:LeftLeg_$AssimpFbx$_PreRotation<mixamorig:LeftLeg_$AssimpFbx$_Translation<mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "585"
+        },
+        "587": {
+            "link": {
+                "name": "mixamorig:LeftFoot_$AssimpFbx$_PreRotation<mixamorig:LeftFoot_$AssimpFbx$_Translation<mixamorig:LeftLeg<mixamorig:LeftLeg_$AssimpFbx$_Rotation<mixamorig:LeftLeg_$AssimpFbx$_PreRotation<mixamorig:LeftLeg_$AssimpFbx$_Translation<mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "586"
+        },
+        "588": {
+            "link": {
+                "name": "mixamorig:LeftFoot_$AssimpFbx$_Rotation<mixamorig:LeftFoot_$AssimpFbx$_PreRotation<mixamorig:LeftFoot_$AssimpFbx$_Translation<mixamorig:LeftLeg<mixamorig:LeftLeg_$AssimpFbx$_Rotation<mixamorig:LeftLeg_$AssimpFbx$_PreRotation<mixamorig:LeftLeg_$AssimpFbx$_Translation<mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "587"
+        },
+        "589": {
+            "link": {
+                "name": "mixamorig:LeftFoot<mixamorig:LeftFoot_$AssimpFbx$_Rotation<mixamorig:LeftFoot_$AssimpFbx$_PreRotation<mixamorig:LeftFoot_$AssimpFbx$_Translation<mixamorig:LeftLeg<mixamorig:LeftLeg_$AssimpFbx$_Rotation<mixamorig:LeftLeg_$AssimpFbx$_PreRotation<mixamorig:LeftLeg_$AssimpFbx$_Translation<mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "588",
+            "skin": "453"
+        },
+        "590": {
+            "link": {
+                "name": "mixamorig:LeftToeBase_$AssimpFbx$_Translation<mixamorig:LeftFoot<mixamorig:LeftFoot_$AssimpFbx$_Rotation<mixamorig:LeftFoot_$AssimpFbx$_PreRotation<mixamorig:LeftFoot_$AssimpFbx$_Translation<mixamorig:LeftLeg<mixamorig:LeftLeg_$AssimpFbx$_Rotation<mixamorig:LeftLeg_$AssimpFbx$_PreRotation<mixamorig:LeftLeg_$AssimpFbx$_Translation<mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "589"
+        },
+        "591": {
+            "link": {
+                "name": "mixamorig:LeftToeBase_$AssimpFbx$_PreRotation<mixamorig:LeftToeBase_$AssimpFbx$_Translation<mixamorig:LeftFoot<mixamorig:LeftFoot_$AssimpFbx$_Rotation<mixamorig:LeftFoot_$AssimpFbx$_PreRotation<mixamorig:LeftFoot_$AssimpFbx$_Translation<mixamorig:LeftLeg<mixamorig:LeftLeg_$AssimpFbx$_Rotation<mixamorig:LeftLeg_$AssimpFbx$_PreRotation<mixamorig:LeftLeg_$AssimpFbx$_Translation<mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "590"
+        },
+        "592": {
+            "link": {
+                "name": "mixamorig:LeftToeBase_$AssimpFbx$_Rotation<mixamorig:LeftToeBase_$AssimpFbx$_PreRotation<mixamorig:LeftToeBase_$AssimpFbx$_Translation<mixamorig:LeftFoot<mixamorig:LeftFoot_$AssimpFbx$_Rotation<mixamorig:LeftFoot_$AssimpFbx$_PreRotation<mixamorig:LeftFoot_$AssimpFbx$_Translation<mixamorig:LeftLeg<mixamorig:LeftLeg_$AssimpFbx$_Rotation<mixamorig:LeftLeg_$AssimpFbx$_PreRotation<mixamorig:LeftLeg_$AssimpFbx$_Translation<mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "591"
+        },
+        "593": {
+            "link": {
+                "name": "mixamorig:LeftToeBase<mixamorig:LeftToeBase_$AssimpFbx$_Rotation<mixamorig:LeftToeBase_$AssimpFbx$_PreRotation<mixamorig:LeftToeBase_$AssimpFbx$_Translation<mixamorig:LeftFoot<mixamorig:LeftFoot_$AssimpFbx$_Rotation<mixamorig:LeftFoot_$AssimpFbx$_PreRotation<mixamorig:LeftFoot_$AssimpFbx$_Translation<mixamorig:LeftLeg<mixamorig:LeftLeg_$AssimpFbx$_Rotation<mixamorig:LeftLeg_$AssimpFbx$_PreRotation<mixamorig:LeftLeg_$AssimpFbx$_Translation<mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "592",
+            "skin": "453"
+        },
+        "594": {
+            "link": {
+                "name": "mixamorig:LeftToe_End<mixamorig:LeftToeBase<mixamorig:LeftToeBase_$AssimpFbx$_Rotation<mixamorig:LeftToeBase_$AssimpFbx$_PreRotation<mixamorig:LeftToeBase_$AssimpFbx$_Translation<mixamorig:LeftFoot<mixamorig:LeftFoot_$AssimpFbx$_Rotation<mixamorig:LeftFoot_$AssimpFbx$_PreRotation<mixamorig:LeftFoot_$AssimpFbx$_Translation<mixamorig:LeftLeg<mixamorig:LeftLeg_$AssimpFbx$_Rotation<mixamorig:LeftLeg_$AssimpFbx$_PreRotation<mixamorig:LeftLeg_$AssimpFbx$_Translation<mixamorig:LeftUpLeg<mixamorig:LeftUpLeg_$AssimpFbx$_Rotation<mixamorig:LeftUpLeg_$AssimpFbx$_PreRotation<mixamorig:LeftUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "593"
+        },
+        "595": {
+            "link": {
+                "name": "mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "455"
+        },
+        "596": {
+            "link": {
+                "name": "mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "595"
+        },
+        "597": {
+            "link": {
+                "name": "mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "596"
+        },
+        "598": {
+            "link": {
+                "name": "mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "597",
+            "skin": "453"
+        },
+        "599": {
+            "link": {
+                "name": "mixamorig:RightLeg_$AssimpFbx$_Translation<mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "598"
+        },
+        "600": {
+            "link": {
+                "name": "mixamorig:RightLeg_$AssimpFbx$_PreRotation<mixamorig:RightLeg_$AssimpFbx$_Translation<mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "599"
+        },
+        "601": {
+            "link": {
+                "name": "mixamorig:RightLeg_$AssimpFbx$_Rotation<mixamorig:RightLeg_$AssimpFbx$_PreRotation<mixamorig:RightLeg_$AssimpFbx$_Translation<mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "600"
+        },
+        "602": {
+            "link": {
+                "name": "mixamorig:RightLeg<mixamorig:RightLeg_$AssimpFbx$_Rotation<mixamorig:RightLeg_$AssimpFbx$_PreRotation<mixamorig:RightLeg_$AssimpFbx$_Translation<mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "601",
+            "skin": "453"
+        },
+        "603": {
+            "link": {
+                "name": "mixamorig:RightFoot_$AssimpFbx$_Translation<mixamorig:RightLeg<mixamorig:RightLeg_$AssimpFbx$_Rotation<mixamorig:RightLeg_$AssimpFbx$_PreRotation<mixamorig:RightLeg_$AssimpFbx$_Translation<mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "602"
+        },
+        "604": {
+            "link": {
+                "name": "mixamorig:RightFoot_$AssimpFbx$_PreRotation<mixamorig:RightFoot_$AssimpFbx$_Translation<mixamorig:RightLeg<mixamorig:RightLeg_$AssimpFbx$_Rotation<mixamorig:RightLeg_$AssimpFbx$_PreRotation<mixamorig:RightLeg_$AssimpFbx$_Translation<mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "603"
+        },
+        "605": {
+            "link": {
+                "name": "mixamorig:RightFoot_$AssimpFbx$_Rotation<mixamorig:RightFoot_$AssimpFbx$_PreRotation<mixamorig:RightFoot_$AssimpFbx$_Translation<mixamorig:RightLeg<mixamorig:RightLeg_$AssimpFbx$_Rotation<mixamorig:RightLeg_$AssimpFbx$_PreRotation<mixamorig:RightLeg_$AssimpFbx$_Translation<mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "604"
+        },
+        "606": {
+            "link": {
+                "name": "mixamorig:RightFoot<mixamorig:RightFoot_$AssimpFbx$_Rotation<mixamorig:RightFoot_$AssimpFbx$_PreRotation<mixamorig:RightFoot_$AssimpFbx$_Translation<mixamorig:RightLeg<mixamorig:RightLeg_$AssimpFbx$_Rotation<mixamorig:RightLeg_$AssimpFbx$_PreRotation<mixamorig:RightLeg_$AssimpFbx$_Translation<mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "605",
+            "skin": "453"
+        },
+        "607": {
+            "link": {
+                "name": "mixamorig:RightToeBase_$AssimpFbx$_Translation<mixamorig:RightFoot<mixamorig:RightFoot_$AssimpFbx$_Rotation<mixamorig:RightFoot_$AssimpFbx$_PreRotation<mixamorig:RightFoot_$AssimpFbx$_Translation<mixamorig:RightLeg<mixamorig:RightLeg_$AssimpFbx$_Rotation<mixamorig:RightLeg_$AssimpFbx$_PreRotation<mixamorig:RightLeg_$AssimpFbx$_Translation<mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "606"
+        },
+        "608": {
+            "link": {
+                "name": "mixamorig:RightToeBase_$AssimpFbx$_PreRotation<mixamorig:RightToeBase_$AssimpFbx$_Translation<mixamorig:RightFoot<mixamorig:RightFoot_$AssimpFbx$_Rotation<mixamorig:RightFoot_$AssimpFbx$_PreRotation<mixamorig:RightFoot_$AssimpFbx$_Translation<mixamorig:RightLeg<mixamorig:RightLeg_$AssimpFbx$_Rotation<mixamorig:RightLeg_$AssimpFbx$_PreRotation<mixamorig:RightLeg_$AssimpFbx$_Translation<mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "607"
+        },
+        "609": {
+            "link": {
+                "name": "mixamorig:RightToeBase_$AssimpFbx$_Rotation<mixamorig:RightToeBase_$AssimpFbx$_PreRotation<mixamorig:RightToeBase_$AssimpFbx$_Translation<mixamorig:RightFoot<mixamorig:RightFoot_$AssimpFbx$_Rotation<mixamorig:RightFoot_$AssimpFbx$_PreRotation<mixamorig:RightFoot_$AssimpFbx$_Translation<mixamorig:RightLeg<mixamorig:RightLeg_$AssimpFbx$_Rotation<mixamorig:RightLeg_$AssimpFbx$_PreRotation<mixamorig:RightLeg_$AssimpFbx$_Translation<mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "608"
+        },
+        "610": {
+            "link": {
+                "name": "mixamorig:RightToeBase<mixamorig:RightToeBase_$AssimpFbx$_Rotation<mixamorig:RightToeBase_$AssimpFbx$_PreRotation<mixamorig:RightToeBase_$AssimpFbx$_Translation<mixamorig:RightFoot<mixamorig:RightFoot_$AssimpFbx$_Rotation<mixamorig:RightFoot_$AssimpFbx$_PreRotation<mixamorig:RightFoot_$AssimpFbx$_Translation<mixamorig:RightLeg<mixamorig:RightLeg_$AssimpFbx$_Rotation<mixamorig:RightLeg_$AssimpFbx$_PreRotation<mixamorig:RightLeg_$AssimpFbx$_Translation<mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "609",
+            "skin": "453"
+        },
+        "611": {
+            "link": {
+                "name": "mixamorig:RightToe_End<mixamorig:RightToeBase<mixamorig:RightToeBase_$AssimpFbx$_Rotation<mixamorig:RightToeBase_$AssimpFbx$_PreRotation<mixamorig:RightToeBase_$AssimpFbx$_Translation<mixamorig:RightFoot<mixamorig:RightFoot_$AssimpFbx$_Rotation<mixamorig:RightFoot_$AssimpFbx$_PreRotation<mixamorig:RightFoot_$AssimpFbx$_Translation<mixamorig:RightLeg<mixamorig:RightLeg_$AssimpFbx$_Rotation<mixamorig:RightLeg_$AssimpFbx$_PreRotation<mixamorig:RightLeg_$AssimpFbx$_Translation<mixamorig:RightUpLeg<mixamorig:RightUpLeg_$AssimpFbx$_Rotation<mixamorig:RightUpLeg_$AssimpFbx$_PreRotation<mixamorig:RightUpLeg_$AssimpFbx$_Translation<mixamorig:Hips",
+                "file": "models\\snowman.fbx"
+            },
+            "parent": "610"
+        },
+        "613": {
+            "name": "Snowman",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0642729,
+                0.0,
+                0.0,
+                1.0
+            ]
         }
     },
     "meshes": {
@@ -2599,6 +3603,12 @@
                 "name": "Mesh.012",
                 "file": "models\\quest_controllers.glb"
             }
+        },
+        "452": {
+            "link": {
+                "name": "Snowman",
+                "file": "models\\snowman.fbx"
+            }
         }
     },
     "textures": {
@@ -2637,6 +3647,24 @@
             "link": {
                 "name": "texture_0",
                 "file": "models\\winter_scene.glb"
+            }
+        },
+        "450": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\snowman.fbx"
+            }
+        },
+        "615": {
+            "link": {
+                "name": "Snowman_diff.png",
+                "file": "models\\textures\\Snowman_diff.png"
+            }
+        },
+        "618": {
+            "link": {
+                "name": "Snowman_ddn.png",
+                "file": "models\\textures\\Snowman_ddn.png"
             }
         }
     },
@@ -2704,6 +3732,19 @@
                 64,
                 64
             ],
+            "compress": false
+        },
+        "614": {
+            "link": {
+                "name": "Snowman_diff.png",
+                "file": "models\\textures\\Snowman_diff.png"
+            }
+        },
+        "617": {
+            "link": {
+                "name": "Snowman_ddn.png",
+                "file": "models\\textures\\Snowman_ddn.png"
+            },
             "compress": false
         }
     },
@@ -2995,6 +4036,17 @@
                 "name": "lambert1.001",
                 "file": "models\\quest_controllers.glb"
             }
+        },
+        "451": {
+            "link": {
+                "name": "SnowmanShader",
+                "file": "models\\snowman.fbx"
+            },
+            "Phong": {
+                "diffuseTexture": "615",
+                "normalTexture": "618"
+            },
+            "pipeline": "616"
         }
     },
     "shaders": {
@@ -3156,7 +4208,14 @@
             ]
         }
     },
-    "animations": {},
+    "animations": {
+        "612": {
+            "link": {
+                "name": "mixamo.com",
+                "file": "models\\snowman.fbx"
+            }
+        }
+    },
     "skins": {
         "133": {
             "link": {
@@ -3225,6 +4284,54 @@
                 "192",
                 "193"
             ]
+        },
+        "453": {
+            "link": {
+                "name": "skin_0",
+                "file": "models\\snowman.fbx"
+            },
+            "joints": [
+                "461",
+                "526",
+                "530",
+                "534",
+                "568",
+                "538",
+                "559",
+                "542",
+                "546",
+                "555",
+                "563",
+                "572",
+                "550",
+                "576",
+                "471",
+                "475",
+                "479",
+                "483",
+                "487",
+                "491",
+                "513",
+                "500",
+                "504",
+                "508",
+                "517",
+                "495",
+                "521",
+                "465",
+                "466",
+                "460",
+                "459",
+                "455",
+                "598",
+                "581",
+                "602",
+                "593",
+                "585",
+                "589",
+                "606",
+                "610"
+            ]
         }
     },
     "pipelines": {
@@ -3264,7 +4371,6 @@
                 "file": "default"
             },
             "features": {
-                "ALPHA": true,
                 "ALPHA_MASKED": true
             },
             "castShadows": false
@@ -3310,6 +4416,18 @@
                 "name": "Sky",
                 "file": "default"
             }
+        },
+        "616": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true,
+                "NORMAL_MAPPING": true
+            },
+            "castShadows": false,
+            "name": "Phong Opaque Normals "
         }
     },
     "files": [
@@ -3321,6 +4439,9 @@
         "models/teleport-indicator.glb",
         "models/low_poly_winter_scene/scene.gltf",
         "models/winter_scene.glb",
-        "models/quest_controllers.glb"
+        "models/quest_controllers.glb",
+        "models/snowman.fbx",
+        "models/textures/Snowman_diff.png",
+        "models/textures/Snowman_ddn.png"
     ]
 }
