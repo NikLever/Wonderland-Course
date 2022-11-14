@@ -7,7 +7,7 @@ WL.registerComponent('blockHandler', {
         this.rotation = glMatrix.quat.create();
         glMatrix.quat.fromEuler(this.rotation, 1, 1, 0);
         this.tmpQuat = glMatrix.quat.create();
-        this.block = this.object.children[0];
+        this.cube = this.object.children[0];
         this.direction = glMatrix.vec3.create();
         this.tmpVec = glMatrix.vec3.create();
         this.tmpVec1 = glMatrix.vec3.create();
@@ -38,7 +38,7 @@ WL.registerComponent('blockHandler', {
     },
     update: function(dt) {
         glMatrix.quat.scale( this.tmpQuat, this.rotation, dt );
-        this.block.rotateObject( this.tmpQuat );
+        this.cube.rotateObject( this.tmpQuat );
         if ( this.vrCamera != null ){
             glMatrix.vec3.copy( this.tmpVec, this.direction );
             glMatrix.vec3.scale( this.tmpVec, this.tmpVec, dt );
