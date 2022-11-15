@@ -1716,15 +1716,6 @@
         },
         "230": {
             "name": "Block",
-            "components": [
-                {
-                    "type": "blockHandler",
-                    "blockHandler": {
-                        "vrCamera": "18",
-                        "countTextObject": "231"
-                    }
-                }
-            ],
             "transformation": [
                 1.0,
                 0.0,
@@ -2030,8 +2021,7 @@
                     0.2165777,
                     1.0
                 ]
-            },
-            "pipeline": "223"
+            }
         },
         "25": {
             "name": "Yellow",

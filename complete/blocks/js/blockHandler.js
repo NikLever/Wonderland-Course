@@ -4,11 +4,9 @@ WL.registerComponent('blockHandler', {
     countTextObject: {type: WL.Type.Object, default: null}
 }, {
     init: function() {
-        /*if (this.vrCamera == null){
-            console.warning('blockHandler needs a vrCamera assigning');
-            this.active = false;
-            return;
-        }*/
+        if (this.vrCamera == null){
+            console.warning('blockHandler needs a vrCamera assigning to support motion through space ');
+        }
         this.rotation = glMatrix.quat.create();
         glMatrix.quat.fromEuler(this.rotation, 1, 1, 0);
         this.tmpQuat = glMatrix.quat.create();  
