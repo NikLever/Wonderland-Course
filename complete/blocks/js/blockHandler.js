@@ -13,12 +13,11 @@ WL.registerComponent('blockHandler', {
         this.direction = glMatrix.vec3.create();
         this.tmpVec = glMatrix.vec3.create();
         this.tmpVec1 = glMatrix.vec3.create();
+        this.count = 0;
     },
     start: function() {
         this.cube = this.object.children[0];
-        this.count = 0;
-        if (this.countTextObject) this.countText = this.countTextObject.getComponent('text');
-        this.updateCount(); 
+        if (this.countTextObject) this.countText = this.countTextObject.getComponent('text'); 
         this.spawn();
     },
     updateCount: function(){
