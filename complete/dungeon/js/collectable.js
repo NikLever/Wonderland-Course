@@ -29,7 +29,7 @@ WL.registerComponent('collectable', {
         }else if(this.handedness == 0){
             this.handedness = this._input.handedness;
         }
-        this._cursor = this.object.getComponent('cursor');
+        this._cursor = this.object.getComponent('cursor'); 
         this._teleport = this.object.getComponent('teleport');
         this.collisionIndicator.active = false;
         WL.onXRSessionStart.push(this.setupVREvents.bind(this));
