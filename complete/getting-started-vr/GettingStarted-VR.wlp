@@ -2001,7 +2001,7 @@
                     "type": "animation",
                     "animation": {
                         "animation": "612",
-                        "preview": false
+                        "preview": true
                     }
                 }
             ],
@@ -3199,7 +3199,7 @@
                 0.0,
                 0.0642729,
                 0.0,
-                0.0,
+                -0.641808,
                 1.0
             ]
         }
