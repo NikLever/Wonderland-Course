@@ -120,7 +120,7 @@
                 0.0,
                 1.3818662,
                 3.0536599,
-                5.960464477539063e-8,
+                -0.1101184,
                 1.0
             ]
         },
@@ -1618,7 +1618,8 @@
                     "mesh": {
                         "mesh": "195",
                         "material": "202"
-                    }
+                    },
+                    "active": true
                 }
             ],
             "transformation": [
@@ -1716,7 +1717,8 @@
                     "type": "button",
                     "button": {
                         "buttonMeshObject": "196",
-                        "hoverMaterial": "203"
+                        "hoverMaterial": "203",
+                        "cube": "16"
                     }
                 }
             ]
@@ -1728,7 +1730,7 @@
                 {
                     "type": "text",
                     "text": {
-                        "text": "Thanks!"
+                        "text": "Drop"
                     }
                 }
             ],
@@ -1758,7 +1760,7 @@
                 {
                     "type": "text",
                     "text": {
-                        "text": "Welcome to\nWonderland",
+                        "text": "Press the button \nto drop the cube.",
                         "material": "201"
                     }
                 }

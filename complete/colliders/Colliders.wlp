@@ -716,6 +716,12 @@
                     "input": {
                         "type": "ray left"
                     }
+                },
+                {
+                    "type": "HitBlock",
+                    "HitBlock": {
+                        "collisionIndicator": "127"
+                    }
                 }
             ],
             "transformation": [
@@ -1486,7 +1492,7 @@
                 {
                     "type": "text",
                     "text": {
-                        "text": "Blocks spawned \n",
+                        "text": "Hit        Missed\n",
                         "material": "201"
                     }
                 }
@@ -1497,16 +1503,16 @@
                 0.0,
                 0.0,
                 0.0,
-                0.0020987,
-                -2.9999983,
+                0.0020971,
+                -2.9999985,
                 0.0,
                 0.0,
-                1.5000009,
-                0.0002623,
+                1.5000004,
+                0.0002621,
                 0.0,
                 -0.0000071,
-                0.2291097,
-                -0.206778,
+                0.2291092,
+                -0.2067785,
                 1.0
             ]
         },
@@ -1607,6 +1613,12 @@
                     "type": "input",
                     "input": {
                         "type": "ray right"
+                    }
+                },
+                {
+                    "type": "HitBlock",
+                    "HitBlock": {
+                        "collisionIndicator": "215"
                     }
                 }
             ],
@@ -1721,7 +1733,15 @@
                     "type": "blockHandler",
                     "blockHandler": {
                         "vrCamera": "18",
-                        "countTextObject": "231"
+                        "countTextObject": "231",
+                        "hitTextObject": "232",
+                        "missedTextObject": "231"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "groups": 64
                     }
                 }
             ],
@@ -1745,7 +1765,7 @@
             ]
         },
         "231": {
-            "name": "Count",
+            "name": "Missed",
             "parent": "194",
             "transformation": [
                 3.0,
@@ -1753,16 +1773,46 @@
                 0.0,
                 0.0,
                 0.0,
-                0.0041964,
+                0.0041942,
                 -5.999999,
                 0.0,
                 0.0,
-                2.9999992,
-                0.0020982,
+                3.0000009,
+                0.0005242,
                 0.0,
-                -0.0062122,
-                0.1632395,
-                0.1186824,
+                0.3542721,
+                0.1632418,
+                0.1186747,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "0"
+                    }
+                }
+            ]
+        },
+        "232": {
+            "name": "Hit",
+            "parent": "194",
+            "transformation": [
+                3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0041942,
+                -5.999999,
+                0.0,
+                0.0,
+                3.0000009,
+                0.0005242,
+                0.0,
+                -0.396769,
+                0.1632418,
+                0.1186747,
                 1.0
             ],
             "components": [

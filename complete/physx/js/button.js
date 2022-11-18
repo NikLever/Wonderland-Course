@@ -1,6 +1,7 @@
 WL.registerComponent('button', {
     buttonMeshObject: {type: WL.Type.Object},
     hoverMaterial: {type: WL.Type.Material},
+    cube: { type: WL.Type.Object }
 }, {
     start: function() {
         this.mesh = this.buttonMeshObject.getComponent('mesh');
@@ -11,6 +12,8 @@ WL.registerComponent('button', {
         this.target.addUnHoverFunction(this.onUnHover.bind(this));
         this.target.addDownFunction(this.onDown.bind(this));
         this.target.addUpFunction(this.onUp.bind(this));
+
+        if (this.cube) this.physx = this.cube.getComponent( 'physx' );
 
         this.soundClick = this.object.addComponent('howler-audio-source', {src: 'sfx/click.wav', spatial: true});
         this.soundUnClick = this.object.addComponent('howler-audio-source', {src: 'sfx/unclick.wav', spatial: true});
@@ -29,6 +32,13 @@ WL.registerComponent('button', {
         this.soundClick.play();
         this.buttonMeshObject.translate([0.0, -0.1, 0.0]);
         this.hapticFeedback(cursor.object, 1.0, 20);
+        if (this.physx ) this.physx.active = true;
+        this.hideObject( this.object.parent );
+    },
+
+    hideObject: function( object ){
+        object.children.forEach( child => this.hideObject( child ) );
+        object.active = false;
     },
 
     onUp: function(_, cursor) {
