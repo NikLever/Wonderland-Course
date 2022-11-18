@@ -705,10 +705,11 @@
                 {
                     "type": "cursor",
                     "cursor": {
-                        "cursorObject": "127",
+                        "cursorObject": null,
                         "collisionGroup": 0,
                         "cursorRayObject": "209",
-                        "cursorRayScalingAxis": "y"
+                        "cursorRayScalingAxis": "y",
+                        "styleCursor": true
                     }
                 },
                 {
@@ -756,21 +757,21 @@
                 }
             ],
             "transformation": [
-                0.0099999,
+                0.1,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
-                0.0099999,
+                0.1,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
-                0.0099999,
+                0.1,
                 0.0,
                 0.0,
-                0.0388118,
-                1.5585095,
+                0.0388117,
+                1.5585094,
                 1.0
             ],
             "parent": null
@@ -1603,10 +1604,11 @@
                 {
                     "type": "cursor",
                     "cursor": {
-                        "cursorObject": "215",
+                        "cursorObject": null,
                         "collisionGroup": 0,
                         "cursorRayObject": "213",
-                        "cursorRayScalingAxis": "y"
+                        "cursorRayScalingAxis": "y",
+                        "styleCursor": true
                     }
                 },
                 {
@@ -1707,17 +1709,17 @@
                 }
             ],
             "transformation": [
-                0.0099999,
+                0.1,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
-                0.0099999,
+                0.1,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
-                0.0099999,
+                0.1,
                 0.0,
                 0.0,
                 0.0,
@@ -2390,7 +2392,7 @@
     },
     "settings": {
         "project": {
-            "name": "Blocks",
+            "name": "Colliders",
             "version": [
                 0,
                 9,

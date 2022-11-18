@@ -22,8 +22,8 @@ WL.registerComponent('blockHandler', {
         this.missed = -1;
         if (this.hitTextObject) this.hitText = this.hitTextObject.getComponent('text');
         if (this.missedTextObject) this.missedText = this.missedTextObject.getComponent('text');
-        this.sfxExplosion = this.object.addComponent('howler-audio-source', {src: 'sfx/explosion.mp3', spatial: true});
-        this.sfxSwish = this.object.addComponent('howler-audio-source', {src: 'sfx/swish.mp3', spatial: true});
+        this.sfxExplosion = this.object.addComponent('howler-audio-source', {src: 'sfx/explosion.mp3', spatial: false});
+        this.sfxSwish = this.object.addComponent('howler-audio-source', {src: 'sfx/swish.mp3', spatial: false});
         this.spawn();
     },
     updateCount: function( textComp, value ){
@@ -39,8 +39,6 @@ WL.registerComponent('blockHandler', {
         glMatrix.vec3.add( this.tmpVec, this.tmpVec, this.tmpVec1 );
         this.object.setTranslationWorld( this.tmpVec );
         glMatrix.vec3.scale( this.direction, this.direction, -this.speed );
-        this.missed++;
-        this.updateCount( this.missedText, this.missed );
     },
     hitBlock: function(){
         console.log('blockHandler.hitBlock called')
@@ -65,6 +63,8 @@ WL.registerComponent('blockHandler', {
             const theta = glMatrix.vec3.angle( this.tmpVec, this.tmpVec1 );
             if (theta > Math.PI/2 ){
                 this.sfxSwish.play();
+                this.missed++;
+                this.updateCount( this.missedText, this.missed );
                 this.spawn();
             }
         }
