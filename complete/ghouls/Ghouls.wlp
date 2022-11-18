@@ -4211,6 +4211,16 @@
                         "preview": false,
                         "autoplay": true
                     }
+                },
+                {
+                    "type": "GhoulHandler",
+                    "GhoulHandler": {
+                        "path": "1263",
+                        "target": "18",
+                        "attackAnim": "1002",
+                        "dieAnim": "1001",
+                        "walkAnim": "1003"
+                    }
                 }
             ]
         },
