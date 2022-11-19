@@ -10,15 +10,13 @@ WL.registerComponent('GhoulHandler', {
         //console.log('init() with param', this.param);
         this.tmpVec = glMatrix.vec3.create();
         this.tmpVec1 = glMatrix.vec3.create();
+        this.tmpVec2 = glMatrix.vec3.create();
         this.tmpQuat = glMatrix.quat.create();
-        this.tmpQuat1 = glMatrix.quat.create();
-        //this.rotHeading = glMatrix.quat.create();
-        //glMatrix.quat.fromEuler( this.rotHeading, 0, Math.PI/2, 0 );
-        this.targetRotation = glMatrix.quat.create();
-        this.startRotation = glMatrix.quat.create();
+        
+        this.startTarget = glMatrix.vec3.create();
         this.target = glMatrix.vec3.create();
         this.direction = glMatrix.vec3.create();
-        this.rotateTime = 0.5;//time taken to rotate to target direction
+        this.rotateTime = 0.25;//time taken to rotate to target direction
     },
     start: function() {
         //console.log('start() with param', this.param);
@@ -42,18 +40,22 @@ WL.registerComponent('GhoulHandler', {
             this.getNode( this.tmpVec, index );
             this.getNode( this.target, index + 1 );
         }
-        glMatrix.quat.copy( this.startRotation, this.object.rotationWorld );
+        this.object.getForward( this.tmpVec2 );
         glMatrix.vec3.copy( this.tmpVec1, this.target );
         this.tmpVec1[1] = this.tmpVec[1];
         this.object.setTranslationWorld( this.tmpVec );
         this.object.lookAt( this.tmpVec1 );
-        //this.object.rotate( this.rotHeading );
-        glMatrix.quat.copy( this.targetRotation, this.object.rotationWorld );
+        //glMatrix.quat.copy( this.targetRotation, this.object.rotationLocal );
         glMatrix.vec3.subtract( this.direction, this.target, this.tmpVec );
         glMatrix.vec3.normalize( this.direction, this.direction );
         glMatrix.vec3.scale( this.direction, this.direction, this.speed );
-        if (index > 0){
-            glMatrix.quat.copy( this.object.rotationWorld, this.startRotation );
+        if (index == 0){
+            glMatrix.vec3.copy( this.startTarget, this.target );
+        }else{
+            const len = glMatrix.vec3.distance( this.target, this.tmpVec );
+            glMatrix.vec3.scale( this.tmpVec2, this.tmpVec2, len );
+            glMatrix.vec3.add( this.startTarget, this.tmpVec2, this.tmpVec );
+            this.object.lookAt( this.startTarget );
             this.pathTime = 0;
         } 
     },
@@ -61,8 +63,10 @@ WL.registerComponent('GhoulHandler', {
         this.path.children[index].getTranslationWorld( vec );
     },
     blendRotation: function( delta ){
-        glMatrix.quat.lerp( this.tmpQuat, this.startRotation, this.targetRotation, delta );
-        glMatrix.quat.copy( this.object.rotationWorld, this.tmpQuat );
+        glMatrix.vec3.lerp( this.tmpVec, this.startTarget, this.target, delta );
+        this.object.getTranslationWorld( this.tmpVec1 );
+        this.tmpVec[1] = this.tmpVec1[1];
+        this.object.lookAt( this.tmpVec );
     },
     update: function(dt) {
         //console.log('update() with delta time', dt);

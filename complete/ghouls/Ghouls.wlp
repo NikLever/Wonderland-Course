@@ -4219,7 +4219,8 @@
                         "target": "18",
                         "attackAnim": "1002",
                         "dieAnim": "1001",
-                        "walkAnim": "1003"
+                        "walkAnim": "1003",
+                        "vrCamera": "18"
                     }
                 }
             ]
