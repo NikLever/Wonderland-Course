@@ -4526,6 +4526,9 @@
                     "input": {
                         "type": "ray left"
                     }
+                },
+                {
+                    "type": "GunHandler"
                 }
             ]
         },
@@ -4538,6 +4541,9 @@
                     "input": {
                         "type": "ray right"
                     }
+                },
+                {
+                    "type": "GunHandler"
                 }
             ]
         },
@@ -4637,6 +4643,71 @@
                 0.0,
                 0.0,
                 0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "1316": {
+            "name": "Collider",
+            "parent": "918",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 1.3999999
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9999976,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.0,
+                0.9999976,
+                0.0,
+                0.0,
+                1.3694618,
+                0.0,
+                1.0
+            ]
+        },
+        "1317": {
+            "name": "Collider",
+            "parent": "1096",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "groups": 64,
+                        "sphere": {
+                            "radius": 1.3999999
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.9999963,
+                0.0,
+                5.960464477539063e-8,
+                1.3136997,
                 0.0,
                 1.0
             ]
