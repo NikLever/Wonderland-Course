@@ -4,7 +4,8 @@ WL.registerComponent('GhoulHandler', {
     speed: { type: WL.Type.Float, default: 2.0 },
     attackAnim: { type: WL.Type.Animation },
     dieAnim: { type: WL.Type.Animation },
-    walkAnim: { type: WL.Type.Animation }
+    walkAnim: { type: WL.Type.Animation },
+    delayStart: { type: WL.Type.Float, default: 0 }
 }, {
     init: function() {
         //console.log('init() with param', this.param);
@@ -17,14 +18,17 @@ WL.registerComponent('GhoulHandler', {
         this.target = glMatrix.vec3.create();
         this.direction = glMatrix.vec3.create();
         this.rotateTime = 0.25;//time taken to rotate to target direction
+
+        this.elapsedTime = 0;
+        this.mode = 0;//0-waiting 1-walking 2-attacking 3-dying 
     },
     start: function() {
         //console.log('start() with param', this.param);
         this.animComp = this.object.getComponent('animation');
-        this.spawn();
     },
     spawn: function(){
         this.animComp.animation = this.walkAnim;
+        this.animComp.playCount = 0;
         this.animComp.play();
         this.setPathSection( 0 );
     },
@@ -68,8 +72,14 @@ WL.registerComponent('GhoulHandler', {
         this.tmpVec[1] = this.tmpVec1[1];
         this.object.lookAt( this.tmpVec );
     },
-    update: function(dt) {
-        //console.log('update() with delta time', dt);
+    waiting: function(dt){
+        this.elapsedTime += dt;
+        if (this.elapsedTime > this.delayStart){
+            this.spawn();
+            this.mode = 1;
+        }
+    },
+    walking: function(dt){
         glMatrix.vec3.copy( this.tmpVec, this.direction );
         glMatrix.vec3.scale( this.tmpVec, this.tmpVec, dt );
         this.object.getTranslationWorld( this.tmpVec1 );
@@ -79,12 +89,56 @@ WL.registerComponent('GhoulHandler', {
         const dist2 = glMatrix.vec3.distance( this.tmpVec1, this.target );
         this.pathTime += dt;
         if ( this.pathTime < this.rotateTime ) this.blendRotation( this.pathTime/this.rotateTime );
+        if (this.playerTarget && dist2 < 2.5 ){
+            this.animComp.animation = this.attackAnim;
+            this.animComp.play();
+            this.elapsedTime = 0;
+            this.mode = 2;
+            return;
+        }
         if (dist2 > dist1){
             if (this.playerTarget){
                 this.spawn();
             }else{
                 this.setPathSection( ++this.pathIndex );
             }
+        }
+    },
+    attacking: function(dt){
+        this.elapsedTime += dt;
+        if (this.elapsedTime > 4){
+            this.spawn();
+            this.mode = 1;
+        }
+    },
+    dying: function(dt){
+        this.elapsedTime += dt;
+        if (this.elapsedTime > 4){
+            this.spawn();
+            this.mode = 1;
+        }
+    },
+    shot: function(){
+        this.animComp.animation = this.dieAnim;
+        this.animComp.playCount = 1;
+        this.animComp.play();
+        this.mode = 3;
+    },
+    update: function(dt) {
+        //console.log('update() with delta time', dt);
+        switch( this.mode ){
+            case 0:
+                this.waiting(dt);
+                break;
+            case 1:
+                this.walking(dt);
+                break;
+            case 2:
+                this.attacking(dt);
+                break;
+            case 3:
+                this.dying(dt);
+                break;
         }
     },
 });
