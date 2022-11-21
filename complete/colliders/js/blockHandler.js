@@ -19,7 +19,7 @@ WL.registerComponent('blockHandler', {
     start: function() {
         this.cube = this.object.children[0];
         this.hit = 0;
-        this.missed = -1;
+        this.missed = 0;
         if (this.hitTextObject) this.hitText = this.hitTextObject.getComponent('text');
         if (this.missedTextObject) this.missedText = this.missedTextObject.getComponent('text');
         this.sfxExplosion = this.object.addComponent('howler-audio-source', {src: 'sfx/explosion.mp3', spatial: false});

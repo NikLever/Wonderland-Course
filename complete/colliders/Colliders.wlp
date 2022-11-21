@@ -2044,7 +2044,8 @@
                     1.0,
                     1.0,
                     1.0
-                ]
+                ],
+                "font": "233"
             }
         },
         "20": {
@@ -2193,7 +2194,8 @@
                     0.0,
                     0.5411764,
                     1.0
-                ]
+                ],
+                "font": "233"
             }
         },
         "202": {
@@ -2575,5 +2577,13 @@
         "models/hand-left.glb",
         "models/hand-right.glb",
         "models/button.glb"
-    ]
+    ],
+    "fonts": {
+        "233": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    }
 }
