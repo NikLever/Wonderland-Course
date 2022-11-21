@@ -25,12 +25,17 @@ WL.registerComponent('GhoulHandler', {
     start: function() {
         //console.log('start() with param', this.param);
         this.animComp = this.object.getComponent('animation');
+
+        this.sfxFootsteps = this.object.addComponent('howler-audio-source', {src: 'sfx/footsteps.mp3', volume: 0.3, loop: true, spatial: false});
+        this.sfxGroan = this.object.addComponent('howler-audio-source', {src: 'sfx/groan.mp3', spatial: false});
+        this.sfxRoar = this.object.addComponent('howler-audio-source', {src: 'sfx/roar.mp3', spatial: false});
     },
     spawn: function(){
         this.animComp.animation = this.walkAnim;
         this.animComp.playCount = 0;
         this.animComp.play();
         this.setPathSection( 0 );
+        this.sfxFootsteps.play();
     },
     setPathSection( index ){
         console.log(`GhoulHandler.setPathSection> index=${index}`);
@@ -94,6 +99,8 @@ WL.registerComponent('GhoulHandler', {
             this.animComp.play();
             this.elapsedTime = 0;
             this.mode = 2;
+            this.sfxFootsteps.stop();
+            this.sfxRoar.play();
             return;
         }
         if (dist2 > dist1){
@@ -122,7 +129,10 @@ WL.registerComponent('GhoulHandler', {
         this.animComp.animation = this.dieAnim;
         this.animComp.playCount = 1;
         this.animComp.play();
+        this.elapsedTime = 0;
         this.mode = 3;
+        this.sfxFootsteps.stop();
+        this.sfxGroan.play();
     },
     update: function(dt) {
         //console.log('update() with delta time', dt);

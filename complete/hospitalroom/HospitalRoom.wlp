@@ -171,11 +171,11 @@
                     "type": "light",
                     "light": {
                         "attenuation": 0.0099999,
-                        "range": 9.3000001,
+                        "range": 20.0,
                         "color": [
-                            1.0,
-                            1.0,
-                            1.0
+                            0.6470588,
+                            0.6419838,
+                            0.6419838
                         ],
                         "type": "point"
                     }
@@ -208,7 +208,12 @@
                     "light": {
                         "attenuation": 0.0099999,
                         "range": 14.1000003,
-                        "type": "sun"
+                        "type": "point",
+                        "color": [
+                            0.5803921,
+                            0.5690118,
+                            0.5690118
+                        ]
                     },
                     "active": true
                 }
@@ -1485,6 +1490,9 @@
                         "mesh": "195",
                         "material": "202"
                     }
+                },
+                {
+                    "type": "UIHandler"
                 }
             ],
             "transformation": [
@@ -2839,6 +2847,120 @@
                 "name": "Mesh.032",
                 "file": "models\\hospital-room.glb"
             }
+        },
+        "479": {
+            "link": {
+                "name": "Mesh.007-uv1",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "480": {
+            "link": {
+                "name": "Mesh.007-uv2",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "481": {
+            "link": {
+                "name": "Mesh.007-uv3",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "482": {
+            "link": {
+                "name": "Mesh.008-uv1",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "483": {
+            "link": {
+                "name": "Mesh.008-uv2",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "484": {
+            "link": {
+                "name": "Mesh.008-uv3",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "485": {
+            "link": {
+                "name": "Mesh.008-uv1.0",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "486": {
+            "link": {
+                "name": "Mesh.008-uv2.0",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "487": {
+            "link": {
+                "name": "Mesh.008-uv3.0",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "488": {
+            "link": {
+                "name": "Mesh.023-uv1",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "489": {
+            "link": {
+                "name": "Mesh.023-uv2",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "490": {
+            "link": {
+                "name": "Mesh.023-uv1.0",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "491": {
+            "link": {
+                "name": "Mesh.023-uv2.0",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "492": {
+            "link": {
+                "name": "Mesh.023-uv1.1",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "493": {
+            "link": {
+                "name": "Mesh.023-uv2.1",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "494": {
+            "link": {
+                "name": "Mesh.025-uv1",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "495": {
+            "link": {
+                "name": "Mesh.025-uv2",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "496": {
+            "link": {
+                "name": "Mesh.025-uv1.0",
+                "file": "models\\hospital-room.glb"
+            }
+        },
+        "497": {
+            "link": {
+                "name": "Mesh.025-uv2.0",
+                "file": "models\\hospital-room.glb"
+            }
         }
     },
     "textures": {
@@ -4068,7 +4190,7 @@
             "version": [
                 0,
                 9,
-                2
+                3
             ]
         },
         "vr": {

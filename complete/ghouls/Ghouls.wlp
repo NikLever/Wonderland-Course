@@ -240,13 +240,16 @@
                 1.0,
                 0.0,
                 0.0,
-                1.75,
+                1.25,
                 0.0,
                 1.0
             ],
             "components": [
                 {
-                    "type": "player-height"
+                    "type": "player-height",
+                    "player-height": {
+                        "height": 1.25
+                    }
                 }
             ]
         },
@@ -4307,9 +4310,9 @@
                 0.0,
                 -0.0,
                 0.0,
+                0.0,
                 -0.0,
-                -0.0,
-                0.0099999,
+                0.0100001,
                 0.0,
                 0.0,
                 -0.0099999,
@@ -4318,202 +4321,6 @@
                 0.0,
                 0.0,
                 0.0,
-                1.0
-            ]
-        },
-        "194": {
-            "name": "Panel",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "195",
-                        "material": "202"
-                    }
-                }
-            ],
-            "transformation": [
-                0.25,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.062447,
-                0.1082836,
-                0.0,
-                0.0,
-                -0.2165673,
-                0.1248941,
-                0.0,
-                -2.5,
-                1.2,
-                0.0,
-                1.0
-            ]
-        },
-        "197": {
-            "name": "Button",
-            "parent": "194",
-            "transformation": [
-                0.4,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.4999999,
-                -0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.3,
-                0.0,
-                0.0,
-                0.057682,
-                0.1754341,
-                1.0
-            ],
-            "components": [
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "box",
-                        "box": {
-                            "extents": [
-                                0.0974999,
-                                0.025,
-                                0.045
-                            ]
-                        },
-                        "groups": 251
-                    }
-                },
-                {
-                    "type": "cursor-target"
-                },
-                {
-                    "type": "button",
-                    "button": {
-                        "buttonMeshObject": "196",
-                        "hoverMaterial": "203"
-                    }
-                }
-            ]
-        },
-        "196": {
-            "link": {
-                "name": "Cube",
-                "file": "models\\button.glb"
-            },
-            "parent": "197",
-            "components": [
-                {
-                    "mesh": {
-                        "material": "26"
-                    }
-                }
-            ],
-            "name": "ButtonMesh",
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.999999,
-                0.0000012,
-                0.0,
-                0.0,
-                -0.0000019,
-                0.999999,
-                0.0,
-                -0.0000095,
-                0.3244419,
-                -0.0000677,
-                1.0
-            ]
-        },
-        "198": {
-            "name": "ButtonLabel",
-            "parent": "196",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Thanks!"
-                    }
-                }
-            ],
-            "transformation": [
-                2.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0031942,
-                -3.7999985,
-                0.0,
-                0.0,
-                4.8000044,
-                0.0040349,
-                0.0,
-                -0.0001564,
-                0.108458,
-                0.0000047,
-                1.0
-            ]
-        },
-        "200": {
-            "name": "Title",
-            "parent": "194",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Welcome to\nWonderland",
-                        "material": "201"
-                    }
-                }
-            ],
-            "transformation": [
-                1.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0021012,
-                -2.9999995,
-                0.0,
-                0.0,
-                1.4999996,
-                0.0010506,
-                0.0,
-                -0.0000023,
-                0.1554994,
-                -0.3034151,
-                1.0
-            ]
-        },
-        "208": {
-            "link": {
-                "name": "TeleportIndicator",
-                "file": "models\\teleport-indicator.glb"
-            },
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0099999,
-                1.3311299,
                 1.0
             ]
         },
@@ -4528,8 +4335,30 @@
                     }
                 },
                 {
-                    "type": "GunHandler"
+                    "type": "GunHandler",
+                    "GunHandler": {
+                        "bulletMesh": "1300",
+                        "bulletMaterial": "25"
+                    }
                 }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.2489805,
+                0.0,
+                0.0000269,
+                1.0
             ]
         },
         "1311": {
@@ -4543,8 +4372,30 @@
                     }
                 },
                 {
-                    "type": "GunHandler"
+                    "type": "GunHandler",
+                    "GunHandler": {
+                        "bulletMesh": "1300",
+                        "bulletMaterial": "25"
+                    }
                 }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.1619075,
+                0.0,
+                0.0000185,
+                1.0
             ]
         },
         "1312": {
@@ -4686,7 +4537,7 @@
                 {
                     "type": "collision",
                     "collision": {
-                        "groups": 64,
+                        "groups": 255,
                         "sphere": {
                             "radius": 1.3999999
                         }
@@ -4710,6 +4561,14 @@
                 1.3136997,
                 0.0,
                 1.0
+            ]
+        },
+        "1318": {
+            "name": "bullet",
+            "components": [
+                {
+                    "type": "BulletHandler"
+                }
             ]
         }
     },
