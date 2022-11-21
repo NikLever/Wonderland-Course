@@ -1,11 +1,10 @@
 WL.registerComponent('blockHandler', {
     vrCamera: {type: WL.Type.Object, default: null},
-    speed: {type: WL.Type.Float, default: 5.0 },
-    countTextObject: {type: WL.Type.Object, default: null}
+    speed: {type: WL.Type.Float, default: 5.0 }
 }, {
     init: function() {
         if (this.vrCamera == null){
-            console.warning('blockHandler needs a vrCamera assigning to support motion through space ');
+            console.warn('blockHandler needs a vrCamera assigning to support motion through space ');
         }
         this.rotation = glMatrix.quat.create();
         glMatrix.quat.fromEuler(this.rotation, 1, 1, 0);
@@ -13,17 +12,10 @@ WL.registerComponent('blockHandler', {
         this.direction = glMatrix.vec3.create();
         this.tmpVec = glMatrix.vec3.create();
         this.tmpVec1 = glMatrix.vec3.create();
-        this.count = 0;
     },
     start: function() {
-        this.cube = this.object.children[0];
-        if (this.countTextObject) this.countText = this.countTextObject.getComponent('text'); 
+        this.cube = this.object.children[0]; 
         this.spawn();
-    },
-    updateCount: function(){
-        if (this.countText == null) return;
-        this.countText.text = this.count.toString();
-        console.log(`count=${this.count}`);
     },
     spawn: function() { 
         if ( this.vrCamera == null ) return;
@@ -34,8 +26,6 @@ WL.registerComponent('blockHandler', {
         glMatrix.vec3.add( this.tmpVec, this.tmpVec, this.tmpVec1 );
         this.object.setTranslationWorld( this.tmpVec );
         glMatrix.vec3.scale( this.direction, this.direction, -this.speed );
-        this.count++;
-        this.updateCount();
     },
     update: function(dt) {
         glMatrix.quat.scale( this.tmpQuat, this.rotation, dt );
