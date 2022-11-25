@@ -4200,8 +4200,10 @@
         "scripting": {
             "sourcePaths": [
                 "/js/editor-components-bundle.js",
-                "js/"
-            ]
+                "js/",
+                "static/js/CanvasUI.js"
+            ],
+            "useInternalBundler": true
         },
         "runtime": {
             "visualizeColliders": false,
