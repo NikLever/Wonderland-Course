@@ -15,9 +15,9 @@
                 0.0,
                 0.9999998,
                 0.0,
-                -2.5,
+                0.9630908,
                 0.0,
-                1.1575536,
+                2.9209005,
                 1.0
             ]
         },
@@ -74,6 +74,14 @@
                     "mesh": {
                         "mesh": "8",
                         "material": "22"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.6999999
+                        }
                     }
                 }
             ],
@@ -269,6 +277,19 @@
                         "mesh": "10",
                         "material": "25"
                     }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.6999999,
+                                1.0,
+                                0.6999999
+                            ]
+                        }
+                    }
                 }
             ],
             "transformation": [
@@ -298,6 +319,14 @@
                     "mesh": {
                         "mesh": "9",
                         "material": "26"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.8
+                        }
                     }
                 }
             ],
@@ -809,7 +838,7 @@
                 {
                     "type": "cursor",
                     "cursor": {
-                        "cursorObject": "127",
+                        "cursorObject": null,
                         "collisionGroup": 0,
                         "cursorRayObject": "209",
                         "cursorRayScalingAxis": "y"
@@ -819,6 +848,13 @@
                     "type": "input",
                     "input": {
                         "type": "ray left"
+                    }
+                },
+                {
+                    "type": "pickup",
+                    "pickup": {
+                        "collisionIndicator": "127",
+                        "returnOnRelease": false
                     }
                 }
             ],
@@ -1639,7 +1675,7 @@
                 {
                     "type": "cursor",
                     "cursor": {
-                        "cursorObject": "215",
+                        "cursorObject": null,
                         "collisionGroup": 0,
                         "cursorRayObject": "213",
                         "cursorRayScalingAxis": "y"
@@ -1649,6 +1685,12 @@
                     "type": "input",
                     "input": {
                         "type": "ray right"
+                    }
+                },
+                {
+                    "type": "pickup",
+                    "pickup": {
+                        "collisionIndicator": "215"
                     }
                 }
             ],
