@@ -33,7 +33,7 @@ WL.registerComponent('pickup', {
         });
 
         s.addEventListener('selectend', (e) => {
-            console.log(`Drop ${this.holding}`);      
+            console.log(`Drop ${this._holding}`);      
         });
     },
     update: function(dt) {

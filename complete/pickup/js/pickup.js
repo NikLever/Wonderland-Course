@@ -47,14 +47,14 @@ WL.registerComponent('pickup', {
                     this._grabObject = grabObject;
 
                     this.collisionIndicator.active = false;
-                    
+
                     this._holding = true;
                 }
             }
         });
 
         s.addEventListener('selectend', (e) => {
-            console.log(`Drop ${this.holding}`);
+            console.log(`Drop ${this._holding}`);
             if (this._holding){
                 if (this.returnOnRelease){
                     this._grabObject.transformLocal.set( this._grabTransform );
