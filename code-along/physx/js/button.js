@@ -12,8 +12,6 @@ WL.registerComponent('button', {
         this.target.addDownFunction(this.onDown.bind(this));
         this.target.addUpFunction(this.onUp.bind(this));
 
-        if (this.cube) this.physx = this.cube.getComponent( 'physx' );
-
         this.soundClick = this.object.addComponent('howler-audio-source', {src: 'sfx/click.wav', spatial: true});
         this.soundUnClick = this.object.addComponent('howler-audio-source', {src: 'sfx/unclick.wav', spatial: true});
     },

@@ -343,7 +343,9 @@
                     "physx": {
                         "sphere": {
                             "radius": 0.75
-                        }
+                        },
+                        "mass": 0.1,
+                        "bounciness": 1.0
                     }
                 }
             ],
@@ -2241,7 +2243,8 @@
                     1.0,
                     1.0,
                     1.0
-                ]
+                ],
+                "font": "232"
             }
         },
         "20": {
@@ -2381,7 +2384,8 @@
                     0.0,
                     0.5411764,
                     1.0
-                ]
+                ],
+                "font": "232"
             }
         },
         "202": {
@@ -2584,7 +2588,7 @@
             "version": [
                 0,
                 9,
-                3
+                4
             ]
         },
         "vr": {
@@ -2697,6 +2701,9 @@
             "link": {
                 "name": "Flat Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "36": {
@@ -2715,6 +2722,9 @@
             "link": {
                 "name": "Phong Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "39": {
@@ -2745,6 +2755,9 @@
             "link": {
                 "name": "Physical Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "226": {
@@ -2758,6 +2771,18 @@
                 "name": "Sky",
                 "file": "default"
             }
+        },
+        "230": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            }
+        },
+        "231": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            }
         }
     },
     "files": [
@@ -2767,5 +2792,13 @@
         "models/hand-right.glb",
         "models/button.glb",
         "models/teleport-indicator.glb"
-    ]
+    ],
+    "fonts": {
+        "232": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    }
 }
