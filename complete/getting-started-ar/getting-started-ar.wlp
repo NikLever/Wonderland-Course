@@ -309,7 +309,7 @@
                 "file": "default"
             },
             "Text": {
-                "font": "61"
+                "font": "59"
             }
         },
         "20": {
@@ -545,7 +545,7 @@
             "version": [
                 0,
                 9,
-                4
+                3
             ]
         },
         "vr": {
@@ -683,7 +683,7 @@
     "textures": {},
     "images": {},
     "fonts": {
-        "61": {
+        "59": {
             "link": {
                 "name": "DejaVuSans.ttf",
                 "file": "default"
