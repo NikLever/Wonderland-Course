@@ -852,12 +852,6 @@
                 {
                     "type": "vr-mode-active-switch",
                     "active": true
-                },
-                {
-                    "type": "teleportPlayer",
-                    "teleportPlayer": {
-                        "player": "14"
-                    }
                 }
             ]
         },
@@ -900,13 +894,6 @@
                 {
                     "type": "vr-mode-active-switch",
                     "active": true
-                },
-                {
-                    "type": "teleportPlayer",
-                    "teleportPlayer": {
-                        "navmesh": "15",
-                        "player": "14"
-                    }
                 }
             ],
             "transformation": [
@@ -2001,7 +1988,7 @@
                     "type": "animation",
                     "animation": {
                         "animation": "612",
-                        "preview": true
+                        "preview": false
                     }
                 }
             ],
@@ -3760,7 +3747,8 @@
                     1.0,
                     1.0,
                     1.0
-                ]
+                ],
+                "font": "619"
             }
         },
         "20": {
@@ -3900,7 +3888,8 @@
                     0.0,
                     0.5411764,
                     1.0
-                ]
+                ],
+                "font": "619"
             }
         },
         "202": {
@@ -4443,5 +4432,13 @@
         "models/snowman.fbx",
         "models/textures/Snowman_diff.png",
         "models/textures/Snowman_ddn.png"
-    ]
+    ],
+    "fonts": {
+        "619": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    }
 }

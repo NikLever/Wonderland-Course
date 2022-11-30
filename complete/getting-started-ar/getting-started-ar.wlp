@@ -55,7 +55,7 @@
                 0.0,
                 0.0,
                 0.4999999,
-                5.960464477539064e-8,
+                5.960464477539065e-8,
                 1.0
             ]
         },
@@ -307,6 +307,9 @@
             "link": {
                 "name": "DefaultFontMaterial",
                 "file": "default"
+            },
+            "Text": {
+                "font": "59"
             }
         },
         "20": {
@@ -542,7 +545,7 @@
             "version": [
                 0,
                 9,
-                2
+                3
             ]
         },
         "vr": {
@@ -657,5 +660,13 @@
         "models/ar-target.glb"
     ],
     "textures": {},
-    "images": {}
+    "images": {},
+    "fonts": {
+        "59": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    }
 }
