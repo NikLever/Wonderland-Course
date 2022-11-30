@@ -45,20 +45,6 @@
                         },
                         "groups": 4
                     }
-                },
-                {
-                    "type": "physx",
-                    "physx": {
-                        "shape": "box",
-                        "box": {
-                            "extents": [
-                                4.0,
-                                4.0,
-                                0.1
-                            ]
-                        },
-                        "static": true
-                    }
                 }
             ],
             "transformation": [
@@ -89,20 +75,6 @@
                         "mesh": "8",
                         "material": "22"
                     }
-                },
-                {
-                    "type": "physx",
-                    "physx": {
-                        "shape": "box",
-                        "box": {
-                            "extents": [
-                                0.5,
-                                0.5,
-                                0.5
-                            ]
-                        }
-                    },
-                    "active": false
                 }
             ],
             "transformation": [
@@ -297,16 +269,6 @@
                         "mesh": "10",
                         "material": "25"
                     }
-                },
-                {
-                    "type": "physx",
-                    "physx": {
-                        "shape": "convexMesh",
-                        "convexMesh": {
-                            "mesh": "10"
-                        },
-                        "static": true
-                    }
                 }
             ],
             "transformation": [
@@ -336,16 +298,6 @@
                     "mesh": {
                         "mesh": "9",
                         "material": "26"
-                    }
-                },
-                {
-                    "type": "physx",
-                    "physx": {
-                        "sphere": {
-                            "radius": 0.75
-                        },
-                        "mass": 0.1,
-                        "bounciness": 1.0
                     }
                 }
             ],
