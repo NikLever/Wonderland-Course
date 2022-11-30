@@ -55,7 +55,7 @@
                 0.0,
                 0.0,
                 0.4999999,
-                5.960464477539064e-8,
+                5.960464477539065e-8,
                 1.0
             ]
         },
@@ -307,6 +307,9 @@
             "link": {
                 "name": "DefaultFontMaterial",
                 "file": "default"
+            },
+            "Text": {
+                "font": "61"
             }
         },
         "20": {
@@ -397,7 +400,7 @@
                 "name": "AR Target Material",
                 "file": "models\\ar-target.glb"
             },
-            "pipeline": "39",
+            "pipeline": "34",
             "Phong": {
                 "ambientColor": [
                     0.5921568,
@@ -542,7 +545,7 @@
             "version": [
                 0,
                 9,
-                2
+                4
             ]
         },
         "vr": {
@@ -590,6 +593,9 @@
             "link": {
                 "name": "Flat Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "36": {
@@ -608,6 +614,9 @@
             "link": {
                 "name": "Phong Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "39": {
@@ -638,6 +647,9 @@
             "link": {
                 "name": "Physical Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "55": {
@@ -651,11 +663,31 @@
                 "name": "Sky",
                 "file": "default"
             }
+        },
+        "59": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            }
+        },
+        "60": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            }
         }
     },
     "files": [
         "models/ar-target.glb"
     ],
     "textures": {},
-    "images": {}
+    "images": {},
+    "fonts": {
+        "61": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    }
 }
