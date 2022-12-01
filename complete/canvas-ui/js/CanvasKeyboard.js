@@ -1,5 +1,3 @@
-//import { CanvasUI } from './CanvasUI.js';
-
 class CanvasKeyboard{
     constructor( width, canvasui, lang = "EN" ){
         const config = this.getConfig( lang );
@@ -250,5 +248,3 @@ class CanvasKeyboard{
         }
     }
 }
-
-//export { CanvasKeyboard };
