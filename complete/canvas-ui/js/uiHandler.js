@@ -275,7 +275,7 @@ WL.registerComponent('uiHandler', {
         console.log('onUp');
         this.soundUnClick.play();
 
-        if (this.ui) this.ui.select(0);
+        if (this.ui) this.ui.select( 0, true );
 
         this.hapticFeedback(cursor.object, 0.7, 20);
     },

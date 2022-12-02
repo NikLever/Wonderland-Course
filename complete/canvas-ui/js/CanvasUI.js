@@ -362,7 +362,7 @@ class CanvasUI{
             const obj = this.keyboard.object;
             glMatrix.quat.fromEuler( this.tmpQuat, -15, 0, 0 );
             obj.rotate( this.tmpQuat );
-            obj.translate( [0, -height*4, 4] );
+            obj.translate( [0, -height*12, 12] );
             glMatrix.vec3.divide(this.tmpVec, obj.scalingLocal, object.scalingWorld);
             obj.resetScaling();
             obj.scale(this.tmpVec);
@@ -481,7 +481,7 @@ class CanvasUI{
         s.addEventListener( 'selectend', onSelectEnd.bind(this) );
         
     }
-    
+
     setClip( elm ){
         const context = this.context;
         
@@ -606,12 +606,36 @@ class CanvasUI{
          
     }
     
-    select( index = 0 ){
+    select( index = 0, mouse=false ){
         if (this.selectedElements[index] !== undefined){
             const elm = this.selectedElements[index];
             if (elm.onSelect) elm.onSelect();
             if (elm.type === 'input-text'){
-                this.keyboard.visible = (this.keyboard.visible) ? false : true;
+                if (mouse){
+                    if ( this.keyboard ){
+                        if ( this.keyboard.visible ){
+                            this.keyboard.linkedUI = undefined;
+                            this.keyboard.linkedText = undefined;
+                            this.keyboard.linkedElement = undefined;
+                            this.keyboard.visible = false;
+                        }else{
+                            this.keyboard.linkedUI = this;
+                            let name;
+                            Object.entries( this.config ).forEach( ([prop, value]) => {
+                                if ( value == elm ) name = prop;
+                            });
+                            const y = (0.5-((elm.position.y + elm.height + this.config.body.padding )/this.config.height)) * this.panelSize.height;
+                            const h = Math.max( this.panelSize.width, this.panelSize.height )/2;
+                            //this.keyboard.position.set( [0, h/1.5 - y, -0.1] );
+                            this.keyboard.linkedText = this.content[ name ];
+                            this.keyboard.linkedName = name;
+                            this.keyboard.linkedElement = elm;
+                            this.keyboard.visible = true;
+                        }
+                    }
+                }else{
+                    this.keyboard.visible = (this.keyboard.visible) ? false : true;
+                }
             }else{
                 this.selectedElements[index] = undefined;
             }
