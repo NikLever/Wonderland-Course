@@ -611,7 +611,7 @@ class CanvasUI{
             const elm = this.selectedElements[index];
             if (elm.onSelect) elm.onSelect();
             if (elm.type === 'input-text'){
-                this.keyboard.object.active = true;
+                this.keyboard.visible = (this.keyboard.visible) ? false : true;
             }else{
                 this.selectedElements[index] = undefined;
             }
