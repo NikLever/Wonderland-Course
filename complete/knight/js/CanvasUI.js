@@ -11,6 +11,7 @@ class CanvasKeyboard{
         const uimesh = canvasui.object.getComponent('mesh');
         mesh.mesh = uimesh.mesh;
         mesh.material = uimesh.material.clone();
+        object.addComponent('cursor-target');
 
         const content = this.getContent(lang);
 
@@ -359,7 +360,9 @@ class CanvasUI{
             const height = (config.panelSize) ? config.panelSize.height : 1;
             this.keyboard = new CanvasKeyboard(width, this );
             const obj = this.keyboard.object;
-            obj.translate( [0, -height, -3] );
+            glMatrix.quat.fromEuler( this.tmpQuat, -15, 0, 0 );
+            obj.rotate( this.tmpQuat );
+            obj.translate( [0, -height*12, 12] );
             glMatrix.vec3.divide(this.tmpVec, obj.scalingLocal, object.scalingWorld);
             obj.resetScaling();
             obj.scale(this.tmpVec);
@@ -376,6 +379,10 @@ class CanvasUI{
             const btns = Object.values(config).filter( (value) => { return value.type === "button" || value.overflow === "scroll" || value.type === "input-text" });
             if (btns.length>0){
                 WL.onXRSessionStart.push(this.initControllers.bind(this));
+                const extents = new Float32Array(3);
+                glMatrix.vec3.copy( extents, this.object.scalingWorld );
+                //glMatrix.vec3.scale( extents, extents, 1.1 );
+                const collision = this.object.addComponent( 'collision', { collider: 2, extents, group: this.collisionGroup });
             }
         }
         
@@ -416,11 +423,6 @@ class CanvasUI{
         });
 
         if (!(this.rayLeft && this.rayRight)) console.warn( 'Player CursorLeft or Player CursorRight not found');
-
-        const extents = new Float32Array(3);
-        glMatrix.vec3.copy( extents, this.object.scalingWorld );
-        //glMatrix.vec3.scale( extents, extents, 1.1 );
-        const collision = this.object.addComponent( 'collision', { collider: 2, extents, group: this.collisionGroup })
         
         function onSelect( event ) {     
             const index = (event.inputSource.handedness === 'left') ? 0 : 1;
@@ -479,7 +481,7 @@ class CanvasUI{
         s.addEventListener( 'selectend', onSelectEnd.bind(this) );
         
     }
-    
+
     setClip( elm ){
         const context = this.context;
         
@@ -604,12 +606,36 @@ class CanvasUI{
          
     }
     
-    select( index = 0 ){
+    select( index = 0, mouse=false ){
         if (this.selectedElements[index] !== undefined){
             const elm = this.selectedElements[index];
             if (elm.onSelect) elm.onSelect();
             if (elm.type === 'input-text'){
-                this.keyboard.object.active = true;
+                if (mouse){
+                    if ( this.keyboard ){
+                        if ( this.keyboard.visible ){
+                            this.keyboard.linkedUI = undefined;
+                            this.keyboard.linkedText = undefined;
+                            this.keyboard.linkedElement = undefined;
+                            this.keyboard.visible = false;
+                        }else{
+                            this.keyboard.linkedUI = this;
+                            let name;
+                            Object.entries( this.config ).forEach( ([prop, value]) => {
+                                if ( value == elm ) name = prop;
+                            });
+                            const y = (0.5-((elm.position.y + elm.height + this.config.body.padding )/this.config.height)) * this.panelSize.height;
+                            const h = Math.max( this.panelSize.width, this.panelSize.height )/2;
+                            //this.keyboard.position.set( [0, h/1.5 - y, -0.1] );
+                            this.keyboard.linkedText = this.content[ name ];
+                            this.keyboard.linkedName = name;
+                            this.keyboard.linkedElement = elm;
+                            this.keyboard.visible = true;
+                        }
+                    }
+                }else{
+                    this.keyboard.visible = (this.keyboard.visible) ? false : true;
+                }
             }else{
                 this.selectedElements[index] = undefined;
             }
