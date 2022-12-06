@@ -246,8 +246,10 @@ WL.registerComponent('uiHandler', {
     }, 
     onHover: function(_, cursor) {
         //console.log('onHover');
-        const xy = this.ui.worldToCanvas(cursor.cursorPos);
-        if (this.ui) this.ui.hover(0, xy);
+        if (this.ui){
+            const xy = this.ui.worldToCanvas(cursor.cursorPos);
+            this.ui.hover(0, xy);
+        }
 
         if(cursor.type == 'finger-cursor') {
             this.onDown(_, cursor);
@@ -257,9 +259,10 @@ WL.registerComponent('uiHandler', {
     },
 
     onMove: function(_, cursor) {
-        this.ui.worldToCanvas(cursor.cursorPos);
-        const xy = this.ui.worldToCanvas(cursor.cursorPos);
-        if (this.ui) this.ui.hover(0, xy);
+        if (this.ui){
+            const xy = this.ui.worldToCanvas(cursor.cursorPos);
+            this.ui.hover(0, xy);
+        }
 
         this.hapticFeedback(cursor.object, 0.5, 50);
     },
