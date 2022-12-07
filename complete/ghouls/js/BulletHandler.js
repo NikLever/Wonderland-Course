@@ -9,11 +9,14 @@ WL.registerComponent('BulletHandler', {
         this.collision = this.object.addComponent('collision');
         this.collision.extents[0] = 0.1;
         this.collision.group = (1 << this.collisionGroup);
+        this.object.getTranslationWorld( this.tmpVec );
+        this.object.resetTranslationRotation();
         this.object.rotateAxisAngleDeg([0,1,0], 90);
+        this.object.setTranslationWorld( this.tmpVec );
     },
     update: function(dt) {
         glMatrix.vec3.copy( this.tmpVec, this.direction );
-        glMatrix.vec3.scale( this.tmpVec, this.tmpVec, dt * 10 );
+        glMatrix.vec3.scale( this.tmpVec, this.tmpVec, dt * 1 );
         this.object.translate( this.tmpVec );
         this.elapsedTime += dt;
         if ( this.elapsedTime > 3) this.object.active = false;
