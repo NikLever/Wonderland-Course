@@ -15,9 +15,9 @@
                 0.0,
                 0.9999998,
                 0.0,
-                -2.5,
+                -7.5163321,
                 0.0,
-                1.1575536,
+                -1.0215582,
                 1.0
             ],
             "components": [
@@ -142,7 +142,7 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.0099999,
+                        "attenuation": 0.003,
                         "range": 40.0
                     }
                 }
@@ -160,7 +160,7 @@
                 0.0,
                 1.0,
                 0.0,
-                0.0,
+                18.0956192,
                 3.0,
                 2.0,
                 1.0
@@ -172,9 +172,10 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.1
+                        "attenuation": 0.001,
+                        "range": 40.0
                     },
-                    "active": false
+                    "active": true
                 }
             ],
             "transformation": [
@@ -190,9 +191,9 @@
                 0.0,
                 1.0,
                 0.0,
-                -1.0,
+                0.0553407,
                 3.0,
-                -1.0,
+                -2.398663,
                 1.0
             ]
         },
@@ -707,7 +708,8 @@
                         "indicatorYOffset": 0.0099999,
                         "eyeLeft": "18",
                         "eyeRight": "19"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "transformation": [
@@ -1441,183 +1443,6 @@
             "parent": "167",
             "skin": "166"
         },
-        "194": {
-            "name": "Panel",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "195",
-                        "material": "202"
-                    }
-                }
-            ],
-            "transformation": [
-                0.25,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.062447,
-                0.1082836,
-                0.0,
-                0.0,
-                -0.2165673,
-                0.1248941,
-                0.0,
-                -2.5,
-                1.2,
-                0.0,
-                1.0
-            ],
-            "deleted": true
-        },
-        "196": {
-            "link": {
-                "name": "Cube",
-                "file": "models\\button.glb"
-            },
-            "parent": "197",
-            "components": [
-                {
-                    "mesh": {
-                        "material": "26"
-                    }
-                }
-            ],
-            "name": "ButtonMesh",
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.999999,
-                0.0000012,
-                0.0,
-                0.0,
-                -0.0000019,
-                0.999999,
-                0.0,
-                -0.0000095,
-                0.3244419,
-                -0.0000677,
-                1.0
-            ],
-            "deleted": true
-        },
-        "197": {
-            "name": "Button",
-            "parent": "194",
-            "transformation": [
-                0.4,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.4999999,
-                -0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.3,
-                0.0,
-                0.0,
-                0.057682,
-                0.1754341,
-                1.0
-            ],
-            "components": [
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "box",
-                        "box": {
-                            "extents": [
-                                0.0974999,
-                                0.025,
-                                0.045
-                            ]
-                        },
-                        "groups": 251
-                    }
-                },
-                {
-                    "type": "cursor-target"
-                },
-                {
-                    "type": "button",
-                    "button": {
-                        "buttonMeshObject": "196",
-                        "hoverMaterial": "203"
-                    }
-                }
-            ],
-            "deleted": true
-        },
-        "198": {
-            "name": "ButtonLabel",
-            "parent": "196",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Thanks!"
-                    }
-                }
-            ],
-            "transformation": [
-                2.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0031942,
-                -3.7999985,
-                0.0,
-                0.0,
-                4.8000044,
-                0.0040349,
-                0.0,
-                -0.0001564,
-                0.108458,
-                0.0000047,
-                1.0
-            ],
-            "deleted": true
-        },
-        "200": {
-            "name": "Title",
-            "parent": "194",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Welcome to\nWonderland",
-                        "material": "201"
-                    }
-                }
-            ],
-            "transformation": [
-                1.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0021012,
-                -2.9999995,
-                0.0,
-                0.0,
-                1.4999996,
-                0.0010506,
-                0.0,
-                -0.0000023,
-                0.1554994,
-                -0.3034151,
-                1.0
-            ],
-            "deleted": true
-        },
         "204": {
             "name": "TeleportTarget",
             "components": [
@@ -1666,13 +1491,16 @@
                 1.0,
                 0.0,
                 0.0,
-                1.75,
+                1.25,
                 0.0,
                 1.0
             ],
             "components": [
                 {
-                    "type": "player-height"
+                    "type": "player-height",
+                    "player-height": {
+                        "height": 1.25
+                    }
                 }
             ]
         },
@@ -1783,7 +1611,8 @@
                         "indicatorYOffset": 0.0099999,
                         "eyeLeft": "18",
                         "eyeRight": "19"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "transformation": [
@@ -1885,53 +1714,6 @@
                 0.0,
                 0.0,
                 0.0,
-                1.0
-            ],
-            "parent": null,
-            "deleted": true
-        },
-        "216": {
-            "name": "FloorPlane",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "7",
-                        "material": "20"
-                    },
-                    "active": true
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                1.0,
-                                0.05,
-                                1.0
-                            ]
-                        },
-                        "groups": 4
-                    }
-                }
-            ],
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                -0.0004041,
-                -0.9999999,
-                0.0,
-                0.0,
-                0.9999999,
-                -0.0004041,
-                0.0,
-                0.0,
-                -4.76837158203125e-7,
-                -6.5,
                 1.0
             ],
             "parent": null,
@@ -2113,17 +1895,53 @@
                 "file": "models\\factory.glb"
             },
             "transformation": [
-                0.8765776,
-                -2.9802322387695315e-8,
-                -0.4812605,
+                1.0,
+                -5.099774824657288e-8,
                 0.0,
-                0.4812605,
-                -1.9371512394172897e-7,
-                0.8765777,
                 0.0,
-                -1.0430814256778831e-7,
-                -1.0000001,
-                -1.6018749704471703e-7,
+                -0.0,
+                -1.1920928955078125e-7,
+                0.9999999,
+                0.0,
+                -5.099775535200024e-8,
+                -1.0,
+                -1.1920930376163597e-7,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "active": false
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "triangleMesh",
+                        "triangleMesh": {
+                            "mesh": "439"
+                        },
+                        "static": true
+                    }
+                }
+            ]
+        },
+        "576": {
+            "name": "Empty",
+            "transformation": [
+                1.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.5,
                 0.0,
                 0.0,
                 0.0,
@@ -3554,6 +3372,18 @@
                 "name": "texture_5",
                 "file": "factory\\factory.glb"
             }
+        },
+        "574": {
+            "link": {
+                "name": "texture_4",
+                "file": "models\\factory.glb"
+            }
+        },
+        "575": {
+            "link": {
+                "name": "texture_5",
+                "file": "models\\factory.glb"
+            }
         }
     },
     "images": {
@@ -3658,7 +3488,8 @@
                     1.0,
                     1.0,
                     1.0
-                ]
+                ],
+                "font": "573"
             }
         },
         "20": {
@@ -3798,7 +3629,8 @@
                     0.0,
                     0.5411764,
                     1.0
-                ]
+                ],
+                "font": "573"
             }
         },
         "202": {
@@ -4557,6 +4389,96 @@
                 "name": "Depth",
                 "file": "default"
             }
+        },
+        "552": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "553": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "554": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "555": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "556": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "557": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "558": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "559": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "560": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "563": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "564": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "565": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "567": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "568": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        },
+        "569": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
         }
     },
     "settings": {
@@ -4565,7 +4487,7 @@
             "version": [
                 0,
                 9,
-                3
+                4
             ]
         },
         "vr": {
@@ -4584,7 +4506,8 @@
                 "optionalFeatures": {
                     "local-floor": true
                 }
-            }
+            },
+            "visualizePhysX": false
         },
         "physx": {
             "enable": true
@@ -4678,6 +4601,9 @@
             "link": {
                 "name": "Flat Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "36": {
@@ -4696,6 +4622,9 @@
             "link": {
                 "name": "Phong Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "39": {
@@ -4715,6 +4644,45 @@
                 "name": "Depth",
                 "file": "default"
             }
+        },
+        "561": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "562": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
+            }
+        },
+        "566": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "570": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            }
+        },
+        "571": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            }
+        },
+        "572": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            }
         }
     },
     "files": [
@@ -4725,5 +4693,13 @@
         "models/button.glb",
         "models/teleport-indicator.glb",
         "models/factory.glb"
-    ]
+    ],
+    "fonts": {
+        "573": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    }
 }
