@@ -44,6 +44,8 @@ WL.registerComponent('collectable', {
 
         s.addEventListener('select', (e) => {
             console.log(`collectable select ${this.handedness}`);
+            if (e.inputSource.handedness != this.handedness) return;
+            
             if ( !GLOBALS.holding ){
                 const rayHit = this._rayHit;
                 if(rayHit) {
