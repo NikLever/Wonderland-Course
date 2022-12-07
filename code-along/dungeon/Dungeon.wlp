@@ -5112,21 +5112,6 @@
                 null,
                 null,
                 {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                0.3,
-                                0.1,
-                                0.1
-                            ]
-                        },
-                        "groups": 64
-                    },
-                    "active": false
-                },
-                {
                     "type": "physx",
                     "physx": {
                         "shape": "box",
@@ -6103,7 +6088,8 @@
                     1.0,
                     1.0,
                     1.0
-                ]
+                ],
+                "font": "828"
             }
         },
         "20": {
@@ -6243,7 +6229,8 @@
                     0.0,
                     0.5411764,
                     1.0
-                ]
+                ],
+                "font": "828"
             }
         },
         "202": {
@@ -6484,7 +6471,7 @@
             "version": [
                 0,
                 9,
-                2
+                4
             ]
         },
         "vr": {
@@ -6612,6 +6599,9 @@
             "link": {
                 "name": "Flat Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "36": {
@@ -6630,6 +6620,9 @@
             "link": {
                 "name": "Phong Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "39": {
@@ -6660,6 +6653,9 @@
             "link": {
                 "name": "Physical Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "226": {
@@ -6673,6 +6669,18 @@
                 "name": "Sky",
                 "file": "default"
             }
+        },
+        "826": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            }
+        },
+        "827": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            }
         }
     },
     "files": [
@@ -6684,5 +6692,13 @@
         "models/teleport-indicator.glb",
         "models/dungeon.glb",
         "models/flash-light.glb"
-    ]
+    ],
+    "fonts": {
+        "828": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    }
 }
