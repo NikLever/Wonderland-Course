@@ -15,9 +15,9 @@
                 0.0,
                 0.9999998,
                 0.0,
-                -0.7449131,
+                0.0607636,
                 0.0,
-                1.1575535,
+                1.4399685,
                 1.0
             ]
         },
@@ -736,18 +736,6 @@
                     "type": "input",
                     "input": {
                         "type": "ray left"
-                    }
-                },
-                {
-                    "type": "teleport",
-                    "teleport": {
-                        "floorGroup": 2,
-                        "camRoot": "14",
-                        "cam": "17",
-                        "teleportIndicatorMeshObject": "208",
-                        "indicatorYOffset": 0.0099999,
-                        "eyeLeft": "18",
-                        "eyeRight": "19"
                     }
                 }
             ],
@@ -1481,181 +1469,6 @@
             "parent": "167",
             "skin": "166"
         },
-        "194": {
-            "name": "Panel",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "195",
-                        "material": "202"
-                    }
-                },
-                {
-                    "type": "UIHandler"
-                }
-            ],
-            "transformation": [
-                0.25,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0624469,
-                0.1082836,
-                0.0,
-                0.0,
-                -0.2165672,
-                0.124894,
-                0.0,
-                -0.9145187,
-                1.2,
-                2.384185791015625e-7,
-                1.0
-            ]
-        },
-        "196": {
-            "link": {
-                "name": "Cube",
-                "file": "models\\button.glb"
-            },
-            "parent": "197",
-            "components": [
-                {
-                    "mesh": {
-                        "material": "26"
-                    }
-                }
-            ],
-            "name": "ButtonMesh",
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.999999,
-                0.0000012,
-                0.0,
-                0.0,
-                -0.0000019,
-                0.999999,
-                0.0,
-                -0.0000095,
-                0.3244419,
-                -0.0000677,
-                1.0
-            ]
-        },
-        "197": {
-            "name": "Button",
-            "parent": "194",
-            "transformation": [
-                0.4,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.4999999,
-                -0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.3,
-                0.0,
-                0.0,
-                0.057682,
-                0.1754341,
-                1.0
-            ],
-            "components": [
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "box",
-                        "box": {
-                            "extents": [
-                                0.0974999,
-                                0.025,
-                                0.045
-                            ]
-                        },
-                        "groups": 251
-                    }
-                },
-                {
-                    "type": "cursor-target"
-                },
-                {
-                    "type": "button",
-                    "button": {
-                        "buttonMeshObject": "196",
-                        "hoverMaterial": "203"
-                    }
-                }
-            ]
-        },
-        "198": {
-            "name": "ButtonLabel",
-            "parent": "196",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Start"
-                    }
-                }
-            ],
-            "transformation": [
-                2.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0031942,
-                -3.7999985,
-                0.0,
-                0.0,
-                4.8000044,
-                0.0040349,
-                0.0,
-                -0.0001564,
-                0.108458,
-                0.0000047,
-                1.0
-            ]
-        },
-        "200": {
-            "name": "Title",
-            "parent": "194",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Start test",
-                        "material": "201"
-                    }
-                }
-            ],
-            "transformation": [
-                1.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0021012,
-                -2.9999995,
-                0.0,
-                0.0,
-                1.4999996,
-                0.0010506,
-                0.0,
-                -0.0000023,
-                0.1554994,
-                -0.3034151,
-                1.0
-            ]
-        },
         "205": {
             "name": "TrackedSpace",
             "parent": "14",
@@ -1684,30 +1497,6 @@
                         "height": 1.75
                     }
                 }
-            ]
-        },
-        "208": {
-            "link": {
-                "name": "TeleportIndicator",
-                "file": "models\\teleport-indicator.glb"
-            },
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0099999,
-                1.3311299,
-                1.0
             ]
         },
         "209": {
@@ -1780,18 +1569,6 @@
                     "type": "input",
                     "input": {
                         "type": "ray right"
-                    }
-                },
-                {
-                    "type": "teleport",
-                    "teleport": {
-                        "floorGroup": 2,
-                        "camRoot": "14",
-                        "cam": "17",
-                        "teleportIndicatorMeshObject": "208",
-                        "indicatorYOffset": 0.0099999,
-                        "eyeLeft": "18",
-                        "eyeRight": "19"
                     }
                 }
             ],
@@ -2278,6 +2055,42 @@
                 "file": "models\\hospital-room.glb"
             },
             "parent": "230"
+        },
+        "502": {
+            "name": "Panel",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "503"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "uiHandler"
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.9832531,
+                -0.1822352,
+                0.0,
+                0.0,
+                0.1822352,
+                0.9832531,
+                0.0,
+                -0.761814,
+                1.1582343,
+                -0.0,
+                1.0
+            ]
         }
     },
     "meshes": {
@@ -3155,6 +2968,12 @@
                 "name": "texture_49",
                 "file": "models\\hospital-room.glb"
             }
+        },
+        "505": {
+            "link": {
+                "name": "canvas-ui-up.png",
+                "file": "images\\canvas-ui-up.png"
+            }
         }
     },
     "images": {
@@ -3365,6 +3184,12 @@
                 "name": "Ce_bc847ae",
                 "file": "models\\hospital-room.glb"
             }
+        },
+        "504": {
+            "link": {
+                "name": "canvas-ui-up.png",
+                "file": "images\\canvas-ui-up.png"
+            }
         }
     },
     "materials": {
@@ -3379,7 +3204,8 @@
                     1.0,
                     1.0,
                     1.0
-                ]
+                ],
+                "font": "500"
             }
         },
         "20": {
@@ -3519,7 +3345,8 @@
                     0.0,
                     0.5411764,
                     1.0
-                ]
+                ],
+                "font": "500"
             }
         },
         "202": {
@@ -4060,6 +3887,17 @@
                 "name": "Sc05_Ceiling",
                 "file": "models\\hospital-room.glb"
             }
+        },
+        "503": {
+            "link": {
+                "name": "Sc05_Ceiling",
+                "file": "models\\hospital-room.glb"
+            },
+            "name": "UI",
+            "pipeline": "501",
+            "Flat": {
+                "flatTexture": "505"
+            }
         }
     },
     "shaders": {
@@ -4190,7 +4028,7 @@
             "version": [
                 0,
                 9,
-                3
+                4
             ]
         },
         "vr": {
@@ -4336,6 +4174,9 @@
             "link": {
                 "name": "Flat Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "36": {
@@ -4354,6 +4195,9 @@
             "link": {
                 "name": "Phong Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "39": {
@@ -4384,6 +4228,9 @@
             "link": {
                 "name": "Physical Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "226": {
@@ -4397,6 +4244,28 @@
                 "name": "Sky",
                 "file": "default"
             }
+        },
+        "498": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            }
+        },
+        "499": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            }
+        },
+        "501": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": false
+            },
+            "name": "UI"
         }
     },
     "files": [
@@ -4406,6 +4275,15 @@
         "models/hand-right.glb",
         "models/button.glb",
         "models/teleport-indicator.glb",
-        "models/hospital-room.glb"
-    ]
+        "models/hospital-room.glb",
+        "images/canvas-ui-up.png"
+    ],
+    "fonts": {
+        "500": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    }
 }
