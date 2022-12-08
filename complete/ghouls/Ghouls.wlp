@@ -4309,7 +4309,7 @@
                 {
                     "type": "GunHandler",
                     "GunHandler": {
-                        "bulletMesh": "11",
+                        "bulletMesh": "1304",
                         "bulletMaterial": "25"
                     }
                 }
@@ -5957,7 +5957,7 @@
             ]
         },
         "runtime": {
-            "visualizeColliders": false,
+            "visualizeColliders": true,
             "webxr": {
                 "optionalFeatures": {
                     "local-floor": true
