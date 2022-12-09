@@ -42,6 +42,13 @@ WL.registerComponent('collectable', {
         });
     },
     showController: function( mode ){
+        if (this._cursor){
+            this._cursor.cursorRayObject.children[0].active = this._cursor.cursorObject.active = mode;
+        }
+        if (this.controller){
+            const model = this.controller.children[0];
+            model.children.forEach( c => c.active = mode );
+        }
     },
     update: function(dt) {
   
