@@ -13,237 +13,182 @@ WL.registerComponent('uiHandler', {
         
         this.soundClick = this.object.addComponent('howler-audio-source', {src: 'sfx/click.wav', spatial: true});
         this.soundUnClick = this.object.addComponent('howler-audio-source', {src: 'sfx/unclick.wav', spatial: true});
+        this.speech = this.object.addComponent('howler-audio-source', { spatial: false });
 
-        switch ( this.panel ){
-            case 0://simple
-            this.simplePanel();
-            break;
-            case 1://buttons
-            this.buttonsPanel();
-            break;
-            case 2://scrolling
-            this.scrollPanel();
-            break;
-            case 3://images
-            this.imagePanel();
-            break;
-            case 4://input-text
-            this.inputTextPanel();
-            break;
-        }
+        fetch( 'json/questions.json' ).then( response => response.json() ).then( obj =>{
+            this.questions = obj;
+            this.createUI();
+        });
     },
-    simplePanel: function(){
-        const config = {
-            header:{
-                type: "text",
-                position:{ top:0 },
-                paddingTop: 30,
-                height: 70
-            },
-            main:{
-                type: "text",
-                position:{ top:70 },
-                height: 372, // default height is 512 so this is 512 - header height (70) - footer height (70)
-                backgroundColor: "#bbb",
-                fontColor: "#000"
-            },
-            footer:{
-                type: "text",
-                position:{ bottom:0 },
-                paddingTop: 30,
-                height: 70
-            }
+    
+    playSound: function(name){
+        this.speech.stop();
+        this.speech.audio.unload();
+        this.speech.audio = new Howl({
+            src:[`sfx/${name}.mp3`],
+            loop: false
+        });
+        this.speech.play();
+    },
+
+    createUI: function(){
+        const headerHeight = 50;
+        const panelHeight = 512;
+        const footerHeight = headerHeight;
+        
+        const self = this;
+        
+        let questionIndex = -2;
+        let answerIndex = 0;
+
+        function showStart(){
+            self.ui.updateElement( "header", "Scenario 5");
+            self.ui.updateElement("panel", self.questions.start);
+            self.ui.updateConfig("prev", "display", "none");
+            self.ui.updateConfig("next", "display", "none");
+            self.ui.updateElement("continue", "Start");
+            questionIndex = 0;
+            answerIndex = -1;
         }
         
-        const content = {
-            header: "Header",
-            main: "This is the main text",
-            footer: "Footer"
+        function showIntro(){
+            self.ui.updateElement( "header", "Intro");
+            self.ui.updateElement("panel", self.questions.intro);
+            self.ui.updateConfig("prev", "display", "none");
+            self.ui.updateConfig("next", "display", "none");
+            self.ui.updateElement("continue", "Continue");
+            self.playSound(`intro`); 
+            questionIndex = 0;
+            answerIndex = -1;
         }
         
-        this.ui = new CanvasUI( content, config, this.object );
-        this.ui.update();
-        let ui = this.ui;
-    },
-    buttonsPanel: function(){
+        function showOption(){
+            const options = self.questions.questions[questionIndex].options;
+            if (answerIndex<0) answerIndex = 0;
+            if (answerIndex>=options.length) answerIndex = options.length - 1;
+            let display = (answerIndex>0) ? "block" : "none";
+            self.ui.updateConfig("prev", "display", display);
+            display = (answerIndex<(options.length-1)) ? "block" : "none";
+            self.ui.updateConfig("next", "display", display);
+            self.ui.updateElement( "header", "Select a response");
+            self.ui.updateElement("panel", options[answerIndex].text);
+        }
+        
+        function showQuestion(){
+            const question = self.questions.questions[questionIndex];
+            self.ui.updateElement( "header", "Heather");
+            self.ui.updateElement("panel", question.text);
+            self.ui.updateConfig("prev", "display", "none");
+            self.ui.updateConfig("next", "display", "none");
+            self.playSound(`option${questionIndex + 1}`);
+        }
+        
         function onPrev(){
-            const msg = "Prev pressed";
-            console.log(msg);
-            ui.updateElement( "info", msg );
-        }
-        
-        function onStop(){
-            const msg = "Stop pressed";
-            console.log(msg);
-            ui.updateElement( "info", msg );
+            answerIndex--;
+            showOption();
         }
         
         function onNext(){
-            const msg = "Next pressed";
-            console.log(msg);
-            ui.updateElement( "info", msg );
+            answerIndex++;
+            showOption();
         }
         
         function onContinue(){
-            const msg = "Continue pressed";
-            console.log(msg);
-            ui.updateElement( "info", msg );
+            if (questionIndex<-1){
+                questionIndex = -1;
+                showIntro();
+            }else if (questionIndex<0){
+                //Coming from intro
+                questionIndex = 0;
+                showQuestion()
+                answerIndex = -1;
+            }else if (answerIndex==-1){
+                //Show first option
+                answerIndex = 0;
+                showOption();
+            }else{
+                //Option selected
+                const question = self.questions.questions[questionIndex];
+                questionIndex = question.options[answerIndex].next;
+                if (questionIndex==-1){
+                    showIntro();
+                }else{
+                    answerIndex = -1;
+                    showQuestion();
+                }
+            }
         }
-        //console.log('start() with param', this.param);
+        
         const config = {
-            panelSize: {
-                width: 1,
-                height: 0.25
+            panelSize: { width: 0.5, height: 0.8 },
+            width: 512,
+            height: panelHeight,
+            body:{
+                fontFamily:'Arial', 
+                fontSize:30, 
+                padding:20, 
+                backgroundColor: '#000', 
+                fontColor:'#fff', 
+                borderRadius: 6,
+                border:{ width: 2, color:"#fff", style:"solid" },
+                opacity: 0.7
             },
-            height: 128,
-            info: {
+            header:{
                 type: "text",
-                position:{ left: 6, top: 6 },
-                width: 500,
-                height: 58,
-                backgroundColor: "#aaa",
-                fontColor: "#000"
+                position:{ x:0, y:0 },
+                height: headerHeight
             },
-            prev: {
+            panel:{
+                type: "text",
+                position:{ x:0, y:headerHeight },
+                height: panelHeight - headerHeight - footerHeight,
+                backgroundColor: "#ffa",
+                fontColor: "#000",   
+                overflow: "scroll", 
+                leading: 5
+            },
+            prev:{
+                display: 'none',
                 type: "button",
-                position:{ top: 64, left: 0 }, 
-                width: 64,
-                fontColor: "#bb0",
-                hover: "#ff0",
+                position: { x:0, y: panelHeight - footerHeight + 5},
+                width: footerHeight,
+                height: footerHeight,
+                fontColor: "#ff4",
                 onSelect: onPrev
             },
-            stop: {
+            next:{
+                display: 'none',
                 type: "button",
-                position:{ top: 64, left: 64 },
-                width: 64,
-                fontColor: "#bb0",
-                hover: "#ff0",
-                onSelect: onStop
-            },
-            next: {
-                type: "button",
-                position:{ top: 64, left: 128 },
-                width: 64,
-                fontColor: "#bb0",
-                hover: "#ff0",
+                position: { x:footerHeight, y: panelHeight - footerHeight + 5},
+                width: footerHeight,
+                height: footerHeight,
+                fontColor: "#ff4",
                 onSelect: onNext
             },
-            continue: {
+            continue:{
                 type: "button",
-                position:{ top: 70, right: 10 },
-                width: 200,
-                height: 52,
-                fontColor: "#fff",
-                backgroundColor: "#1bf",
-                hover: "#3df",
+                position: { x:212, y: panelHeight - footerHeight },
+                textAlign: "right",
+                width: 300,
+                height: footerHeight,
+                hover: "#ff0",
+                fontColor: "#ff4",
                 onSelect: onContinue
             }
         }
         
         const content = {
-            info: "",
-            prev: "<path>M 10 32 L 54 10 L 54 54 Z</path>",
-            stop: "<path>M 50 15 L 15 15 L 15 50 L 50 50 Z<path>",
-            next: "<path>M 54 32 L 10 10 L 10 54 Z</path>",
-            continue: "Continue"
+            header: "Scenario 5",
+            panel: self.questions.start,
+            prev: "<path>m 5 20 l 35 35 l 35 5 z</path>",
+            next: "<path>m 35 20 l 5 5 l 5 35 z</path>",
+            continue: "Start"
         }
-
-        this.ui = new CanvasUI( content, config, this.object );
-        this.ui.update();
-        let ui = this.ui;
+        
+        const ui = new CanvasUI( content, config, this.object );
+        this.ui = ui;
     },
-    scrollPanel: function(){
-        const config = {
-            body: {
-                backgroundColor: "#666"
-            },
-            txt: {
-                type: "text",
-                overflow: "scroll",
-                position: { left: 20, top: 20 },
-                width: 460,
-                height: 400,
-                backgroundColor: "#fff",
-                fontColor: "#000"
-            }
-        }
-        
-        const content = {
-            txt: "This is an example of a scrolling panel. Select it with a controller and move the controller while keeping the select button pressed. In an AR app just press and drag. If a panel is set to scroll and the overflow setting is 'scroll', then a scroll bar will appear when the panel is active. But to scroll you can just drag anywhere on the panel. This is an example of a scrolling panel. Select it with a controller and move the controller while keeping the select button pressed. In an AR app just press and drag. If a panel is set to scroll and the overflow setting is 'scroll', then a scroll bar will appear when the panel is active. But to scroll you can just drag anywhere on the panel."
-        }
-        
-        this.ui = new CanvasUI( content, config, this.object );
-        this.ui.update();
-        let ui = this.ui;
-    },
-    imagePanel: function(){
-        const config = {
-            image: {
-                type: "img",
-                position: { left: 20, top: 20 },
-                width: 472
-            },
-            info: {
-                type: "text",
-                position: { top: 300 }
-            }
-        }
-        
-        const content = {
-            image: "images/promo.png",
-            info: "The promo image from the course: Learn to create WebXR, VR and AR, experiences using Wonderland Engine"
-        }
-        
-        
-        this.ui = new CanvasUI( content, config, this.object );
-        this.ui.update();
-        let ui = this.ui;
-    }, 
-    inputTextPanel: function(){
-        function onChanged( txt ){
-            console.log( `message changed: ${txt}`);
-        }
-        
-        function onEnter( txt ){
-            console.log(`message enter: ${txt}`);
-        }
-        
-        const config = {
-            panelSize: { width: 1, height: 0.25 },
-            height: 128,
-            message: {
-                type: "input-text",
-                position: { left: 10, top: 8 },
-                height: 56,
-                width: 492,
-                backgroundColor: "#ccc",
-                fontColor: "#000",
-                onChanged,
-                onEnter
-            },
-            label: {
-                type: "text",
-                position: { top: 64 }
-            }
-        }
-        
-        const content = {
-            message: "",
-            label: "Select the panel above."
-        }
-        
-        this.ui = new CanvasUI( content, config, this.object );
 
-        const target = this.ui.keyboard.object.getComponent('cursor-target');
-        target.addHoverFunction(this.onHoverKeyboard.bind(this));
-        target.addUnHoverFunction(this.onUnHoverKeyboard.bind(this));
-        target.addMoveFunction(this.onMoveKeyboard.bind(this));
-        target.addDownFunction(this.onDown.bind(this));
-        target.addUpFunction(this.onUpKeyboard.bind(this));
-
-        this.ui.update();
-        let ui = this.ui;
-    }, 
     onHover: function(_, cursor) {
         //console.log('onHover');
         if (this.ui){
@@ -343,6 +288,6 @@ WL.registerComponent('uiHandler', {
     
     update: function(dt) {
         //console.log('update() with delta time', dt);
-        this.ui.update();
+        if (this.ui) this.ui.update();
     },
 });

@@ -353,7 +353,7 @@ class CanvasUI{
         this.tmpQuat = new Float32Array(4);
 
         const inputs = Object.values( this.config ).filter( ( value )=>{
-            return  value.type === "input-text";
+            return  (value.type && value.type === "input-text");
         });
         if ( inputs.length > 0 ){
             const width = (config.panelSize) ? config.panelSize.width : 1;
