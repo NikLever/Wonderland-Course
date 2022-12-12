@@ -42,7 +42,7 @@ WL.registerComponent('uiHandler', {
         let answerIndex = 0;
 
         function showStart(){
-            self.ui.updateElement( "header", "Scenario 5");
+            self.ui.updateElement( "header", "Instructions");
             self.ui.updateElement("panel", self.questions.start);
             self.ui.updateConfig("prev", "display", "none");
             self.ui.updateConfig("next", "display", "none");
@@ -52,7 +52,7 @@ WL.registerComponent('uiHandler', {
         }
         
         function showIntro(){
-            self.ui.updateElement( "header", "Intro");
+            self.ui.updateElement( "header", "Scenario 5");
             self.ui.updateElement("panel", self.questions.intro);
             self.ui.updateConfig("prev", "display", "none");
             self.ui.updateConfig("next", "display", "none");
@@ -178,7 +178,7 @@ WL.registerComponent('uiHandler', {
         }
         
         const content = {
-            header: "Scenario 5",
+            header: "Instructions",
             panel: self.questions.start,
             prev: "<path>m 5 20 l 35 35 l 35 5 z</path>",
             next: "<path>m 35 20 l 5 5 l 5 35 z</path>",
