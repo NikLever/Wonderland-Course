@@ -65,10 +65,10 @@ WL.registerComponent('mathTest', {
         const s = (Math.cos( this.time ) + 1.2)*0.6;
         this.object.scalingWorld.set( [s,s,s] );
     },
-    f32ToString: function( v, precision=2 ){
+    f32ToString: function( v, decimalCount=2 ){
         let str = '';
         v.forEach( (e) => {
-            str += `${e.toFixed(precision)}, `;
+            str += `${e.toFixed(decimalCount)}, `;
         });
         return str;
     },
