@@ -19,9 +19,11 @@ WL.registerComponent('mathTest', {
     compare: function(){
         this.object.getTranslationWorld( this.tmpVec );
         glMatrix.quat2.getTranslation( this.tmpVec1, this.object.transformWorld );
-        console.log(`mathTest.start getTranslationWorld:${this.f32ToString(this.tmpVec)} from transform:${this.f32ToString(this.tmpVec1)}`);
+        console.group('mathTest.compare');
+        console.log(`getTranslationWorld:${this.f32ToString(this.tmpVec)} from transform:${this.f32ToString(this.tmpVec1)}`);
         glMatrix.quat2.getReal( this.tmpQuat, this.object.transformWorld );
-        console.log(`mathTest.start rotationWorld:${this.f32ToString(this.object.rotationWorld)} from transform:${this.f32ToString(this.tmpQuat)}`);
+        console.log(`rotationWorld:${this.f32ToString(this.object.rotationWorld)} from transform:${this.f32ToString(this.tmpQuat)}`);
+        console.groupEnd();
     },
     position: function(){
         this.tmpVec.set( [0, Math.cos(this.time), 0] );
@@ -52,14 +54,6 @@ WL.registerComponent('mathTest', {
     },
     challenge: function(dt){
         //Combine orbit and spin
-        const theta = dt * 3;
-        this.object.setTranslationLocal(this.origin);
-        glMatrix.quat.rotateY( this.tmpQuat, this.object.rotationLocal, theta);
-        glMatrix.quat.copy( this.object.rotationLocal, this.tmpQuat );
-        const radius = 2;
-        this.tmpVec.set( [Math.sin(this.time) * radius, 0, Math.cos(this.time) * radius] );
-        glMatrix.vec3.add( this.tmpVec, this.startPosition, this.tmpVec);
-        this.object.setTranslationWorld( this.tmpVec );
     },
     scale: function(){
         const s = (Math.cos( this.time ) + 1.2)*0.6;
