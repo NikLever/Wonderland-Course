@@ -1903,7 +1903,7 @@
                 -1.1920928955078125e-7,
                 0.9999999,
                 0.0,
-                -5.099775535200024e-8,
+                -5.099775535200025e-8,
                 -1.0,
                 -1.1920930376163597e-7,
                 0.0,
@@ -1926,27 +1926,6 @@
                         "static": true
                     }
                 }
-            ]
-        },
-        "576": {
-            "name": "Empty",
-            "transformation": [
-                1.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0
             ]
         }
     },
@@ -3384,6 +3363,12 @@
                 "name": "texture_5",
                 "file": "models\\factory.glb"
             }
+        },
+        "579": {
+            "link": {
+                "name": "logo512.png",
+                "file": "images\\logo512.png"
+            }
         }
     },
     "images": {
@@ -3473,6 +3458,12 @@
             "link": {
                 "name": "losttreasur_d16bfd3",
                 "file": "models\\factory.glb"
+            }
+        },
+        "578": {
+            "link": {
+                "name": "logo512.png",
+                "file": "images\\logo512.png"
             }
         }
     },
@@ -4290,6 +4281,9 @@
             "link": {
                 "name": "elements3_4",
                 "file": "models\\factory.glb"
+            },
+            "Phong": {
+                "diffuseTexture": "233"
             }
         },
         "335": {
@@ -4309,6 +4303,10 @@
                 "name": "Default OBJ.001",
                 "file": "models\\factory.glb"
             }
+        },
+        "580": {
+            "name": "material",
+            "pipeline": "35"
         }
     },
     "shaders": {
@@ -4507,7 +4505,11 @@
                     "local-floor": true
                 }
             },
-            "visualizePhysX": false
+            "visualizePhysX": false,
+            "pwa": {
+                "enable": true,
+                "appIcon": "578"
+            }
         },
         "physx": {
             "enable": true
@@ -4692,7 +4694,8 @@
         "models/hand-right.glb",
         "models/button.glb",
         "models/teleport-indicator.glb",
-        "models/factory.glb"
+        "models/factory.glb",
+        "images/logo512.png"
     ],
     "fonts": {
         "573": {
