@@ -22,6 +22,8 @@ WL.registerComponent('collectable', {
             return;
         }else if(this.handedness == 0){
             this.handedness = this._input.handedness;
+        }else{
+            this.handedness = ['left', 'right', 'none'][this.handedness-1];
         }
         this._cursor = this.object.getComponent('cursor'); 
         this._teleport = this.object.getComponent('teleport');

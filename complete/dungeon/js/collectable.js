@@ -49,9 +49,6 @@ WL.registerComponent('collectable', {
             if ( !GLOBALS.holding ){
                 const rayHit = this._rayHit;
                 if(rayHit) {
-                    this.collisionIndicator.translate(rayHit.location);
-                    this.collisionIndicator.active = true;
-
                     const grabObject = rayHit.object;
 
                     if (grabObject){
@@ -72,9 +69,9 @@ WL.registerComponent('collectable', {
                         GLOBALS.holding = true;
                         GLOBALS.handedness = this.handedness;
                         console.log(`Pickup ${GLOBALS.handedness}`);
+
+                        this.collisionIndicator.active = false;
                     }
-                }else{
-                    this.collisionIndicator.active = false;
                 }
             }else{
                 if (GLOBALS.holding && GLOBALS.handedness == this.handedness ){

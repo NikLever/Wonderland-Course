@@ -713,7 +713,7 @@
                         "collectable": "823",
                         "controller": "130",
                         "collisionIndicator": "824",
-                        "handedness": "left",
+                        "handedness": "input component",
                         "moveToController": false
                     },
                     "active": true
@@ -1592,7 +1592,7 @@
                         "collectable": "823",
                         "controller": "129",
                         "collisionIndicator": "825",
-                        "handedness": "right",
+                        "handedness": "input component",
                         "moveToController": true,
                         "rotateYOnMove": 90.0
                     }
