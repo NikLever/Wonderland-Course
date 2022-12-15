@@ -1,5 +1,5 @@
 WL.registerComponent('uiHandler', {
-    panel: {type: WL.Type.Enum, values:['simple', 'buttons', 'scrolling', 'images', 'input-text'], default: 'simple'},
+    //panel: {type: WL.Type.Enum, values:['simple', 'buttons', 'scrolling', 'images', 'input-text'], default: 'simple'},
 }, {
     init: function() {
     },
