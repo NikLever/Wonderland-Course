@@ -5,7 +5,8 @@ WL.registerComponent('GhoulHandler', {
     attackAnim: { type: WL.Type.Animation },
     dieAnim: { type: WL.Type.Animation },
     walkAnim: { type: WL.Type.Animation },
-    delayStart: { type: WL.Type.Float, default: 0 }
+    delayStart: { type: WL.Type.Float, default: 0 },
+    player: { type: WL.Type.Object }
 }, {
     init: function() {
         //console.log('init() with param', this.param);
@@ -29,6 +30,8 @@ WL.registerComponent('GhoulHandler', {
         this.sfxFootsteps = this.object.addComponent('howler-audio-source', {src: 'sfx/footsteps.mp3', volume: 0.3, loop: true, spatial: false});
         this.sfxGroan = this.object.addComponent('howler-audio-source', {src: 'sfx/groan.mp3', spatial: false});
         this.sfxRoar = this.object.addComponent('howler-audio-source', {src: 'sfx/roar.mp3', spatial: false});
+
+        if (this.player) this.shake = this.player.getComponent('Shake');
     },
     spawn: function(){
         this.animComp.animation = this.walkAnim;
@@ -114,8 +117,11 @@ WL.registerComponent('GhoulHandler', {
     attacking: function(dt){
         this.elapsedTime += dt;
         if (this.elapsedTime > 4){
+            if (this.shake) this.shake.active = false;
             this.spawn();
             this.mode = 1;
+        }else if (this.elapsedTime > 0.6){
+            if (this.shake) this.shake.active = true;
         }
     },
     dying: function(dt){
