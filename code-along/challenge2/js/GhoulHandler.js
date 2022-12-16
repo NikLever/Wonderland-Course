@@ -5,7 +5,8 @@ WL.registerComponent('GhoulHandler', {
     attackAnim: { type: WL.Type.Animation },
     dieAnim: { type: WL.Type.Animation },
     walkAnim: { type: WL.Type.Animation },
-    delayStart: { type: WL.Type.Float, default: 0 }
+    delayStart: { type: WL.Type.Float, default: 0 },
+    player: { type: WL.Type.Object }
 }, {
     init: function() {
         //console.log('init() with param', this.param);

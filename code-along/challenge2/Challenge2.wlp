@@ -2645,7 +2645,8 @@
                         "attackAnim": "1002",
                         "dieAnim": "1001",
                         "walkAnim": "1003",
-                        "vrCamera": "18"
+                        "vrCamera": "18",
+                        "player": "14"
                     }
                 }
             ],
@@ -3348,7 +3349,8 @@
                         "attackAnim": "1180",
                         "dieAnim": "1179",
                         "walkAnim": "1181",
-                        "delayStart": 2.0
+                        "delayStart": 6.0,
+                        "player": "14"
                     }
                 }
             ],
@@ -5881,7 +5883,7 @@
     },
     "settings": {
         "project": {
-            "name": "Ghouls",
+            "name": "Challenge2",
             "version": [
                 0,
                 9,
