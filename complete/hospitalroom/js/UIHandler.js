@@ -47,7 +47,7 @@ WL.registerComponent('uiHandler', {
             self.ui.updateConfig("prev", "display", "none");
             self.ui.updateConfig("next", "display", "none");
             self.ui.updateElement("continue", "Start");
-            questionIndex = 0;
+            questionIndex = -1;
             answerIndex = -1;
         }
         
@@ -58,7 +58,7 @@ WL.registerComponent('uiHandler', {
             self.ui.updateConfig("next", "display", "none");
             self.ui.updateElement("continue", "Continue");
             self.playSound(`intro`); 
-            questionIndex = 0;
+            questionIndex = -1;
             answerIndex = -1;
         }
         
