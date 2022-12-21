@@ -17,6 +17,15 @@
                 1.0,
                 1.0,
                 1.0
+            ],
+            "components": [
+                {
+                    "type": "Shake",
+                    "active": false,
+                    "Shake": {
+                        "strength": 0.5
+                    }
+                }
             ]
         },
         "17": {
@@ -38,9 +47,9 @@
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
-                0.0
+                0.000012,
+                0.1882848,
+                0.0000085
             ],
             "rotation": [
                 0.0,
@@ -2645,7 +2654,8 @@
                         "attackAnim": "1002",
                         "dieAnim": "1001",
                         "walkAnim": "1003",
-                        "vrCamera": "18"
+                        "vrCamera": "18",
+                        "player": "14"
                     }
                 }
             ],
@@ -3348,7 +3358,8 @@
                         "attackAnim": "1180",
                         "dieAnim": "1179",
                         "walkAnim": "1181",
-                        "delayStart": 2.0
+                        "delayStart": 4.0,
+                        "player": "14"
                     }
                 }
             ],
@@ -4247,9 +4258,9 @@
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
-                -2.384185791015625e-7
+                0.0000083,
+                -0.2200198,
+                0.0000054
             ],
             "rotation": [
                 0.0,
@@ -4308,9 +4319,9 @@
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
-                -2.384185791015625e-7
+                0.0000094,
+                -0.2230937,
+                0.0000066
             ],
             "rotation": [
                 0.0,
@@ -5899,7 +5910,7 @@
             ]
         },
         "runtime": {
-            "visualizeColliders": true,
+            "visualizeColliders": false,
             "webxr": {
                 "optionalFeatures": {
                     "local-floor": true
