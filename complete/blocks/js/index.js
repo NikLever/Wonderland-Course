@@ -16,11 +16,10 @@ import {Cursor} from '@wonderlandengine/components';
 import {FingerCursor} from '@wonderlandengine/components';
 import {HandTracking} from '@wonderlandengine/components';
 import {HowlerAudioListener} from '@wonderlandengine/components';
-import {HowlerAudioSource} from '@wonderlandengine/components';
 import {MouseLookComponent} from '@wonderlandengine/components';
 import {PlayerHeight} from '@wonderlandengine/components';
-import {TeleportComponent} from '@wonderlandengine/components';
 import {VrModeActiveSwitch} from '@wonderlandengine/components';
+import {Name} from './blockHandler.js';
 /* wle:auto-imports:end */
 
 import {loadRuntime} from '@wonderlandengine/api';
@@ -34,7 +33,7 @@ const RuntimeOptions = {
     canvas: 'canvas',
 };
 const Constants = {
-    ProjectName: 'Getting Started - VR',
+    ProjectName: 'Blocks',
     RuntimeBaseName: 'WonderlandRuntime',
     WebXRRequiredFeatures: ['local',],
     WebXROptionalFeatures: ['local','local-floor','hand-tracking','hit-test',],
@@ -83,11 +82,10 @@ engine.registerComponent(Cursor);
 engine.registerComponent(FingerCursor);
 engine.registerComponent(HandTracking);
 engine.registerComponent(HowlerAudioListener);
-engine.registerComponent(HowlerAudioSource);
 engine.registerComponent(MouseLookComponent);
 engine.registerComponent(PlayerHeight);
-engine.registerComponent(TeleportComponent);
 engine.registerComponent(VrModeActiveSwitch);
+engine.registerComponent(Name);
 /* wle:auto-register:end */
 
 engine.scene.load(`${Constants.ProjectName}.bin`);
