@@ -17,15 +17,6 @@
                 1.0,
                 1.0,
                 1.0
-            ],
-            "components": [
-                {
-                    "type": "Shake",
-                    "active": false,
-                    "Shake": {
-                        "strength": 0.5
-                    }
-                }
             ]
         },
         "17": {
@@ -4248,13 +4239,6 @@
                     "input": {
                         "type": "ray right"
                     }
-                },
-                {
-                    "type": "GunHandler",
-                    "GunHandler": {
-                        "bulletMesh": "1304",
-                        "bulletMaterial": "25"
-                    }
                 }
             ],
             "translation": [
@@ -4308,13 +4292,6 @@
                     "type": "input",
                     "input": {
                         "type": "ray left"
-                    }
-                },
-                {
-                    "type": "GunHandler",
-                    "GunHandler": {
-                        "bulletMesh": "1304",
-                        "bulletMaterial": "25"
                     }
                 }
             ],

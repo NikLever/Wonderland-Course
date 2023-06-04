@@ -1,8 +1,14 @@
-WL.registerComponent('button', {
-    buttonMeshObject: {type: WL.Type.Object},
-    hoverMaterial: {type: WL.Type.Material},
-}, {
-    start: function() {
+import {Component, Property} from '@wonderlandengine/api';
+
+export class Name extends Component {
+    static TypeName = "button";
+    static Properties = { 
+        buttonMeshObject: Property.mesh(),
+        hoverMaterial: Property.material()
+    };
+
+    
+    start() {
         this.mesh = this.buttonMeshObject.getComponent('mesh');
         this.defaultMaterial = this.mesh.material;
 
@@ -14,43 +20,43 @@ WL.registerComponent('button', {
 
         this.soundClick = this.object.addComponent('howler-audio-source', {src: 'sfx/click.wav', spatial: true});
         this.soundUnClick = this.object.addComponent('howler-audio-source', {src: 'sfx/unclick.wav', spatial: true});
-    },
+    }
 
-    onHover: function(_, cursor) {
+    onHover(_, cursor) {
         this.mesh.material = this.hoverMaterial;
         if(cursor.type == 'finger-cursor') {
             this.onDown(_, cursor);
         }
 
         this.hapticFeedback(cursor.object, 0.5, 50);
-    },
+    }
 
-    onDown: function(_, cursor) {
+    onDown(_, cursor) {
         this.soundClick.play();
         this.buttonMeshObject.translate([0.0, -0.1, 0.0]);
         this.hapticFeedback(cursor.object, 1.0, 20);
-    },
+    }
 
-    onUp: function(_, cursor) {
+    onUp(_, cursor) {
         this.soundUnClick.play();
         this.buttonMeshObject.translate([0.0, 0.1, 0.0]);
         this.hapticFeedback(cursor.object, 0.7, 20);
-    },
+    }
 
-    onUnHover: function(_, cursor) {
+    onUnHover(_, cursor) {
         this.mesh.material = this.defaultMaterial;
         if(cursor.type == 'finger-cursor') {
             this.onUp(_, cursor);
         }
 
         this.hapticFeedback(cursor.object, 0.3, 50);
-    },
+    }
 
-    hapticFeedback: function(object, strength, duration) {
+    hapticFeedback(object, strength, duration) {
         const input = object.getComponent('input');
         if(input && input.xrInputSource) {
             const gamepad = input.xrInputSource.gamepad;
             if(gamepad && gamepad.hapticActuators) gamepad.hapticActuators[0].pulse(strength, duration);
         }
-    },
-});
+    }
+}
