@@ -1446,7 +1446,7 @@
                     "type": "uiHandler",
                     "active": true,
                     "uiHandler": {
-                        "panel": "simple"
+                        "panel": "input-text"
                     }
                 },
                 {
