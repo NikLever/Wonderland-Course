@@ -1,26 +1,30 @@
-WL.registerComponent('spawn-mesh-on-select', {
-    /* The mesh to spawn */
-    mesh: {type: WL.Type.Mesh},
-    /* The material to spawn the mesh with */
-    material: {type: WL.Type.Material},
-}, {
-    start: function() {
+import {Component, Property} from '@wonderlandengine/api';
+import { vec3, quat } from "gl-matrix";
+
+export class Name extends Component {
+    static TypeName = "'spawn-mesh-on-select'";
+    static Properties = { 
+        mesh: Property.object(),
+        material: Property.material()
+    };
+
+    start() {
         /* Once a session starts, we want to bind event listeners
          * to the session */
-        WL.onXRSessionStart.push(this.onXRSessionStart.bind(this));
-    },
+        this.engine.onXRSessionStart.push(this.onXRSessionStart.bind(this));
+    }
 
-    onXRSessionStart: function(s) {
+    onXRSessionStart(s) {
         /* We set this function up to get called when a session starts.
          * The 'select' event happens either on touch or when the trigger
          * button of a controller is pressed.
          * Once that event is triggered, we want spawnMesh() to be called. */
         s.addEventListener('select', this.spawnMesh.bind(this));
-    },
+    }
 
-    spawnMesh: function() {
+    spawnMesh() {
         /* Create a new object in the scene */
-        const o = WL.scene.addObject();
+        const o = this.engine.scene.addObject();
         /* Place new object at current cursor location */
         o.transformLocal = this.object.transformWorld;
         o.scale([0.25, 0.25, 0.25]);
@@ -33,6 +37,6 @@ WL.registerComponent('spawn-mesh-on-select', {
         mesh.material = this.material;
         mesh.mesh = this.mesh;
         mesh.active = true;
-    },
+    }
 
-});
+}
