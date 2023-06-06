@@ -2,23 +2,21 @@
     "objects": {
         "14": {
             "name": "Player",
-            "transformation": [
-                0.9999998,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.9999998,
-                0.0,
+            "translation": [
                 0.0607636,
                 0.0,
-                1.4399685,
+                1.4399684
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
                 1.0
+            ],
+            "scaling": [
+                0.9999998,
+                1.0,
+                0.9999998
             ]
         },
         "15": {
@@ -39,23 +37,21 @@
                     }
                 }
             ],
-            "transformation": [
+            "translation": [
+                0.0,
+                0.0,
+                1.1920928955078125e-7
+            ],
+            "rotation": [
+                -0.7072496,
+                0.0,
+                0.0,
+                0.7069638
+            ],
+            "scaling": [
                 4.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                -0.0016164,
-                -3.9999997,
-                0.0,
-                0.0,
-                3.9999997,
-                -0.0016164,
-                0.0,
-                0.0,
-                0.0,
-                1.192092895507813e-7,
-                1.0
+                4.0,
+                4.0
             ]
         },
         "17": {
@@ -76,23 +72,21 @@
                     }
                 }
             ],
-            "transformation": [
-                0.9525259,
-                -0.0,
-                -0.3044398,
-                0.0,
-                -0.104128,
-                0.9396824,
-                -0.3257939,
-                0.0,
-                0.2860796,
-                0.3420313,
-                0.895081,
-                0.0,
-                0.4658914,
-                -0.0361396,
-                0.0000123,
-                1.0
+            "translation": [
+                0.4658913,
+                -0.0361395,
+                0.0000122
+            ],
+            "rotation": [
+                -0.1715811,
+                0.1517192,
+                0.0267531,
+                0.9730495
+            ],
+            "scaling": [
+                0.9999945,
+                0.9999936,
+                0.9999984
             ]
         },
         "18": {
@@ -112,22 +106,20 @@
                     "type": "howler-audio-listener"
                 }
             ],
-            "transformation": [
+            "translation": [
+                0.0,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                -2.384185791015625e-7,
                 1.0
             ]
         },
@@ -145,22 +137,20 @@
                     }
                 }
             ],
-            "transformation": [
+            "translation": [
+                0.0,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                -2.384185791015625e-7,
                 1.0
             ]
         },
@@ -170,33 +160,31 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.0099999,
-                        "range": 20.0,
                         "color": [
                             0.6470588,
                             0.6419838,
                             0.6419838
                         ],
-                        "type": "point"
+                        "type": "point",
+                        "shadowRange": 20.0,
+                        "intensity": 33.329998
                     }
                 }
             ],
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                -0.6833982,
+            "translation": [
+                -0.6833981,
                 3.0129892,
-                -0.1598271,
+                -0.159827
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
                 1.0
             ]
         },
@@ -206,35 +194,33 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.0099999,
-                        "range": 14.1000003,
                         "type": "point",
                         "color": [
                             0.5803921,
                             0.5690118,
                             0.5690118
-                        ]
+                        ],
+                        "shadowRange": 14.1000003,
+                        "intensity": 33.329998
                     },
                     "active": true
                 }
             ],
-            "transformation": [
-                0.2388398,
-                -0.7718914,
-                -0.5891891,
-                0.0,
-                0.5685413,
-                0.6030352,
-                -0.5595612,
-                0.0,
-                0.7872202,
-                -0.2013323,
-                0.5828795,
-                0.0,
+            "translation": [
                 1.3674559,
                 3.4056215,
-                -3.1882729,
-                1.0
+                -3.1882729
+            ],
+            "rotation": [
+                -0.1150262,
+                0.4419604,
+                -0.4304082,
+                0.7785811
+            ],
+            "scaling": [
+                1.0000022,
+                0.9999997,
+                0.9999994
             ]
         },
         "53": {
@@ -244,23 +230,21 @@
             },
             "parent": "130",
             "name": "ControllerModelLeft",
-            "transformation": [
-                -0.9999998,
-                2.9802311729554276e-8,
-                -5.960464477539065e-8,
-                0.0,
-                -2.9802322387695326e-8,
-                0.0706573,
-                0.9975006,
-                0.0,
-                0.0,
-                0.9975004,
-                -0.0706574,
-                0.0,
-                -0.0117515,
+            "translation": [
+                -0.0117514,
                 0.0008869,
-                0.0161192,
-                1.0
+                0.0161192
+            ],
+            "rotation": [
+                -0.0,
+                0.7316615,
+                0.6816681,
+                3.196286257889369e-8
+            ],
+            "scaling": [
+                0.9999998,
+                0.9999999,
+                0.9999997
             ]
         },
         "54": {
@@ -485,23 +469,21 @@
             },
             "parent": "129",
             "name": "ControllerModelRight",
-            "transformation": [
-                -0.9993979,
-                0.0,
-                8.344650268554688e-7,
-                0.0,
-                -1.4901161193847656e-8,
-                0.9990808,
-                -0.0251145,
-                0.0,
-                -8.642673492431641e-7,
-                -0.0251297,
-                -0.9996858,
-                0.0,
-                0.0097995,
+            "translation": [
+                0.0097994,
                 -0.0006203,
-                0.0177838,
-                1.0
+                0.0177838
+            ],
+            "rotation": [
+                -0.0,
+                0.999921,
+                -0.0125658,
+                -4.174509058429976e-7
+            ],
+            "scaling": [
+                0.9993978,
+                0.9993963,
+                1.0000015
             ]
         },
         "96": {
@@ -739,22 +721,20 @@
                     }
                 }
             ],
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
+            "translation": [
                 2.384185791015625e-7,
-                1.192092895507813e-7,
-                -2.384185791015625e-7,
+                1.1920928955078125e-7,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
                 1.0
             ]
         },
@@ -769,47 +749,27 @@
                     }
                 }
             ],
-            "transformation": [
-                0.0099999,
+            "parent": null,
+            "translation": [
+                0.0,
+                0.0388117,
+                1.5585094
+            ],
+            "rotation": [
                 0.0,
                 0.0,
                 0.0,
-                0.0,
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0099999,
-                0.0,
-                0.0,
-                0.0388118,
-                1.5585095,
                 1.0
             ],
-            "parent": null
+            "scaling": [
+                0.0099999,
+                0.0099999,
+                0.0099999
+            ]
         },
         "129": {
             "name": "ControllerRight",
             "parent": "205",
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                -0.1829202,
-                1.0
-            ],
             "components": [
                 null,
                 null,
@@ -847,6 +807,22 @@
                     "type": "vr-mode-active-switch",
                     "active": true
                 }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -0.1829202
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
             ]
         },
         "130": {
@@ -890,22 +866,20 @@
                     "active": true
                 }
             ],
-            "transformation": [
+            "translation": [
+                0.0,
+                0.0,
+                -0.1522008
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                -0.1522009,
                 1.0
             ]
         },
@@ -931,22 +905,20 @@
                     "active": true
                 }
             ],
-            "transformation": [
+            "translation": [
+                0.0,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                -2.384185791015625e-7,
                 1.0
             ]
         },
@@ -1222,22 +1194,20 @@
                     "active": true
                 }
             ],
-            "transformation": [
+            "translation": [
+                0.0,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                -2.384185791015625e-7,
                 1.0
             ]
         },
@@ -1472,24 +1442,6 @@
         "205": {
             "name": "TrackedSpace",
             "parent": "14",
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.6808816,
-                1.75,
-                0.0000139,
-                1.0
-            ],
             "components": [
                 {
                     "type": "player-height",
@@ -1497,27 +1449,41 @@
                         "height": 1.75
                     }
                 }
+            ],
+            "translation": [
+                0.6808816,
+                1.75,
+                0.0000139
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
             ]
         },
         "209": {
             "name": "CursorRayLeft",
             "parent": "126",
-            "transformation": [
+            "translation": [
+                0.0,
+                0.0,
+                2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                2.384185791015625e-7,
                 1.0
             ]
         },
@@ -1533,23 +1499,21 @@
                     }
                 }
             ],
-            "transformation": [
-                0.0049999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0001057,
-                0.3500003,
-                0.0,
-                0.0,
-                -0.005,
-                0.0000015,
-                0.0,
-                2.384192896442983e-7,
+            "translation": [
+                2.3841928964429826e-7,
                 0.0002447,
+                0.0
+            ],
+            "rotation": [
+                0.707,
                 0.0,
-                1.0
+                0.0,
+                0.7072135
+            ],
+            "scaling": [
+                0.0049998,
+                0.3500002,
+                0.0049999
             ]
         },
         "212": {
@@ -1572,44 +1536,40 @@
                     }
                 }
             ],
-            "transformation": [
+            "translation": [
+                0.0,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                -2.384185791015625e-7,
                 1.0
             ]
         },
         "213": {
             "name": "CursorRayRight",
             "parent": "212",
-            "transformation": [
+            "translation": [
+                0.0,
+                0.0,
+                2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                2.384185791015625e-7,
                 1.0
             ]
         },
@@ -1625,23 +1585,21 @@
                     }
                 }
             ],
-            "transformation": [
-                0.0049999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                -0.0001711,
-                0.3499999,
-                0.0,
-                0.0,
-                -0.0049999,
-                -0.0000024,
-                0.0,
+            "translation": [
                 2.384185791015625e-7,
                 0.0002447,
+                0.0
+            ],
+            "rotation": [
+                0.7072796,
                 0.0,
-                1.0
+                0.0,
+                0.7069339
+            ],
+            "scaling": [
+                0.0049998,
+                0.3499999,
+                0.0049999
             ]
         },
         "215": {
@@ -1655,44 +1613,40 @@
                     }
                 }
             ],
-            "transformation": [
-                0.0099999,
+            "parent": null,
+            "translation": [
                 0.0,
                 0.0,
-                0.0,
-                0.0,
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0099999,
-                0.0,
+                0.0
+            ],
+            "rotation": [
                 0.0,
                 0.0,
                 0.0,
                 1.0
             ],
-            "parent": null
+            "scaling": [
+                0.0099999,
+                0.0099999,
+                0.0099999
+            ]
         },
         "230": {
             "name": "HospitalRoom",
-            "transformation": [
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
                 1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
                 1.0
             ]
         },
@@ -2073,23 +2027,21 @@
                     "type": "uiHandler"
                 }
             ],
-            "transformation": [
-                0.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.9832531,
-                -0.1822352,
-                0.0,
-                0.0,
-                0.1822352,
-                0.9832531,
-                0.0,
-                -0.761814,
+            "translation": [
+                -0.7618139,
                 1.1582343,
-                -0.0,
-                1.0
+                -0.0
+            ],
+            "rotation": [
+                -0.0915016,
+                0.0,
+                0.0,
+                0.9958049
+            ],
+            "scaling": [
+                0.5,
+                0.9999981,
+                0.9999981
             ]
         }
     },
@@ -3218,7 +3170,25 @@
                     9.999999974752427e-7,
                     1.0
                 ],
-                "shininess": 1
+                "shininess": 1,
+                "emissiveColor": [
+                    0.2,
+                    0.2,
+                    0.2,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ]
             }
         },
         "22": {
@@ -3238,9 +3208,15 @@
                 ],
                 "shininess": 10,
                 "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
                     0.317647,
                     0.0,
-                    0.2165777,
+                    0.2165776,
                     1.0
                 ]
             }
@@ -3261,6 +3237,12 @@
                     1.0
                 ],
                 "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
                     0.3843137,
                     0.3089579,
                     0.0,
@@ -3284,9 +3266,15 @@
                     1.0
                 ],
                 "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
                     0.0,
                     0.2352941,
-                    0.1437908,
+                    0.1437907,
                     1.0
                 ]
             }
@@ -3296,14 +3284,42 @@
                 "name": "skel_controller_materials_controllerMTL1",
                 "file": "models\\oculus-touch-v2-left.glb"
             },
-            "name": "ControllerLeft"
+            "name": "ControllerLeft",
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
         },
         "88": {
             "link": {
                 "name": "skel_controller_materials_controllerMTL",
                 "file": "models\\oculus-touch-v2-right.glb"
             },
-            "name": "ControllerRight"
+            "name": "ControllerRight",
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
         },
         "128": {
             "name": "Cursor",
@@ -3324,14 +3340,30 @@
                 "name": "Default_Material",
                 "file": "models\\hand-left.glb"
             },
-            "name": "HandLeft"
+            "name": "HandLeft",
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
+            }
         },
         "164": {
             "link": {
                 "name": "lambert2",
                 "file": "models\\hand-right.glb"
             },
-            "name": "HandRight"
+            "name": "HandRight",
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
+            }
         },
         "201": {
             "link": {
@@ -3367,9 +3399,15 @@
                     1.0
                 ],
                 "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
                     0.0274509,
-                    0.0274507,
-                    0.0274507,
+                    0.0274506,
+                    0.0274506,
                     1.0
                 ]
             }
@@ -3390,8 +3428,14 @@
                     1.0
                 ],
                 "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
                     0.0,
-                    0.3294117,
+                    0.3294116,
                     0.2013071,
                     1.0
                 ]
@@ -3427,9 +3471,9 @@
             },
             "Phong": {
                 "diffuseColor": [
-                    0.5647058,
-                    0.5647058,
-                    0.5647058,
+                    1.0,
+                    1.0,
+                    1.0,
                     1.0
                 ],
                 "specularColor": [
@@ -3437,6 +3481,12 @@
                     0.4902268,
                     0.4902268,
                     0.0632455
+                ],
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
                 ]
             },
             "pipeline": "38"
@@ -3445,114 +3495,332 @@
             "link": {
                 "name": "Sc5WindowFrame",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "289": {
             "link": {
                 "name": "Sc5Light_Metal",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "290": {
             "link": {
                 "name": "Sc5Light",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "291": {
             "link": {
                 "name": "Sc5WindowPane",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "292": {
             "link": {
                 "name": "Chair_Baked",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "293": {
             "link": {
                 "name": "Chair_Metallic",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "294": {
             "link": {
                 "name": "ClockHands",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "295": {
             "link": {
                 "name": "ClockRim",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "296": {
             "link": {
                 "name": "ClockFace",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "297": {
             "link": {
                 "name": "Table_Metallic",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "298": {
             "link": {
                 "name": "Table_Baked",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "299": {
             "link": {
                 "name": "Table_Wheels",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "300": {
             "link": {
                 "name": "Drawers_Baked",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "301": {
             "link": {
                 "name": "Drawers_Wheels",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "302": {
             "link": {
                 "name": "Drawers_Metallic",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "303": {
             "link": {
                 "name": "DoorBaker_Metallic",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "304": {
             "link": {
                 "name": "DoorBaker",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "305": {
             "link": {
                 "name": "MobilePhone_Main",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "306": {
             "link": {
                 "name": "RingBinder_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "307": {
@@ -3574,318 +3842,941 @@
                     1.0
                 ],
                 "ambientColor": [
-                    0.0,
-                    0.0,
-                    0.0,
+                    0.05,
+                    0.05,
+                    0.05,
                     1.0
-                ],
-                "ambientFactor": 0.05
+                ]
             }
         },
         "308": {
             "link": {
                 "name": "PadYellow",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "309": {
             "link": {
                 "name": "Light_surf",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "310": {
             "link": {
                 "name": "RoofLight",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "311": {
             "link": {
                 "name": "PaperTray_Main",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "312": {
             "link": {
                 "name": "Paper",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "313": {
             "link": {
                 "name": "CounterCupboards_Baker",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "314": {
             "link": {
                 "name": "CounterCupboards_Mettalic",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "315": {
             "link": {
                 "name": "Curtain_Frame",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "316": {
             "link": {
                 "name": "Wheels",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "317": {
             "link": {
                 "name": "Metal",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "318": {
             "link": {
                 "name": "Curtain_Baker",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "319": {
             "link": {
                 "name": "DripStand_Baker",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "320": {
             "link": {
                 "name": "DripStand_Shiny",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "321": {
             "link": {
                 "name": "WheelsBlack",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "322": {
             "link": {
                 "name": "DripBag_Baker",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "323": {
             "link": {
                 "name": "NozzleWhite",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "324": {
             "link": {
                 "name": "DripBag_Baker_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "325": {
             "link": {
                 "name": "NozzleWhite_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "326": {
             "link": {
                 "name": "HospitalBed_Baker",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "327": {
             "link": {
                 "name": "WhiteMetal",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "328": {
             "link": {
                 "name": "BlackWheels",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "329": {
             "link": {
                 "name": "Clipboard_Baker",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "330": {
             "link": {
                 "name": "Clipboard_Metallic",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "331": {
             "link": {
                 "name": "Clipboard_Baker_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "332": {
             "link": {
                 "name": "Clipboard_Metallic_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "333": {
             "link": {
                 "name": "Drawers_Baked_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "334": {
             "link": {
                 "name": "Drawers_Wheels_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "335": {
             "link": {
                 "name": "Drawers_Metallic_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "336": {
             "link": {
                 "name": "BlackPlastic",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "337": {
             "link": {
                 "name": "ComputerEquipment_Baker",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "338": {
             "link": {
                 "name": "PC_Monitor_Baker",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "339": {
             "link": {
                 "name": "LightSwitch_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "340": {
             "link": {
                 "name": "LeafA_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "341": {
             "link": {
                 "name": "LeafB_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "342": {
             "link": {
                 "name": "PotBake",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "343": {
             "link": {
                 "name": "ClickPen_Baker",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "344": {
             "link": {
                 "name": "MedicalShelves2_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "345": {
             "link": {
                 "name": "MedicalBoxes02",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "346": {
             "link": {
                 "name": "MedicalShelvesFull01_Baker",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "347": {
             "link": {
                 "name": "MedicalBoxes01",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "348": {
             "link": {
                 "name": "ClockHands_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "349": {
             "link": {
                 "name": "ClockRim_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "350": {
             "link": {
                 "name": "ClockFace_1",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "351": {
             "link": {
                 "name": "Screen",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "352": {
             "link": {
                 "name": "xrayMachineFrame_Baker",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "353": {
             "link": {
                 "name": "Patient_Sc05_RArm",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "354": {
             "link": {
                 "name": "Patient_Sc05_LArm",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "355": {
             "link": {
                 "name": "Patient_Sc05_Main",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "356": {
             "link": {
                 "name": "Patient_Sc05_Hair",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "357": {
             "link": {
                 "name": "Patient_Sc05_Head",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "358": {
             "link": {
                 "name": "Sc05_Ceiling",
                 "file": "models\\hospital-room.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "503": {
@@ -4026,9 +4917,9 @@
         "project": {
             "name": "HospitalRoom",
             "version": [
+                1,
                 0,
-                9,
-                4
+                2
             ]
         },
         "vr": {
@@ -4037,11 +4928,12 @@
         },
         "scripting": {
             "sourcePaths": [
-                "/js/editor-components-bundle.js",
-                "js/",
-                "static/js/CanvasUI.js"
+                "js/"
             ],
-            "useInternalBundler": true
+            "libraryPaths": [
+                "/js/lib/"
+            ],
+            "bundlingType": "esbuild"
         },
         "runtime": {
             "visualizeColliders": false,
@@ -4189,6 +5081,10 @@
             "link": {
                 "name": "Phong Opaque",
                 "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true,
+                "WITH_EMISSIVE": true
             }
         },
         "38": {
@@ -4197,13 +5093,17 @@
                 "file": "default"
             },
             "features": {
-                "ALPHA_MASKED": true
+                "ALPHA_MASKED": true,
+                "DEPRECATED_LIGHT_ATTENUATION": true
             }
         },
         "39": {
             "link": {
                 "name": "Foliage",
                 "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
             }
         },
         "40": {
@@ -4249,12 +5149,18 @@
             "link": {
                 "name": "Phong Normalmapped",
                 "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
             }
         },
         "499": {
             "link": {
                 "name": "Phong Lightmapped",
                 "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
             }
         },
         "501": {
@@ -4285,5 +5191,6 @@
                 "file": "default"
             }
         }
-    }
+    },
+    "languages": {}
 }
