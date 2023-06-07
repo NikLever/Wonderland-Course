@@ -52,7 +52,7 @@ export class ButtonComponent extends Component {
             this.object.addComponent(CursorTarget);
 
         target.onHover.add(this.onHover.bind(this));
-        target.onUnHover.add(this.onUnHover.bind(this));
+        target.onUnhover.add(this.onUnHover.bind(this));
         target.onDown.add(this.onDown.bind(this));
         target.onUp.add(this.onUp.bind(this));
 
