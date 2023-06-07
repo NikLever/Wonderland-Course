@@ -1,13 +1,21 @@
-WL.registerComponent('grabAction', {
-    param: {type: WL.Type.Float, default: 1.0},
-}, {
-    init: function() {
+
+import {Component, Property} from '@wonderlandengine/api';
+
+export class GrabAction extends Component {
+    static TypeName = "grabAction";
+    static Properties = { 
+        param: Property.float( 1.0 )
+    };
+
+    init() {
         console.log('init() with param', this.param);
-    },
-    start: function() {
+    }
+
+    start() {
         console.log('start() with param', this.param);
-    },
-    update: function(dt) {
+    }
+
+    update(dt) {
         console.log('update() with delta time', dt);
-    },
-});
+    }
+}
