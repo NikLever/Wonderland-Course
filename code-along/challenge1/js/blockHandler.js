@@ -30,9 +30,9 @@ export class Name extends Component {
         this.vrCamera.getForward( this.direction );
         vec3.copy( this.tmpVec, this.direction );
         vec3.scale( this.tmpVec, this.tmpVec, 30 );
-        this.vrCamera.getTranslationWorld( this.tmpVec1 );
+        this.vrCamera.getPositionWorld( this.tmpVec1 );
         vec3.add( this.tmpVec, this.tmpVec, this.tmpVec1 );
-        this.object.setTranslationWorld( this.tmpVec );
+        this.object.setPositionWorld( this.tmpVec );
         vec3.scale( this.direction, this.direction, -this.speed );
     }
 
@@ -42,9 +42,9 @@ export class Name extends Component {
         if ( this.vrCamera != null ){
             vec3.copy( this.tmpVec, this.direction );
             vec3.scale( this.tmpVec, this.tmpVec, dt );
-            this.object.translate( this.tmpVec );
-            this.object.getTranslationWorld( this.tmpVec );
-            this.vrCamera.getTranslationWorld( this.tmpVec1 );
+            this.object.translateLocal( this.tmpVec );
+            this.object.getPosittionWorld( this.tmpVec );
+            this.vrCamera.getPositionWorld( this.tmpVec1 );
             vec3.subtract( this.tmpVec, this.tmpVec, this.tmpVec1 );
             vec3.normalize( this.tmpVec, this.tmpVec );
             this.vrCamera.getForward( this.tmpVec1 );
