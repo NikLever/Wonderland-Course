@@ -1,66 +1,112 @@
-WL.registerComponent('button', {
-    buttonMeshObject: {type: WL.Type.Object},
-    hoverMaterial: {type: WL.Type.Material},
-    cube: { type: WL.Type.Object }
-}, {
-    start: function() {
-        this.mesh = this.buttonMeshObject.getComponent('mesh');
-        this.defaultMaterial = this.mesh.material;
+import {Component, MeshComponent, Property} from '@wonderlandengine/api';
+import {CursorTarget, HowlerAudioSource} from '@wonderlandengine/components';
 
-        this.target = this.object.getComponent('cursor-target');
-        this.target.addHoverFunction(this.onHover.bind(this));
-        this.target.addUnHoverFunction(this.onUnHover.bind(this));
-        this.target.addDownFunction(this.onDown.bind(this));
-        this.target.addUpFunction(this.onUp.bind(this));
+/**
+ * Helper function to trigger haptic feedback pulse.
+ *
+ * @param {Object} object An object with 'input' component attached
+ * @param {number} strength Strength from 0.0 - 1.0
+ * @param {number} duration Duration in milliseconds
+ */
+export function hapticFeedback(object, strength, duration) {
+    const input = object.getComponent('input');
+    if (input && input.xrInputSource) {
+        const gamepad = input.xrInputSource.gamepad;
+        if (gamepad && gamepad.hapticActuators)
+            gamepad.hapticActuators[0].pulse(strength, duration);
+    }
+}
+
+/**
+ * Button component.
+ *
+ * Shows a 'hoverMaterial' on cursor hover, moves backward on cursor down,
+ * returns to its position on cursor up, plays click/unclick sounds and haptic
+ * feedback on hover.
+ *
+ * Use `addClickFunction(() => {})` on the `cursor-target` component used
+ * with the button to define the button's action.
+ *
+ * Supports interaction with `finger-cursor` component for hand tracking.
+ */
+export class ButtonComponent extends Component {
+    static TypeName = 'button';
+    static Properties = {
+        buttonMeshObject: Property.object(),
+        hoverMaterial: Property.material(),
+        cube: Property.object()
+    };
+    static Dependencies = [
+        HowlerAudioSource
+    ];
+
+    /* Position to return to when "unpressing" the button */
+    returnPos = new Float32Array(3);
+
+    start() {
+        this.mesh = this.buttonMeshObject.getComponent(MeshComponent);
+        this.defaultMaterial = this.mesh.material;
+        this.buttonMeshObject.getTranslationLocal(this.returnPos);
+
+        const target =
+            this.object.getComponent(CursorTarget) ||
+            this.object.addComponent(CursorTarget);
+
+        target.onHover.add(this.onHover.bind(this));
+        target.onUnhover.add(this.onUnHover.bind(this));
+        target.onDown.add(this.onDown.bind(this));
+        target.onUp.add(this.onUp.bind(this));
 
         if (this.cube) this.physx = this.cube.getComponent( 'physx' );
 
-        this.soundClick = this.object.addComponent('howler-audio-source', {src: 'sfx/click.wav', spatial: true});
-        this.soundUnClick = this.object.addComponent('howler-audio-source', {src: 'sfx/unclick.wav', spatial: true});
-    },
+        this.soundClick = this.object.addComponent(HowlerAudioSource, {
+            src: 'sfx/click.wav',
+            spatial: true,
+        });
+        this.soundUnClick = this.object.addComponent(HowlerAudioSource, {
+            src: 'sfx/unclick.wav',
+            spatial: true,
+        });
+    }
 
-    onHover: function(_, cursor) {
+    /* Called by 'cursor-target' */
+    onHover(_, cursor) {
         this.mesh.material = this.hoverMaterial;
-        if(cursor.type == 'finger-cursor') {
+        if (cursor.type === 'finger-cursor') {
             this.onDown(_, cursor);
         }
 
-        this.hapticFeedback(cursor.object, 0.5, 50);
-    },
+        hapticFeedback(cursor.object, 0.5, 50);
+    }
 
-    onDown: function(_, cursor) {
+    /* Called by 'cursor-target' */
+    onDown(_, cursor) {
         this.soundClick.play();
         this.buttonMeshObject.translate([0.0, -0.1, 0.0]);
-        this.hapticFeedback(cursor.object, 1.0, 20);
+        hapticFeedback(cursor.object, 1.0, 20);
         if (this.physx ) this.physx.active = true;
         this.hideObject( this.object.parent );
-    },
+    }
 
-    hideObject: function( object ){
+    hideObject( object ){
         object.children.forEach( child => this.hideObject( child ) );
         object.active = false;
-    },
+    }
 
-    onUp: function(_, cursor) {
+    /* Called by 'cursor-target' */
+    onUp(_, cursor) {
         this.soundUnClick.play();
-        this.buttonMeshObject.translate([0.0, 0.1, 0.0]);
-        this.hapticFeedback(cursor.object, 0.7, 20);
-    },
+        this.buttonMeshObject.setTranslationLocal(this.returnPos);
+        hapticFeedback(cursor.object, 0.7, 20);
+    }
 
-    onUnHover: function(_, cursor) {
+    /* Called by 'cursor-target' */
+    onUnHover(_, cursor) {
         this.mesh.material = this.defaultMaterial;
-        if(cursor.type == 'finger-cursor') {
+        if (cursor.type === 'finger-cursor') {
             this.onUp(_, cursor);
         }
 
-        this.hapticFeedback(cursor.object, 0.3, 50);
-    },
-
-    hapticFeedback: function(object, strength, duration) {
-        const input = object.getComponent('input');
-        if(input && input.xrInputSource) {
-            const gamepad = input.xrInputSource.gamepad;
-            if(gamepad && gamepad.hapticActuators) gamepad.hapticActuators[0].pulse(strength, duration);
-        }
-    },
-});
+        hapticFeedback(cursor.object, 0.3, 50);
+    }
+}
