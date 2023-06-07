@@ -1,3 +1,6 @@
+import { Texture, Object3D } from "@wonderlandengine/api";
+import { vec3, quat } from "gl-matrix";
+
 class CanvasKeyboard{
     constructor( width, canvasui, lang = "EN" ){
         const config = this.getConfig( lang );
@@ -15,7 +18,7 @@ class CanvasKeyboard{
 
         const content = this.getContent(lang);
 
-        this.keyboard = new CanvasUI( content, config, object );
+        this.keyboard = new CanvasUI( content, config, object, canvasui.engine );
 
         this.tmpVec = new Float32Array(3);
     }
@@ -270,7 +273,7 @@ clipPath: svg path
 border: width color style
 */
 class CanvasUI{
-	constructor(content, config, object){
+	constructor(content, config, object, engine){
         const defaultconfig = {
             width: 512,
             height: 512,
@@ -335,7 +338,7 @@ class CanvasUI{
         const mesh = object.getComponent('mesh');
         this.material = mesh.material;
 
-        this.canvasTexture = new WL.Texture(this.canvas);
+        this.canvasTexture = new Texture(engine, this.canvas);
         this.material.flatTexture = this.canvasTexture;
 
         if (config.panelSize){
@@ -348,6 +351,7 @@ class CanvasUI{
         }
 
         this.object = object;
+        this.engine = engine;
         this.tmpVec = new Float32Array(3);
         this.tmpVec1 = new Float32Array(3);
         this.tmpQuat = new Float32Array(4);
@@ -375,13 +379,13 @@ class CanvasUI{
             this.tmpVec1[2] = -Math.cos(theta)/halfheight;
             this.tmpVec1[1] = Math.sin(theta)/halfheight;           
             console.log(`CanvasUI create keyboard 2 theta=${theta.toFixed(2)} offset=${this.vecToStr(this.tmpVec1)}`); 
-            glMatrix.vec3.add( this.tmpVec, this.tmpVec, this.tmpVec1);          
+            vec3.add( this.tmpVec, this.tmpVec, this.tmpVec1);          
             console.log(`CanvasUI create keyboard 3 theta=${theta.toFixed(2)} offset=${this.vecToStr(this.tmpVec)}`); 
             const obj = this.keyboard.object;
-            glMatrix.quat.fromEuler( this.tmpQuat, -15, 0, 0 );
+            quat.fromEuler( this.tmpQuat, -15, 0, 0 );
             obj.rotate( this.tmpQuat );
             obj.translate( this.tmpVec );//[0, -height*12, 12] );
-            glMatrix.vec3.divide(this.tmpVec, obj.scalingLocal, object.scalingWorld);
+            vec3.divide(this.tmpVec, obj.scalingLocal, object.scalingWorld);
             obj.resetScaling();
             obj.scale(this.tmpVec);
             obj.parent = object;
@@ -396,10 +400,9 @@ class CanvasUI{
             this.content = content;
             const btns = Object.values(config).filter( (value) => { return value.type === "button" || value.overflow === "scroll" || value.type === "input-text" });
             if (btns.length>0){
-                WL.onXRSessionStart.push(this.initControllers.bind(this));
+                this.engine.onXRSessionStart.push(this.initControllers.bind(this));
                 const extents = new Float32Array(3);
-                glMatrix.vec3.copy( extents, this.object.scalingWorld );
-                //glMatrix.vec3.scale( extents, extents, 1.1 );
+                vec3.copy( extents, this.object.scalingWorld );
                 const collision = this.object.addComponent( 'collision', { collider: 2, extents, group: this.collisionGroup });
             }
         }
@@ -472,7 +475,7 @@ class CanvasUI{
     initControllers(s){
         this.session = s;
         //Get rayleft and right
-        const root = new WL.Object(0);
+        const root = new Object3D(0);
         root.children.forEach( child => {
             if (child.name == 'Player'){
                 const space = child.children[0];
@@ -730,8 +733,8 @@ class CanvasUI{
         
     worldToCanvas( pos ){
         this.object.transformPointInverseWorld( this.tmpVec, pos );
-        glMatrix.vec3.copy( this.tmpVec1, this.object.scalingWorld );
-        glMatrix.vec3.div( this.tmpVec, this.tmpVec, this.tmpVec1 );
+        vec3.copy( this.tmpVec1, this.object.scalingWorld );
+        vec3.div( this.tmpVec, this.tmpVec, this.tmpVec1 );
         const xy = new Float32Array(2);
         xy[0] = ((this.tmpVec[0]+1)/2) * this.config.width;
         xy[1] = (1-(this.tmpVec[1]+1)/2) * this.config.height;
@@ -1043,3 +1046,5 @@ class CanvasUI{
 		});
 	}
 }
+
+export { CanvasUI };
