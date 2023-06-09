@@ -1,15 +1,26 @@
-WL.registerComponent('pickup', {
-    colliderGroup: { type: WL.Type.Int, default: 6 },
-    collisionIndicator: { type: WL.Type.Object }, 
-    returnOnRelease: { type: WL.Type.Bool, default: true },
-    handedness: {type: WL.Type.Enum, values: ['input component', 'left', 'right', 'none'], default: 'input component'}
-}, {
-    init: function() {    
+import {Component, Property} from '@wonderlandengine/api';
+import {HowlerAudioSource} from '@wonderlandengine/components';
+import { vec3, quat } from 'gl-matrix'
+
+export class BlockHandler extends Component {
+    static TypeName = 'blockHandler';
+    static Properties = {
+        colliderGroup: Property.int( 6 ),
+        collisionIndicator: Property.object(),
+        returnOnRelease: Property.bool( true ),
+        handedness: Property.enum(['input component', 'left', 'right', 'none'], 'input component')
+    };
+    static Dependencies = [
+        HowlerAudioSource
+    ];
+    
+    init() {    
         this._tmpVec = new Float32Array(3);
         this._tmpVec1 = new Float32Array(3);
         this._collisionGroup = 1 << this.colliderGroup;
-    },
-    start: function() {
+    }
+
+    start() {
         const input = this.object.getComponent('input');
         if(!input) {
             console.warn(this.object.name, "pickup.js: input component is required on the object");
@@ -20,9 +31,10 @@ WL.registerComponent('pickup', {
             this.handedness = ['left', 'right', 'none'][this.handedness-1];
         }
         this.collisionIndicator.active = false;
-        WL.onXRSessionStart.push(this.setupVREvents.bind(this));
-    },
-    setupVREvents: function(s){
+        this.engine.onXRSessionStart.add(this.setupVREvents.bind(this));
+    }
+
+    setupVREvents(s){
         this.session = s;
         s.addEventListener('end', () => {
             this.session = null;
@@ -35,17 +47,20 @@ WL.registerComponent('pickup', {
         s.addEventListener('selectend', (e) => {
             console.log(`Drop ${this._holding}`);      
         });
-    },
-    update: function(dt) {
-    },
-    reparentReset: function (object, newParent) {
+    }
+
+    update(dt) {
+    }
+
+    reparentReset (object, newParent) {
         object.resetTransform( );
         object.rotateAxisAngleDeg([0, 1, 0], this.rotateYOnMove ); 
         object.scalingLocal.set( this._grabScale );
         object.parent = newParent;
         object.setDirty();
-    },
-    reparentKeepTransform: function (object, newParent) {
+    }
+
+    reparentKeepTransform (object, newParent) {
         //From Pipo's code
         let newParentTransformWorld = [];
         glMatrix.quat2.identity(newParentTransformWorld);
@@ -71,4 +86,4 @@ WL.registerComponent('pickup', {
 
         object.setDirty();
     }
-});
+}
