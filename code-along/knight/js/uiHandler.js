@@ -1,7 +1,14 @@
-WL.registerComponent('uiHandler', {
-    
-}, {
-    start: function() {
+import {Component, Property} from '@wonderlandengine/api';
+import {HowlerAudioSource} from '@wonderlandengine/components';
+import { vec3, quat } from 'gl-matrix'
+
+export class UIHandler extends Component {
+    static TypeName = 'uiHandler';
+    static Dependencies = [
+        HowlerAudioSource
+    ];
+   
+    start() {
 
         this.target = this.object.getComponent('cursor-target');
         this.target.addHoverFunction(this.onHover.bind(this));
@@ -15,9 +22,9 @@ WL.registerComponent('uiHandler', {
 
         this.soundClick = this.object.addComponent('howler-audio-source', {src: 'sfx/click.wav', spatial: true});
         this.soundUnClick = this.object.addComponent('howler-audio-source', {src: 'sfx/unclick.wav', spatial: true});
-    },
+    }
 
-    setupUI: function(){
+    setupUI(){
         const scope = this;
 
         function onIdle(){
@@ -106,18 +113,18 @@ WL.registerComponent('uiHandler', {
             dance: "Dance"
         }
 
-        this.ui = new CanvasUI( content, config, this.object );
+        this.ui = new CanvasUI( content, config, this.object, this.engine );
         this.ui.update();
         let ui = this.ui;
-    },
+    }
 
-    setAnimation: function(animation, loop=true){
+    setAnimation(animation, loop=true){
         if (this.animComp){
             //TO DO
         }
-    },
+    }
 
-    onHover: function(_, cursor) {
+    onHover(_, cursor) {
         //console.log('onHover');
         const xy = this.ui.worldToCanvas(cursor.cursorPos);
         if (this.ui) this.ui.hover(0, xy);
@@ -127,49 +134,49 @@ WL.registerComponent('uiHandler', {
         }
 
         this.hapticFeedback(cursor.object, 0.5, 50);
-    },
+    }
 
-    onMove: function(_, cursor) {
+    onMove(_, cursor) {
         this.ui.worldToCanvas(cursor.cursorPos);
         const xy = this.ui.worldToCanvas(cursor.cursorPos);
         if (this.ui) this.ui.hover(0, xy);
 
         this.hapticFeedback(cursor.object, 0.5, 50);
-    },
+    }
 
-    onDown: function(_, cursor) {
+    onDown(_, cursor) {
         console.log('onDown');
         /*this.soundClick.play();
         this.buttonMeshObject.translate([0.0, -0.1, 0.0]);
         this.hapticFeedback(cursor.object, 1.0, 20);*/
-    },
+    }
 
-    onUp: function(_, cursor) {
+    onUp(_, cursor) {
         console.log('onUp');
         this.soundUnClick.play();
 
         if (this.ui) this.ui.select(0);
 
         this.hapticFeedback(cursor.object, 0.7, 20);
-    },
+    }
 
-    onUnHover: function(_, cursor) {
+    onUnHover(_, cursor) {
         console.log('onUnHover');
         
         if (this.ui) this.ui.hover(0);
 
         this.hapticFeedback(cursor.object, 0.3, 50);
-    },
+    }
 
-    hapticFeedback: function(object, strength, duration) {
+    hapticFeedback(object, strength, duration) {
         const input = object.getComponent('input');
         if(input && input.xrInputSource) {
             const gamepad = input.xrInputSource.gamepad;
             if(gamepad && gamepad.hapticActuators) gamepad.hapticActuators[0].pulse(strength, duration);
         }
-    },
-
-    update: function(dt){
+    }
+    
+    update(dt){
         if (this.ui) this.ui.update();
     }
-});
+}
