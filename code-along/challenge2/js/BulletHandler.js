@@ -1,7 +1,7 @@
 import { Component } from '@wonderlandengine/api';
 import { vec3 } from "gl-matrix";
 
-export class Name extends Component {
+export class BulletHandler extends Component {
     static TypeName = "BulletHandler";
     
     init() {

@@ -16,7 +16,7 @@ export class MovePlayer extends Component {
     }
 
     start() {
-        this.engine.onXRSessionStart.push(this.setupVREvents.bind(this));
+        this.engine.onXRSessionStart.add(this.setupVREvents.bind(this));
     }
 
     update(dt) {

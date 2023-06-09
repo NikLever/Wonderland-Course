@@ -11,7 +11,7 @@ export class Name extends Component {
     start() {
         /* Once a session starts, we want to bind event listeners
          * to the session */
-        this.engine.onXRSessionStart.push(this.onXRSessionStart.bind(this));
+        this.engine.onXRSessionStart.add(this.onXRSessionStart.bind(this));
     }
 
     onXRSessionStart(s) {

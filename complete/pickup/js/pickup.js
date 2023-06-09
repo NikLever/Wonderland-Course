@@ -1,7 +1,7 @@
 import {Component, Property} from '@wonderlandengine/api';
 import { vec3, quat } from "gl-matrix";
 
-export class Name extends Component {
+export class Pickup extends Component {
     static TypeName = "pickup";
     static Properties = { 
         colliderGroup: Property.int(6),
@@ -31,7 +31,7 @@ export class Name extends Component {
             this.handedness = ['left', 'right', 'none'][this.handedness-1];
         }
         this.collisionIndicator.active = false;
-        this.engine.onXRSessionStart.push(this.setupVREvents.bind(this));
+        this.engine.onXRSessionStart.add(this.setupVREvents.bind(this));
     }
 
     setupVREvents(s){

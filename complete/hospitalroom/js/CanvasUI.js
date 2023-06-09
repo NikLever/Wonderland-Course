@@ -400,7 +400,7 @@ class CanvasUI{
             this.content = content;
             const btns = Object.values(config).filter( (value) => { return value.type === "button" || value.overflow === "scroll" || value.type === "input-text" });
             if (btns.length>0){
-                this.engine.onXRSessionStart.push(this.initControllers.bind(this));
+                this.engine.onXRSessionStart.add(this.initControllers.bind(this));
                 const extents = new Float32Array(3);
                 vec3.copy( extents, this.object.scalingWorld );
                 const collision = this.object.addComponent( 'collision', { collider: 2, extents, group: this.collisionGroup });

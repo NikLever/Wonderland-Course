@@ -40,7 +40,7 @@ export class Collectable extends Component {
         this._cursor = this.object.getComponent('cursor'); 
         this._teleport = this.object.getComponent('teleport');
         this.collisionIndicator.active = false;
-        this.engine.onXRSessionStart.push(this.setupVREvents.bind(this));
+        this.engine.onXRSessionStart.add(this.setupVREvents.bind(this));
     }
 
     setupVREvents(s){

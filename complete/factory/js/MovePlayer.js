@@ -18,13 +18,13 @@ export class Name extends Component {
 
     setTranslationWorld() {
         //this.physx = (this.navmesh) ? this.navmesh.getComponent('physx') : null;
-        this.engine.onXRSessionStart.push(this.setupVREvents.bind(this));
+        this.engine.onXRSessionStart.add(this.setupVREvents.bind(this));
     }
 
     update(dt) {
         if ( this.camera == null ) return;
         if (this.getSelectPressed()){
-            this.object.getTranslationWorld( this.tmpPos );
+            this.object.getPositionWorld( this.tmpPos );
             this.camera.getForward( this.tmpVec );
 
             vec3.scale(this.tmpVec, this.tmpVec, dt * this.speed);
@@ -35,7 +35,7 @@ export class Name extends Component {
             let rayhit = WL.physics.rayCast(this.tmpPos, this.down, 255, 5.0);
             
             if (rayhit.hitCount>0){
-                this.object.setTranslationWorld(rayhit.locations[0]);
+                this.object.setPositionWorld(rayhit.locations[0]);
             }
         }
     }

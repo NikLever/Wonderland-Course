@@ -1,7 +1,7 @@
 import {Component, Property} from '@wonderlandengine/api';
 import { vec3, quat, quat2 } from "gl-matrix";
 
-export class Name extends Component {
+export class MathTest extends Component {
     static TypeName = "mathTest";
     static Properties = { 
         option: Property.enum(['position', 'orbit', 'spin', 'scale', 'challenge'], 'position')

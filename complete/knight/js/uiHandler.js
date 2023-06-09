@@ -3,7 +3,7 @@ import { HowlerAudioSource } from '@wonderlandengine/components';
 import { vec3, quat } from "gl-matrix";
 import { CanvasUI  } from './CanvasUI.js';
 
-export class Name extends Component {
+export class UIHandler extends Component {
     static TypeName = "uiHandler";
     static Properties = {
         idleAnimation: Property.animation(),

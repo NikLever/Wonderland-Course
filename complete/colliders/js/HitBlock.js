@@ -26,7 +26,7 @@ export class Name extends Component {
             this.handedness = ['left', 'right'][this.handedness-1];
         }
         this.cursor = this.object.getComponent('cursor');
-        this.engine.onXRSessionStart.push(this.setupVREvents.bind(this));
+        this.engine.onXRSessionStart.add(this.setupVREvents.bind(this));
     }
 
     setupVREvents(s){

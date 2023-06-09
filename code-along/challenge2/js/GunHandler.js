@@ -1,7 +1,7 @@
 import {Component, Property} from '@wonderlandengine/api';
 import { HowlerAudioSource } from '@wonderlandengine/components';
 
-export class Name extends Component {
+export class GunHandler extends Component {
     static TypeName = "GunHandler";
     static Properties = { 
         bulletMesh: Property.mesh(),
@@ -24,7 +24,7 @@ export class Name extends Component {
         }else{
             this.handedness = input.handedness;
         }
-        this.engine.onXRSessionStart.push(this.setupVREvents.bind(this));
+        this.engine.onXRSessionStart.add(this.setupVREvents.bind(this));
         this.sfxShot = this.object.addComponent(HowlerAudioSource, {src: 'sfx/shot.mp3', spatial: false});
     }
 

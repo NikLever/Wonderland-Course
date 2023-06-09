@@ -1,7 +1,7 @@
 import {Component, Property} from '@wonderlandengine/api';
 import { vec3, quat } from "gl-matrix";
 
-export class Name extends Component {
+export class BlockHandler extends Component {
     static TypeName = "blockHandler";
     static Properties = { 
         vrCamera: Property.object(),
