@@ -11,12 +11,10 @@ export class BlockHandler extends Component {
         hitTextObject: Property.object(),
         missedTextObject: Property.object()
     };
-    static Dependencies = [
-        HowlerAudioSource
-    ];
-    //onRegister(){
-    //    engine.registerComponent( HowlerAudioSource );
-    //}
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
 
     init() {
         if (this.vrCamera == null){

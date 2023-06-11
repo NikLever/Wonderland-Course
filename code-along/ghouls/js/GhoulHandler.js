@@ -14,9 +14,10 @@ export class GhoulHandler extends Component {
         delayStart: Property.float( 0.0 ),
         player: Property.object()
     };
-    static Dependencies = [
-        HowlerAudioSource
-    ];
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
 
     init() {
         //console.log('init() with param', this.param);

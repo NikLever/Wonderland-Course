@@ -8,9 +8,10 @@ export class GunHandler extends Component {
         bulletMaterial: Property.material(),
         collisionGroup: Property.float( 6.0 )
     };
-    static Dependencies = [
-        HowlerAudioSource
-    ];
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
 
     init(){
         this.tmpVec = new Float32Array(3);

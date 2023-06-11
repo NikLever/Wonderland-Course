@@ -9,9 +9,10 @@ export class BlockHandler extends Component {
         speed: Property.float( 5.0 ),
         countTextObject: Property.object()
     };
-    static Dependencies = [
-        HowlerAudioSource
-    ];
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
 
     init() {
         if (this.vrCamera == null){

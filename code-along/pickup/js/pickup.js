@@ -10,9 +10,10 @@ export class BlockHandler extends Component {
         returnOnRelease: Property.bool( true ),
         handedness: Property.enum(['input component', 'left', 'right', 'none'], 'input component')
     };
-    static Dependencies = [
-        HowlerAudioSource
-    ];
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
     
     init() {    
         this._tmpVec = new Float32Array(3);

@@ -35,9 +35,9 @@ export class ButtonComponent extends Component {
         buttonMeshObject: Property.object(),
         hoverMaterial: Property.material(),
     };
-    static Dependencies = [
-        HowlerAudioSource
-    ];
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
 
     /* Position to return to when "unpressing" the button */
     returnPos = new Float32Array(3);

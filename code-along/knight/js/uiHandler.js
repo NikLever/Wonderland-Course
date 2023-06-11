@@ -4,9 +4,10 @@ import { vec3, quat } from 'gl-matrix'
 
 export class UIHandler extends Component {
     static TypeName = 'uiHandler';
-    static Dependencies = [
-        HowlerAudioSource
-    ];
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
    
     start() {
 

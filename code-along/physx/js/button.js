@@ -8,9 +8,10 @@ export class BlockHandler extends Component {
         buttonMeshObject: Property.object(),
         hoverMaterial: Property.material()
     };
-    static Dependencies = [
-        HowlerAudioSource
-    ];
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
     
     start() {
         this.mesh = this.buttonMeshObject.getComponent('mesh');

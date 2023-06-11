@@ -13,9 +13,10 @@ export class Collectable extends Component {
         rotateYOnMove: Property.float( 0.0 ),
         handedness: Property.enum(['input component', 'left', 'right', 'none'], 'input component')
     };
-    static Dependencies = [
-        HowlerAudioSource
-    ];
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
 
     init() {    
         this._tempVec = new Float32Array(3);
