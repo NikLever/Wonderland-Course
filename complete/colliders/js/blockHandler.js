@@ -2,7 +2,7 @@ import {Component, Property} from '@wonderlandengine/api';
 import {HowlerAudioSource} from '@wonderlandengine/components';
 import { vec3, quat } from "gl-matrix";
 
-export class Name extends Component {
+export class BlockHandler extends Component {
     static TypeName = "blockHandler";
     static Properties = { 
         vrCamera: Property.object(),
@@ -14,6 +14,9 @@ export class Name extends Component {
     static Dependencies = [
         HowlerAudioSource
     ];
+    //onRegister(){
+    //    engine.registerComponent( HowlerAudioSource );
+    //}
 
     init() {
         if (this.vrCamera == null){
@@ -45,12 +48,12 @@ export class Name extends Component {
 
     spawn() { 
         if ( this.vrCamera == null ) return;
-        this.vrCamera.getForward( this.direction );
+        this.vrCamera.getForwardWorld( this.direction );
         vec3.copy( this.tmpVec, this.direction );
         vec3.scale( this.tmpVec, this.tmpVec, this.spawnDistance );
-        this.vrCamera.getTranslationWorld( this.tmpVec1 );
+        this.vrCamera.getPositionWorld( this.tmpVec1 );
         vec3.add( this.tmpVec, this.tmpVec, this.tmpVec1 );
-        this.object.setTranslationWorld( this.tmpVec );
+        this.object.setPositionWorld( this.tmpVec );
         vec3.scale( this.direction, this.direction, -this.speed );
     }
 
@@ -69,9 +72,9 @@ export class Name extends Component {
         if ( this.vrCamera != null ){
             vec3.copy( this.tmpVec, this.direction );
             vec3.scale( this.tmpVec, this.tmpVec, dt );
-            this.object.translate( this.tmpVec );
-            this.object.getTranslationWorld( this.tmpVec );
-            this.vrCamera.getTranslationWorld( this.tmpVec1 );
+            this.object.translateWorld( this.tmpVec );
+            this.object.getPositionWorld( this.tmpVec );
+            this.vrCamera.getPositionWorld( this.tmpVec1 );
             vec3.subtract( this.tmpVec, this.tmpVec, this.tmpVec1 );
             vec3.normalize( this.tmpVec, this.tmpVec );
             this.vrCamera.getForward( this.tmpVec1 );

@@ -1,7 +1,7 @@
 import {Component, Property} from '@wonderlandengine/api';
 import { vec3, quat } from "gl-matrix";
 
-export class Name extends Component {
+export class BlockHandler extends Component {
     static TypeName = "blockHandler";
     static Properties = { 
         vrCamera: Property.object(),
@@ -53,7 +53,7 @@ export class Name extends Component {
         if ( this.vrCamera != null ){
             vec3.copy( this.tmpVec, this.direction );
             vec3.scale( this.tmpVec, this.tmpVec, dt );
-            this.object.translateLocal( this.tmpVec );
+            this.object.translateWorld( this.tmpVec );
             this.object.getPositionWorld( this.tmpVec );
             this.vrCamera.getPositionWorld( this.tmpVec1 );
             vec3.subtract( this.tmpVec, this.tmpVec, this.tmpVec1 );
