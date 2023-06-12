@@ -1,8 +1,8 @@
 import {Component} from '@wonderlandengine/api';
 import { vec3, quat } from "gl-matrix";
 
-export class Name extends Component {
-    static TypeName = "BulletHandler";
+export class BulletHandler extends Component {
+    static TypeName = "bulletHandler";
  
     init() {
         this.direction = new Float32Array(3);

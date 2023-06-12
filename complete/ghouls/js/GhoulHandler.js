@@ -2,8 +2,8 @@ import {Component, Property} from '@wonderlandengine/api';
 import { HowlerAudioSource } from '@wonderlandengine/components';
 import { vec3, quat } from "gl-matrix";
 
-export class Name extends Component {
-    static TypeName = "GhoulHandler";
+export class GhoulHandler extends Component {
+    static TypeName = "ghoulHandler";
     static Properties = { 
         path: Property.object(),
         vrCamera: Property.object(),
@@ -14,9 +14,10 @@ export class Name extends Component {
         delayStart: Property.float( 0 ),
         player: Property.object()
     };
-    static Dependencies = [
-        HowlerAudioSource
-    ];
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
 
     init() {
         //console.log('init() with param', this.param);

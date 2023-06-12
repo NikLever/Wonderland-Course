@@ -5,9 +5,10 @@ import { CanvasUI  } from './CanvasUI.js';
 
 export class UIHandler extends Component {
     static TypeName = "uiHandler";
-    static Dependencies = [
-        HowlerAudioSource
-    ];
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
 
     init() {
     }

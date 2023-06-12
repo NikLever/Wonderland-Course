@@ -7,9 +7,10 @@ export class UIHandler extends Component {
     static Properties = { 
         panel: Property.enum(['simple', 'buttons', 'scrolling', 'images', 'input-text'], 'simple')
     };
-    static Dependencies = [
-        HowlerAudioSource
-    ];
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
 
     init() {
     }

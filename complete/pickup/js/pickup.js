@@ -1,5 +1,5 @@
 import {Component, Property} from '@wonderlandengine/api';
-import { vec3, quat } from "gl-matrix";
+import { vec3, quat2 } from "gl-matrix";
 
 export class Pickup extends Component {
     static TypeName = "pickup";
@@ -80,7 +80,7 @@ export class Pickup extends Component {
     update(dt) {
         if ( !this._holding ){
             const origin = this._tmpVec;
-            glMatrix.quat2.getTranslation(origin, this.object.transformWorld);
+            quat2.getTranslation(origin, this.object.transformWorld);
             const direction = this.object.getForward( this._tmpVec1 );
             let rayHit = this.engine.scene.rayCast(origin, direction, this._collisionGroup, 20 );
             if(rayHit.hitCount > 0) {
@@ -106,7 +106,7 @@ export class Pickup extends Component {
     reparentKeepTransform(object, newParent) {
         //From Pipo's code
         let newParentTransformWorld = [];
-        glMatrix.quat2.identity(newParentTransformWorld);
+        quat2.identity(newParentTransformWorld);
         let newParentScalingWorld = [1, 1, 1];
 
         if (newParent) {
@@ -116,12 +116,12 @@ export class Pickup extends Component {
 
         let tempTransform = new Float32Array(8);
 
-        glMatrix.quat2.conjugate(tempTransform, newParentTransformWorld);
-        glMatrix.quat2.mul(tempTransform, tempTransform, object.transformWorld);
+        quat2.conjugate(tempTransform, newParentTransformWorld);
+        quat2.mul(tempTransform, tempTransform, object.transformWorld);
         object.transformLocal.set(tempTransform);
 
         let newScale = new Float32Array(3);
-        glMatrix.vec3.divide(newScale, object.scalingLocal, newParentScalingWorld);
+        vec3.divide(newScale, object.scalingLocal, newParentScalingWorld);
         object.resetScaling();
         object.scale(newScale);
 

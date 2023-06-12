@@ -12,9 +12,10 @@ export class UIHandler extends Component {
         danceAnimation: Property.animation(),
         animationTarget: Property.object()
     };
-    static Dependencies = [
-        HowlerAudioSource
-    ];
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
 
     start() {
 

@@ -1,14 +1,18 @@
 import {Component, Property} from '@wonderlandengine/api';
 import { HowlerAudioSource } from '@wonderlandengine/components';
-import { vec3, quat } from "gl-matrix";
 
-export class Name extends Component {
-    static TypeName = "GunHandler";
+
+export class GunHandler extends Component {
+    static TypeName = "gunHandler";
     static Properties = { 
         bulletMesh: Property.mesh(),
         bulletMaterial: Property.material(),
         collisionGroup: Property.float( 6.0 )
     };
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
 
     init(){
         this.tmpVec = new Float32Array(3);

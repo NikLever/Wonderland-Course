@@ -1,8 +1,8 @@
 import {Component, Property} from '@wonderlandengine/api';
 import { vec3 } from "gl-matrix";
 
-export class Name extends Component {
-    static TypeName = "MovePlayer";
+export class MovePlayer extends Component {
+    static TypeName = "movePlayer";
     static Properties = { 
         camera: Property.object(),
         speed: Property.float( 2.0 )
