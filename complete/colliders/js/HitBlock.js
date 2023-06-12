@@ -45,7 +45,7 @@ export class HitBlock extends Component {
     update(dt) {
         this.object.getPositionWorld( this.tmpVec );//origin
         this.object.getForwardWorld( this.tmpVec1 );//direction
-        const rayHit = WL.scene.rayCast( this.tmpVec, this.tmpVec1, 1 << this.colliderGroup, 10 );
+        const rayHit = this.engine.scene.rayCast( this.tmpVec, this.tmpVec1, 1 << this.colliderGroup, 10 );
         if(rayHit.hitCount > 0) {
             this.collisionIndicator.setPositionWorld( rayHit.locations[0] );
             //console.log( `HitBlock.js: update > rayHit.locations[0] = ${rayHit.locations[0]} `);

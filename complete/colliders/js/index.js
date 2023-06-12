@@ -19,6 +19,7 @@ import {HowlerAudioListener} from '@wonderlandengine/components';
 import {MouseLookComponent} from '@wonderlandengine/components';
 import {PlayerHeight} from '@wonderlandengine/components';
 import {VrModeActiveSwitch} from '@wonderlandengine/components';
+import {HitBlock} from './HitBlock.js';
 import {BlockHandler} from './blockHandler.js';
 /* wle:auto-imports:end */
 
@@ -85,6 +86,7 @@ engine.registerComponent(HowlerAudioListener);
 engine.registerComponent(MouseLookComponent);
 engine.registerComponent(PlayerHeight);
 engine.registerComponent(VrModeActiveSwitch);
+engine.registerComponent(HitBlock);
 engine.registerComponent(BlockHandler);
 /* wle:auto-register:end */
 

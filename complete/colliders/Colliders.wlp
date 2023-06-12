@@ -704,6 +704,9 @@
                     "type": "hitBlock",
                     "HitBlock": {
                         "collisionIndicator": "127"
+                    },
+                    "hitBlock": {
+                        "collisionIndicator": "127"
                     }
                 }
             ],
@@ -1440,7 +1443,7 @@
             "translation": [
                 0.0,
                 1.3364075,
-                1.7881393432617188e-7
+                1.788139343261719e-7
             ],
             "rotation": [
                 0.5002118,
@@ -1580,6 +1583,9 @@
                 {
                     "type": "hitBlock",
                     "HitBlock": {
+                        "collisionIndicator": "215"
+                    },
+                    "hitBlock": {
                         "collisionIndicator": "215"
                     }
                 }
@@ -2436,7 +2442,7 @@
             "version": [
                 1,
                 0,
-                2
+                3
             ]
         },
         "vr": {
