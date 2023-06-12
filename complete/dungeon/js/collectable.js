@@ -7,7 +7,7 @@ if (GLOBALS == undefined ){
     GLOBALS.holding = false;
 }
 
-export class Name extends Component {
+export class Collectable extends Component {
     static TypeName = "collectable";
     static Properties = { 
         controller: Property.object(),

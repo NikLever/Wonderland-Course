@@ -701,7 +701,7 @@
                     }
                 },
                 {
-                    "type": "HitBlock",
+                    "type": "hitBlock",
                     "HitBlock": {
                         "collisionIndicator": "127"
                     }
@@ -1578,7 +1578,7 @@
                     }
                 },
                 {
-                    "type": "HitBlock",
+                    "type": "hitBlock",
                     "HitBlock": {
                         "collisionIndicator": "215"
                     }

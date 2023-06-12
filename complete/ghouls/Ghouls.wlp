@@ -2647,7 +2647,7 @@
                     }
                 },
                 {
-                    "type": "GhoulHandler",
+                    "type": "ghoulHandler",
                     "GhoulHandler": {
                         "path": "1263",
                         "target": "18",
@@ -3351,7 +3351,7 @@
                     }
                 },
                 {
-                    "type": "GhoulHandler",
+                    "type": "ghoulHandler",
                     "GhoulHandler": {
                         "path": "1270",
                         "vrCamera": "18",
@@ -4250,7 +4250,7 @@
                     }
                 },
                 {
-                    "type": "GunHandler",
+                    "type": "gunHandler",
                     "GunHandler": {
                         "bulletMesh": "1304",
                         "bulletMaterial": "25"
@@ -4311,7 +4311,7 @@
                     }
                 },
                 {
-                    "type": "GunHandler",
+                    "type": "gunHandler",
                     "GunHandler": {
                         "bulletMesh": "1304",
                         "bulletMaterial": "25"

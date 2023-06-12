@@ -12,6 +12,7 @@ export class GunHandler extends Component {
     
     static onRegister(engine){
         engine.registerComponent( HowlerAudioSource );
+        engine.registerComponent( bulletHandler );
     }
 
     init(){
