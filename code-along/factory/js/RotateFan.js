@@ -1,7 +1,7 @@
 import {Component, Property} from '@wonderlandengine/api';
 
 export class RotateFan extends Component {
-    static TypeName = 'RotateFan';
+    static TypeName = 'rotateFan';
     static Properties = {
         rotationSpeed: Property.float( 10.0 )
     };

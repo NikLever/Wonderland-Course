@@ -1719,7 +1719,7 @@
             "components": [
                 {
                     "type": "blockHandler",
-                    "blockHandler": {
+                    "BlockHandler": {
                         "vrCamera": "18",
                         "countTextObject": "231"
                     }

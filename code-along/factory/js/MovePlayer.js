@@ -1,7 +1,7 @@
 import {Component, Property} from '@wonderlandengine/api';
 
 export class MovePlayer extends Component {
-    static TypeName = 'MovePlayer';
+    static TypeName = 'movePlayer';
     static Properties = {
         camera: Property.object(),
         speed: Property.float( 2.0 )

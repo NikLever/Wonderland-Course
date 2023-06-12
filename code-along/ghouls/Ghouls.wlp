@@ -2638,7 +2638,7 @@
                     }
                 },
                 {
-                    "type": "GhoulHandler",
+                    "type": "ghoulHandler",
                     "GhoulHandler": {
                         "path": "1263",
                         "target": "18",
@@ -3342,7 +3342,7 @@
                     }
                 },
                 {
-                    "type": "GhoulHandler",
+                    "type": "ghoulHandler",
                     "GhoulHandler": {
                         "path": "1270",
                         "vrCamera": "18",

@@ -16,8 +16,6 @@ import {Cursor} from '@wonderlandengine/components';
 import {HowlerAudioListener} from '@wonderlandengine/components';
 import {MouseLookComponent} from '@wonderlandengine/components';
 import {PlayerHeight} from '@wonderlandengine/components';
-import {GhoulHandler} from './GhoulHandler.js';
-import {Name as Name1} from './GunHandler.js';
 /* wle:auto-imports:end */
 
 import {loadRuntime} from '@wonderlandengine/api';
@@ -80,8 +78,6 @@ engine.registerComponent(Cursor);
 engine.registerComponent(HowlerAudioListener);
 engine.registerComponent(MouseLookComponent);
 engine.registerComponent(PlayerHeight);
-engine.registerComponent(GhoulHandler);
-engine.registerComponent(Name1);
 /* wle:auto-register:end */
 
 engine.scene.load(`${Constants.ProjectName}.bin`);

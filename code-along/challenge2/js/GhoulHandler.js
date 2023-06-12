@@ -3,7 +3,7 @@ import { HowlerAudioSource } from '@wonderlandengine/components';
 import { vec3, quat } from "gl-matrix";
 
 export class GhoulHandler extends Component {
-    static TypeName = "GhoulHandler";
+    static TypeName = "ghoulHandler";
     static Properties = { 
         path: Property.object(),
         vrCamera: Property.object(),

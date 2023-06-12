@@ -2,8 +2,8 @@ import {Component, Property} from '@wonderlandengine/api';
 import {HowlerAudioSource} from '@wonderlandengine/components';
 import { vec3, quat } from 'gl-matrix'
 
-export class BlockHandler extends Component {
-    static TypeName = 'blockHandler';
+export class Pickup extends Component {
+    static TypeName = 'pickup';
     static Properties = {
         colliderGroup: Property.int( 6 ),
         collisionIndicator: Property.object(),

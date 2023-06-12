@@ -2,7 +2,7 @@ import {Component, Property} from '@wonderlandengine/api';
 import { HowlerAudioSource } from '@wonderlandengine/components';
 
 export class GunHandler extends Component {
-    static TypeName = "GunHandler";
+    static TypeName = "gunHandler";
     static Properties = { 
         bulletMesh: Property.mesh(),
         bulletMaterial: Property.material(),

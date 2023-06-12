@@ -22,7 +22,7 @@
             ],
             "components": [
                 {
-                    "type": "MovePlayer",
+                    "type": "movePlayer",
                     "MovePlayer": {
                         "navmesh": "444",
                         "camera": "18"
@@ -1852,7 +1852,7 @@
             "components": [
                 null,
                 {
-                    "type": "RotateFan",
+                    "type": "rotateFan",
                     "RotateFan": {
                         "rotationSpeed": 70.0
                     }
@@ -1867,7 +1867,7 @@
             "components": [
                 null,
                 {
-                    "type": "RotateFan",
+                    "type": "rotateFan",
                     "RotateFan": {
                         "rotationSpeed": 70.0
                     }
@@ -1882,7 +1882,7 @@
             "components": [
                 null,
                 {
-                    "type": "RotateFan",
+                    "type": "rotateFan",
                     "RotateFan": {
                         "rotationSpeed": 70.0
                     }

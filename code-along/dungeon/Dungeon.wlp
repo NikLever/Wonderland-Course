@@ -709,7 +709,7 @@
                 },
                 {
                     "type": "collectable",
-                    "collectable": {
+                    "Collectable": {
                         "collectable": "823",
                         "controller": "130",
                         "collisionIndicator": "824",
