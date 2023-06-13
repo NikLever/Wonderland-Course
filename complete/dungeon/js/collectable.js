@@ -62,8 +62,8 @@ export class Collectable extends Component {
                         this._grabParent = grabObject.parent;
                         this._grabPhysX = grabObject.getComponent('physx');
                         this._grabPhysX.active = false;
-                        this._grabTransform.set( grabObject.transformLocal );
-                        this._grabScale.set( grabObject.scalingLocal );
+                        this._grabTransform.set( grabObject.getTransformLocal() );
+                        this._grabScale.set( grabObject.getScalingLocal() );
                         
                         if (this.moveToController){
                             this.reparentReset( grabObject, this.object );
@@ -83,8 +83,8 @@ export class Collectable extends Component {
             }else{
                 if (GLOBALS.holding && GLOBALS.handedness == this.handedness ){
                     console.log(`Drop ${GLOBALS.handedness}`);
-                    this._grabObject.transformLocal.set( this._grabTransform );
-                    this._grabObject.scalingLocal.set( this._grabScale );
+                    this._grabObject.setTransformLocal( this._grabTransform );
+                    this._grabObject.setScalingLocal( this._grabScale );
                     this._grabObject.parent = this._grabParent;
                     this._grabObject.setDirty();
 
@@ -116,9 +116,9 @@ export class Collectable extends Component {
         //console.log('update() with delta time', dt);
         if ( !GLOBALS.holding ){
             const origin = this._tempVec0;
-            quat2.getTranslation(origin, this.object.transformWorld);
-            const direction = this.object.getForward( this._tempVec );
-            let rayHit = WL.physics.rayCast(origin, direction, 1 << this.collectablesGroup, 10 );
+            quat2.getTranslation(origin, this.object.getTransformWorld());
+            const direction = this.object.getForwardWorld( this._tempVec );
+            let rayHit = this.engine.physics.rayCast(origin, direction, 1 << this.collectablesGroup, 10 );
             if(rayHit.hitCount > 0) {
                 this.collisionIndicator.resetTranslationRotation();
                 this.collisionIndicator.translate( rayHit.locations[0] );

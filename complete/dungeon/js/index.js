@@ -20,7 +20,7 @@ import {MouseLookComponent} from '@wonderlandengine/components';
 import {PlayerHeight} from '@wonderlandengine/components';
 import {TeleportComponent} from '@wonderlandengine/components';
 import {VrModeActiveSwitch} from '@wonderlandengine/components';
-import {Name} from './collectable.js';
+import {Collectable} from './collectable.js';
 /* wle:auto-imports:end */
 
 import {loadRuntime} from '@wonderlandengine/api';
@@ -87,7 +87,7 @@ engine.registerComponent(MouseLookComponent);
 engine.registerComponent(PlayerHeight);
 engine.registerComponent(TeleportComponent);
 engine.registerComponent(VrModeActiveSwitch);
-engine.registerComponent(Name);
+engine.registerComponent(Collectable);
 /* wle:auto-register:end */
 
 engine.scene.load(`${Constants.ProjectName}.bin`);

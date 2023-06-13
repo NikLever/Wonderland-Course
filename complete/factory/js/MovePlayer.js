@@ -32,7 +32,7 @@ export class MovePlayer extends Component {
             
             this.tmpPos[1] += 1;
             
-            let rayhit = WL.physics.rayCast(this.tmpPos, this.down, 255, 5.0);
+            let rayhit = this.engine.physics.rayCast(this.tmpPos, this.down, 255, 5.0);
             
             if (rayhit.hitCount>0){
                 this.object.setPositionWorld(rayhit.locations[0]);
