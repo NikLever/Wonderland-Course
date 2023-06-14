@@ -16,7 +16,7 @@ export class MovePlayer extends Component {
         this.selectPressed = { left: false, right: false };
     }
 
-    setTranslationWorld() {
+    start() {
         //this.physx = (this.navmesh) ? this.navmesh.getComponent('physx') : null;
         this.engine.onXRSessionStart.add(this.setupVREvents.bind(this));
     }
