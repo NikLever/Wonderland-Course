@@ -1,8 +1,8 @@
 import {Component, Property} from '@wonderlandengine/api';
 import { vec3 } from "gl-matrix";
 
-export class Name extends Component {
-    static TypeName = "Shake";
+export class Shake extends Component {
+    static TypeName = "shake";
     static Properties = { 
         strength: Property.float( 1.0 )
     };
