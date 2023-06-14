@@ -1,5 +1,5 @@
 import {Component} from '@wonderlandengine/api';
-import { vec3, quat } from "gl-matrix";
+import { vec3 } from "gl-matrix";
 
 export class BulletHandler extends Component {
     static TypeName = "bulletHandler";
@@ -23,7 +23,7 @@ export class BulletHandler extends Component {
     update(dt) {
         vec3.copy( this.tmpVec, this.direction );
         vec3.scale( this.tmpVec, this.tmpVec, dt * 10 );
-        this.object.translateLocal( this.tmpVec );
+        this.object.translateWorld( this.tmpVec );
         this.elapsedTime += dt;
         if ( this.elapsedTime > 3) this.object.active = false;
         const overlaps = this.collision.queryOverlaps();
