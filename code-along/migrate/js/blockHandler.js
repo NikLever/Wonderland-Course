@@ -12,11 +12,13 @@ WL.registerComponent('blockHandler', {
         this.direction = glMatrix.vec3.create();
         this.tmpVec = glMatrix.vec3.create();
         this.tmpVec1 = glMatrix.vec3.create();
+
     },
     start: function() {
         this.cube = this.object.children[0]; 
         this.sfxSwish = this.object.addComponent('howler-audio-source', {src: 'sfx/swish.mp3', spatial: false});
         this.spawn();
+        WL.onXRSessionStart.push(this.setupVREvents.bind(this));
     },
     spawn: function() { 
         if ( this.vrCamera == null ) return;
@@ -27,6 +29,16 @@ WL.registerComponent('blockHandler', {
         glMatrix.vec3.add( this.tmpVec, this.tmpVec, this.tmpVec1 );
         this.object.setTranslationWorld( this.tmpVec );
         glMatrix.vec3.scale( this.direction, this.direction, -this.speed );
+    },
+    setupVREvents: function(s){
+        this.session = s;
+        s.addEventListener('end', function() {
+            this.session = null;
+        }.bind(this));
+
+        s.addEventListener('selectstart', (e) => {
+            //Placeholder
+        });
     },
     update: function(dt) {
         glMatrix.quat.scale( this.tmpQuat, this.rotation, dt );

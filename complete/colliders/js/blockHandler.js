@@ -75,7 +75,7 @@ export class BlockHandler extends Component {
             this.vrCamera.getPositionWorld( this.tmpVec1 );
             vec3.subtract( this.tmpVec, this.tmpVec, this.tmpVec1 );
             vec3.normalize( this.tmpVec, this.tmpVec );
-            this.vrCamera.getForward( this.tmpVec1 );
+            this.vrCamera.getForwardWorld( this.tmpVec1 );
             const theta = vec3.angle( this.tmpVec, this.tmpVec1 );
             if (theta > Math.PI/2 ){
                 this.sfxSwish.play();
