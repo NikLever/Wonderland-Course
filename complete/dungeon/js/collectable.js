@@ -120,8 +120,8 @@ export class Collectable extends Component {
             const direction = this.object.getForwardWorld( this._tempVec );
             let rayHit = this.engine.physics.rayCast(origin, direction, 1 << this.collectablesGroup, 10 );
             if(rayHit.hitCount > 0) {
-                this.collisionIndicator.resetTranslationRotation();
-                this.collisionIndicator.translate( rayHit.locations[0] );
+                this.collisionIndicator.resetPositionRotation();
+                this.collisionIndicator.translateWorld( rayHit.locations[0] );
                 //console.log( `collectable.js: update > rayHit.locations[0] = ${rayHit.locations[0]} `);
                 this.collisionIndicator.active = true; 
                 this._rayHit = { location: rayHit.locations[0], object: rayHit.objects[0] };
