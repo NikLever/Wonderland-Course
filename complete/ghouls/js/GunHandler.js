@@ -1,5 +1,6 @@
 import {Component, Property} from '@wonderlandengine/api';
 import { HowlerAudioSource } from '@wonderlandengine/components';
+import { BulletHandler } from './BulletHandler.js';
 
 
 export class GunHandler extends Component {
@@ -12,7 +13,7 @@ export class GunHandler extends Component {
     
     static onRegister(engine){
         engine.registerComponent( HowlerAudioSource );
-        engine.registerComponent( bulletHandler );
+        engine.registerComponent( BulletHandler );
     }
 
     init(){
@@ -56,7 +57,7 @@ export class GunHandler extends Component {
         mesh.mesh = this.bulletMesh;
         mesh.active = true;
 
-        const bulletHandler = bullet.addComponent('BulletHandler');
+        const bulletHandler = bullet.addComponent('bulletHandler');
         this.object.getForwardWorld( bulletHandler.direction );
         bulletHandler.collisionGroup = this.collisionGroup;
 

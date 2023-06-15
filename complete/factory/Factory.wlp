@@ -5995,7 +5995,7 @@
             },
             "visualizePhysX": false,
             "pwa": {
-                "enable": true,
+                "enable": false,
                 "appIcon": "578"
             }
         },
