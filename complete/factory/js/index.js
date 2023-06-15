@@ -20,8 +20,8 @@ import {MouseLookComponent} from '@wonderlandengine/components';
 import {PlayerHeight} from '@wonderlandengine/components';
 import {TeleportComponent} from '@wonderlandengine/components';
 import {VrModeActiveSwitch} from '@wonderlandengine/components';
-import {Name} from './MovePlayer.js';
-import {Name as Name1} from './RotateFan.js';
+import {MovePlayer} from './MovePlayer.js';
+import {RotateFan} from './RotateFan.js';
 /* wle:auto-imports:end */
 
 import {loadRuntime} from '@wonderlandengine/api';
@@ -88,8 +88,8 @@ engine.registerComponent(MouseLookComponent);
 engine.registerComponent(PlayerHeight);
 engine.registerComponent(TeleportComponent);
 engine.registerComponent(VrModeActiveSwitch);
-engine.registerComponent(Name);
-engine.registerComponent(Name1);
+engine.registerComponent(MovePlayer);
+engine.registerComponent(RotateFan);
 /* wle:auto-register:end */
 
 engine.scene.load(`${Constants.ProjectName}.bin`);

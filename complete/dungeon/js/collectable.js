@@ -34,6 +34,8 @@ export class Collectable extends Component {
             return;
         }else if(this.handedness == 0){
             this.handedness = this._input.handedness;
+        }else{
+            this.handedness = ['left', 'right', 'none'][this.handedness-1];
         }
         this._cursor = this.object.getComponent('cursor'); 
         this._teleport = this.object.getComponent('teleport');
@@ -50,7 +52,7 @@ export class Collectable extends Component {
         }.bind(this));
 
         s.addEventListener('select', (e) => {
-            console.log(`collectable select ${this.handedness}`);
+            console.log(`collectable select ${this.handedness}, ${e.inputSource.handedness}`);
             if (e.inputSource.handedness != this.handedness) return;
             
             if ( !GLOBALS.holding ){
