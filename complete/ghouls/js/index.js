@@ -18,6 +18,7 @@ import {MouseLookComponent} from '@wonderlandengine/components';
 import {PlayerHeight} from '@wonderlandengine/components';
 import {GhoulHandler} from './GhoulHandler.js';
 import {GunHandler} from './GunHandler.js';
+import {Shake} from './Shake.js';
 /* wle:auto-imports:end */
 
 import {loadRuntime} from '@wonderlandengine/api';
@@ -82,6 +83,7 @@ engine.registerComponent(MouseLookComponent);
 engine.registerComponent(PlayerHeight);
 engine.registerComponent(GhoulHandler);
 engine.registerComponent(GunHandler);
+engine.registerComponent(Shake);
 /* wle:auto-register:end */
 
 engine.scene.load(`${Constants.ProjectName}.bin`);
