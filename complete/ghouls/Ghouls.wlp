@@ -15,7 +15,7 @@
             ],
             "components": [
                 {
-                    "type": "Shake",
+                    "type": "shake",
                     "active": false,
                     "Shake": {
                         "strength": 0.5

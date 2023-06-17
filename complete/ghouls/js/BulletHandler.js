@@ -29,7 +29,7 @@ export class BulletHandler extends Component {
         const overlaps = this.collision.queryOverlaps();
         if (overlaps.length > 0){
             console.log('BulletHandler.update: overlap');
-            const ghoulHandler = overlaps[0].object.parent.getComponent( 'GhoulHandler' );
+            const ghoulHandler = overlaps[0].object.parent.getComponent( 'ghoulHandler' );
             if (ghoulHandler) ghoulHandler.shot();
             this.object.active = false;
         }
