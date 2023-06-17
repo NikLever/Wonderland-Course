@@ -68,7 +68,7 @@
                 {
                     "type": "mathTest",
                     "mathTest": {
-                        "option": "scale"
+                        "option": "position"
                     }
                 }
             ],

@@ -21,7 +21,7 @@ import {MouseLookComponent} from '@wonderlandengine/components';
 import {PlayerHeight} from '@wonderlandengine/components';
 import {TeleportComponent} from '@wonderlandengine/components';
 import {VrModeActiveSwitch} from '@wonderlandengine/components';
-import {Name} from './uiHandler.js';
+import {UIHandler} from './uiHandler.js';
 /* wle:auto-imports:end */
 
 import {loadRuntime} from '@wonderlandengine/api';
@@ -89,7 +89,7 @@ engine.registerComponent(MouseLookComponent);
 engine.registerComponent(PlayerHeight);
 engine.registerComponent(TeleportComponent);
 engine.registerComponent(VrModeActiveSwitch);
-engine.registerComponent(Name);
+engine.registerComponent(UIHandler);
 /* wle:auto-register:end */
 
 engine.scene.load(`${Constants.ProjectName}.bin`);
