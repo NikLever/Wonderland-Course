@@ -43,7 +43,7 @@ export class GhoulHandler extends Component {
         this.sfxGroan = this.object.addComponent(HowlerAudioSource, {src: 'sfx/groan.mp3', spatial: false});
         this.sfxRoar = this.object.addComponent(HowlerAudioSource, {src: 'sfx/roar.mp3', spatial: false});
 
-        if (this.player) this.shake = this.player.getComponent('Shake');
+        if (this.player) this.shake = this.player.getComponent('shake');
     }
 
     spawn(){
@@ -60,16 +60,16 @@ export class GhoulHandler extends Component {
         this.playerTarget = ( index >= (this.path.children.length-1) );
         if ( this.playerTarget ){
             this.getNode( this.tmpVec, index );
-            this.vrCamera.getTranslationWorld( this.target );
+            this.vrCamera.getPositionWorld( this.target );
             this.target[1] = this.tmpVec[1];
         }else{
             this.getNode( this.tmpVec, index );
             this.getNode( this.target, index + 1 );
         }
-        this.object.getForward( this.tmpVec2 );
+        this.object.getForwardWorld( this.tmpVec2 );
         vec3.copy( this.tmpVec1, this.target );
         this.tmpVec1[1] = this.tmpVec[1];
-        this.object.setTranslationWorld( this.tmpVec );
+        this.object.setPositionWorld( this.tmpVec );
         this.object.lookAt( this.tmpVec1 );
         //quat.copy( this.targetRotation, this.object.rotationLocal );
         vec3.subtract( this.direction, this.target, this.tmpVec );
@@ -87,12 +87,12 @@ export class GhoulHandler extends Component {
     }
 
     getNode( vec, index ){
-        this.path.children[index].getTranslationWorld( vec );
+        this.path.children[index].getPositionWorld( vec );
     }
 
     blendRotation( delta ){
         vec3.lerp( this.tmpVec, this.startTarget, this.target, delta );
-        this.object.getTranslationWorld( this.tmpVec1 );
+        this.object.getPositionWorld( this.tmpVec1 );
         this.tmpVec[1] = this.tmpVec1[1];
         this.object.lookAt( this.tmpVec );
     }
