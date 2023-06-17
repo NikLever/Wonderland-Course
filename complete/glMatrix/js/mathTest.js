@@ -54,12 +54,12 @@ export class MathTest extends Component {
             this.object.getPositionLocal(this.tmpVec);
             this.object.setPositionLocal(this.origin);
             quat.rotateY( this.tmpQuat, this.object.getRotationLocal(), theta);
-            quat.copy( this.object.getRotationLocal(), this.tmpQuat );
+            this.object.setRotationLocal( this.tmpQuat );
             this.object.setPositionLocal( this.tmpVec );
         }else{
             this.object.setPositionWorld(this.origin);
             quat.rotateY( this.tmpQuat, this.object.getRotationWorld(), theta);
-            quat.copy( this.object.getRotationWorld(), this.tmpQuat );
+            this.object.setRotationWorld( this.tmpQuat );
             this.object.setPositionWorld( this.startPosition );
         }
     }
@@ -70,7 +70,7 @@ export class MathTest extends Component {
 
     scale(){
         const s = (Math.cos( this.time ) + 1.2)*0.6;
-        this.object.getScalingWorld().set( [s,s,s] );
+        this.object.setScalingWorld( [s,s,s] );
     }
 
     f32ToString( v, decimalCount = 2 ){
