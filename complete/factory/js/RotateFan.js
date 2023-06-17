@@ -7,11 +7,11 @@ export class RotateFan extends Component {
     };
 
     init() {
-        console.log('init() with rotationSpeed', this.rotationSpeed);
+        console.log('RotateFan.init() with rotationSpeed', this.rotationSpeed);
     }
 
     start() {
-        console.log('start() with rotationSpeed', this.rotationSpeed);
+        console.log('RotateFan.start() with rotationSpeed', this.rotationSpeed);
     }
 
     update(dt) {
