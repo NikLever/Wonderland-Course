@@ -27,7 +27,7 @@ export class BlockHandler extends Component {
 
     spawn() { 
         if ( this.vrCamera == null ) return;
-        this.vrCamera.getForward( this.direction );
+        this.vrCamera.getForwardWorld( this.direction );
         vec3.copy( this.tmpVec, this.direction );
         vec3.scale( this.tmpVec, this.tmpVec, 30 );
         this.vrCamera.getPositionWorld( this.tmpVec1 );
@@ -42,12 +42,12 @@ export class BlockHandler extends Component {
         if ( this.vrCamera != null ){
             vec3.copy( this.tmpVec, this.direction );
             vec3.scale( this.tmpVec, this.tmpVec, dt );
-            this.object.translateLocal( this.tmpVec );
-            this.object.getPosittionWorld( this.tmpVec );
+            this.object.translateWorld( this.tmpVec );
+            this.object.getPositionWorld( this.tmpVec );
             this.vrCamera.getPositionWorld( this.tmpVec1 );
             vec3.subtract( this.tmpVec, this.tmpVec, this.tmpVec1 );
             vec3.normalize( this.tmpVec, this.tmpVec );
-            this.vrCamera.getForward( this.tmpVec1 );
+            this.vrCamera.getForwardWorld( this.tmpVec1 );
             const theta = vec3.angle( this.tmpVec, this.tmpVec1 );
             if (theta > Math.PI/2 ) this.spawn();
         }
