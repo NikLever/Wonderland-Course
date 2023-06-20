@@ -1,5 +1,4 @@
 import {Component, Property} from '@wonderlandengine/api';
-import {HowlerAudioSource} from '@wonderlandengine/components';
 import { vec3, quat } from 'gl-matrix'
 
 export class BlockHandler extends Component {
@@ -9,10 +8,6 @@ export class BlockHandler extends Component {
         speed: Property.float( 5.0 ),
         countTextObject: Property.object()
     };
-    
-    static onRegister(engine){
-        engine.registerComponent( HowlerAudioSource );
-    }
 
     init() {
         if (this.vrCamera == null){
@@ -24,11 +19,11 @@ export class BlockHandler extends Component {
         this.direction = vec3.create();
         this.tmpVec = vec3.create();
         this.tmpVec1 = vec3.create();
+        this.count = 0;
     }
 
     start() {
         this.cube = this.object.children[0];
-        this.count = 0;
         if (this.countTextObject) this.countText = this.countTextObject.getComponent('text');
         this.updateCount(); 
         this.spawn();
@@ -42,7 +37,7 @@ export class BlockHandler extends Component {
 
     spawn() { 
         if ( this.vrCamera == null ) return;
-        this.vrCamera.getForward( this.direction );
+        this.vrCamera.getForwardWorld( this.direction );
         vec3.copy( this.tmpVec, this.direction );
         vec3.scale( this.tmpVec, this.tmpVec, 30 );
         this.vrCamera.getPositionWorld( this.tmpVec1 );
@@ -59,12 +54,12 @@ export class BlockHandler extends Component {
         if ( this.vrCamera != null ){
             vec3.copy( this.tmpVec, this.direction );
             vec3.scale( this.tmpVec, this.tmpVec, dt );
-            this.object.translateLocal( this.tmpVec );
+            this.object.translateWorld( this.tmpVec );
             this.object.getPositionWorld( this.tmpVec );
             this.vrCamera.getPositionWorld( this.tmpVec1 );
             vec3.subtract( this.tmpVec, this.tmpVec, this.tmpVec1 );
             vec3.normalize( this.tmpVec, this.tmpVec );
-            this.vrCamera.getForward( this.tmpVec1 );
+            this.vrCamera.getForwardWorld( this.tmpVec1 );
             const theta = vec3.angle( this.tmpVec, this.tmpVec1 );
             if (theta > Math.PI/2 ) this.spawn();
         }
