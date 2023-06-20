@@ -1454,7 +1454,7 @@
                 {
                     "type": "text",
                     "text": {
-                        "text": "Blocks spawned \n",
+                        "text": "Hit       Missed\n",
                         "material": "201"
                     }
                 }
@@ -1698,7 +1698,7 @@
             ]
         },
         "231": {
-            "name": "Count",
+            "name": "Hit",
             "parent": "194",
             "components": [
                 {
@@ -1709,9 +1709,37 @@
                 }
             ],
             "translation": [
-                -0.0062122,
-                0.1632394,
-                0.1186823
+                -0.3748688,
+                0.1632395,
+                0.1186238
+            ],
+            "rotation": [
+                -0.7068594,
+                0.0,
+                0.0,
+                0.707354
+            ],
+            "scaling": [
+                3.0,
+                6.0000004,
+                3.0000002
+            ]
+        },
+        "235": {
+            "name": "Missed",
+            "parent": "194",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "0"
+                    }
+                }
+            ],
+            "translation": [
+                0.3228903,
+                0.1632397,
+                0.1185542
             ],
             "rotation": [
                 -0.7068594,
