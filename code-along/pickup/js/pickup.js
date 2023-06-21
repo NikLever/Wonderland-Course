@@ -1,6 +1,6 @@
 import {Component, Property} from '@wonderlandengine/api';
 import {HowlerAudioSource} from '@wonderlandengine/components';
-import { vec3, quat } from 'gl-matrix'
+import { vec3, quat2 } from 'gl-matrix'
 
 export class Pickup extends Component {
     static TypeName = 'pickup';
