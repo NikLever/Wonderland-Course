@@ -53,7 +53,7 @@ export class Pickup extends Component {
     update(dt) {
     }
 
-    reparentReset (object, newParent) {
+    reparentReset(object, newParent) {
         object.resetTransform( );
         object.rotateAxisAngleDeg([0, 1, 0], this.rotateYOnMove ); 
         object.scalingLocal.set( this._grabScale );
@@ -61,25 +61,28 @@ export class Pickup extends Component {
         object.setDirty();
     }
 
-    reparentKeepTransform (object, newParent) {
+    reparentKeepTransform(object, newParent) {
         //From Pipo's code
         let newParentTransformWorld = [];
-        glMatrix.quat2.identity(newParentTransformWorld);
+        quat2.identity(newParentTransformWorld);
         let newParentScalingWorld = [1, 1, 1];
 
         if (newParent) {
-            newParentTransformWorld = newParent.transformWorld;
-            newParentScalingWorld = newParent.scalingWorld;
+            newParent.getTransformWorld( newParentTransformWorld );
+            newParent.getScalingWorld( newParentScalingWorld );
         }
 
         let tempTransform = new Float32Array(8);
+        let tempTransform1 = new Float32Array(8);
 
-        glMatrix.quat2.conjugate(tempTransform, newParentTransformWorld);
-        glMatrix.quat2.mul(tempTransform, tempTransform, object.transformWorld);
-        object.transformLocal.set(tempTransform);
+        quat2.conjugate(tempTransform, newParentTransformWorld);
+        object.getTransformWorld( tempTransform1 );
+        quat2.mul( tempTransform, tempTransform, tempTransform1 );
+        object.setTransformLocal(tempTransform);
 
         let newScale = new Float32Array(3);
-        glMatrix.vec3.divide(newScale, object.scalingLocal, newParentScalingWorld);
+
+        vec3.divide(newScale, object.scalingLocal, newParentScalingWorld);
         object.resetScaling();
         object.scale(newScale);
 

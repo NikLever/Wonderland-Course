@@ -48,8 +48,8 @@ export class Pickup extends Component {
 
                 if (grabObject){
                     this._grabParent = grabObject.parent;
-                    this._grabTransform.set( grabObject.transformLocal );
-                    this._grabScale.set( grabObject.scalingLocal );
+                    this._grabTransform.set( grabObject.getTransformLocal() );
+                    this._grabScale.set( grabObject.getScalingLocal() );
                     
                     this.reparentKeepTransform( grabObject, this.object );
                     this._grabObject = grabObject;
@@ -65,8 +65,8 @@ export class Pickup extends Component {
             console.log(`Drop ${this._holding}`);
             if (this._holding){
                 if (this.returnOnRelease){
-                    this._grabObject.transformLocal.set( this._grabTransform );
-                    this._grabObject.scalingLocal.set( this._grabScale );
+                    this._grabObject.setTransformLocal( this._grabTransform );
+                    this._grabObject.setScalingLocal( this._grabScale );
                     this._grabObject.parent = this._grabParent;
                 }else{
                     this.reparentKeepTransform( this._grabObject, this._grabParent );
@@ -80,8 +80,8 @@ export class Pickup extends Component {
     update(dt) {
         if ( !this._holding ){
             const origin = this._tmpVec;
-            quat2.getTranslation(origin, this.object.transformWorld);
-            const direction = this.object.getForward( this._tmpVec1 );
+            quat2.getTranslation(origin, this.object.getTransformWorld() );
+            const direction = this.object.getForwardWorld( this._tmpVec1 );
             let rayHit = this.engine.scene.rayCast(origin, direction, this._collisionGroup, 20 );
             if(rayHit.hitCount > 0) {
                 this.collisionIndicator.setTranslationWorld( rayHit.locations[0] );
@@ -110,17 +110,20 @@ export class Pickup extends Component {
         let newParentScalingWorld = [1, 1, 1];
 
         if (newParent) {
-            newParentTransformWorld = newParent.transformWorld;
-            newParentScalingWorld = newParent.scalingWorld;
+            newParent.getTransformWorld( newParentTransformWorld );
+            newParent.getScalingWorld( newParentScalingWorld );
         }
 
         let tempTransform = new Float32Array(8);
+        let tempTransform1 = new Float32Array(8);
 
         quat2.conjugate(tempTransform, newParentTransformWorld);
-        quat2.mul(tempTransform, tempTransform, object.transformWorld);
-        object.transformLocal.set(tempTransform);
+        object.getTransformWorld( tempTransform1 );
+        quat2.mul( tempTransform, tempTransform, tempTransform1 );
+        object.setTransformLocal(tempTransform);
 
         let newScale = new Float32Array(3);
+
         vec3.divide(newScale, object.scalingLocal, newParentScalingWorld);
         object.resetScaling();
         object.scale(newScale);
