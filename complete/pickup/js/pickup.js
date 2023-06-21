@@ -123,8 +123,10 @@ export class Pickup extends Component {
         object.setTransformLocal(tempTransform);
 
         let newScale = new Float32Array(3);
+        let tmpScale = new Float32Array(3);
 
-        vec3.divide(newScale, object.scalingLocal, newParentScalingWorld);
+        object.getScalingLocal( tmpScale );
+        vec3.divide(newScale, tmpScale, newParentScalingWorld);
         object.resetScaling();
         object.scale(newScale);
 
