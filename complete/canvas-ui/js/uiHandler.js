@@ -18,7 +18,7 @@ export class UIHandler extends Component {
     start() {
         this.target = this.object.getComponent('cursor-target');
         this.target.addHoverFunction(this.onHover.bind(this));
-        this.target.addUnHoverFunction(this.onUnHover.bind(this));
+        this.target.addUnhoverFunction(this.onUnHover.bind(this));
         this.target.addMoveFunction(this.onMove.bind(this));
         this.target.addDownFunction(this.onDown.bind(this));
         this.target.addUpFunction(this.onUp.bind(this));
@@ -253,7 +253,7 @@ export class UIHandler extends Component {
 
         const target = this.ui.keyboard.object.getComponent('cursor-target');
         target.addHoverFunction(this.onHoverKeyboard.bind(this));
-        target.addUnHoverFunction(this.onUnHoverKeyboard.bind(this));
+        target.addUnhoverFunction(this.onUnHoverKeyboard.bind(this));
         target.addMoveFunction(this.onMoveKeyboard.bind(this));
         target.addDownFunction(this.onDown.bind(this));
         target.addUpFunction(this.onUpKeyboard.bind(this));
