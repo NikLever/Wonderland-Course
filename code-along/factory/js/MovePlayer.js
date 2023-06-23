@@ -1,4 +1,5 @@
 import {Component, Property} from '@wonderlandengine/api';
+import { vec3 } from 'gl-matrix';
 
 export class MovePlayer extends Component {
     static TypeName = 'movePlayer';
