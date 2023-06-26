@@ -1,7 +1,7 @@
 
 import {Component, Property} from '@wonderlandengine/api';
 import {HowlerAudioSource} from '@wonderlandengine/components';
-import { vec3, quat } from 'gl-matrix';
+import { vec3, quat2 } from 'gl-matrix';
 
 export class Collectable extends Component {
     static TypeName = 'collectable';
@@ -75,7 +75,7 @@ export class Collectable extends Component {
     reparentReset (object, newParent) {
         object.resetTransform( );
         object.rotateAxisAngleDeg([0, 1, 0], this.rotateYOnMove ); 
-        object.scalingLocal.set( this._grabScale );
+        object.setScalingLocal( this._grabScale );
         object.parent = newParent;
         object.setDirty();
     }
@@ -94,11 +94,11 @@ export class Collectable extends Component {
         let tempTransform = new Float32Array(8);
 
         quat2.conjugate(tempTransform, newParentTransformWorld);
-        quat2.mul(tempTransform, tempTransform, object.transformWorld);
-        object.transformLocal.set(tempTransform);
+        quat2.mul(tempTransform, tempTransform, object.getTransformWorld());
+        object.setTransformLocal(tempTransform);
 
         let newScale = new Float32Array(3);
-        vec3.divide(newScale, object.scalingLocal, newParentScalingWorld);
+        vec3.divide(newScale, object.getScalingLocal(), newParentScalingWorld);
         object.resetScaling();
         object.scale(newScale);
 
