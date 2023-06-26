@@ -253,7 +253,7 @@ export class UIHandler extends Component {
 
         const target = this.ui.keyboard.object.getComponent('cursor-target');
         target.addHoverFunction(this.onHoverKeyboard.bind(this));
-        target.addUnhoverFunction(this.onUnHoverKeyboard.bind(this));
+        target.addUnHoverFunction(this.onUnHoverKeyboard.bind(this));
         target.addMoveFunction(this.onMoveKeyboard.bind(this));
         target.addDownFunction(this.onDown.bind(this));
         target.addUpFunction(this.onUpKeyboard.bind(this));
