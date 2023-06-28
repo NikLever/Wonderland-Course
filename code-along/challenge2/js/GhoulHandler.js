@@ -64,10 +64,10 @@ export class GhoulHandler extends Component {
             this.getNode( this.tmpVec, index );
             this.getNode( this.target, index + 1 );
         }
-        this.object.getForward( this.tmpVec2 );
+        this.object.getForwardWorld( this.tmpVec2 );
         vec3.copy( this.tmpVec1, this.target );
         this.tmpVec1[1] = this.tmpVec[1];
-        this.object.setTranslationWorld( this.tmpVec );
+        this.object.setPositionWorld( this.tmpVec );
         this.object.lookAt( this.tmpVec1 );
         //quat.copy( this.targetRotation, this.object.rotationLocal );
         vec3.subtract( this.direction, this.target, this.tmpVec );
@@ -85,7 +85,7 @@ export class GhoulHandler extends Component {
     }
 
     getNode( vec, index ){
-        this.path.children[index].getTranslationWorld( vec );
+        this.path.children[index].getPositionWorld( vec );
     }
 
     blendRotation( delta ){
@@ -106,10 +106,10 @@ export class GhoulHandler extends Component {
     walking(dt){
         vec3.copy( this.tmpVec, this.direction );
         vec3.scale( this.tmpVec, this.tmpVec, dt );
-        this.object.getTranslationWorld( this.tmpVec1 );
+        this.object.getPositionWorld( this.tmpVec1 );
         const dist1 = vec3.distance( this.tmpVec1, this.target );
         this.object.translateWorld( this.tmpVec );
-        this.object.getTranslationWorld( this.tmpVec1 );
+        this.object.getPositionWorld( this.tmpVec1 );
         const dist2 = vec3.distance( this.tmpVec1, this.target );
         this.pathTime += dt;
         if ( this.pathTime < this.rotateTime ) this.blendRotation( this.pathTime/this.rotateTime );
