@@ -108,7 +108,7 @@ export class GhoulHandler extends Component {
         vec3.scale( this.tmpVec, this.tmpVec, dt );
         this.object.getTranslationWorld( this.tmpVec1 );
         const dist1 = vec3.distance( this.tmpVec1, this.target );
-        this.object.translate( this.tmpVec );
+        this.object.translateWorld( this.tmpVec );
         this.object.getTranslationWorld( this.tmpVec1 );
         const dist2 = vec3.distance( this.tmpVec1, this.target );
         this.pathTime += dt;

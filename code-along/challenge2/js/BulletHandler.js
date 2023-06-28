@@ -25,13 +25,13 @@ export class BulletHandler extends Component {
         vec3.scale( this.tmpVec, this.tmpVec, dt * 10 );
         this.object.translate( this.tmpVec );
         this.elapsedTime += dt;
-        if ( this.elapsedTime > 3) this.object.active = false;
+        if ( this.elapsedTime > 3) this.object.destroy();
         const overlaps = this.collision.queryOverlaps();
         if (overlaps.length > 0){
             console.log('BulletHandler.update: overlap');
             const ghoulHandler = overlaps[0].object.parent.getComponent( 'GhoulHandler' );
             if (ghoulHandler) ghoulHandler.shot();
-            this.object.active = false;
+            this.object.destroy();
         }
     }
 }

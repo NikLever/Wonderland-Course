@@ -1,5 +1,6 @@
 import {Component, Property} from '@wonderlandengine/api';
 import { HowlerAudioSource } from '@wonderlandengine/components';
+import { BulletHandler } from './BulletHandler.js';
 
 export class GunHandler extends Component {
     static TypeName = "gunHandler";
@@ -11,6 +12,7 @@ export class GunHandler extends Component {
     
     static onRegister(engine){
         engine.registerComponent( HowlerAudioSource );
+        engine.registerComponent( BulletHandler );
     }
 
     init(){
