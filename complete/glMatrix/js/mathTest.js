@@ -19,18 +19,18 @@ export class MathTest extends Component {
     }
 
     start() {
-        this.startTransform.set( this.object.transformWorld );
+        this.startTransform.set( this.object.getTransformWorld() );
         this.object.getPositionWorld( this.startPosition );
         document.addEventListener('mousedown', this.compare.bind(this) );
     }
 
     compare(){
         this.object.getPositionWorld( this.tmpVec );
-        quat2.getTranslation( this.tmpVec1, this.object.transformWorld );
+        quat2.getTranslation( this.tmpVec1, this.object.getTransformWorld() );
         console.group('mathTest.compare');
-        console.log(`getTranslationWorld:${this.f32ToString(this.tmpVec)} from transform:${this.f32ToString(this.tmpVec1)}`);
-        quat2.getReal( this.tmpQuat, this.object.transformWorld );
-        console.log(`rotationWorld:${this.f32ToString(this.object.rotationWorld)} from transform:${this.f32ToString(this.tmpQuat)}`);
+        console.log(`getPositionWorld:${this.f32ToString(this.tmpVec)} from transform:${this.f32ToString(this.tmpVec1)}`);
+        quat2.getReal( this.tmpQuat, this.object.getTransformWorld() );
+        console.log(`getRotationWorld:${this.f32ToString(this.object.getRotationWorld())} from transform:${this.f32ToString(this.tmpQuat)}`);
         console.groupEnd();
     }
 
@@ -65,7 +65,7 @@ export class MathTest extends Component {
     }
 
     challenge(dt){
-        //Combine orbit and spin
+        //Combine spin and orbit
     }
 
     scale(){
