@@ -1,7 +1,13 @@
-WL.registerComponent('mathTest', {
-    option: {type: WL.Type.Enum, values:['position', 'orbit', 'spin', 'scale', 'challenge'], default: 'position'},
-}, {
-    init: function() {
+import {Component, Property} from '@wonderlandengine/api';
+import { vec3, quat, quat2 } from "gl-matrix";
+
+export class MathTest extends Component {
+    static TypeName = "mathTest";
+    static Properties = { 
+        option: Property.enum(['position', 'orbit', 'spin', 'scale', 'challenge'], 'position')
+    };
+    
+    init() {
         this.startTransform = new Float32Array(8);
         this.startPosition = new Float32Array(3);
         this.tmpVec = new Float32Array(3);
@@ -10,63 +16,72 @@ WL.registerComponent('mathTest', {
         this.tmpTransform = new Float32Array(8);
         this.origin = new Float32Array(3);
         this.time = 0;
-    },
-    start: function() {
-        this.startTransform.set( this.object.transformWorld );
-        this.object.getTranslationWorld( this.startPosition );
+    }
+
+    start() {
+        this.startTransform.set( this.object.getTransformWorld() );
+        this.object.getPositionWorld( this.startPosition );
         document.addEventListener('mousedown', this.compare.bind(this) );
-    },
-    compare: function(){
-        this.object.getTranslationWorld( this.tmpVec );
-        glMatrix.quat2.getTranslation( this.tmpVec1, this.object.transformWorld );
+    }
+
+    compare(){
+        this.object.getPositionWorld( this.tmpVec );
+        quat2.getTranslation( this.tmpVec1, this.object.getTransformWorld() );
         console.group('mathTest.compare');
-        console.log(`getTranslationWorld:${this.f32ToString(this.tmpVec)} from transform:${this.f32ToString(this.tmpVec1)}`);
-        glMatrix.quat2.getReal( this.tmpQuat, this.object.transformWorld );
-        console.log(`rotationWorld:${this.f32ToString(this.object.rotationWorld)} from transform:${this.f32ToString(this.tmpQuat)}`);
+        console.log(`getPositionWorld:${this.f32ToString(this.tmpVec)} from transform:${this.f32ToString(this.tmpVec1)}`);
+        quat2.getReal( this.tmpQuat, this.object.getTransformWorld() );
+        console.log(`getRotationWorld:${this.f32ToString(this.object.getRotationWorld())} from transform:${this.f32ToString(this.tmpQuat)}`);
         console.groupEnd();
-    },
-    position: function(){
+    }
+
+    position(){
         this.tmpVec.set( [0, Math.cos(this.time), 0] );
-        glMatrix.vec3.add( this.tmpVec, this.startPosition, this.tmpVec);
-        this.object.setTranslationWorld( this.tmpVec );
-    },
-    orbit: function(){
+        vec3.add( this.tmpVec, this.startPosition, this.tmpVec);
+        this.object.setPositionWorld( this.tmpVec );
+    }
+
+    orbit(){
         const radius = 2;
         this.tmpVec.set( [Math.sin(this.time) * radius, 0, Math.cos(this.time) * radius] );
-        glMatrix.vec3.add( this.tmpVec, this.startPosition, this.tmpVec);
-        this.object.setTranslationWorld( this.tmpVec );
-    },
-    spin: function(dt){
+        vec3.add( this.tmpVec, this.startPosition, this.tmpVec);
+        this.object.setPositionWorld( this.tmpVec );
+    }
+
+    spin(dt){
         const theta = dt * 3;
         const local = true;
         if (local){
-            this.object.getTranslationLocal(this.tmpVec);
-            this.object.setTranslationLocal(this.origin);
-            glMatrix.quat.rotateY( this.tmpQuat, this.object.rotationLocal, theta);
-            glMatrix.quat.copy( this.object.rotationLocal, this.tmpQuat );
-            this.object.setTranslationLocal( this.tmpVec );
+            this.object.getPositionLocal(this.tmpVec);
+            this.object.setPositionLocal(this.origin);
+            quat.rotateY( this.tmpQuat, this.object.getRotationLocal(), theta);
+            this.object.setRotationLocal( this.tmpQuat );
+            this.object.setPositionLocal( this.tmpVec );
         }else{
-            this.object.setTranslationWorld(this.origin);
-            glMatrix.quat.rotateY( this.tmpQuat, this.object.rotationWorld, theta);
-            glMatrix.quat.copy( this.object.rotationWorld, this.tmpQuat );
-            this.object.setTranslationWorld( this.startPosition );
+            this.object.setPositionWorld(this.origin);
+            quat.rotateY( this.tmpQuat, this.object.getRotationWorld(), theta);
+            this.object.setRotationWorld( this.tmpQuat );
+            this.object.setPositionWorld( this.startPosition );
         }
-    },
-    challenge: function(dt){
-        //Combine orbit and spin
-    },
-    scale: function(){
+    }
+
+    challenge(dt){
+        //Combine spin and orbit
+    }
+
+    scale(){
         const s = (Math.cos( this.time ) + 1.2)*0.6;
-        this.object.scalingWorld.set( [s,s,s] );
-    },
-    f32ToString: function( v, decimalCount=2 ){
+        this.object.setScalingWorld( [s,s,s] );
+    }
+
+    f32ToString( v, decimalCount = 2 ){
         let str = '';
         v.forEach( (e) => {
             str += `${e.toFixed(decimalCount)}, `;
         });
         return str;
-    },
-    update: function(dt) {
+    }
+
+    update(dt) {
         this.time += dt;
 
         switch(this.option){
@@ -86,5 +101,5 @@ WL.registerComponent('mathTest', {
                 this.challenge(dt);
                 break;
         }
-    },
-});
+    }
+}

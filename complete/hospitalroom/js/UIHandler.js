@@ -1,9 +1,19 @@
-WL.registerComponent('uiHandler', {
-    //panel: {type: WL.Type.Enum, values:['simple', 'buttons', 'scrolling', 'images', 'input-text'], default: 'simple'},
-}, {
-    init: function() {
-    },
-    start: function() {
+import {Component, Property} from '@wonderlandengine/api';
+import { HowlerAudioSource } from '@wonderlandengine/components';
+import { vec3, quat } from "gl-matrix";
+import { CanvasUI  } from './CanvasUI.js';
+
+export class UIHandler extends Component {
+    static TypeName = "uiHandler";
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
+
+    init() {
+    }
+
+    start() {
         this.target = this.object.getComponent('cursor-target');
         this.target.addHoverFunction(this.onHover.bind(this));
         this.target.addUnHoverFunction(this.onUnHover.bind(this));
@@ -11,17 +21,17 @@ WL.registerComponent('uiHandler', {
         this.target.addDownFunction(this.onDown.bind(this));
         this.target.addUpFunction(this.onUp.bind(this));
         
-        this.soundClick = this.object.addComponent('howler-audio-source', {src: 'sfx/click.wav', spatial: true});
-        this.soundUnClick = this.object.addComponent('howler-audio-source', {src: 'sfx/unclick.wav', spatial: true});
-        this.speech = this.object.addComponent('howler-audio-source', { spatial: false });
+        this.soundClick = this.object.addComponent(HowlerAudioSource, {src: 'sfx/click.wav', spatial: true});
+        this.soundUnClick = this.object.addComponent(HowlerAudioSource, {src: 'sfx/unclick.wav', spatial: true});
+        this.speech = this.object.addComponent(HowlerAudioSource, { spatial: false });
 
         fetch( 'json/questions.json' ).then( response => response.json() ).then( obj =>{
             this.questions = obj;
             this.createUI();
         });
-    },
+    }
     
-    playSound: function(name){
+    playSound(name){
         this.speech.stop();
         this.speech.audio.unload();
         this.speech.audio = new Howl({
@@ -29,9 +39,9 @@ WL.registerComponent('uiHandler', {
             loop: false
         });
         this.speech.play();
-    },
+    }
 
-    createUI: function(){
+    createUI(){
         const headerHeight = 50;
         const panelHeight = 512;
         const footerHeight = headerHeight;
@@ -185,11 +195,11 @@ WL.registerComponent('uiHandler', {
             continue: "Start"
         }
         
-        const ui = new CanvasUI( content, config, this.object );
+        const ui = new CanvasUI( content, config, this.object, this.engine );
         this.ui = ui;
-    },
+    }
 
-    onHover: function(_, cursor) {
+    onHover(_, cursor) {
         //console.log('onHover');
         if (this.ui){
             const xy = this.ui.worldToCanvas(cursor.cursorPos);
@@ -201,42 +211,42 @@ WL.registerComponent('uiHandler', {
         }
 
         this.hapticFeedback(cursor.object, 0.5, 50);
-    },
+    }
 
-    onMove: function(_, cursor) {
+    onMove(_, cursor) {
         if (this.ui){
             const xy = this.ui.worldToCanvas(cursor.cursorPos);
             this.ui.hover(0, xy);
         }
 
         this.hapticFeedback(cursor.object, 0.5, 50);
-    },
+    }
 
-    onDown: function(_, cursor) {
+    onDown(_, cursor) {
         console.log('onDown');
         this.soundClick.play();
 
         this.hapticFeedback(cursor.object, 1.0, 20);
-    },
+    }
 
-    onUp: function(_, cursor) {
+    onUp(_, cursor) {
         console.log('onUp');
         this.soundUnClick.play();
 
         if (this.ui) this.ui.select( 0, true );
 
         this.hapticFeedback(cursor.object, 0.7, 20);
-    },
+    }
 
-    onUnHover: function(_, cursor) {
+    onUnHover(_, cursor) {
         console.log('onUnHover');
         
         if (this.ui) this.ui.hover(0);
 
         this.hapticFeedback(cursor.object, 0.3, 50);
-    },
+    }
 
-    onHoverKeyboard: function(_, cursor) {
+    onHoverKeyboard(_, cursor) {
         //console.log('onHover');
         if (!this.ui || !this.ui.keyboard || !this.ui.keyboard.keyboard) return;
 
@@ -249,9 +259,9 @@ WL.registerComponent('uiHandler', {
         }
 
         this.hapticFeedback(cursor.object, 0.5, 50);
-    },
+    }
 
-    onMoveKeyboard: function(_, cursor) {
+    onMoveKeyboard(_, cursor) {
         if (!this.ui || !this.ui.keyboard || !this.ui.keyboard.keyboard) return;
 
         const ui = this.ui.keyboard.keyboard;
@@ -259,35 +269,35 @@ WL.registerComponent('uiHandler', {
         ui.hover(0, xy);
 
         this.hapticFeedback(cursor.object, 0.5, 50);
-    },
+    }
 
-    onUpKeyboard: function(_, cursor) {
+    onUpKeyboard(_, cursor) {
         console.log('onUpKeyboard');
         this.soundUnClick.play();
 
         if (this.ui && this.ui.keyboard && this.ui.keyboard.keyboard) this.ui.keyboard.keyboard.select(0);
 
         this.hapticFeedback(cursor.object, 0.7, 20);
-    },
+    }
 
-    onUnHoverKeyboard: function(_, cursor) {
+    onUnHoverKeyboard(_, cursor) {
         console.log('onUnHoverKeyboard');
         
         if (this.ui && this.ui.keyboard && this.ui.keyboard.keyboard) this.ui.keyboard.keyboard.hover(0);
 
         this.hapticFeedback(cursor.object, 0.3, 50);
-    },
+    }
 
-    hapticFeedback: function(object, strength, duration) {
+    hapticFeedback(object, strength, duration) {
         const input = object.getComponent('input');
         if(input && input.xrInputSource) {
             const gamepad = input.xrInputSource.gamepad;
             if(gamepad && gamepad.hapticActuators) gamepad.hapticActuators[0].pulse(strength, duration);
         }
-    },
+    }
     
-    update: function(dt) {
+    update(dt) {
         //console.log('update() with delta time', dt);
         if (this.ui) this.ui.update();
-    },
-});
+    }
+}

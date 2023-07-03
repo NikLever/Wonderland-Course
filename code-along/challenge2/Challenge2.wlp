@@ -13,7 +13,7 @@
                 0.0,
                 0.7071067
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -48,7 +48,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -82,7 +82,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -113,7 +113,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -125,14 +125,14 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.001,
                         "color": [
                             0.6283737,
                             0.593464,
                             0.890196
                         ],
                         "shadows": true,
-                        "range": 40.0
+                        "shadowRange": 40.0,
+                        "intensity": 33.329998
                     }
                 }
             ],
@@ -147,7 +147,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -159,7 +159,7 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.1
+                        "intensity": 3.3329999
                     }
                 }
             ],
@@ -174,7 +174,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -204,7 +204,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 0.0099999,
                 0.0099999,
                 0.0099999
@@ -229,7 +229,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -256,7 +256,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -286,7 +286,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 0.0099999,
                 0.0099999,
                 0.0099999
@@ -2600,7 +2600,7 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.1
+                        "intensity": 3.3329999
                     }
                 }
             ],
@@ -2616,7 +2616,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -2638,7 +2638,7 @@
                     }
                 },
                 {
-                    "type": "GhoulHandler",
+                    "type": "ghoulHandler",
                     "GhoulHandler": {
                         "path": "1263",
                         "target": "18",
@@ -2646,6 +2646,14 @@
                         "dieAnim": "1001",
                         "walkAnim": "1003",
                         "vrCamera": "18",
+                        "player": "14"
+                    },
+                    "ghoulHandler": {
+                        "path": "1263",
+                        "vrCamera": "18",
+                        "attackAnim": "1002",
+                        "dieAnim": "1001",
+                        "walkAnim": "1003",
                         "player": "14"
                     }
                 }
@@ -2661,7 +2669,7 @@
                 0.0,
                 0.7171395
             ],
-            "scale": [
+            "scaling": [
                 1.0000014,
                 0.9999998,
                 1.0000014
@@ -2684,7 +2692,7 @@
                 0.0,
                 0.0
             ],
-            "scale": [
+            "scaling": [
                 0.0199999,
                 0.0199992,
                 0.0199999
@@ -3306,7 +3314,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 0.9999989,
                 0.9999988,
                 0.9999979
@@ -3342,7 +3350,7 @@
                     }
                 },
                 {
-                    "type": "GhoulHandler",
+                    "type": "ghoulHandler",
                     "GhoulHandler": {
                         "path": "1270",
                         "vrCamera": "18",
@@ -3351,6 +3359,15 @@
                         "walkAnim": "1181",
                         "delayStart": 6.0,
                         "player": "14"
+                    },
+                    "ghoulHandler": {
+                        "path": "1270",
+                        "vrCamera": "18",
+                        "attackAnim": "1180",
+                        "dieAnim": "1179",
+                        "walkAnim": "1181",
+                        "player": "14",
+                        "delayStart": 6.0
                     }
                 }
             ],
@@ -3365,7 +3382,7 @@
                 0.0,
                 0.7257925
             ],
-            "scale": [
+            "scaling": [
                 1.0000001,
                 0.9999998,
                 1.0000001
@@ -3388,7 +3405,7 @@
                 0.0,
                 0.0
             ],
-            "scale": [
+            "scaling": [
                 0.0199992,
                 0.0199999,
                 0.0199999
@@ -4031,7 +4048,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -4051,7 +4068,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -4071,7 +4088,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -4091,7 +4108,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -4114,7 +4131,7 @@
                 -0.3529242,
                 0.9202641
             ],
-            "scale": [
+            "scaling": [
                 1.6000018,
                 1.100002,
                 1.6
@@ -4138,7 +4155,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -4158,7 +4175,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -4178,7 +4195,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -4198,7 +4215,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -4241,10 +4258,14 @@
                     }
                 },
                 {
-                    "type": "GunHandler",
+                    "type": "gunHandler",
                     "GunHandler": {
                         "bulletMesh": "1304",
                         "bulletMaterial": "25"
+                    },
+                    "gunHandler": {
+                        "bulletMesh": "1304",
+                        "bulletMaterial": "1300"
                     }
                 }
             ],
@@ -4259,7 +4280,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -4302,10 +4323,14 @@
                     }
                 },
                 {
-                    "type": "GunHandler",
+                    "type": "gunHandler",
                     "GunHandler": {
                         "bulletMesh": "1304",
                         "bulletMaterial": "25"
+                    },
+                    "gunHandler": {
+                        "bulletMesh": "1304",
+                        "bulletMaterial": "1300"
                     }
                 }
             ],
@@ -4320,7 +4345,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -4421,7 +4446,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 0.9999998,
                 1.0,
                 0.9999998
@@ -4452,7 +4477,7 @@
                 0.0,
                 1.0
             ],
-            "scale": [
+            "scaling": [
                 1.0,
                 1.0,
                 1.0
@@ -5446,7 +5471,25 @@
                     9.999999974752427e-7,
                     1.0
                 ],
-                "shininess": 1
+                "shininess": 1,
+                "emissiveColor": [
+                    0.2,
+                    0.2,
+                    0.2,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ]
             }
         },
         "22": {
@@ -5466,9 +5509,15 @@
                 ],
                 "shininess": 10,
                 "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
                     0.317647,
                     0.0,
-                    0.2165777,
+                    0.2165776,
                     1.0
                 ]
             }
@@ -5489,6 +5538,12 @@
                     1.0
                 ],
                 "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
                     0.3843137,
                     0.3089579,
                     0.0,
@@ -5512,9 +5567,15 @@
                     1.0
                 ],
                 "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
                     0.0,
                     0.2352941,
-                    0.1437908,
+                    0.1437907,
                     1.0
                 ]
             }
@@ -5524,14 +5585,42 @@
                 "name": "skel_controller_materials_controllerMTL1",
                 "file": "models\\oculus-touch-v2-left.glb"
             },
-            "name": "ControllerLeft"
+            "name": "ControllerLeft",
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
         },
         "88": {
             "link": {
                 "name": "skel_controller_materials_controllerMTL",
                 "file": "models\\oculus-touch-v2-right.glb"
             },
-            "name": "ControllerRight"
+            "name": "ControllerRight",
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
         },
         "128": {
             "name": "Cursor",
@@ -5552,14 +5641,30 @@
                 "name": "Default_Material",
                 "file": "models\\hand-left.glb"
             },
-            "name": "HandLeft"
+            "name": "HandLeft",
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
+            }
         },
         "164": {
             "link": {
                 "name": "lambert2",
                 "file": "models\\hand-right.glb"
             },
-            "name": "HandRight"
+            "name": "HandRight",
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
+            }
         },
         "201": {
             "link": {
@@ -5595,9 +5700,15 @@
                     1.0
                 ],
                 "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
                     0.0274509,
-                    0.0274507,
-                    0.0274507,
+                    0.0274506,
+                    0.0274506,
                     1.0
                 ]
             }
@@ -5618,8 +5729,14 @@
                     1.0
                 ],
                 "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
                     0.0,
-                    0.3294117,
+                    0.3294116,
                     0.2013071,
                     1.0
                 ]
@@ -5655,9 +5772,21 @@
             },
             "Phong": {
                 "ambientColor": [
-                    0.0588235,
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0588234,
                     0.0431372,
-                    0.0823529,
+                    0.0823528,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
                     1.0
                 ]
             }
@@ -5666,96 +5795,314 @@
             "link": {
                 "name": "SimpleDungeons_Glow",
                 "file": "models\\chamber.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "640": {
             "link": {
                 "name": "ghoul_col",
                 "file": "models\\ghoul.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ]
             }
         },
         "641": {
             "link": {
                 "name": "ghoul_transp",
                 "file": "models\\ghoul.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ]
             }
         },
         "737": {
             "link": {
                 "name": "ghoul_col",
                 "file": "models\\ghoul2.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ]
             }
         },
         "738": {
             "link": {
                 "name": "ghoul_transp",
                 "file": "models\\ghoul2.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ]
             }
         },
         "822": {
             "link": {
                 "name": "ghoul_col",
                 "file": "models\\ghoul-anim.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ]
             }
         },
         "823": {
             "link": {
                 "name": "ghoul_transp",
                 "file": "models\\ghoul-anim.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ]
             }
         },
         "912": {
             "link": {
                 "name": "ghoul_col",
                 "file": "models\\ghoul-anims.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "913": {
             "link": {
                 "name": "ghoul_transp",
                 "file": "models\\ghoul-anims.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "1090": {
             "link": {
                 "name": "ghoul_col",
                 "file": "models\\ghoul-anims2.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "1091": {
             "link": {
                 "name": "ghoul_transp",
                 "file": "models\\ghoul-anims2.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "1299": {
             "link": {
                 "name": "bullet",
                 "file": "models\\gun.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ]
             }
         },
         "1300": {
             "link": {
                 "name": "Bullet",
                 "file": "models\\gun.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "1301": {
             "link": {
                 "name": "Up_Black1",
                 "file": "models\\gun.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "1302": {
             "link": {
                 "name": "Muzzle1",
                 "file": "models\\gun.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "1303": {
             "link": {
                 "name": "Body1",
                 "file": "models\\gun.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         }
     },
@@ -5885,9 +6232,9 @@
         "project": {
             "name": "Challenge2",
             "version": [
+                1,
                 0,
-                9,
-                5
+                3
             ]
         },
         "vr": {
@@ -5896,12 +6243,15 @@
         },
         "scripting": {
             "sourcePaths": [
-                "/js/editor-components-bundle.js",
                 "js/"
-            ]
+            ],
+            "libraryPaths": [
+                "/js/lib/"
+            ],
+            "bundlingType": "esbuild"
         },
         "runtime": {
-            "visualizeColliders": true,
+            "visualizeColliders": false,
             "webxr": {
                 "optionalFeatures": {
                     "local-floor": true
@@ -6542,6 +6892,10 @@
             "link": {
                 "name": "Phong Opaque",
                 "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true,
+                "WITH_EMISSIVE": true
             }
         },
         "38": {
@@ -6551,8 +6905,9 @@
             },
             "features": {
                 "ALPHA_MASKED": false,
-                "WITH_EMISSIVE": false,
-                "WITH_FOG": true
+                "WITH_EMISSIVE": true,
+                "WITH_FOG": true,
+                "DEPRECATED_LIGHT_ATTENUATION": true
             },
             "castShadows": true
         },
@@ -6560,6 +6915,9 @@
             "link": {
                 "name": "Foliage",
                 "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
             }
         },
         "40": {
@@ -6606,18 +6964,27 @@
                 "name": "Foliage",
                 "file": "default"
             },
-            "name": "Test"
+            "name": "Test",
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
         },
         "1276": {
             "link": {
                 "name": "Phong Normalmapped",
                 "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
             }
         },
         "1277": {
             "link": {
                 "name": "Phong Lightmapped",
                 "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
             }
         }
     },
@@ -6643,5 +7010,6 @@
                 "file": "default"
             }
         }
-    }
+    },
+    "languages": {}
 }

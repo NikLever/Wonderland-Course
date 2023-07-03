@@ -1,12 +1,25 @@
-WL.registerComponent('GunHandler', {
-    bulletMesh: {type: WL.Type.Mesh},
-    bulletMaterial: {type: WL.Type.Material},
-    collisionGroup: {type: WL.Type.Float, default: 6 }
-}, {
-    init: function(){
+import {Component, Property} from '@wonderlandengine/api';
+import { HowlerAudioSource } from '@wonderlandengine/components';
+import { BulletHandler } from './BulletHandler.js';
+
+export class GunHandler extends Component {
+    static TypeName = "gunHandler";
+    static Properties = { 
+        bulletMesh: Property.mesh(),
+        bulletMaterial: Property.material(),
+        collisionGroup: Property.float( 6.0 )
+    };
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+        engine.registerComponent( BulletHandler );
+    }
+
+    init(){
         this.tmpVec = new Float32Array(3);
-    },
-    start: function() {
+    }
+
+    start() {
         const input = this.object.getComponent('input');
         if(!input) {
             console.error(this.object.name, "GunHandler.js: input component is required on the object");
@@ -14,11 +27,11 @@ WL.registerComponent('GunHandler', {
         }else{
             this.handedness = input.handedness;
         }
-        WL.onXRSessionStart.push(this.setupVREvents.bind(this));
-        this.sfxShot = this.object.addComponent('howler-audio-source', {src: 'sfx/shot.mp3', spatial: false});
-    },
+        this.engine.onXRSessionStart.add(this.setupVREvents.bind(this));
+        this.sfxShot = this.object.addComponent(HowlerAudioSource, {src: 'sfx/shot.mp3', spatial: false});
+    }
 
-    setupVREvents: function(s){
+    setupVREvents(s){
         this.session = s;
         s.addEventListener('end', function() {
             this.session = null;
@@ -27,14 +40,14 @@ WL.registerComponent('GunHandler', {
         s.addEventListener('select', (e) => {
             if (e.inputSource.handedness == this.handedness ) this.fire();    
         });
-    },
+    }
 
-    fire: function() {
+    fire() {
         //Create a new bullet in the scene
-        const bullet = WL.scene.addObject();
+        const bullet = this.engine.scene.addObject();
         //Place new bullet at current object location
-        this.object.getTranslationWorld( this.tmpVec );
-        bullet.setTranslationWorld( this.tmpVec );
+        this.object.getPositionWorld( this.tmpVec );
+        bullet.setPositionWorld( this.tmpVec );
         //bullet.scale([0.1, 0.1, 0.1]);
 
         //Add a mesh to render the object 
@@ -44,10 +57,10 @@ WL.registerComponent('GunHandler', {
         mesh.active = true;
 
         const bulletHandler = bullet.addComponent('BulletHandler');
-        this.object.getForward( bulletHandler.direction );
+        this.object.getForwardWorld( bulletHandler.direction );
         bulletHandler.collisionGroup = this.collisionGroup;
 
         this.sfxShot.play();
-    },
+    }
 
-});
+}

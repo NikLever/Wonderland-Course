@@ -1,31 +1,43 @@
-WL.registerComponent('MovePlayer', {
-    camera: { type: WL.Type.Object },
-    speed: { type: WL.Type.Float, default: 2.0 }
-}, {
-    init: function() {
+import {Component, Property} from '@wonderlandengine/api';
+import { vec3 } from 'gl-matrix';
+
+export class MovePlayer extends Component {
+    static TypeName = 'movePlayer';
+    static Properties = {
+        camera: Property.object(),
+        speed: Property.float( 2.0 )
+    };
+ 
+    init() {
         this.tmpPos = new Float32Array(3);
         this.tmpVec = new Float32Array(3);
         this.down = new Float32Array(3);
         this.down.set([0,-1,0]);
         this.selectPressed = { left: false, right: false };
-    },
-    start: function() {
-        WL.onXRSessionStart.push(this.setupVREvents.bind(this));
-    },
-    update: function(dt) {
+    }
+
+    start() {
+        this.engine.onXRSessionStart.add(this.setupVREvents.bind(this));
+    }
+
+    update(dt) {
  
-    },
-    setupVREvents: function(s){
+    }
+
+    setupVREvents(s){
     	s.addEventListener('selectstart', this.selectStart.bind(this));
         s.addEventListener('selectend', this.selectEnd.bind(this));
-    },
-    selectStart: function(e){
+    }
+
+    selectStart(e){
     	this.selectPressed[e.inputSource.handedness] = true;	
-    },
-    selectEnd: function(e){
+    }
+
+    selectEnd(e){
     	this.selectPressed[e.inputSource.handedness] = false;
-    },
-    getSelectPressed: function(){
+    }
+
+    getSelectPressed(){
     	return this.selectPressed.left || this.selectPressed.right;
     }
-});
+}

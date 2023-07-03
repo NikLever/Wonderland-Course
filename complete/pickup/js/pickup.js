@@ -1,10 +1,16 @@
-WL.registerComponent('pickup', {
-    colliderGroup: { type: WL.Type.Int, default: 6 },
-    collisionIndicator: { type: WL.Type.Object }, 
-    returnOnRelease: { type: WL.Type.Bool, default: true },
-    handedness: {type: WL.Type.Enum, values: ['input component', 'left', 'right', 'none'], default: 'input component'}
-}, {
-    init: function() {    
+import {Component, Property} from '@wonderlandengine/api';
+import { vec3, quat2 } from "gl-matrix";
+
+export class Pickup extends Component {
+    static TypeName = "pickup";
+    static Properties = { 
+        colliderGroup: Property.int(6),
+        collisionIndicator: Property.object(),
+        returnOnRelease: Property.bool( true ),
+        handedness: Property.enum(['input component', 'left', 'right', 'none'], 'input component')
+    };
+    
+    init() {    
         this._tmpVec = new Float32Array(3);
         this._tmpVec1 = new Float32Array(3);
         this._grabParent = null;
@@ -12,8 +18,9 @@ WL.registerComponent('pickup', {
         this._grabScale = new Float32Array(3);
         this._holding = false;
         this._collisionGroup = 1 << this.colliderGroup;
-    },
-    start: function() {
+    }
+
+    start() {
         const input = this.object.getComponent('input');
         if(!input) {
             console.warn(this.object.name, "pickup.js: input component is required on the object");
@@ -24,9 +31,10 @@ WL.registerComponent('pickup', {
             this.handedness = ['left', 'right', 'none'][this.handedness-1];
         }
         this.collisionIndicator.active = false;
-        WL.onXRSessionStart.push(this.setupVREvents.bind(this));
-    },
-    setupVREvents: function(s){
+        this.engine.onXRSessionStart.add(this.setupVREvents.bind(this));
+    }
+
+    setupVREvents(s){
         this.session = s;
         s.addEventListener('end', () => {
             this.session = null;
@@ -40,8 +48,8 @@ WL.registerComponent('pickup', {
 
                 if (grabObject){
                     this._grabParent = grabObject.parent;
-                    this._grabTransform.set( grabObject.transformLocal );
-                    this._grabScale.set( grabObject.scalingLocal );
+                    this._grabTransform.set( grabObject.getTransformLocal() );
+                    this._grabScale.set( grabObject.getScalingLocal() );
                     
                     this.reparentKeepTransform( grabObject, this.object );
                     this._grabObject = grabObject;
@@ -57,8 +65,8 @@ WL.registerComponent('pickup', {
             console.log(`Drop ${this._holding}`);
             if (this._holding){
                 if (this.returnOnRelease){
-                    this._grabObject.transformLocal.set( this._grabTransform );
-                    this._grabObject.scalingLocal.set( this._grabScale );
+                    this._grabObject.setTransformLocal( this._grabTransform );
+                    this._grabObject.setScalingLocal( this._grabScale );
                     this._grabObject.parent = this._grabParent;
                 }else{
                     this.reparentKeepTransform( this._grabObject, this._grabParent );
@@ -67,13 +75,14 @@ WL.registerComponent('pickup', {
                 this._holding = false; 
             }       
         });
-    },
-    update: function(dt) {
+    }
+
+    update(dt) {
         if ( !this._holding ){
             const origin = this._tmpVec;
-            glMatrix.quat2.getTranslation(origin, this.object.transformWorld);
-            const direction = this.object.getForward( this._tmpVec1 );
-            let rayHit = WL.scene.rayCast(origin, direction, this._collisionGroup, 20 );
+            quat2.getTranslation(origin, this.object.getTransformWorld() );
+            const direction = this.object.getForwardWorld( this._tmpVec1 );
+            let rayHit = this.engine.scene.rayCast(origin, direction, this._collisionGroup, 20 );
             if(rayHit.hitCount > 0) {
                 this.collisionIndicator.setTranslationWorld( rayHit.locations[0] );
                 //console.log( `pickup.update: rayHit.locations[0] = ${rayHit.locations[0]} `);
@@ -84,33 +93,40 @@ WL.registerComponent('pickup', {
                 delete this._hitData;
             }
         }
-    },
-    reparentReset: function (object, newParent) {
+    }
+
+    reparentReset(object, newParent) {
         object.resetTransform( );
         object.rotateAxisAngleDeg([0, 1, 0], this.rotateYOnMove ); 
         object.scalingLocal.set( this._grabScale );
         object.parent = newParent;
         object.setDirty();
-    },
-    reparentKeepTransform: function (object, newParent) {
+    }
+
+    reparentKeepTransform(object, newParent) {
         //From Pipo's code
         let newParentTransformWorld = [];
-        glMatrix.quat2.identity(newParentTransformWorld);
+        quat2.identity(newParentTransformWorld);
         let newParentScalingWorld = [1, 1, 1];
 
         if (newParent) {
-            newParentTransformWorld = newParent.transformWorld;
-            newParentScalingWorld = newParent.scalingWorld;
+            newParent.getTransformWorld( newParentTransformWorld );
+            newParent.getScalingWorld( newParentScalingWorld );
         }
 
         let tempTransform = new Float32Array(8);
+        let tempTransform1 = new Float32Array(8);
 
-        glMatrix.quat2.conjugate(tempTransform, newParentTransformWorld);
-        glMatrix.quat2.mul(tempTransform, tempTransform, object.transformWorld);
-        object.transformLocal.set(tempTransform);
+        quat2.conjugate(tempTransform, newParentTransformWorld);
+        object.getTransformWorld( tempTransform1 );
+        quat2.mul( tempTransform, tempTransform, tempTransform1 );
+        object.setTransformLocal(tempTransform);
 
         let newScale = new Float32Array(3);
-        glMatrix.vec3.divide(newScale, object.scalingLocal, newParentScalingWorld);
+        let tmpScale = new Float32Array(3);
+
+        object.getScalingLocal( tmpScale );
+        vec3.divide(newScale, tmpScale, newParentScalingWorld);
         object.resetScaling();
         object.scale(newScale);
 
@@ -118,4 +134,4 @@ WL.registerComponent('pickup', {
 
         object.setDirty();
     }
-});
+}

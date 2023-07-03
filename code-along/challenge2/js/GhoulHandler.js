@@ -1,43 +1,57 @@
-WL.registerComponent('GhoulHandler', {
-    path: { type: WL.Type.Object },
-    vrCamera: { type: WL.Type.Object },
-    speed: { type: WL.Type.Float, default: 2.0 },
-    attackAnim: { type: WL.Type.Animation },
-    dieAnim: { type: WL.Type.Animation },
-    walkAnim: { type: WL.Type.Animation },
-    delayStart: { type: WL.Type.Float, default: 0 },
-    player: { type: WL.Type.Object }
-}, {
-    init: function() {
+import {Component, Property} from '@wonderlandengine/api';
+import { HowlerAudioSource } from '@wonderlandengine/components';
+import { vec3, quat } from "gl-matrix";
+
+export class GhoulHandler extends Component {
+    static TypeName = "ghoulHandler";
+    static Properties = { 
+        path: Property.object(),
+        vrCamera: Property.object(),
+        speed: Property.float( 2.0 ),
+        attackAnim: Property.animation(),
+        dieAnim: Property.animation(),
+        walkAnim: Property.animation(),
+        delayStart: Property.float( 0 ),
+        player: Property.object()
+    };
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
+    
+    init() {
         //console.log('init() with param', this.param);
-        this.tmpVec = glMatrix.vec3.create();
-        this.tmpVec1 = glMatrix.vec3.create();
-        this.tmpVec2 = glMatrix.vec3.create();
-        this.tmpQuat = glMatrix.quat.create();
+        this.tmpVec = vec3.create();
+        this.tmpVec1 = vec3.create();
+        this.tmpVec2 = vec3.create();
+        this.tmpQuat = quat.create();
         
-        this.startTarget = glMatrix.vec3.create();
-        this.target = glMatrix.vec3.create();
-        this.direction = glMatrix.vec3.create();
+        this.startTarget = vec3.create();
+        this.target = vec3.create();
+        this.direction = vec3.create();
         this.rotateTime = 0.25;//time taken to rotate to target direction
 
         this.elapsedTime = 0;
         this.mode = 0;//0-waiting 1-walking 2-attacking 3-dying 
-    },
-    start: function() {
+    }
+
+    start() {
         //console.log('start() with param', this.param);
         this.animComp = this.object.getComponent('animation');
 
-        this.sfxFootsteps = this.object.addComponent('howler-audio-source', {src: 'sfx/footsteps.mp3', volume: 0.3, loop: true, spatial: false});
-        this.sfxGroan = this.object.addComponent('howler-audio-source', {src: 'sfx/groan.mp3', spatial: false});
-        this.sfxRoar = this.object.addComponent('howler-audio-source', {src: 'sfx/roar.mp3', spatial: false});
-    },
-    spawn: function(){
+        this.sfxFootsteps = this.object.addComponent(HowlerAudioSource, {src: 'sfx/footsteps.mp3', volume: 0.3, loop: true, spatial: false});
+        this.sfxGroan = this.object.addComponent(HowlerAudioSource, {src: 'sfx/groan.mp3', spatial: false});
+        this.sfxRoar = this.object.addComponent(HowlerAudioSource, {src: 'sfx/roar.mp3', spatial: false});
+    }
+
+    spawn(){
         this.animComp.animation = this.walkAnim;
         this.animComp.playCount = 0;
         this.animComp.play();
         this.setPathSection( 0 );
         this.sfxFootsteps.play();
-    },
+    }
+
     setPathSection( index ){
         console.log(`GhoulHandler.setPathSection> index=${index}`);
         this.pathIndex = index;
@@ -50,49 +64,53 @@ WL.registerComponent('GhoulHandler', {
             this.getNode( this.tmpVec, index );
             this.getNode( this.target, index + 1 );
         }
-        this.object.getForward( this.tmpVec2 );
-        glMatrix.vec3.copy( this.tmpVec1, this.target );
+        this.object.getForwardWorld( this.tmpVec2 );
+        vec3.copy( this.tmpVec1, this.target );
         this.tmpVec1[1] = this.tmpVec[1];
-        this.object.setTranslationWorld( this.tmpVec );
+        this.object.setPositionWorld( this.tmpVec );
         this.object.lookAt( this.tmpVec1 );
-        //glMatrix.quat.copy( this.targetRotation, this.object.rotationLocal );
-        glMatrix.vec3.subtract( this.direction, this.target, this.tmpVec );
-        glMatrix.vec3.normalize( this.direction, this.direction );
-        glMatrix.vec3.scale( this.direction, this.direction, this.speed );
+        //quat.copy( this.targetRotation, this.object.rotationLocal );
+        vec3.subtract( this.direction, this.target, this.tmpVec );
+        vec3.normalize( this.direction, this.direction );
+        vec3.scale( this.direction, this.direction, this.speed );
         if (index == 0){
-            glMatrix.vec3.copy( this.startTarget, this.target );
+            vec3.copy( this.startTarget, this.target );
         }else{
-            const len = glMatrix.vec3.distance( this.target, this.tmpVec );
-            glMatrix.vec3.scale( this.tmpVec2, this.tmpVec2, len );
-            glMatrix.vec3.add( this.startTarget, this.tmpVec2, this.tmpVec );
+            const len = vec3.distance( this.target, this.tmpVec );
+            vec3.scale( this.tmpVec2, this.tmpVec2, len );
+            vec3.add( this.startTarget, this.tmpVec2, this.tmpVec );
             this.object.lookAt( this.startTarget );
             this.pathTime = 0;
         } 
-    },
-    getNode: function( vec, index ){
-        this.path.children[index].getTranslationWorld( vec );
-    },
-    blendRotation: function( delta ){
-        glMatrix.vec3.lerp( this.tmpVec, this.startTarget, this.target, delta );
+    }
+
+    getNode( vec, index ){
+        this.path.children[index].getPositionWorld( vec );
+    }
+
+    blendRotation( delta ){
+        vec3.lerp( this.tmpVec, this.startTarget, this.target, delta );
         this.object.getTranslationWorld( this.tmpVec1 );
         this.tmpVec[1] = this.tmpVec1[1];
         this.object.lookAt( this.tmpVec );
-    },
-    waiting: function(dt){
+    }
+
+    waiting(dt){
         this.elapsedTime += dt;
         if (this.elapsedTime > this.delayStart){
             this.spawn();
             this.mode = 1;
         }
-    },
-    walking: function(dt){
-        glMatrix.vec3.copy( this.tmpVec, this.direction );
-        glMatrix.vec3.scale( this.tmpVec, this.tmpVec, dt );
-        this.object.getTranslationWorld( this.tmpVec1 );
-        const dist1 = glMatrix.vec3.distance( this.tmpVec1, this.target );
-        this.object.translate( this.tmpVec );
-        this.object.getTranslationWorld( this.tmpVec1 );
-        const dist2 = glMatrix.vec3.distance( this.tmpVec1, this.target );
+    }
+
+    walking(dt){
+        vec3.copy( this.tmpVec, this.direction );
+        vec3.scale( this.tmpVec, this.tmpVec, dt );
+        this.object.getPositionWorld( this.tmpVec1 );
+        const dist1 = vec3.distance( this.tmpVec1, this.target );
+        this.object.translateWorld( this.tmpVec );
+        this.object.getPositionWorld( this.tmpVec1 );
+        const dist2 = vec3.distance( this.tmpVec1, this.target );
         this.pathTime += dt;
         if ( this.pathTime < this.rotateTime ) this.blendRotation( this.pathTime/this.rotateTime );
         if (this.playerTarget && dist2 < 2.5 ){
@@ -111,22 +129,25 @@ WL.registerComponent('GhoulHandler', {
                 this.setPathSection( ++this.pathIndex );
             }
         }
-    },
-    attacking: function(dt){
+    }
+
+    attacking(dt){
         this.elapsedTime += dt;
         if (this.elapsedTime > 4){
             this.spawn();
             this.mode = 1;
         }
-    },
-    dying: function(dt){
+    }
+
+    dying(dt){
         this.elapsedTime += dt;
         if (this.elapsedTime > 4){
             this.spawn();
             this.mode = 1;
         }
-    },
-    shot: function(){
+    }
+
+    shot(){
         this.animComp.animation = this.dieAnim;
         this.animComp.playCount = 1;
         this.animComp.play();
@@ -134,8 +155,9 @@ WL.registerComponent('GhoulHandler', {
         this.mode = 3;
         this.sfxFootsteps.stop();
         this.sfxGroan.play();
-    },
-    update: function(dt) {
+    }
+
+    update(dt) {
         //console.log('update() with delta time', dt);
         switch( this.mode ){
             case 0:
@@ -151,5 +173,5 @@ WL.registerComponent('GhoulHandler', {
                 this.dying(dt);
                 break;
         }
-    },
-});
+    }
+}

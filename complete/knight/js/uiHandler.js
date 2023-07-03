@@ -1,11 +1,23 @@
-WL.registerComponent('uiHandler', {
-    idleAnimation: {type: WL.Type.Animation },
-    walkAnimation: {type: WL.Type.Animation },
-    dieAnimation: {type: WL.Type.Animation },
-    danceAnimation: {type: WL.Type.Animation },
-    animationTarget: {type: WL.Type.Object },
-}, {
-    start: function() {
+import {Component, Property} from '@wonderlandengine/api';
+import { HowlerAudioSource } from '@wonderlandengine/components';
+import { vec3, quat } from "gl-matrix";
+import { CanvasUI  } from './CanvasUI.js';
+
+export class UIHandler extends Component {
+    static TypeName = "uiHandler";
+    static Properties = {
+        idleAnimation: Property.animation(),
+        walkAnimation: Property.animation(),
+        dieAnimation: Property.animation(),
+        danceAnimation: Property.animation(),
+        animationTarget: Property.object()
+    };
+    
+    static onRegister(engine){
+        engine.registerComponent( HowlerAudioSource );
+    }
+
+    start() {
 
         if (this.animationTarget) this.animComp = this.animationTarget.getComponent('animation');
 
@@ -19,11 +31,11 @@ WL.registerComponent('uiHandler', {
 
         this.tmpVec = new Float32Array(3);
 
-        this.soundClick = this.object.addComponent('howler-audio-source', {src: 'sfx/click.wav', spatial: true});
-        this.soundUnClick = this.object.addComponent('howler-audio-source', {src: 'sfx/unclick.wav', spatial: true});
-    },
+        this.soundClick = this.object.addComponent(HowlerAudioSource, {src: 'sfx/click.wav', spatial: true});
+        this.soundUnClick = this.object.addComponent(HowlerAudioSource, {src: 'sfx/unclick.wav', spatial: true});
+    }
 
-    setupUI: function(){
+    setupUI(){
         const scope = this;
 
         function onIdle(){
@@ -116,20 +128,20 @@ WL.registerComponent('uiHandler', {
         collision.extents[0] = config.panelSize.width;
         collision.extents[1] = config.panelSize.height;
 
-        this.ui = new CanvasUI( content, config, this.object );
+        this.ui = new CanvasUI( content, config, this.object, this.engine );
         this.ui.update();
         let ui = this.ui;
-    },
+    }
 
-    setAnimation: function(animation, loop=true){
+    setAnimation(animation, loop = true){
         if (this.animComp){
             this.animComp.animation = animation;
             this.animComp.playCount = (loop) ? 0 : 1;
             this.animComp.play();
         }
-    },
+    }
 
-    onHover: function(_, cursor) {
+    onHover(_, cursor) {
         //console.log('onHover');
         const xy = this.ui.worldToCanvas(cursor.cursorPos);
         if (this.ui) this.ui.hover(0, xy);
@@ -139,49 +151,49 @@ WL.registerComponent('uiHandler', {
         }
 
         this.hapticFeedback(cursor.object, 0.5, 50);
-    },
+    }
 
-    onMove: function(_, cursor) {
+    onMove(_, cursor) {
         this.ui.worldToCanvas(cursor.cursorPos);
         const xy = this.ui.worldToCanvas(cursor.cursorPos);
         if (this.ui) this.ui.hover(0, xy);
 
         this.hapticFeedback(cursor.object, 0.5, 50);
-    },
+    }
 
-    onDown: function(_, cursor) {
+    onDown(_, cursor) {
         console.log('onDown');
         /*this.soundClick.play();
         this.buttonMeshObject.translate([0.0, -0.1, 0.0]);
         this.hapticFeedback(cursor.object, 1.0, 20);*/
-    },
+    }
 
-    onUp: function(_, cursor) {
+    onUp(_, cursor) {
         console.log('onUp');
         this.soundUnClick.play();
 
         if (this.ui) this.ui.select(0);
 
         this.hapticFeedback(cursor.object, 0.7, 20);
-    },
+    }
 
-    onUnHover: function(_, cursor) {
+    onUnHover(_, cursor) {
         console.log('onUnHover');
         
         if (this.ui) this.ui.hover(0);
 
         this.hapticFeedback(cursor.object, 0.3, 50);
-    },
+    }
 
-    hapticFeedback: function(object, strength, duration) {
+    hapticFeedback(object, strength, duration) {
         const input = object.getComponent('input');
         if(input && input.xrInputSource) {
             const gamepad = input.xrInputSource.gamepad;
             if(gamepad && gamepad.hapticActuators) gamepad.hapticActuators[0].pulse(strength, duration);
         }
-    },
+    }
 
-    update: function(dt){
+    update(dt){
         if (this.ui) this.ui.update();
     }
-});
+}
